@@ -1,9 +1,14 @@
 #-------------------------------
 # General Site Settings
 baseURL = "https://hot-deal.store/"
-languageCode = "en-us"
 title = "Danto"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+
+# 기본 언어 설정
+defaultContentLanguage = "en"
+languageCode = "en"
+defaultContentLanguageInSubdir = true
+
 [pagination]
 pagerSize = 12
 
