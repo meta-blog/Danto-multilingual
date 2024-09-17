@@ -4,8 +4,20 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Danto"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+
 [pagination]
 pagerSize = 12
+
+[taxonomies]
+  author = "authors"
+  category = "categories"
+  tag = "tags"
+
+[params]
+  logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
+  logo_dark = "/images/logo.png"
+  description = "Danto is a news and magazine Hugo theme"
+  color_scheme = "auto" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
 #-------------------------------
@@ -71,14 +83,6 @@ pagerSize = 12
     enable = true
     cta_button_link = "/contact/"
     cta_button_text = "Get in touch"
-
-
-[params]
-  logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
-  logo_dark = "/images/logo.png"
-  description = "Danto is a news and magazine Hugo theme"
-  color_scheme = "auto" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
-
 
   #-------------------------------
   # Hero Settings
@@ -188,11 +192,6 @@ pagerSize = 12
   [params.disqus]
     enable = true
     disqusShortname = "anvod-studio-test" # Add your shortname for Disqus Comment. For example anvod-studio-test
-
-
-[taxonomies]
-  author = "authors"
-  tag = "tags"
 
 
 [markup]
