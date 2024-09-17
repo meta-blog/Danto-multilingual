@@ -1,0 +1,58 @@
+title = "ダント"
+languageName = "日本語"
+weight = 3
+
+[params]
+  logo = "/images/logo-ja.png"  # 日本語のロゴがある場合
+  description = "ダントはニュースと雑誌のためのHugoテーマです"
+
+[menu]
+  [[menu.main]]
+    name = "ホーム"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "最新"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "著者"
+    url = "/authors/"
+    weight = 3
+
+  [[menu.main]]
+    name = "タグ"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    name = "ページ"
+    weight = 5
+    hasChildren = true
+
+    [[menu.main]]
+      parent = "ページ"
+      name = "概要"
+      url = "/about/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "ページ"
+      name = "要素"
+      url = "/elements/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "ページ"
+      name = "お問い合わせ"
+      url = "/contact/"
+      weight = 3
+
+[params.hero]
+  hero__title = "日々のニュース、記事、インスピレーション、そしてヒントのワンストップサイト。"
+  hero__description = "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を特集しています。成功するブログの設定方法や、既存のブログをより良くする方法をご覧ください！"
+
+[params.footer]
+  footer__description = "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を特集しています。成功するブログの設定方法や、既存のブログをより良くする方法をご覧ください！"

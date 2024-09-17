@@ -1,0 +1,58 @@
+title = "단토"
+languageName = "한국어"
+weight = 2
+
+[params]
+  logo = "/images/logo-ko.png"  # 한국어 로고가 있다면
+  description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
+
+[menu]
+  [[menu.main]]
+    name = "홈"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "최신 글"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "저자"
+    url = "/authors/"
+    weight = 3
+
+  [[menu.main]]
+    name = "태그"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    name = "페이지"
+    weight = 5
+    hasChildren = true
+
+    [[menu.main]]
+      parent = "페이지"
+      name = "소개"
+      url = "/about/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "페이지"
+      name = "요소"
+      url = "/elements/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "페이지"
+      name = "연락처"
+      url = "/contact/"
+      weight = 3
+
+[params.hero]
+  hero__title = "일일 뉴스, 기사, 영감, 그리고 팁을 위한 원스톱 사이트."
+  hero__description = "생산성, 팁, 영감 그리고 대규모 수익을 위한 전략을 제공합니다. 성공적인 블로그를 어떻게 설정하는지, 또는 여러분의 블로그를 어떻게 더 좋게 만들 수 있는지 알아보세요!"
+
+[params.footer]
+  footer__description = "생산성, 팁, 영감 그리고 대규모 수익을 위한 전략을 제공합니다. 성공적인 블로그를 어떻게 설정하는지, 또는 여러분의 블로그를 어떻게 더 좋게 만들 수 있는지 알아보세요!"

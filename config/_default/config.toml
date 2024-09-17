@@ -5,6 +5,24 @@ languageCode = "en-us"
 title = "Danto"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    title = "Danto"
+    weight = 1
+
+  [languages.ko]
+    languageName = "한국어"
+    title = "단토"
+    weight = 2
+
+  [languages.ja]
+    languageName = "日本語"
+    title = "ダント"
+    weight = 3
+
+
 [pagination]
 pagerSize = 12
 
@@ -12,6 +30,7 @@ pagerSize = 12
   author = "authors"
   category = "categories"
   tag = "tags"
+  series = "series"
 
 [params]
   logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
