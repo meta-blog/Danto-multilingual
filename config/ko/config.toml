@@ -2,6 +2,7 @@ languageCode = "ko-kr"
 languageName = "한국어"
 title = "당신의 사이트 제목"
 weight = 5
+contentDir = "content/ko"
 
 [params]
   description = "Danto는 뉴스와 매거진을 위한 Hugo 테마입니다"

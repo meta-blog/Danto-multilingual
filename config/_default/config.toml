@@ -3,7 +3,8 @@
 baseURL = "https://hot-deal.store"
 
 # Multilingual Setting
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 [languages]
   en = { weight = 1 }
@@ -28,7 +29,7 @@ DefaultContentLanguage = "en"
   color_scheme = "auto"
 
 [permalinks]
-  post = "/:language/:slug/"
+  post = "/:sections/:slug/"
 
 [markup.goldmark.renderer]
   unsafe = true

@@ -2,6 +2,7 @@ languageCode = "ja-jp"
 languageName = "日本語"
 title = "あなたのサイトタイトル"
 weight = 4
+contentDir = "content/ja"
 
 [params]
   description = "Dantoはニュースと雑誌のためのHugoテーマです"

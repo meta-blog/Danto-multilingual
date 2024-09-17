@@ -1,7 +1,9 @@
 languageCode = "en-us"
 languageName = "English"
 title = "Your Site Title"
+contentDir = "content/en"
 weight = 1
+
 
 [params]
   description = "Danto is a news and magazine Hugo theme"
