@@ -1,0 +1,73 @@
+languageCode = "en-us"
+languageName = "English"
+title = "Your Site Title"
+weight = 1
+
+[params]
+  description = "Danto is a news and magazine Hugo theme"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Latest"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Authors"
+    url = "/authors/"
+    weight = 3
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    name = "Pages"
+    weight = 5
+    hasChildren = true
+  [[menu.main]]
+    parent = "Pages"
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    parent = "Pages"
+    name = "Elements"
+    url = "/elements/"
+    weight = 2
+  [[menu.main]]
+    parent = "Pages"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+  [[menu.main]]
+    parent = "Pages"
+    name = "Videos"
+    url = "/videos/"
+    weight = 4
+  [[menu.main]]
+    parent = "Pages"
+    name = "Featured"
+    url = "/featured/"
+    weight = 5
+
+[params.cta_button]
+  enable = true
+  cta_button_link = "/contact/"
+  cta_button_text = "Get in touch"
+
+[params.hero]
+  enable = true
+  hero__title = "One Stop Daily News, Article, Inspiration, and Tips."
+  hero__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+[params.mailchimp]
+  mailchimp__title = "Get interesting news"
+  mailchimp__description = "Subscribe to our newsletter and we'll send you the emails of latest posts."
+  mailchimp__input__text = "Your email address"
+  mailchimp__button__text = "Subscribe"
+
+[params.footer]
+  footer__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
