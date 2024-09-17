@@ -2,6 +2,10 @@ title = "단토"
 languageName = "한국어"
 weight = 2
 
+[languages.ko.permalinks]
+  posts = "/ko/:slug/"
+
+
 [params]
   logo = "/images/logo-ko.png"  # 한국어 로고가 있다면
   description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"

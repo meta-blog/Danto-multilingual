@@ -2,6 +2,9 @@ title = "ダント"
 languageName = "日本語"
 weight = 3
 
+[languages.ja.permalinks]
+  posts = "/ja/:slug/"
+
 [params]
   logo = "/images/logo-ja.png"  # 日本語のロゴがある場合
   description = "ダントはニュースと雑誌のためのHugoテーマです"
