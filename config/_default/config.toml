@@ -1,7 +1,6 @@
 #-------------------------------
 # General Site Settings
 baseURL = "https://hot-deal.store"
-theme = "danto"
 
 # Multilingual Setting
 DefaultContentLanguage = "en"
