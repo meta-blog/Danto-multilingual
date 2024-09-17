@@ -2,12 +2,38 @@
 # General Site Settings
 baseURL = "https://hot-deal.store/"
 title = "Danto"
+languageCode = "en"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 # 기본 언어 설정
 defaultContentLanguage = "en"
-languageCode = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false  # 이 줄을 false로 변경
+
+# 언어 설정
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    title = "Danto"
+    weight = 1
+  [languages.ko]
+    languageName = "한국어"
+    contentDir = "content/ko"
+    title = "단토"
+    weight = 2
+  [languages.ja]
+    languageName = "日本語"
+    contentDir = "content/ja"
+    title = "ダント"
+    weight = 3
+
+# URL 설정
+[permalinks]
+  posts = "/:language/:section/:slug/"
+
+# 기존의 다른 설정들은 그대로 유지
+
+
 
 [pagination]
 pagerSize = 12
