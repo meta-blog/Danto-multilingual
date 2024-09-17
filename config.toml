@@ -9,6 +9,13 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false  # 이 줄을 false로 변경
 
+baseURL = "https://hot-deal.store/"
+title = "Danto"
+
+# 기본 언어 설정
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
 # 언어 설정
 [languages]
   [languages.en]
@@ -29,7 +36,20 @@ defaultContentLanguageInSubdir = false  # 이 줄을 false로 변경
 
 # URL 설정
 [permalinks]
-  posts = "/:language/:section/:slug/"
+  posts = "/:sections/:slug/"
+
+# 다국어 URL 설정
+[languages.en]
+  [languages.en.permalinks]
+    posts = "/posts/:slug/"
+
+[languages.ko]
+  [languages.ko.permalinks]
+    posts = "/ko/posts/:slug/"
+
+[languages.ja]
+  [languages.ja.permalinks]
+    posts = "/ja/posts/:slug/"
 
 # 기존의 다른 설정들은 그대로 유지
 
