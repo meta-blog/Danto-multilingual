@@ -1,20 +1,6 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "hugo"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.117.0"
-  HUGO_ENV = "production"
-
-[[redirects]]
-  from = "/en-US/"
-  to = "/"
-  status = 302
-  force = true
-  conditions = { Language = ["en"] }
-
-# 없는 콘텐츠에 대해 기본 언어로 리다이렉트
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 404

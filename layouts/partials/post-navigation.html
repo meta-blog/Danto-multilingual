@@ -17,7 +17,7 @@
       </a>
       {{ end }}
       <div class="prev__box">
-        <span class="post__nav post__nav__prev">{{ i18n "older_post" }}</span> <!-- 번역 적용 -->
+        <span class="post__nav post__nav__prev">Older post</span>
         <h2 class="post__nav__title"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h2>
       </div>
     </div>
@@ -26,7 +26,7 @@
     {{ if .NextInSection }}
     <div class="post__next">
       <div class="next__box">
-        <span class="post__nav post__nav__next">{{ i18n "newer_post" }}</span> <!-- 번역 적용 -->
+        <span class="post__nav post__nav__next">Newer post</span>
         <h2 class="post__nav__title"><a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a></h2>
       </div>
       {{ if .NextInSection.Params.Image }}

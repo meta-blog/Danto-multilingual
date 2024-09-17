@@ -1,9 +1,56 @@
-# Anvod Studio - Danto custom
+# Danto – News and Magazine Hugo Theme
 
-## 수정 사항
-1. 다국어 설정 구성
-2. language-switcher 기능 추가 (feat.Claud e)
-3. news, docs 섹션 추가 (각 섹션에 대한 리스트 페이지 추가, 검색을 위한 index.json 수정, video 및 featured 리스트 섹션에 맞게 수정)
-4. TOC (사이드바를 스티키로 고정, 활성화 섹션의 toc 제목 부분 디자인 활성화 구성)
-5. 택소노미 번역 중
-6. i18n 번역 완료, Config 번역 필요, 검색 기능 복구 중
+Danto is a fast, modern, optimized, and mobile-friendly Hugo theme. It supports videos from YouTube and Vimeo and also has a light and dark mode. This theme has been designed with a focus on readability to provide your visitors with a quality user experience and is perfect for a personal blog, news, magazine, and all kinds of publishing websites.
+
+* * *
+
+### Demo
+
+Check the theme in action [Live Demo](https://danto-hugo.netlify.app/) |
+[Anvod Studio](https://themeforest.net/user/anvodstudio)
+
+* * *
+
+### Theme features
+
+- Dark and light mode
+- No jQuery, only vanilla JS
+- 100% responsive design
+- Clean and modern code
+- Optimized for mobile devices
+- Compatible with modern browsers
+- Section featured posts
+- Page latest posts
+- Page videos
+- Post navigation
+- Section tag
+- Super fast performance ⚡⚡⚡
+- Social sharing buttons
+- Scroll to top button
+- Syntax highlighting
+- Medium style image zoom
+- Image gallery
+- Tag page
+- Author page
+- Custom logo support
+- Supports video posts
+- Supports contact form (Formspree)
+- Supports MailChimp newsletter
+- Supports Disqus comments
+- Supports Google analytics
+- Font Awesome icons
+- Free Google Fonts
+
+* * *
+
+### Deployment
+
+To run the theme locally, navigate to the theme directory and run `hugo` to start building websites, then run `hugo server` or `hugo server --disableFastRender` to start the HUGO server.
+
+I would recommend checking the [Deployment Methods](https://gohugo.io/hosting-and-deployment/) page on HUGO website.
+
+* * *
+
+### Documentation
+
+Before using the Danto theme, please read the attached documentation.

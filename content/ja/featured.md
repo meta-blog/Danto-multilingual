@@ -1,4 +1,0 @@
----
-layout: featured
-title: Featured
----

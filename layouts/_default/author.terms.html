@@ -18,7 +18,7 @@
             <div class="authors__meta">
               <h2 class="authors__name"><a class="authors__link" href="{{ .Permalink }}">{{ .Params.name }}</a></h2>
               {{ if ge (len .Pages) 1 }}
-              <span class="authors__posts__count">{{ len .Pages }} {{ if lt (len .Pages) 2 }}{{ i18n "post" }}{{ else }}{{ i18n "posts" }}{{ end }}</span>
+              <span class="authors__posts__count">{{ len .Pages }} {{ if lt (len .Pages) 2 }}Post{{ else }}Posts{{ end }}</span>
               {{ end }}
             </div>
             {{ if .Content }}

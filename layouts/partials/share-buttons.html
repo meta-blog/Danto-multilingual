@@ -1,55 +1,25 @@
 <div class="post__share">
   <ul class="share__list list-reset">
-
-    <!-- 링크 복사 버튼 -->
     <li class="share__item">
-      <a class="share__link share__copy" href="#" onclick="navigator.clipboard.writeText('{{ .Permalink | absLangURL }}'); alert('링크가 복사되었습니다!'); return false;" title="Copy Link"><i class="fa-solid fa-link"></i></a>
+      <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="fa-brands fa-x-twitter"></i><span class="share-name">Twitter</span></a>
     </li>
 
-    <!-- 이메일 공유 버튼 -->
     <li class="share__item">
-      <a class="share__link share__email" href="mailto:?subject={{ .Title }}&body={{ .Permalink | absLangURL }}" title="Share via Email" rel="nofollow"><i class="fa-solid fa-envelope"></i></a>
+      <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | absLangURL }}"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on Facebook" rel="nofollow"><i class="fa-brands fa-facebook"></i><span class="share-name">Facebook</span></a>
     </li>
 
-    <!-- 왓츠앱 -->
     <li class="share__item">
-      <a class="share__link share__whatsapp" href="https://api.whatsapp.com/send?text={{ .Title }} {{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on WhatsApp" rel="nofollow"><i class="fa-brands fa-whatsapp"></i></a>
+      <a class="share__link share__pinterest"
+        href="http://pinterest.com/pin/create/button/?url={{ .Permalink | absLangURL }}&amp;media={{ .Params.image | absURL }}&amp;description={{ .Title }}"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on Pinterest" aria-label="Share on Pinterest"><i class="fa-brands fa-pinterest"></i><span class="share-name">Pinterest</span></a>
     </li>
 
-    <!-- 라인 -->
     <li class="share__item">
-      <a class="share__link share__line" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LINE" rel="nofollow"><i class="fa-brands fa-line"></i></a>
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | absLangURL }}&title={{ .Title }}&summary={{ .Description }}&source={{ .Title }}"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin"></i><span class="share-name">Linkedin</span></a>
     </li>
-
-    <!-- 잘로 -->
-    <li class="share__item">
-      <a class="share__link share__zalo" href="https://zalo.me/share?url={{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Zalo" rel="nofollow"><i class="fa-brands fa-z"></i></a>
-    </li>
-
-    <!-- 페이스북 -->
-    <li class="share__item">
-      <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="fa-brands fa-facebook"></i></a>
-    </li>
-
-    <!-- 트위터 -->
-    <li class="share__item">
-      <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | absLangURL }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="fa-brands fa-x-twitter"></i></a>
-    </li>
-
-    <!-- 텔레그램 -->
-    <li class="share__item">
-      <a class="share__link share__telegram" href="https://t.me/share/url?url={{ .Permalink | absLangURL }}&text={{ .Title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="fa-brands fa-telegram"></i></a>
-    </li>
-
-    <!-- 레딧 -->
-    <li class="share__item">
-      <a class="share__link share__reddit" href="https://www.reddit.com/submit?url={{ .Permalink | absLangURL }}&title={{ .Title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" rel="nofollow"><i class="fa-brands fa-reddit"></i></a>
-    </li>
-
-    <!-- 웨이보 -->
-    <li class="share__item">
-      <a class="share__link share__weibo" href="http://service.weibo.com/share/share.php?url={{ .Permalink | absLangURL }}&title={{ .Title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Weibo" rel="nofollow"><i class="fa-brands fa-weibo"></i></a>
-    </li>
-
   </ul>
 </div>

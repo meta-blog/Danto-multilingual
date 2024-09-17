@@ -4,15 +4,15 @@
 <!-- begin pagination -->
 <div class="container animate">
   <div class="pagination">
-    <button class="load-more-posts button button--big">{{ i18n "load_more_posts" }}</button>
+    <button class="load-more-posts button button--big">Load more posts</button>
   </div>
 </div>
 <!-- end pagination -->
 {{ end }}
 
 <script>
-  var base_url = "{{ .RelPermalink }}", // 현재 페이지의 상대 URL
-    pagination_next_url = base_url + 'page/{{ add .Paginator.PageNumber 1 }}',
+  var base_url = "",
+    pagination_next_url = base_url + '/posts/page2',
     pagination_next_page_number = '{{ add .Paginator.PageNumber 1 }}',
     pagination_available_pages_number = '{{ .Paginator.TotalPages }}';
 </script>
