@@ -1,0 +1,30 @@
+{{ $related := first 4 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+{{ with $related }}
+<!-- begin related posts -->
+<div class="container">
+  <section class="related-posts">
+    <div class="row">
+      <div class="col col-12">
+        <div class="container__inner">
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Related</h2>
+              {{ range first 1 ($.GetTerms "tags") }}
+              <a href="{{ .Permalink }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              {{ end }}
+            </div>
+          </div>
+          <div class="row">
+            {{ range . }}
+            <div class="col col-3 col-d-6 col-m-12">
+              {{ partial "article.html" (dict "context" .) }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- end related posts -->
+{{ end }}

@@ -1,0 +1,26 @@
+{{ range first 1 (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) }}
+  {{ $.Scratch.Set "featured" true }}
+{{ end }}
+
+{{ if $.Scratch.Get "featured" }}
+<div class="widget-sidebar widget-featured-posts">
+  <h2 class="widget-sidebar-title">Featured posts</h2>
+
+  {{ $featured := first 3 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) "Permalink" "!=" .Permalink)}}
+  {{ range $featured }}
+  <div class="post-featured-content">
+    <a href="{{ .Permalink }}" class="post-featured-image">
+      {{ if and (.Params.Image) (.Params.video_embed) }}
+      <div class="video-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <polygon points="40,30 70,50 40,70"></polygon>
+        </svg>
+      </div>
+      {{ end }}
+      <img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.title }}">
+    </a>
+    <h3 class="post-featured-title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<!-- begin author -->
+<section class="section author">
+  <div class="container">
+
+    <div class="author__content">
+      <div class="author__image"><img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.name }}"></div>
+      <h1 class="author__name">{{ .Params.name }}</h1>
+
+      <div class="author__info">
+        {{ if .Params.location }}
+          <span class="author__social__item"><i class="fa-solid fa-location-dot"></i> {{ .Params.location }}</span>
+        {{ end }}
+        {{ if .Params.website }}
+          <a class="author__social__item" href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="Website link"><i class="fa-solid fa-link"></i> Website</a>
+        {{ end }}
+        {{ if .Params.facebook }}
+          <a class="author__social__item" href="{{ .Params.facebook }}" target="_blank" rel="noopener" aria-label="Facebook link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        {{ end }}
+        {{ if .Params.twitter }}
+          <a class="author__social__item" href="{{ .Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter link"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        {{ end }}
+        {{ if .Params.instagram }}
+          <a class="author__social__item" href="{{ .Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        {{ end }}
+      </div>
+
+      {{ .Content }}
+
+    </div>
+
+  </div>
+
+  <div class="container">
+    <h2 class="author__posts__count">{{ len .Pages }} {{ if lt (len .Pages) 2 }}Post{{ else }}Posts{{ end }}</h2>
+    <div class="row animate">
+      {{ range .Data.Pages }}
+      <div class="col col-4 col-d-6 col-t-12">
+        {{ partial "article.html" (dict "context" .) }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+</section>
+<!-- end author -->
+
+{{ end }}

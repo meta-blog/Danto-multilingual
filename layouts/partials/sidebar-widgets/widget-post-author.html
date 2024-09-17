@@ -1,0 +1,40 @@
+{{ if .Params.authors }}
+<div class="widget-sidebar widget-post-author">
+  {{ range first 1 .Params.authors }}
+  {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+
+  {{ if .Params.image }}
+  <div class="post-author-image">
+    <a href="{{ .Permalink }}" class="post__author__image">
+      <img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.name }}">
+    </a>
+  </div>
+  {{ end }}
+
+  <h2 class="post-author-name">
+    <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+  </h2>
+
+  {{ if .Content }}
+  <div class="post-author-description">{{ .Content }}</div>
+  {{ end }}
+
+  <div class="post-author-social">
+    {{ if .Params.website }}
+    <a class="post-author-link" href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="Website link"><i class="fa-solid fa-link"></i></a>
+    {{ end }}
+    {{ if .Params.facebook }}
+    <a class="post-author-link" href="{{ .Params.facebook }}" target="_blank" rel="noopener" aria-label="Facebook link"><i class="fa-brands fa-facebook"></i></a>
+    {{ end }}
+    {{ if .Params.twitter }}
+    <a class="post-author-link" href="{{ .Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter link"><i class="fa-brands fa-x-twitter"></i></a>
+    {{ end }}
+    {{ if .Params.instagram }}
+    <a class="post-author-link" href="{{ .Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i></a>
+    {{ end }}
+  </div>
+
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}

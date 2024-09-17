@@ -1,0 +1,36 @@
+<div class="col col-4 col-d-12">
+  <div class="widget-footer widget-info">
+
+    <div class="logo-footer">
+      <a class="logo-footer__link widget-title" href="{{ .Site.BaseURL }}">
+        {{ if or (.Site.Params.logo) (.Site.Params.logo_dark) }}
+        <img class="logo-footer__image" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+          alt="{{ .Site.Title }}">
+        <img class="logo-footer__image__dark" src="{{ .Site.BaseURL }}{{ .Site.Params.logo_dark }}"
+          alt="{{ .Site.Title }}">
+        {{ else }}
+          {{ .Site.Title }}
+        {{ end }}
+      </a>
+    </div>
+
+    {{ if .Site.Params.footer.footer__description }}
+    <p class="widget-footer__desc">{{ .Site.Params.footer.footer__description }}</p>
+    {{ end }}
+
+    {{ if .Site.Params.social }}
+    {{ with .Site.Params.social }}
+    <div class="social">
+      <ul class="social__list list-reset">
+        {{ range . }}
+        <li class="social__item">
+          <a class="social__link" href="{{ .link }}" target="_blank" rel="noopener" aria-label="{{ .name }} link"><i class="{{ .icon }}"></i></a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    {{ end }}
+
+  </div>
+</div>

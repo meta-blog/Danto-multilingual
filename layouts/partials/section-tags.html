@@ -1,0 +1,54 @@
+{{ if (.Site.Params.tags_section.enable) }}
+
+{{ $number_columns := 0 }}
+{{ if eq .Site.Params.tags_section.number_columns 1 }}
+  {{ $number_columns = 12 }}
+{{ else if eq .Site.Params.tags_section.number_columns 2 }}
+  {{ $number_columns = 6 }}
+{{ else if eq .Site.Params.tags_section.number_columns 3 }}
+  {{ $number_columns = 4 }}
+{{ else if eq .Site.Params.tags_section.number_columns 4 }}
+  {{ $number_columns = 3 }}
+{{ end }}
+
+{{ $number_posts := 0 }}
+{{ if .Site.Params.tags_section.number_posts }}
+  {{ $number_posts = .Site.Params.tags_section.number_posts }}
+{{ else }}
+  {{ $number_posts = 3 }}
+{{ end }}
+
+{{ range .Site.Params.tag }}
+{{ $tags_range := (site.Taxonomies.tags.Get .tag).Pages }}
+<!-- begin section-tags -->
+<section class="section section-tags animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__inner">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title"><a href="{{ "/tags/" | relLangURL }}{{ .tag | urlize }}" class="section__link">{{ humanize .tag | safeHTML }}</a></h2>
+              {{ if lt $number_posts $tags_range }}
+              <a class="button" href="{{ "/tags/" | relLangURL }}{{ .tag | urlize }}">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              {{ else }}
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="row">
+            {{ range $index, $element := first $number_posts $tags_range }}
+            <div class="col {{ if and (gt .Site.Params.tags_section.number_columns 0) (le .Site.Params.tags_section.number_columns 4) }}col-{{ $number_columns }} col-d-6 col-t-12{{ else }}col-4 col-d-6 col-t-12{{ end }}">
+              {{ partial "article.html" (dict "context" . "index" $index) }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- end section-tags -->
+{{ end }}

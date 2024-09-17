@@ -1,0 +1,49 @@
+{{ if or .NextInSection .PrevInSection }}
+<div class="container">
+  <div class="post__navigation">
+  
+    {{ if .PrevInSection }}
+    <div class="post__prev">
+      {{ if .PrevInSection.Params.Image }}
+      <a href="{{ .PrevInSection.Permalink }}" class="prev__image">
+        {{ if and (.PrevInSection.Params.Image) (.PrevInSection.Params.video_embed) }}
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <polygon points="40,30 70,50 40,70"></polygon>
+          </svg>
+        </div>
+        {{ end }}
+        <img class="lazy" data-src="{{ .PrevInSection.Params.Image }}" alt="{{ .PrevInSection.Title }}">
+      </a>
+      {{ end }}
+      <div class="prev__box">
+        <span class="post__nav post__nav__prev">Older post</span>
+        <h2 class="post__nav__title"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h2>
+      </div>
+    </div>
+    {{ end }}
+  
+    {{ if .NextInSection }}
+    <div class="post__next">
+      <div class="next__box">
+        <span class="post__nav post__nav__next">Newer post</span>
+        <h2 class="post__nav__title"><a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a></h2>
+      </div>
+      {{ if .NextInSection.Params.Image }}
+      <a href="{{ .NextInSection.Permalink }}" class="next__image">
+        {{ if and (.NextInSection.Params.Image) (.NextInSection.Params.video_embed) }}
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <polygon points="40,30 70,50 40,70"></polygon>
+          </svg>
+        </div>
+        {{ end }}
+        <img class="lazy" data-src="{{ .NextInSection.Params.Image }}" alt="{{ .NextInSection.Title }}">
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  
+  </div>
+</div>
+{{ end }}

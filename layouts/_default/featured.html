@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<!-- begin hero -->
+<section class="hero hero--left">
+  <div class="container">
+    {{ if .Title }}
+    <h1 class="hero__title">{{ .Title }}</h1>
+    {{ end }}
+  </div>
+</section>
+<!-- end hero -->
+
+<div class="section animate">
+  <div class="container">
+    <div class="row">
+      {{ range (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) }}
+      <div class="col col-4 col-d-6 col-t-12">
+        {{ partial "article.html" (dict "context" .) }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,53 @@
+<div class="article {{.class}}">
+  <div class="article__inner">
+
+    <div class="article__head">
+      {{ if and (.context.Params.Image) (.context.Params.video_embed) }}
+      <div class="video-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <polygon points="40,30 70,50 40,70"></polygon>
+        </svg>
+      </div>
+      {{ end }}
+
+      {{ if .context.Params.Image }}
+      <a class="article__image" href="{{ .context.RelPermalink }}">
+        <img class="lazy" data-src="{{ .context.Params.Image | absURL }}" alt="{{ .context.Title }}">
+      </a>
+      {{ end }}
+    </div>
+
+    <div class="article__content">
+
+      <div class="article__meta">
+        {{ if .context.Params.tags }}
+        <div class="article__tags">
+          {{ range (.context.GetTerms "tags") }}
+            <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+        <span class="article__date">•<time datetime="{{ .context.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .context.Date.Format "2 Jan, 2006" }}</time></span>
+      </div>
+
+      <h2 class="article__title">
+        <a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a>
+      </h2>
+
+      {{ if eq (.class) "article--big" }}
+      <p class="article__excerpt">{{ if .context.Description }}{{ .context.Description }}{{ else }}{{ truncate 250 .context.Summary | safeHTML }}{{ end }}</p>
+      {{ end }}
+
+      <div class="article__info">
+        {{ if .context.Params.authors }}
+          {{ range first 1 .context.Params.authors }}
+            {{ with $.context.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+            By <a class="article__author__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
