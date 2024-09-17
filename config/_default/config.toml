@@ -22,8 +22,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     title = "ダント"
     weight = 3
 
-  [permalinks]
-  posts = "/:language/:year/:month/:day/:slug/"
+[permalinks]
+ posts = "/:slug/"
 
 
 [pagination]
