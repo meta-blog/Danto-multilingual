@@ -3,6 +3,7 @@
 baseURL = "https://hot-deal.store/"
 languageCode = "en-us"
 title = "Danto"
+contentDir = "contents"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 [pagination]
 pagerSize = 12
