@@ -1,8 +1,8 @@
 #-------------------------------
 # General Site Settings
-baseURL = "http://hot-deal.store/ko/"
-languageCode = "ko"
-title = "단토"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Danto"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 [pagination]
 pagerSize = 12
@@ -12,22 +12,22 @@ pagerSize = 12
 # Main Menu
 [menu]
   [[menu.main]]
-    name = "홈"
+    name = "Home"
     url = "/"
     weight = 1
 
   [[menu.main]]
-    name = "최근"
+    name = "Latest"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "작가"
+    name = "Authors"
     url = "/authors/"
     weight = 3
 
   [[menu.main]]
-    name = "태그"
+    name = "Tags"
     url = "/tags/"
     weight = 4
 
