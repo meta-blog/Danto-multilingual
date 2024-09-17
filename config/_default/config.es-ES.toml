@@ -1,0 +1,86 @@
+baseURL = "https://example.com/es/"
+languageCode = "es-ES"
+defaultContentLanguage = "es-ES"
+contentDir = "content/es"
+title = "Mi Blog (Español de España)"
+
+
+#-------------------------------
+# Main Menu
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Latest"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Authors"
+    url = "/authors/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Pages"
+    weight = 5
+    hasChildren = true
+
+  [[menu.main]]
+    parent = "Pages"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    parent = "Pages"
+    name = "Elements"
+    url = "/elements/"
+    weight = 2
+
+  [[menu.main]]
+    parent = "Pages"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+  [[menu.main]]
+    parent = "Pages"
+    name = "Videos"
+    url = "/videos/"
+    weight = 4
+
+  [[menu.main]]
+    parent = "Pages"
+    name = "Featured"
+    url = "/featured/"
+    weight = 5
+
+  # Call to action button
+  [params.cta_button]
+    enable = true
+    cta_button_link = "/contact/"
+    cta_button_text = "Get in touch"
+
+
+  [params]
+  logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
+  logo_dark = "/images/logo.png"
+  description = "Danto is a news and magazine Hugo theme"
+  color_scheme = "auto" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+  dateFormat = "2 de enero de 2006"
+
+
+  #-------------------------------
+  # Hero Settings
+  [params.hero]
+    enable = true
+    hero__title = "Una parada diaria de noticias, artículos, inspiración y consejos."
+    hero__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"

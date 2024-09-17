@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "Publicações"
+"Latest": "Últimas"
+"Blog": "Blog"
+"News": "Notícias"
+"Docs": "Documentos"
+"Authors" : "Autores"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Categorias"
+taxonomy_tag: "Etiquetas"
+taxonomy_series: "Séries"
+
+### Taxonomy: Category
+###-------------------
+Car: "Carro"
+Gear: "Equipamento"
+Camera: "Câmara"
+Mobile: "Telemóvel"
+
+### Taxonomy: tag
+###----------------
+Study: "Estudo"
+Business: "Negócios"
+Lifestyle: "Estilo de vida"
+Shopping: "Compras"
+Food: "Comida"
+People: "Pessoas"
+Reading: "Leitura"
+Science: "Ciência"
+Sport: "Desporto"
+
+## author.html
+##------------
+location: "Localização"
+website: "Website"
+website_link_aria_label: "Link do website"
+facebook: "Facebook"
+facebook_link_aria_label: "Link do Facebook"
+twitter: "Twitter"
+twitter_link_aria_label: "Link do Twitter"
+instagram: "Instagram"
+instagram_link_aria_label: "Link do Instagram"
+post: "Publicação"
+posts: "Publicações"
+
+## contact.html
+##-------------
+your_name_label: "O seu nome"
+your_name_placeholder: "Escreva o seu nome..."
+your_email_label: "O seu email"
+your_email_placeholder: "Escreva o seu email..."
+your_message_label: "A sua mensagem"
+your_message_placeholder: "Escreva a sua mensagem..."
+send_message_button: "Enviar mensagem"
+
+### 404 page
+###----------
+errorText: "A página que procurava não foi encontrada."
+backToHomepage: "Voltar à página inicial"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2 de janeiro de 2006\" }}"
+by: "Por"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Mostrar comentários"
+enable_javascript: "Ative o JavaScript para ver os"
+disqus_comments: "comentários fornecidos pelo Disqus"
+
+### footer
+###----------------
+darkMode: "Escuro"
+lightMode: "Claro"
+
+### Pagination
+###--------------------------
+load_more_posts: "Carregar mais publicações"
+
+## post-navigation
+##-------------------
+older_post: "Publicação anterior"
+newer_post: "Publicação mais recente"
+
+## related-posts
+##--------------------
+related_posts: "Publicações relacionadas"
+view_all: "Ver tudo"
+
+## search
+##----------------------------------
+search_label: "Pesquisar no site"
+search_placeholder: "Escreva para pesquisar..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "Ver todos os autores"
+
+## section-featured-posts
+##-----------------------
+featured: "Destaques"
+
+## section-tags
+##------------------------
+view_all: "Ver tudo"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Publicações recentes"
+by_author: "Por"
+
+## toc
+##--------------------
+on_this_page: "Nesta página"
+no_content_available: "Nenhum conteúdo disponível."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Publicações em destaque"
+
+## widget-tags
+##--------------------
+popular_topics: "Tópicos populares"

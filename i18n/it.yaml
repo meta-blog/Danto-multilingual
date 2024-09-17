@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "Post"
+"Latest": "Ultimi"
+"Blog": "Blog"
+"News": "Notizie"
+"Docs": "Documenti"
+"Authors" : "Autori"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Categorie"
+taxonomy_tag: "Tag"
+taxonomy_series: "Serie"
+
+### Taxonomy: Category
+###-------------------
+Car: "Auto"
+Gear: "Attrezzatura"
+Camera: "Fotocamera"
+Mobile: "Cellulare"
+
+### Taxonomy: tag
+###----------------
+Study: "Studio"
+Business: "Affari"
+Lifestyle: "Stile di vita"
+Shopping: "Shopping"
+Food: "Cibo"
+People: "Persone"
+Reading: "Lettura"
+Science: "Scienza"
+Sport: "Sport"
+
+## author.html
+##------------
+location: "Posizione"
+website: "Sito web"
+website_link_aria_label: "Link del sito web"
+facebook: "Facebook"
+facebook_link_aria_label: "Link di Facebook"
+twitter: "Twitter"
+twitter_link_aria_label: "Link di Twitter"
+instagram: "Instagram"
+instagram_link_aria_label: "Link di Instagram"
+post: "Post"
+posts: "Post"
+
+## contact.html
+##-------------
+your_name_label: "Il tuo nome"
+your_name_placeholder: "Il tuo nome..."
+your_email_label: "La tua email"
+your_email_placeholder: "La tua email..."
+your_message_label: "Il tuo messaggio"
+your_message_placeholder: "Il tuo messaggio..."
+send_message_button: "Invia messaggio"
+
+### 404 page
+###----------
+errorText: "La pagina richiesta non è stata trovata."
+backToHomepage: "Torna alla homepage"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2 gennaio 2006\" }}"
+by: "Di"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Mostra i commenti"
+enable_javascript: "Attiva JavaScript per visualizzare"
+disqus_comments: "i commenti forniti da Disqus"
+
+### footer
+###----------------
+darkMode: "Scuro"
+lightMode: "Chiaro"
+
+### Pagination
+###--------------------------
+load_more_posts: "Carica altri post"
+
+## post-navigation
+##-------------------
+older_post: "Post precedente"
+newer_post: "Post successivo"
+
+## related-posts
+##--------------------
+related_posts: "Post correlati"
+view_all: "Vedi tutto"
+
+## search
+##----------------------------------
+search_label: "Cerca nel sito"
+search_placeholder: "Digita per cercare..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "Vedi tutti gli autori"
+
+## section-featured-posts
+##-----------------------
+featured: "In evidenza"
+
+## section-tags
+##------------------------
+view_all: "Vedi tutto"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Post recenti"
+by_author: "Di"
+
+## toc
+##--------------------
+on_this_page: "In questa pagina"
+no_content_available: "Nessun contenuto disponibile."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Post in evidenza"
+
+## widget-tags
+##--------------------
+popular_topics: "Argomenti popolari"

@@ -4,9 +4,9 @@
 
 {{ if $.Scratch.Get "featured" }}
 <div class="widget-sidebar widget-featured-posts">
-  <h2 class="widget-sidebar-title">Featured posts</h2>
+  <h2 class="widget-sidebar-title">{{ i18n "featured_posts" }}</h2>
 
-  {{ $featured := first 3 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) "Permalink" "!=" .Permalink)}}
+  {{ $featured := first 4 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) "Permalink" "!=" .Permalink)}}
   {{ range $featured }}
   <div class="post-featured-content">
     <a href="{{ .Permalink }}" class="post-featured-image">

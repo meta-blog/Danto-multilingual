@@ -32,6 +32,9 @@
     3.10-Sidebar
     3.11-Scroll Button Top
     3.12-Buttons
+    3.13-language-switcher
+    3.14-explore-tag-cloud
+    3.15-tocw
 :: 4-Layouts
     4.1-Post Page
     4.2-Authors
@@ -102,6 +105,13 @@
 @import '3-modules/scroll-button-top';
 /* >>>>>>>>>>>>>> :: 3.12-Buttons <<<<<<<<<<<<<<< */
 @import '3-modules/buttons';
+/* >>>>>>>>>>>>>> :: 3.13-language-switcher <<<<<<<<<<<<<<< */
+@import '3-modules/language-switcher';
+/* >>>>>>>>>>>>>> :: 3.14-explore-tag-cloud <<<<<<<<<<<<<<< */
+@import '3-modules/explore-tags';
+/* >>>>>>>>>>>>>> :: 3.15-toc <<<<<<<<<<<<<<< */
+@import '3-modules/toc';
+
 
 
 /* =======================

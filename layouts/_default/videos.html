@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
@@ -9,17 +8,16 @@
   </div>
 </section>
 <!-- end hero -->
-
 <div class="section videos-page animate">
   <div class="container">
     <div class="row">
-      {{ range (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.video_embed" "!=" nil) }}
-      <div class="col col-4 col-d-6 col-t-12">
-        {{ partial "article.html" (dict "context" .) }}
-      </div>
+      {{ $videoPages := where .Site.RegularPages ".Params.video_embed" "!=" nil }}
+      {{ range $videoPages }}
+        <div class="col col-4 col-d-6 col-t-12">
+          {{ partial "article.html" (dict "context" .) }}
+        </div>
       {{ end }}
     </div>
   </div>
 </div>
-
 {{ end }}

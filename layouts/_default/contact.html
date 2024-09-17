@@ -40,19 +40,19 @@
         <form class="form"
           action="{{ if .Site.Params.contact.email }}https://formspree.io/f/{{.Site.Params.contact.email}}{{ else }}#{{ end }}" method="POST">
           <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-            <input class="form__input" id="form-name" type="text" name="name" placeholder="Your name..." required>
+            <label class="form__label screen-reader-text" for="form-name">{{ i18n "your_name_label" }}</label>
+            <input class="form__input" id="form-name" type="text" name="name" placeholder="{{ i18n "your_name_placeholder" }}" required>
           </div>
           <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-            <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Your email..." required>
+            <label class="form__label screen-reader-text" for="form-email">{{ i18n "your_email_label" }}</label>
+            <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="{{ i18n "your_email_placeholder" }}" required>
           </div>
           <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-            <textarea class="form__input" id="form-text" name="text" rows="4" placeholder="Your message..." required></textarea>
+            <label class="form__label screen-reader-text" for="form-text">{{ i18n "your_message_label" }}</label>
+            <textarea class="form__input" id="form-text" name="text" rows="4" placeholder="{{ i18n "your_message_placeholder" }}" required></textarea>
           </div>
           <div class="form__group">
-            <button class="button button--big" type="submit">Send Message</button>
+            <button class="button button--big" type="submit">{{ i18n "send_message_button" }}</button>
           </div>
         </form>
       </div>

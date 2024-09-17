@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "Beiträge"
+"Latest": "Neueste"
+"Blog": "Blog"
+"Authors" : "Autoren"
+"News": "Nachrichten"
+"Docs": "Dokumente"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Kategorien"
+taxonomy_tag: "Schlagwörter"
+taxonomy_series: "Serien"
+
+### Taxonomy: Category
+###-------------------
+Car: "Auto"
+Gear: "Ausrüstung"
+Camera: "Kamera"
+Mobile: "Mobiltelefon"
+
+### Taxonomy: tag
+###----------------
+Study: "Studium"
+Business: "Geschäft"
+Lifestyle: "Lebensstil"
+Shopping: "Einkaufen"
+Food: "Essen"
+People: "Leute"
+Reading: "Lesen"
+Science: "Wissenschaft"
+Sport: "Sport"
+
+## author.html
+##------------
+location: "Ort"
+website: "Webseite"
+website_link_aria_label: "Website-Link"
+facebook: "Facebook"
+facebook_link_aria_label: "Facebook-Link"
+twitter: "Twitter"
+twitter_link_aria_label: "Twitter-Link"
+instagram: "Instagram"
+instagram_link_aria_label: "Instagram-Link"
+post: "Beitrag"
+posts: "Beiträge"
+
+## contact.html
+##-------------
+your_name_label: "Dein Name"
+your_name_placeholder: "Dein Name..."
+your_email_label: "Deine E-Mail"
+your_email_placeholder: "Deine E-Mail..."
+your_message_label: "Deine Nachricht"
+your_message_placeholder: "Deine Nachricht..."
+send_message_button: "Nachricht senden"
+
+### 404 page
+###----------
+errorText: "Die angeforderte Seite konnte nicht gefunden werden."
+backToHomepage: "Zurück zur Startseite"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2. Januar 2006\" }}"
+by: "Von"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Kommentare anzeigen"
+enable_javascript: "Bitte aktiviere JavaScript, um die"
+disqus_comments: "Kommentare von Disqus zu sehen"
+
+### footer
+###----------------
+darkMode: "Dunkel"
+lightMode: "Hell"
+
+### Pagination
+###--------------------------
+load_more_posts: "Mehr Beiträge laden"
+
+## post-navigation
+##-------------------
+older_post: "Älterer Beitrag"
+newer_post: "Neuerer Beitrag"
+
+## related-posts
+##--------------------
+related_posts: "Verwandte Beiträge"
+view_all: "Alle anzeigen"
+
+## search
+##----------------------------------
+search_label: "Website durchsuchen"
+search_placeholder: "Zum Suchen tippen..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "Alle Autoren anzeigen"
+
+## section-featured-posts
+##-----------------------
+featured: "Empfohlen"
+
+## section-tags
+##------------------------
+view_all: "Alle anzeigen"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Neueste Beiträge"
+by_author: "Von"
+
+## toc
+##--------------------
+on_this_page: "Auf dieser Seite"
+no_content_available: "Kein Inhalt verfügbar."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Empfohlene Beiträge"
+
+## widget-tags
+##--------------------
+popular_topics: "Beliebte Themen"

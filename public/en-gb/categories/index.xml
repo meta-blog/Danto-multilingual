@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My Blog (UK English)</title>
+    <link>http://localhost:1315/uk/categories/</link>
+    <description>Recent content in Categories on My Blog (UK English)</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <atom:link href="http://localhost:1315/uk/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

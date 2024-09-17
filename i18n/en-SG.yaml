@@ -1,0 +1,156 @@
+#################
+#### Type
+#################
+"Posts": "Posts"
+"Latest": "Latest"
+"Blog": "Blog"
+"News": "News"
+"Docs": "Docs"
+"Authors" : "Authors"
+
+
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Categories"
+taxonomy_tag: "Tags"
+taxonomy_series: "Series"
+
+### Taxonomy: Category
+###-------------------
+Car: "Car"
+Gear: "Gear"
+Camera: "camera"
+Mobile: "mobile"
+
+### Taxonomy: tag
+###----------------
+Study: "Study"
+Business: "Business"
+Lifestyle: "Lifestyle"
+Shopping: "Shopping"
+Food: "Food"
+People: "People"
+Reading: "Reading"
+Science: "Science"
+Sport: "Sport"
+
+
+## author.html
+##------------
+location: "Location"
+website: "Website"
+website_link_aria_label: "Website link"
+facebook: "Facebook"
+facebook_link_aria_label: "Facebook link"
+twitter: "Twitter"
+twitter_link_aria_label: "Twitter link"
+instagram: "Instagram"
+instagram_link_aria_label: "Instagram link"
+post: "Post"
+posts: "Posts"
+
+
+## contact.html
+##-------------
+your_name_label: "Your Name"
+your_name_placeholder: "Your name..."
+your_email_label: "Your Email"
+your_email_placeholder: "Your email..."
+your_message_label: "Your Message"
+your_message_placeholder: "Your message..."
+send_message_button: "Send Message"
+
+
+### 404 page
+###----------
+errorText: "The page you requested could not be found."
+backToHomepage: "Back to Homepage"
+
+
+
+
+####################
+##### Partials
+####################
+
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"January 2, 2006\" }}"
+by: "By"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Show Comments"
+enable_javascript: "Please enable JavaScript to view the"
+disqus_comments: "comments powered by Disqus"
+
+
+### footer
+###----------------
+darkMode: "Dark"
+lightMode: "Light"
+
+
+### Pagination
+###--------------------------
+load_more_posts: "Load more posts"
+
+## post-navigation
+##-------------------
+older_post: "Older post"
+newer_post: "Newer post"
+
+## related-posts
+##--------------------
+related_posts: "Related"
+view_all: "View all"
+
+
+## search
+##----------------------------------
+search_label: "Search for site"
+search_placeholder: "Type to search..."
+
+
+## section-authors
+##--------------------------------
+see_all_authors: "See all authors"
+
+
+## section-featured-posts
+##-----------------------
+featured: "Featured"
+
+## section-tags
+##------------------------
+view_all: "View All"
+
+
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Recent posts"
+by_author: "By"
+
+## toc
+##--------------------
+on_this_page: "On this page"
+no_content_available: "No content available."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Featured posts"
+
+## widget-tags
+##--------------------
+popular_topics: "Popular topics"

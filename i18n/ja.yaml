@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "投稿"
+"Latest": "最新"
+"Blog": "ブログ"
+"News": "ニュース"
+"Docs": "ドキュメント"
+"Authors" : "著者"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "カテゴリー"
+taxonomy_tag: "タグ"
+taxonomy_series: "シリーズ"
+
+### Taxonomy: Category
+###-------------------
+Car: "車"
+Gear: "ギア"
+Camera: "カメラ"
+Mobile: "モバイル"
+
+### Taxonomy: tag
+###----------------
+Study: "勉強"
+Business: "ビジネス"
+Lifestyle: "ライフスタイル"
+Shopping: "ショッピング"
+Food: "食べ物"
+People: "人々"
+Reading: "読書"
+Science: "科学"
+Sport: "スポーツ"
+
+## author.html
+##------------
+location: "場所"
+website: "ウェブサイト"
+website_link_aria_label: "ウェブサイトのリンク"
+facebook: "Facebook"
+facebook_link_aria_label: "Facebookのリンク"
+twitter: "Twitter"
+twitter_link_aria_label: "Twitterのリンク"
+instagram: "Instagram"
+instagram_link_aria_label: "Instagramのリンク"
+post: "投稿"
+posts: "投稿"
+
+## contact.html
+##-------------
+your_name_label: "お名前"
+your_name_placeholder: "お名前を入力してください..."
+your_email_label: "メールアドレス"
+your_email_placeholder: "メールアドレスを入力してください..."
+your_message_label: "メッセージ"
+your_message_placeholder: "メッセージを入力してください..."
+send_message_button: "メッセージを送信"
+
+### 404 page
+###----------
+errorText: "リクエストされたページが見つかりませんでした。"
+backToHomepage: "ホームページに戻る"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2006年1月2日\" }}"
+by: "著者"
+
+### disqus-comments
+###-------------------------------
+show_comments: "コメントを表示"
+enable_javascript: "コメントを表示するにはJavaScriptを有効にしてください"
+disqus_comments: "Disqusが提供するコメント"
+
+### footer
+###----------------
+darkMode: "ダーク"
+lightMode: "ライト"
+
+### Pagination
+###--------------------------
+load_more_posts: "さらに投稿を読み込む"
+
+## post-navigation
+##-------------------
+older_post: "前の投稿"
+newer_post: "次の投稿"
+
+## related-posts
+##--------------------
+related_posts: "関連記事"
+view_all: "すべて表示"
+
+## search
+##----------------------------------
+search_label: "サイトを検索"
+search_placeholder: "検索するには入力してください..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "すべての著者を見る"
+
+## section-featured-posts
+##-----------------------
+featured: "おすすめ"
+
+## section-tags
+##------------------------
+view_all: "すべて表示"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "最近の投稿"
+by_author: "著者"
+
+## toc
+##--------------------
+on_this_page: "このページで"
+no_content_available: "利用可能なコンテンツがありません。"
+
+## widget-featured-posts
+##--------------------
+featured_posts: "おすすめの投稿"
+
+## widget-tags
+##--------------------
+popular_topics: "人気のトピック"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on 내 블로그 (한국어)</title>
+    <link>http://localhost:1332/kr/authors/</link>
+    <description>Recent content in Authors on 내 블로그 (한국어)</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 18 Jan 2023 15:01:35 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1332/kr/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1332/kr/authors/livia/</link>
+      <pubDate>Wed, 18 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1332/kr/authors/livia/</guid>
+      <description>&lt;p&gt;We live our lives through stories. I enjoy listening to a good story, and I take pride in crafting someone else&amp;rsquo;s.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1332/kr/authors/admin/</link>
+      <pubDate>Mon, 16 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1332/kr/authors/admin/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a seasoned veteran of editorial and content management with the skills to make a difference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Justin</title>
+      <link>http://localhost:1332/kr/authors/justin/</link>
+      <pubDate>Thu, 12 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1332/kr/authors/justin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kaiya</title>
+      <link>http://localhost:1332/kr/authors/kaiya/</link>
+      <pubDate>Tue, 10 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1332/kr/authors/kaiya/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

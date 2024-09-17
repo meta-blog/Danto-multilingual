@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "Publications"
+"Latest": "Derniers"
+"Blog": "Blog"
+"News": "Actualités"
+"Docs": "Documents"
+"Authors" : "Auteurs"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Catégories"
+taxonomy_tag: "Étiquettes"
+taxonomy_series: "Séries"
+
+### Taxonomy: Category
+###-------------------
+Car: "Voiture"
+Gear: "Équipement"
+Camera: "Caméra"
+Mobile: "Téléphone mobile"
+
+### Taxonomy: tag
+###----------------
+Study: "Étude"
+Business: "Affaires"
+Lifestyle: "Mode de vie"
+Shopping: "Achats"
+Food: "Nourriture"
+People: "Personnes"
+Reading: "Lecture"
+Science: "Science"
+Sport: "Sport"
+
+## author.html
+##------------
+location: "Emplacement"
+website: "Site web"
+website_link_aria_label: "Lien du site web"
+facebook: "Facebook"
+facebook_link_aria_label: "Lien Facebook"
+twitter: "Twitter"
+twitter_link_aria_label: "Lien Twitter"
+instagram: "Instagram"
+instagram_link_aria_label: "Lien Instagram"
+post: "Publication"
+posts: "Publications"
+
+## contact.html
+##-------------
+your_name_label: "Votre nom"
+your_name_placeholder: "Votre nom..."
+your_email_label: "Votre e-mail"
+your_email_placeholder: "Votre e-mail..."
+your_message_label: "Votre message"
+your_message_placeholder: "Votre message..."
+send_message_button: "Envoyer le message"
+
+### 404 page
+###----------
+errorText: "La page que vous avez demandée est introuvable."
+backToHomepage: "Retour à la page d'accueil"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2 janvier 2006\" }}"
+by: "Par"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Afficher les commentaires"
+enable_javascript: "Veuillez activer JavaScript pour voir les"
+disqus_comments: "commentaires fournis par Disqus"
+
+### footer
+###----------------
+darkMode: "Sombre"
+lightMode: "Clair"
+
+### Pagination
+###--------------------------
+load_more_posts: "Charger plus de publications"
+
+## post-navigation
+##-------------------
+older_post: "Publication précédente"
+newer_post: "Publication suivante"
+
+## related-posts
+##--------------------
+related_posts: "Publications connexes"
+view_all: "Voir tout"
+
+## search
+##----------------------------------
+search_label: "Rechercher sur le site"
+search_placeholder: "Tapez pour rechercher..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "Voir tous les auteurs"
+
+## section-featured-posts
+##-----------------------
+featured: "En vedette"
+
+## section-tags
+##------------------------
+view_all: "Voir tout"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Publications récentes"
+by_author: "Par"
+
+## toc
+##--------------------
+on_this_page: "Sur cette page"
+no_content_available: "Aucun contenu disponible."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Publications en vedette"
+
+## widget-tags
+##--------------------
+popular_topics: "Sujets populaires"

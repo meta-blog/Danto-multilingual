@@ -1,0 +1,92 @@
+/* Base styling for the TOC */
+aside.toc {
+  background-color: var(--background-alt-color);
+  border-radius: 10px;
+  margin-bottom: 56px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 40px); /* For desktop: keeps TOC within viewport */
+  overflow-y: auto; /* Enables scroll if content exceeds height */
+}
+
+.toc h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TOC list styling */
+aside.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* TOC list items */
+aside.toc ul li {
+  font-size: 15px;
+  color: var(--text-alt-color);
+  margin: 0;
+  padding: 0.2em 0;
+  transition: all 0.3s ease;
+}
+
+/* Indentation for nested levels */
+aside.toc ul ul {
+  padding-left: 8px; /* Indent level for h3 */
+}
+
+aside.toc ul ul ul {
+  padding-left: 14px; /* Indent level for h4 */
+}
+
+/* TOC links */
+aside.toc ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: normal;
+  transition: all 0.2s ease;
+  display: block;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+/* Active link styling */
+aside.toc ul li a.active {
+  color: var(--button-color);
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Hover effect for TOC links */
+aside.toc ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+}
+
+/* Sticky behavior for larger screens */
+@media screen and (min-width: 769px) {
+  .toc-wrapper {
+    position: sticky;
+    top: 0; /* Starts sticking when it reaches the top of the viewport */
+    max-height: calc(100vh - 20px); /* Keep TOC within the viewport height */
+  }
+}
+
+/* Mobile adjustments for TOC */
+@media screen and (max-width: 768px) {
+  .toc-wrapper {
+    position: static; /* Disable sticky behavior on mobile */
+  }
+
+  aside.toc {
+    width: 100%; /* Use full width on mobile */
+    max-height: 40vh; /* Limit TOC height to 40% of the viewport */
+    overflow-y: auto; /* Enable scrolling inside the TOC */
+    margin-bottom: 100px; /* Extra space to prevent overlap with other content */
+  }
+}
+
+/* Extra padding at the bottom to prevent overlap */
+main {
+  padding-bottom: 150px; /* Ensure sufficient space at the bottom */
+}

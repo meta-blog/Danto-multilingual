@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "Postingan"
+"Latest": "Terbaru"
+"Blog": "Blog"
+"News": "Berita"
+"Docs": "Dokumen"
+"Authors" : "Penulis"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Kategori"
+taxonomy_tag: "Tag"
+taxonomy_series: "Seri"
+
+### Taxonomy: Category
+###-------------------
+Car: "Mobil"
+Gear: "Perlengkapan"
+Camera: "Kamera"
+Mobile: "Ponsel"
+
+### Taxonomy: tag
+###----------------
+Study: "Belajar"
+Business: "Bisnis"
+Lifestyle: "Gaya Hidup"
+Shopping: "Belanja"
+Food: "Makanan"
+People: "Orang"
+Reading: "Membaca"
+Science: "Ilmu Pengetahuan"
+Sport: "Olahraga"
+
+## author.html
+##------------
+location: "Lokasi"
+website: "Situs web"
+website_link_aria_label: "Tautan situs web"
+facebook: "Facebook"
+facebook_link_aria_label: "Tautan Facebook"
+twitter: "Twitter"
+twitter_link_aria_label: "Tautan Twitter"
+instagram: "Instagram"
+instagram_link_aria_label: "Tautan Instagram"
+post: "Postingan"
+posts: "Postingan"
+
+## contact.html
+##-------------
+your_name_label: "Nama Anda"
+your_name_placeholder: "Nama Anda..."
+your_email_label: "Email Anda"
+your_email_placeholder: "Email Anda..."
+your_message_label: "Pesan Anda"
+your_message_placeholder: "Pesan Anda..."
+send_message_button: "Kirim Pesan"
+
+### 404 page
+###----------
+errorText: "Halaman yang Anda minta tidak dapat ditemukan."
+backToHomepage: "Kembali ke Beranda"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2 Januari 2006\" }}"
+by: "Oleh"
+
+### disqus-comments
+###-------------------------------
+show_comments: "Tampilkan Komentar"
+enable_javascript: "Aktifkan JavaScript untuk melihat"
+disqus_comments: "komentar yang didukung oleh Disqus"
+
+### footer
+###----------------
+darkMode: "Gelap"
+lightMode: "Terang"
+
+### Pagination
+###--------------------------
+load_more_posts: "Muat lebih banyak postingan"
+
+## post-navigation
+##-------------------
+older_post: "Postingan Lama"
+newer_post: "Postingan Baru"
+
+## related-posts
+##--------------------
+related_posts: "Postingan Terkait"
+view_all: "Lihat Semua"
+
+## search
+##----------------------------------
+search_label: "Cari di situs"
+search_placeholder: "Ketik untuk mencari..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "Lihat semua penulis"
+
+## section-featured-posts
+##-----------------------
+featured: "Unggulan"
+
+## section-tags
+##------------------------
+view_all: "Lihat Semua"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "Postingan Terbaru"
+by_author: "Oleh"
+
+## toc
+##--------------------
+on_this_page: "Di halaman ini"
+no_content_available: "Tidak ada konten yang tersedia."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "Postingan Unggulan"
+
+## widget-tags
+##--------------------
+popular_topics: "Topik Populer"

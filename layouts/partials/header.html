@@ -24,9 +24,9 @@
             <ul class="nav__list list-reset">
 
               {{ $currentPage := . }}
-              {{ range.Site.Menus.main }}
+              {{ range .Site.Menus.main }}
               {{ $menuURL := .URL | absLangURL }}
-              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+              {{ $pageURL := $currentPage.Permalink | absLangURL }}
               {{ $active := eq $menuURL $pageURL }}
 
               {{ if .HasChildren }}
@@ -36,8 +36,7 @@
                   {{ range .Children }}
                   {{ $childURL := .URL | absLangURL }}
                   {{ $active := eq $childURL $pageURL }}
-                  <a href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}"
-                    class="nav__link{{ if $active }} active-link{{ end }}">{{ .Name }}</a>
+                  <a href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}" class="nav__link{{ if $active }} active-link{{ end }}">{{ .Name }}</a>
                   {{ end }}
                 </div>
               </li>
@@ -63,6 +62,8 @@
           </div>
 
         </nav>
+
+        {{ partial "language-switcher.html" . }}
 
       </div>
     </div>

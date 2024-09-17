@@ -10,19 +10,19 @@
 
       <div class="author__info">
         {{ if .Params.location }}
-          <span class="author__social__item"><i class="fa-solid fa-location-dot"></i> {{ .Params.location }}</span>
+          <span class="author__social__item"><i class="fa-solid fa-location-dot"></i> {{ i18n "location" }}: {{ .Params.location }}</span>
         {{ end }}
         {{ if .Params.website }}
-          <a class="author__social__item" href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="Website link"><i class="fa-solid fa-link"></i> Website</a>
+          <a class="author__social__item" href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="{{ i18n "website_link_aria_label" }}"><i class="fa-solid fa-link"></i> {{ i18n "website" }}</a>
         {{ end }}
         {{ if .Params.facebook }}
-          <a class="author__social__item" href="{{ .Params.facebook }}" target="_blank" rel="noopener" aria-label="Facebook link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a class="author__social__item" href="{{ .Params.facebook }}" target="_blank" rel="noopener" aria-label="{{ i18n "facebook_link_aria_label" }}"><i class="fa-brands fa-facebook"></i> {{ i18n "facebook" }}</a>
         {{ end }}
         {{ if .Params.twitter }}
-          <a class="author__social__item" href="{{ .Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter link"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+          <a class="author__social__item" href="{{ .Params.twitter }}" target="_blank" rel="noopener" aria-label="{{ i18n "twitter_link_aria_label" }}"><i class="fa-brands fa-x-twitter"></i> {{ i18n "twitter" }}</a>
         {{ end }}
         {{ if .Params.instagram }}
-          <a class="author__social__item" href="{{ .Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="author__social__item" href="{{ .Params.instagram }}" target="_blank" rel="noopener" aria-label="{{ i18n "instagram_link_aria_label" }}"><i class="fa-brands fa-instagram"></i> {{ i18n "instagram" }}</a>
         {{ end }}
       </div>
 
@@ -33,7 +33,7 @@
   </div>
 
   <div class="container">
-    <h2 class="author__posts__count">{{ len .Pages }} {{ if lt (len .Pages) 2 }}Post{{ else }}Posts{{ end }}</h2>
+    <h2 class="author__posts__count">{{ len .Pages }} {{ if lt (len .Pages) 2 }}{{ i18n "post" }}{{ else }}{{ i18n "posts" }}{{ end }}</h2>
     <div class="row animate">
       {{ range .Data.Pages }}
       <div class="col col-4 col-d-6 col-t-12">

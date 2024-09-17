@@ -1,16 +1,15 @@
-{{ $tags := (len $.Site.Taxonomies.tags) }}
-{{if ge $tags 1}}
 <div class="widget-sidebar widget-tags">
-  <h3 class="widget-sidebar-title">Popular topics</h4>
-
-  <div class="tag-cloud">
-  {{ if isset site.Taxonomies "tags" }}
-    {{ if not (eq (len site.Taxonomies.tags) 0) }}
-      {{ range $name, $items := site.Taxonomies.tags }}
-      <a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" class="tag-cloud-item">{{ $name | humanize }}</a>
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  </div>
+  <h3 class="widget-sidebar-title">{{ i18n "popular_topics" }}</h4>
+    <!-- explore tags module -->
+    <div class="explore-tags">
+      <div class="tag-cloud">
+        {{ range .Site.Taxonomies.tags.ByCount }}
+        {{ $currCount := len .Pages }}
+        <a href="{{ .Page.Permalink }}" style="font-size: 14px;">
+          {{ i18n .Page.Title }} <span>({{ $currCount }})</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <!-- explore tags module -->
 </div>
-{{ end }}

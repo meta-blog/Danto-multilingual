@@ -1,0 +1,140 @@
+#################
+#### Type
+#################
+"Posts": "게시물"
+"Latest": "최신"
+"Blog": "블로그"
+"News": "뉴스"
+"Docs": "문서"
+"Authors" : "작성자"
+
+##################
+##### Layout
+###################
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "카테고리"
+taxonomy_tag: "태그"
+taxonomy_series: "시리즈"
+
+### Taxonomy: Category
+###-------------------
+Car: "차"
+Gear: "기어"
+Camera: "카메라"
+Mobile: "모바일"
+
+### Taxonomy: tag
+###----------------
+Study: "공부"
+Business: "비즈니스"
+Lifestyle: "라이프스타일"
+Shopping: "쇼핑"
+Food: "음식"
+People: "사람"
+Reading: "독서"
+Science: "과학"
+Sport: "스포츠"
+
+## author.html
+##------------
+location: "위치"
+website: "웹사이트"
+website_link_aria_label: "웹사이트 링크"
+facebook: "페이스북"
+facebook_link_aria_label: "페이스북 링크"
+twitter: "트위터"
+twitter_link_aria_label: "트위터 링크"
+instagram: "인스타그램"
+instagram_link_aria_label: "인스타그램 링크"
+post: "게시물"
+posts: "게시물들"
+
+## contact.html
+##-------------
+your_name_label: "이름"
+your_name_placeholder: "당신의 이름..."
+your_email_label: "이메일"
+your_email_placeholder: "당신의 이메일..."
+your_message_label: "메시지"
+your_message_placeholder: "당신의 메시지..."
+send_message_button: "메시지 보내기"
+
+### 404 page
+###----------
+errorText: "요청하신 페이지를 찾을 수 없습니다."
+backToHomepage: "홈페이지로 돌아가기"
+
+####################
+##### Partials
+####################
+
+### Article Meta
+###------------------------------------------
+dateFormat: "{{ .Format \"2006년 1월 2일\" }}"
+by: "작성자"
+
+### disqus-comments
+###-------------------------------
+show_comments: "댓글 보기"
+enable_javascript: "댓글을 보려면 JavaScript를 활성화하세요"
+disqus_comments: "Disqus로 제공되는 댓글"
+
+### footer
+###----------------
+darkMode: "다크 모드"
+lightMode: "라이트 모드"
+
+### Pagination
+###--------------------------
+load_more_posts: "더 많은 게시물 보기"
+
+## post-navigation
+##-------------------
+older_post: "이전 게시물"
+newer_post: "다음 게시물"
+
+## related-posts
+##--------------------
+related_posts: "관련 게시물"
+view_all: "모두 보기"
+
+## search
+##----------------------------------
+search_label: "사이트 검색"
+search_placeholder: "검색어 입력..."
+
+## section-authors
+##--------------------------------
+see_all_authors: "모든 작성자 보기"
+
+## section-featured-posts
+##-----------------------
+featured: "추천"
+
+## section-tags
+##------------------------
+view_all: "모두 보기"
+
+###################
+##### Widgets
+###################
+
+## widget-recent-posts
+##--------------------
+recent_posts: "최근 게시물"
+by_author: "작성자"
+
+## toc
+##--------------------
+on_this_page: "이 페이지에서"
+no_content_available: "내용이 없습니다."
+
+## widget-featured-posts
+##--------------------
+featured_posts: "추천 게시물"
+
+## widget-tags
+##--------------------
+popular_topics: "인기 주제"

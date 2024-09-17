@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 私のブログ (日本語)</title>
+    <link>http://localhost:1331/jp/categories/</link>
+    <description>Recent content in Categories on 私のブログ (日本語)</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Jan 2023 15:01:35 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1331/jp/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Car</title>
+      <link>http://localhost:1331/jp/categories/car/</link>
+      <pubDate>Sat, 14 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1331/jp/categories/car/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gear</title>
+      <link>http://localhost:1331/jp/categories/gear/</link>
+      <pubDate>Sat, 14 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1331/jp/categories/gear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Camera</title>
+      <link>http://localhost:1331/jp/categories/camera/</link>
+      <pubDate>Fri, 06 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1331/jp/categories/camera/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1331/jp/categories/mobile/</link>
+      <pubDate>Fri, 06 Jan 2023 15:01:35 +0300</pubDate>
+      <guid>http://localhost:1331/jp/categories/mobile/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
