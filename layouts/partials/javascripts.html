@@ -1,7 +1,7 @@
 {{ $script := resources.Get "js/scripts.js" }}
 {{ $commonJs := resources.Get "js/common.js" }}
 
-{{ if hugo.IsServer }}
+{{ if not hugo.IsProduction }}
 <script src="{{ $script.Permalink }}"></script>
 <script src="{{ $commonJs.Permalink }}"></script>
 {{ else }}
