@@ -1,0 +1,58 @@
+languageCode = "ko-kr"
+languageName = "한국어"
+title = "당신의 사이트 제목"
+weight = 5
+
+[params]
+  description = "Danto는 뉴스와 매거진을 위한 Hugo 테마입니다"
+
+[menu]
+  [[menu.main]]
+    name = "홈"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "최신글"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "작가들"
+    url = "/authors/"
+    weight = 3
+  [[menu.main]]
+    name = "태그"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    name = "페이지"
+    weight = 5
+    hasChildren = true
+  [[menu.main]]
+    parent = "페이지"
+    name = "소개"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    parent = "페이지"
+    name = "연락처"
+    url = "/contact/"
+    weight = 2
+
+[params.cta_button]
+  cta_button_text = "연락하기"
+
+[params.hero]
+  hero__title = "일상 뉴스, 기사, 영감, 팁을 위한 원스톱 사이트."
+  hero__description = "생산성, 팁, 영감 그리고 큰 수익을 위한 전략을 제공합니다. 성공적인 블로그를 어떻게 설정하는지, 또는 어떻게 더 좋게 만들 수 있는지 알아보세요!"
+
+[params.authors_section]
+  section_title = "우리의 작가들을 만나보세요"
+
+[params.footer]
+  footer__description = "생산성, 팁, 영감 그리고 큰 수익을 위한 전략을 제공합니다. 성공적인 블로그를 어떻게 설정하는지, 또는 어떻게 더 좋게 만들 수 있는지 알아보세요!"
+
+[params.mailchimp]
+  mailchimp__title = "흥미로운 소식 받아보기"
+  mailchimp__description = "우리의 뉴스레터를 구독하시면 최신 글의 이메일을 보내드립니다."
+  mailchimp__input__text = "이메일 주소"
+  mailchimp__button__text = "구독하기"
