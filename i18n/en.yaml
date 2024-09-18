@@ -38,6 +38,12 @@ Search: "Search"
 hero_title: "One Stop Daily News, Article, Inspiration, and Tips."
 hero_description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
 
+# section:featured-posts
+Featured: "Featured"
+
+# section: tags
+ViewAll: "View all"
+
 # Section: Authors
 authors_section_title: "Meet our authors"
 see_all_authors: "See all authors"
