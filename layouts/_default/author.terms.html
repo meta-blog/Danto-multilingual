@@ -1,42 +1,47 @@
 {{ define "main" }}
-<!-- begin authors -->
-<section class="section authors">
-  <div class="authors__inner">
-    <div class="container">
-      <div class="authors__head">
-        <h1 class="authors__title">{{ T .Title }}</h1>
-      </div>
-      <div class="row">
-        {{ range .Data.Pages.ByParam "name" }}
-        <div class="col col-3 col-w-6 col-t-12 animate">
-          <div class="authors__info">
-            <a class="authors__image" href="{{ .Permalink }}">
-              <img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.name }}">
-            </a>
-            <div class="authors__meta">
-              <h2 class="authors__name">
-                <a class="authors__link" href="{{ .Permalink }}">{{ .Params.name }}</a>
-              </h2>
-              {{ if ge (len .Pages) 1 }}
-                <span class="authors__posts__count">
-                  {{ len .Pages }} 
-                  {{ if lt (len .Pages) 2 }}
-                    {{ T "Post" }}
-                  {{ else }}
-                    {{ T "Posts" }}
-                  {{ end }}
-                </span>
-              {{ end }}
-            </div>
-            {{ if .Content }}
-              <div class="authors__description">{{ .Content }}</div>
-            {{ end }}
+<!-- begin author -->
+<section class="author">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="author__content">
+          <div class="author__image"><img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.name }}"></div>
+          <h1 class="author__name">{{ .Params.name }}</h1>
+          <div class="author__info">
+            <span class="author__posts__count">{{ len .Pages }} {{ T "PostsCount" }}</span>
           </div>
+          {{ if .Content }}
+          <div class="author__description">{{ .Content }}</div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
     </div>
   </div>
 </section>
-<!-- end authors -->
+<!-- end author -->
+
+<!-- begin posts -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__head">
+          <h2 class="section__title">{{ T "LatestPosts" }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {{ $paginator := .Paginate .Pages }}
+      {{ range $paginator.Pages }}
+      <div class="col col-4 col-d-6 col-t-12">
+        {{ .Render "article" }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- end posts -->
+
+{{ partial "pagination.html" . }}
+
 {{ end }}

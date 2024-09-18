@@ -54,3 +54,7 @@ cta_button_text: "문의하기"
 
 # Layout: Article Meta
 By: "작성자："
+
+# Layour: author.terms
+PostsCount: "포스트"
+LatestPosts: "최신 포스트"
