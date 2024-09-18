@@ -1,5 +1,6 @@
 {{ .Scratch.Add "index" slice }}
 {{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-  {{ $.Scratch.Add "index" (dict "title" .Title "content" (.Summary | plainify) "date" (.Date.Format "2006-01-02") "permalink" .Permalink "image" (.Params.Image | absURL)) }}
+  {{ $dateFormat := (.Site.Language.Params.dateFormat | default "2006-01-02") }}
+  {{ $.Scratch.Add "index" (dict "title" .Title "content" (.Summary | plainify) "date" (.Date.Format $dateFormat) "permalink" .Permalink "image" (.Params.Image | absURL)) }}
 {{ end }}
 {{ $.Scratch.Get "index" | jsonify }}
