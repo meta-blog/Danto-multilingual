@@ -3,13 +3,12 @@
 
 {{ partial "head.html" . }}
 
-<div class="container-big">
+
 <div class="second-header">
 <div class="second-menu-01">{{ partial "language-switcher.html" . }}</div>
 <div class="second-menu-02">{{ partial "toggle-theme.html" . }}</div>
 </div>
-<div>
-  
+
 <body {{ if .IsHome }}class="home-page"{{ end }}>
 
   {{ template "_internal/google_analytics.html" . }}
