@@ -78,3 +78,6 @@ sendMessage: "메시지 보내기"
 
 # Layout: featured
 featuredPosts: "추천 포스트"
+
+#Layout: index.json
+dateFormat: "2006년 1월 2일"

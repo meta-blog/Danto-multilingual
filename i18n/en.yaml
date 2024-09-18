@@ -79,3 +79,6 @@ sendMessage: "Send Message"
 
 # Layout: featured
 featuredPosts: "Featured Posts"
+
+#Layout: index.json
+dateFormat: "January 2, 2006"

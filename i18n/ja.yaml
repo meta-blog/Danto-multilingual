@@ -76,3 +76,6 @@ sendMessage: "メッセージを送る"
 
 # Layout: featured
 featuredPosts: "注目の投稿"
+
+# Layout: index.json
+dateFormat: "2006年1月2日"
