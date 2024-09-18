@@ -1,7 +1,10 @@
 # Sections
-posts: "Posts"
-news: "News"
-docs: "Docs"
+"Posts": "Posts"
+"Latest": "Latest"
+"Blog": "Blog"
+"News": "News"
+"Docs": "Docs"
+"Authors" : "Authors"
 
 # Taxonomies
 Categories: "Categories"

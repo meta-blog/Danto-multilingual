@@ -1,7 +1,10 @@
 # Sections
-posts: "게시물"
-news: "뉴스"
-docs: "문서"
+"Posts": "포스트"
+"Latest": "최근"
+"Blog": "블로그"
+"News": "새로운 소식"
+"Docs": "문서"
+"Authors" : "작가"
 
 # Taxonomies
 Categories: "카테고리"

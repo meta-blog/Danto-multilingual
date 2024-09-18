@@ -1,7 +1,10 @@
 # Sections
-posts: "投稿"
-news: "ニュース"
-docs: "ドキュメント"
+"Posts": "投稿"
+"Latest": "最新"
+"Blog": "ブログ"
+"News": "ニュース"
+"Docs": "ドキュメント"
+"Authors" : "著者"
 
 # Taxonomies
 Categories: "カテゴリー"
