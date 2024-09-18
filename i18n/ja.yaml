@@ -4,8 +4,8 @@ news: "ニュース"
 docs: "ドキュメント"
 
 # Taxonomies
-category: "カテゴリー"
-tag: "タグ"
+taxonomy_category: "カテゴリー"
+taxonomy_tag: "タグ"
 
 # Categories
 apple: "アップル"

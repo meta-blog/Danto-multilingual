@@ -4,8 +4,8 @@ news: "뉴스"
 docs: "문서"
 
 # Taxonomies
-category: "카테고리"
-tag: "태그"
+taxonomy_category: "카테고리"
+taxonomy_tag: "태그"
 
 # Categories
 apple: "애플"

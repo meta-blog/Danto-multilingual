@@ -4,8 +4,8 @@ news: "News"
 docs: "Docs"
 
 # Taxonomies
-category: "Category"
-tag: "Tag"
+taxonomy_category: "Category"
+taxonomy_tag: "Tag"
 
 # Categories
 apple: "Apple"
