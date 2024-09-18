@@ -199,6 +199,9 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
   [params.authors_section]
     enable = false
+    
+  [params.footer]
+    footer__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
 
   [[params.social]]
     icon = "fa-brands fa-x-twitter"
