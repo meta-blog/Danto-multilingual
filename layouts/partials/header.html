@@ -58,7 +58,9 @@
           <div class="nav-button">
             <div class="search-button">
               <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
-              <span class="search-button__text">Search</span>
+              <button class="search-button" aria-label="{{ T "SearchAriaLabel" }}">
+                <span class="search-button__text">{{ T "Search" }}</span>
+              </button>
             </div>
             {{ if .Site.Params.cta_button.enable }}
             <a href="{{ if .Site.Params.cta_button.cta_button_link }}{{ .Site.Params.cta_button.cta_button_link }}{{ else }}#{{ end }}"

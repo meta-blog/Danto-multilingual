@@ -48,6 +48,8 @@ mailchimp__button__text: "購読する"
 
 # header: cta_button
 cta_button_text: "お問い合わせ"
+Search: "検索"
+SearchAriaLabel: "クリックして検索"
 
 
 # Layout: Article Meta
@@ -98,7 +100,10 @@ PopularTopics: "人気のトピック"
 ShowComments: "コメントを表示"
 DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqusによるコメント</a>を表示するにはJavaScriptを有効にしてください。"
 
-# Layout: footer
+# Layout: pagination
+LoadMorePosts: "もっと記事を読み込む"
+
+# Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 全著作権所有. <a href='https://gohugo.io/'>Hugo</a>で公開されています。"
 EnableDarkMode: "ダークモードを有効にする"
 Dark: "ダーク"

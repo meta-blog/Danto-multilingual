@@ -50,7 +50,8 @@ mailchimp__button__text: "구독하기"
 
 # header: cta_button
 cta_button_text: "문의하기"
-
+Search: "검색"
+SearchAriaLabel: "클릭하여 검색"
 
 # Layout: Article Meta
 By: "작성자："
@@ -99,7 +100,10 @@ PopularTopics: "인기 주제"
 ShowComments: "댓글 보기"
 DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqus에서 제공하는 댓글</a>을 보려면 JavaScript를 활성화해 주세요."
 
-# Layout: footer
+# Layout: pagination
+LoadMorePosts: "더 많은 게시물 불러오기"
+
+# Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 제작되었습니다."
 EnableDarkMode: "다크 모드 활성화"
 Dark: "다크"

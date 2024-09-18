@@ -30,6 +30,10 @@ reading: "Reading"
 science: "Science"
 sport: "Sport"
 
+# header: cta_button
+cta_button_text: "Get in touch"
+Search: "Search"
+SearchAriaLabel: "Click to search"
 
 # Section: Hero
 hero_title: "One Stop Daily News, Article, Inspiration, and Tips."
@@ -38,18 +42,6 @@ hero_description: "Features productivity, tips, inspiration and strategies for m
 # Section: Authors
 authors_section_title: "Meet our authors"
 see_all_authors: "See all authors"
-
-# Footer: widget-info
-footer__description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
-
-# Footer: mailchimp_Subscribe
-mailchimp__title: "Get interesting news"
-mailchimp__description: "Subscribe to our newsletter and we'll send you the emails of latest posts."
-mailchimp__input__text: "Your email address"
-mailchimp__button__text: "Subscribe"
-
-# header: cta_button
-cta_button_text: "Get in touch"
 
 
 # Layout: Article Meta
@@ -103,7 +95,10 @@ ShowComments: "Show Comments"
 DisqusNoscriptMessage: "Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a>"
 
 
-# Layout: footer
+# Layout: pagination
+LoadMorePosts: "Load more posts"
+
+# Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. All Right Reserved. Published with <a href='https://gohugo.io/'>Hugo</a>."
 EnableDarkMode: "Enable dark mode"
 Dark: "Dark"
@@ -111,3 +106,12 @@ EnableLightMode: "Enable light mode"
 Light: "Light"
 Top: "Top"
 BackToTop: "Back to top"
+
+# Footer: widget-info
+footer__description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Get interesting news"
+mailchimp__description: "Subscribe to our newsletter and we'll send you the emails of latest posts."
+mailchimp__input__text: "Your email address"
+mailchimp__button__text: "Subscribe"
