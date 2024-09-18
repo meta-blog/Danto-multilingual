@@ -94,3 +94,7 @@ FeaturedPosts: "추천 게시물"
 
 # Widget: tags-cloud
 PopularTopics: "인기 주제"
+
+# Layout: disqus-comments
+ShowComments: "댓글 보기"
+DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqus에서 제공하는 댓글</a>을 보려면 JavaScript를 활성화해 주세요."

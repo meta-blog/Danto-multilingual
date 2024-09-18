@@ -93,3 +93,7 @@ FeaturedPosts: "おすすめの投稿"
 
 # Widget: tags-cloud
 PopularTopics: "人気のトピック"
+
+# Layout: disqus-comments
+ShowComments: "コメントを表示"
+DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqusによるコメント</a>を表示するにはJavaScriptを有効にしてください。"
