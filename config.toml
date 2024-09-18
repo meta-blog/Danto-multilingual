@@ -7,6 +7,7 @@ defaultContentLanguageInSubdir = false
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 # 언어 설정
+# 언어 설정
 [languages]
   [languages.en]
     languageCode = "en-us"
@@ -18,175 +19,34 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
       description = "Danto is a news and magazine Hugo theme"
       dateFormat = "January 2, 2006"
       shortDateFormat = "Jan 2"
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-      [[languages.en.menu.main]]
-        name = "Latest"
-        url = "/posts/"
-        weight = 2
-      [[languages.en.menu.main]]
-        name = "Authors"
-        url = "/authors/"
-        weight = 3
-      [[languages.en.menu.main]]
-        name = "Tags"
-        url = "/tags/"
-        weight = 4
-      [[languages.en.menu.main]]
-        name = "Pages"
-        weight = 5
-        hasChildren = true
-      [[languages.en.menu.main]]
-        parent = "Pages"
-        name = "About"
-        url = "/about/"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "Pages"
-        name = "Elements"
-        url = "/elements/"
-        weight = 2
-      [[languages.en.menu.main]]
-        parent = "Pages"
-        name = "Contact"
-        url = "/contact/"
-        weight = 3
-      [[languages.en.menu.main]]
-        parent = "Pages"
-        name = "Videos"
-        url = "/videos/"
-        weight = 4
-      [[languages.en.menu.main]]
-        parent = "Pages"
-        name = "Featured"
-        url = "/featured/"
-        weight = 5
 
   [languages.ko]
     languageCode = "ko-kr"
     contentDir = "content/ko"
     languageName = "한국어"
-    dateFormat = "2006년 1월 2일"
     weight = 2
     title = "단토"
     [languages.ko.params]
       description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
       dateFormat = "2006년 1월 2일"
       shortDateFormat = "1월 2일"
-    [languages.ko.menu]
-      [[languages.ko.menu.main]]
-        name = "홈"
-        url = "/"
-        weight = 1
-      [[languages.ko.menu.main]]
-        name = "최신"
-        url = "/posts/"
-        weight = 2
-      [[languages.ko.menu.main]]
-        name = "작가"
-        url = "/authors/"
-        weight = 3
-      [[languages.ko.menu.main]]
-        name = "태그"
-        url = "/tags/"
-        weight = 4
-      [[languages.ko.menu.main]]
-        name = "페이지"
-        weight = 5
-        hasChildren = true
-      [[languages.ko.menu.main]]
-        parent = "페이지"
-        name = "소개"
-        url = "/about/"
-        weight = 1
-      [[languages.ko.menu.main]]
-        parent = "페이지"
-        name = "요소"
-        url = "/elements/"
-        weight = 2
-      [[languages.ko.menu.main]]
-        parent = "페이지"
-        name = "연락처"
-        url = "/contact/"
-        weight = 3
-      [[languages.ko.menu.main]]
-        parent = "페이지"
-        name = "비디오"
-        url = "/videos/"
-        weight = 4
-      [[languages.ko.menu.main]]
-        parent = "페이지"
-        name = "추천"
-        url = "/featured/"
-        weight = 5
 
   [languages.ja]
     languageCode = "ja-jp"
     contentDir = "content/ja"
     languageName = "日本語"
-    dateFormat = "2006年1月2日"
     weight = 3
     title = "ダント"
     [languages.ja.params]
       description = "ダントはニュースと雑誌のためのHugoテーマです"
       dateFormat = "2006年1月2日"
       shortDateFormat = "1月2日"
-    [languages.ja.menu]
-      [[languages.ja.menu.main]]
-        name = "ホーム"
-        url = "/"
-        weight = 1
-      [[languages.ja.menu.main]]
-        name = "最新"
-        url = "/posts/"
-        weight = 2
-      [[languages.ja.menu.main]]
-        name = "著者"
-        url = "/authors/"
-        weight = 3
-      [[languages.ja.menu.main]]
-        name = "タグ"
-        url = "/tags/"
-        weight = 4
-      [[languages.ja.menu.main]]
-        name = "ページ"
-        weight = 5
-        hasChildren = true
-      [[languages.ja.menu.main]]
-        parent = "ページ"
-        name = "について"
-        url = "/about/"
-        weight = 1
-      [[languages.ja.menu.main]]
-        parent = "ページ"
-        name = "要素"
-        url = "/elements/"
-        weight = 2
-      [[languages.ja.menu.main]]
-        parent = "ページ"
-        name = "お問い合わせ"
-        url = "/contact/"
-        weight = 3
-      [[languages.ja.menu.main]]
-        parent = "ページ"
-        name = "動画"
-        url = "/videos/"
-        weight = 4
-      [[languages.ja.menu.main]]
-        parent = "ページ"
-        name = "おすすめ"
-        url = "/featured/"
-        weight = 5
 
 [params]
   logo = "/images/logo.png"
   logo_dark = "/images/logo.png"
   color_scheme = "auto"
   mainSections = ["posts", "news", "docs"]
-
 
 
   [params.hero]
@@ -281,4 +141,6 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   noClasses = false
 
 [permalinks]
-  posts = "/:sections/:slug/"
+  posts = "/:slug/"
+  news = "/:sections/:slug/"
+  docs = "/:sections/:slug/"

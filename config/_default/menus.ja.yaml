@@ -1,0 +1,36 @@
+main:
+  - name: "ホーム"
+    url: "/"
+    weight: 1
+  - name: "最新"
+    url: "/posts/"
+    weight: 2
+  - name: "著者"
+    url: "/authors/"
+    weight: 3
+  - name: "タグ"
+    url: "/tags/"
+    weight: 4
+  - name: "ページ"
+    weight: 5
+    hasChildren: true
+  - name: "について"
+    url: "/about/"
+    parent: "ページ"
+    weight: 1
+  - name: "要素"
+    url: "/elements/"
+    parent: "ページ"
+    weight: 2
+  - name: "お問い合わせ"
+    url: "/contact/"
+    parent: "ページ"
+    weight: 3
+  - name: "動画"
+    url: "/videos/"
+    parent: "ページ"
+    weight: 4
+  - name: "おすすめ"
+    url: "/featured/"
+    parent: "ページ"
+    weight: 5
