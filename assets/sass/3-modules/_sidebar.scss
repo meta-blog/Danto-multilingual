@@ -30,6 +30,37 @@
   }
 }
 
+.sidebar-right {
+
+  .widget-sidebar {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .widget-sidebar-title {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+  @media (max-width: $desktop) {
+    order: -1;
+
+    .widget-post-author {
+      margin-bottom: 0;
+    }
+
+    .widget-featured-posts,
+    .widget-tags {
+      display: block;
+    }
+  }
+}
+
 // WIdget Post Author
 .widget-post-author {
   .post-author-image {
