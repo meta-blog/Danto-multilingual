@@ -1,0 +1,29 @@
+/* 기본 스타일: PC 환경 */
+.second-header {
+    display: flex;
+    justify-content: flex-end; /* PC에서는 모든 메뉴를 오른쪽 끝으로 */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .second-menu-01, .second-menu-02 {
+    margin-left: 20px; /* 메뉴들 간의 간격 */
+  }
+  
+  /* 모바일 환경 */
+  @media (max-width: 768px) {
+    .second-header {
+      display: flex;
+      justify-content: space-between; /* 양쪽 끝에 배치 */
+      padding: 10px;
+    }
+  
+    .second-menu-01 {
+      justify-content: flex-start; /* 왼쪽 끝 */
+    }
+  
+    .second-menu-02 {
+      justify-content: flex-end; /* 오른쪽 끝 */
+    }
+  }
+  

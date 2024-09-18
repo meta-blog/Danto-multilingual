@@ -3,8 +3,10 @@
 
 {{ partial "head.html" . }}
 
-{{ partial "language-switcher.html" . }}
-{{ partial "toggle-theme.html" . }}
+<div class="second-header">
+<div class="second-menu-01">{{ partial "language-switcher.html" . }}</div>
+<div class="second-menu-02">{{ partial "toggle-theme.html" . }}</div>
+</div>
 
 <body {{ if .IsHome }}class="home-page"{{ end }}>
 
