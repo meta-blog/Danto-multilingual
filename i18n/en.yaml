@@ -1,3 +1,13 @@
+# Sections, Taxonomies
+section_posts: "Posts"
+section_docs: "Documentation"
+section_news: "News"
+
+taxonomy_authors: "Authors"
+taxonomy_categories: "Categories"
+taxonomy_tags: "Tags"
+
+
 # Section: Hero
 hero_title: "One Stop Daily News, Article, Inspiration, and Tips."
 hero_description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"

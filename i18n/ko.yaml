@@ -1,3 +1,13 @@
+# Sections, Taxonomies
+section_posts: "게시물"
+section_docs: "문서"
+section_news: "뉴스"
+
+taxonomy_authors: "작가"
+taxonomy_categories: "카테고리"
+taxonomy_tags: "태그"
+
+
 # Section: Hero
 hero_title: "원스톱 일일 뉴스, 기사, 영감, 그리고 팁."
 hero_description: "생산성, 팁, 영감 및 대규모 수익을 위한 전략을 제공합니다. 성공적인 블로그를 설정하는 방법 또는 기존 블로그를 개선하는 방법을 알아보세요!"

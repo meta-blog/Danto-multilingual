@@ -1,3 +1,12 @@
+# Sections, Taxonomies
+section_posts: "投稿"
+section_docs: "ドキュメント"
+section_news: "ニュース"
+
+taxonomy_authors: "著者"
+taxonomy_categories: "カテゴリー"
+taxonomy_tags: "タグ"
+
 # Section: Hero
 hero_title: "ワンストップ・デイリーニュース、記事、インスピレーション、そしてヒント。"
 hero_description: "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を特集しています。成功するブログの立ち上げ方、または既存のブログをより良くする方法を見つけましょう！"
