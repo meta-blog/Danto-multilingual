@@ -64,3 +64,12 @@ website: "ウェブサイト"
 authorsList: "著者一覧"
 post: "投稿"
 posts: "投稿"
+
+# Layout: contact
+yourName: "名前"
+yourNamePlaceholder: "名前を入力してください..."
+yourEmail: "メールアドレス"
+yourEmailPlaceholder: "メールを入力してください..."
+yourMessage: "メッセージ"
+yourMessagePlaceholder: "メッセージを入力してください..."
+sendMessage: "メッセージを送る"

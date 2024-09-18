@@ -66,3 +66,12 @@ website: "웹사이트"
 authorsList: "저자 목록"
 post: "포스트"
 posts: "포스트"
+
+# Layout: contact
+yourName: "이름"
+yourNamePlaceholder: "이름을 입력하세요..."
+yourEmail: "이메일"
+yourEmailPlaceholder: "이메일을 입력하세요..."
+yourMessage: "메시지"
+yourMessagePlaceholder: "메시지를 입력하세요..."
+sendMessage: "메시지 보내기"

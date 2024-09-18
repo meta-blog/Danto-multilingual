@@ -66,3 +66,12 @@ website: "Website"
 authorsList: "Authors"
 post: "Post"
 posts: "Posts"
+
+# Layout: contact
+yourName: "Your Name"
+yourNamePlaceholder: "Your name..."
+yourEmail: "Your Email"
+yourEmailPlaceholder: "Your email..."
+yourMessage: "Your Message"
+yourMessagePlaceholder: "Your message..."
+sendMessage: "Send Message"
