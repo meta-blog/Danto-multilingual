@@ -1,30 +1,39 @@
 {{ define "main" }}
-
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
     {{ if .Title }}
-    <h1 class="hero__title">{{ .Title }}</h1>
+      <h1 class="hero__title">
+        {{ if eq .Kind "taxonomy" }}
+          {{ if eq .Data.Plural "categories" }}
+            {{ i18n "taxonomy_category" }}
+          {{ else if eq .Data.Plural "tags" }}
+            {{ i18n "taxonomy_tag" }}
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h1>
     {{ end }}
   </div>
 </section>
 <!-- end hero -->
-
 <!-- begin tags -->
 <section class="section tags animate">
   <div class="container">
     <div class="row">
       {{ range .Pages }}
-      <div class="col col-2 col-w-3 col-d-6 col-m-12">
-        <a href="{{ .RelPermalink }}" class="tag-image" title="{{ .Title }}">
-          <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | absURL }}" {{ end }} alt="{{ .Title }}">
-          <span class="tag-name">{{ .Title }}</span>
-        </a>
-      </div>
+        <div class="col col-2 col-w-3 col-d-6 col-m-12">
+          <a href="{{ .RelPermalink }}" class="tag-image" title="{{ i18n .Title }}">
+            <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | absURL }}" {{ end }} alt="{{ i18n .Title }}">
+            <span class="tag-name">{{ i18n .Title }}</span>
+          </a>
+        </div>
       {{ end }}
     </div>
   </div>
 </section>
 <!-- end tags -->
-
 {{ end }}
