@@ -30,36 +30,46 @@
   }
 }
 
-.sidebar-right {
-
-  .widget-sidebar {
-    margin-bottom: 32px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--border-color);
-
-    &:last-child {
-      border-bottom: none;
+  /* Right Sidebar - 기본 설정 */
+  .sidebar-right {
+    position: sticky;  /* 스티키 속성 적용 */
+    top: 20px;         /* 상단에서 20px 떨어진 위치에 고정 */
+    align-self: flex-start; /* 부모 요소 내에서 상단에 맞추어 정렬 */
+    
+    .widget-sidebar {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-color);
+  
+      &:last-child {
+        border-bottom: none;
+      }
     }
-  }
-
-  .widget-sidebar-title {
-    margin-bottom: 24px;
-    font-size: 20px;
-  }
-
-  @media (max-width: $desktop) {
-    order: -1;
-
-    .widget-post-author {
-      margin-bottom: 0;
+  
+    .widget-sidebar-title {
+      margin-bottom: 24px;
+      font-size: 20px;
     }
-
-    .widget-featured-posts,
-    .widget-tags {
-      display: block;
+  
+    /* 모바일 환경에서 사이드바 순서 및 스티키 적용 */
+    @media (max-width: $desktop) {
+      order: -1;  /* 모바일에서 사이드바가 상단에 위치하도록 설정 */
+      position: relative; /* 모바일에서 스티키 기능을 해제 (원하는 경우) */
+  
+      .widget-post-author {
+        margin-bottom: 0;
+      }
+  
+      .widget-featured-posts,
+      .widget-tags {
+        display: block; /* 모바일에서는 해당 위젯 숨김 */
+      }
     }
+  
+    /* 스크롤 시 사이드바의 크기를 조정하고 스크롤 가능하도록 설정 (선택 사항) */
+    max-height: calc(100vh - 40px); /* 화면의 높이에 맞게 최대 높이 설정 */
+    overflow-y: auto; /* 내용이 길 경우 스크롤 가능하게 설정 */
   }
-}
 
 // WIdget Post Author
 .widget-post-author {
