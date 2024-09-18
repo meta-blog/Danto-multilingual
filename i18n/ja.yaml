@@ -4,9 +4,9 @@
 "Blog": "ブログ"
 "News": "ニュース"
 "Docs": "ドキュメント"
-"Authors" : "著者"
 
 # Taxonomies
+Authors : "著者"
 Categories: "カテゴリー"
 Tags: "タグ"
 
@@ -47,3 +47,7 @@ mailchimp__button__text: "購読する"
 
 # header: cta_button
 cta_button_text: "お問い合わせ"
+
+
+# Layout: Article Meta
+By: "著者："

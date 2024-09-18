@@ -4,9 +4,10 @@
 "Blog": "블로그"
 "News": "새로운 소식"
 "Docs": "문서"
-"Authors" : "작가"
+
 
 # Taxonomies
+Authors : "작가"
 Categories: "카테고리"
 Tags: "태그"
 
@@ -48,3 +49,7 @@ mailchimp__button__text: "구독하기"
 
 # header: cta_button
 cta_button_text: "문의하기"
+
+
+# Layout: Article Meta
+By: "작성자："

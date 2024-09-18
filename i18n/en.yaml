@@ -4,9 +4,10 @@
 "Blog": "Blog"
 "News": "News"
 "Docs": "Docs"
-"Authors" : "Authors"
+
 
 # Taxonomies
+Authors : "Authors"
 Categories: "Categories"
 Tags: "Tags"
 
@@ -48,3 +49,7 @@ mailchimp__button__text: "Subscribe"
 
 # header: cta_button
 cta_button_text: "Get in touch"
+
+
+# Layout: Article Meta
+By: "By"
