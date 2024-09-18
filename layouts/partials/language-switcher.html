@@ -1,0 +1,25 @@
+{{ $siteLanguages := .Site.Languages }}
+{{ $pageLang := .Page.Lang }}
+<div class="lang-switcher">
+  <div class="lang-switcher__dropdown">
+    <button class="lang-switcher__dropbtn">
+      {{ if eq .Site.Language.Lang "en" }}🇺🇸 English
+      {{ else if eq .Site.Language.Lang "ko" }}🇰🇷 한국어
+      {{ else if eq .Site.Language.Lang "ja" }}🇯🇵 日本語
+      {{ end }}
+      ▾
+    </button>
+    <div class="lang-switcher__dropdown-content">
+      {{ range .Site.Home.AllTranslations }}
+        {{ if ne .Language.Lang $pageLang }}
+          <a href="{{ .Permalink }}" class="lang-switcher__link" lang="{{ .Language.Lang }}">
+            {{ if eq .Language.Lang "en" }}🇺🇸 English
+            {{ else if eq .Language.Lang "ko" }}🇰🇷 한국어
+            {{ else if eq .Language.Lang "ja" }}🇯🇵 日本語
+            {{ end }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
