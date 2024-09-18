@@ -3,11 +3,8 @@
 
 {{ partial "head.html" . }}
 
-<ul></ul>
-  {{ range .Site.Home.AllTranslations }}
-  <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-  {{ end }}
-</ul>
+{{ partial "language-switcher.html" . }}
+{{ partial "toggle-theme.html" . }}
 
 <body {{ if .IsHome }}class="home-page"{{ end }}>
 
