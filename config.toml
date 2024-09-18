@@ -2,45 +2,201 @@
 
 baseURL = "https://hot-deal.store/"
 title = "Danto"
-defaultContentLanguage = "en"
+defaultContentLanguage = "us"
 defaultContentLanguageInSubdir = false
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 # 언어 설정
-# 언어 설정
 [languages]
-  [languages.en]
+  [languages.us]
     languageCode = "en-us"
-    contentDir = "content/en"
+    contentDir = "content/us"
     languageName = "English"
     weight = 1
     title = "Danto"
-    [languages.en.params]
+    [languages.us.params]
       description = "Danto is a news and magazine Hugo theme"
       dateFormat = "January 2, 2006"
       shortDateFormat = "Jan 2"
 
-  [languages.ko]
-    languageCode = "ko-kr"
-    contentDir = "content/ko"
-    languageName = "한국어"
+  [languages.cn]
+    languageCode = "zh-cn"
+    contentDir = "content/cn"
+    languageName = "简体中文"
     weight = 2
+    title = "丹托"
+    [languages.cn.params]
+      description = "丹托是一个新闻和杂志Hugo主题"
+      dateFormat = "2006年1月2日"
+      shortDateFormat = "1月2日"
+
+  [languages.tw]
+    languageCode = "zh-tw"
+    contentDir = "content/tw"
+    languageName = "繁體中文"
+    weight = 3
+    title = "丹托"
+    [languages.tw.params]
+      description = "丹托是一個新聞和雜誌Hugo主題"
+      dateFormat = "2006年1月2日"
+      shortDateFormat = "1月2日"
+
+  [languages.in]
+    languageCode = "hi-in"
+    contentDir = "content/in"
+    languageName = "हिन्दी"
+    weight = 4
+    title = "दंतो"
+    [languages.in.params]
+      description = "दंतो एक समाचार और पत्रिका Hugo थीम है"
+      dateFormat = "2 January, 2006"
+      shortDateFormat = "2 Jan"
+
+  [languages.mx]
+    languageCode = "es-mx"
+    contentDir = "content/mx"
+    languageName = "Español (México)"
+    weight = 5
+    title = "Danto"
+    [languages.mx.params]
+      description = "Danto es un tema Hugo para noticias y revistas"
+      dateFormat = "2 de enero de 2006"
+      shortDateFormat = "2 ene"
+
+  [languages.ae]
+    languageCode = "ar-ae"
+    contentDir = "content/ae"
+    languageName = "العربية"
+    weight = 6
+    title = "دانتو"
+    [languages.ae.params]
+      description = "دانتو هو موضوع Hugo للأخبار والمجلات"
+      dateFormat = "2 يناير 2006"
+      shortDateFormat = "2 يناير"
+
+  [languages.br]
+    languageCode = "pt-br"
+    contentDir = "content/br"
+    languageName = "Português (Brasil)"
+    weight = 7
+    title = "Danto"
+    [languages.br.params]
+      description = "Danto é um tema Hugo para notícias e revistas"
+      dateFormat = "2 de janeiro de 2006"
+      shortDateFormat = "2 jan"
+
+  [languages.bd]
+    languageCode = "bn-bd"
+    contentDir = "content/bd"
+    languageName = "বাংলা"
+    weight = 8
+    title = "দান্তো"
+    [languages.bd.params]
+      description = "দান্তো একটি সংবাদ এবং ম্যাগাজিন Hugo থিম"
+      dateFormat = "২ জানুয়ারী, ২০০৬"
+      shortDateFormat = "২ জানু"
+
+  [languages.jp]
+    languageCode = "ja-jp"
+    contentDir = "content/jp"
+    languageName = "日本語"
+    weight = 9
+    title = "ダント"
+    [languages.jp.params]
+      description = "ダントはニュースと雑誌のためのHugoテーマです"
+      dateFormat = "2006年1月2日"
+      shortDateFormat = "1月2日"
+
+  [languages.de]
+    languageCode = "de-de"
+    contentDir = "content/de"
+    languageName = "Deutsch"
+    weight = 10
+    title = "Danto"
+    [languages.de.params]
+      description = "Danto ist ein Hugo-Thema für Nachrichten und Magazine"
+      dateFormat = "2. Januar 2006"
+      shortDateFormat = "2. Jan"
+
+  [languages.kr]
+    languageCode = "ko-kr"
+    contentDir = "content/kr"
+    languageName = "한국어"
+    weight = 11
     title = "단토"
-    [languages.ko.params]
+    [languages.kr.params]
       description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
       dateFormat = "2006년 1월 2일"
       shortDateFormat = "1월 2일"
 
-  [languages.ja]
-    languageCode = "ja-jp"
-    contentDir = "content/ja"
-    languageName = "日本語"
-    weight = 3
-    title = "ダント"
-    [languages.ja.params]
-      description = "ダントはニュースと雑誌のためのHugoテーマです"
-      dateFormat = "2006年1月2日"
-      shortDateFormat = "1月2日"
+  [languages.fr]
+    languageCode = "fr-fr"
+    contentDir = "content/fr"
+    languageName = "Français"
+    weight = 12
+    title = "Danto"
+    [languages.fr.params]
+      description = "Danto est un thème Hugo pour les actualités et les magazines"
+      dateFormat = "2 janvier 2006"
+      shortDateFormat = "2 janv"
+
+  [languages.vn]
+    languageCode = "vi-vn"
+    contentDir = "content/vn"
+    languageName = "Tiếng Việt"
+    weight = 13
+    title = "Danto"
+    [languages.vn.params]
+      description = "Danto là chủ đề Hugo cho tin tức và tạp chí"
+      dateFormat = "2 tháng 1 năm 2006"
+      shortDateFormat = "2 Th1"
+
+  [languages.it]
+    languageCode = "it-it"
+    contentDir = "content/it"
+    languageName = "Italiano"
+    weight = 14
+    title = "Danto"
+    [languages.it.params]
+      description = "Danto è un tema Hugo per notizie e riviste"
+      dateFormat = "2 gennaio 2006"
+      shortDateFormat = "2 gen"
+
+  [languages.tr]
+    languageCode = "tr-tr"
+    contentDir = "content/tr"
+    languageName = "Türkçe"
+    weight = 15
+    title = "Danto"
+    [languages.tr.params]
+      description = "Danto, haberler ve dergiler için bir Hugo temasıdır"
+      dateFormat = "2 Ocak 2006"
+      shortDateFormat = "2 Oca"
+
+  [languages.id]
+    languageCode = "id-id"
+    contentDir = "content/id"
+    languageName = "Bahasa Indonesia"
+    weight = 16
+    title = "Danto"
+    [languages.id.params]
+      description = "Danto adalah tema Hugo untuk berita dan majalah"
+      dateFormat = "2 Januari 2006"
+      shortDateFormat = "2 Jan"
+
+  [languages.th]
+    languageCode = "th-th"
+    contentDir = "content/th"
+    languageName = "ไทย"
+    weight = 17
+    title = "แดนโต"
+    [languages.th.params]
+      description = "แดนโตเป็นธีม Hugo สำหรับข่าวและนิตยสาร"
+      dateFormat = "2 มกราคม 2006"
+      shortDateFormat = "2 ม.ค."
+
+
+# 메타 및 테마 관련 설정
 
 [params]
   logo = "/images/logo.png"
