@@ -3,9 +3,22 @@
 <div class="lang-switcher">
   <div class="lang-switcher__dropdown">
     <button class="lang-switcher__dropbtn">
-      {{ if eq .Site.Language.Lang "en" }}🇺🇸 English
-      {{ else if eq .Site.Language.Lang "ko" }}🇰🇷 한국어
-      {{ else if eq .Site.Language.Lang "ja" }}🇯🇵 日本語
+      {{ if eq .Site.Language.Lang "us" }}🇺🇸 English (US)
+      {{ else if eq .Site.Language.Lang "in" }}🇮🇳 English (India)
+      {{ else if eq .Site.Language.Lang "cn" }}🇨🇳 简体中文
+      {{ else if eq .Site.Language.Lang "tw" }}🇹🇼 繁體中文
+      {{ else if eq .Site.Language.Lang "mx" }}🇲🇽 Español (México)
+      {{ else if eq .Site.Language.Lang "ae" }}🇦🇪 العربية
+      {{ else if eq .Site.Language.Lang "br" }}🇧🇷 Português (Brasil)
+      {{ else if eq .Site.Language.Lang "jp" }}🇯🇵 日本語
+      {{ else if eq .Site.Language.Lang "de" }}🇩🇪 Deutsch
+      {{ else if eq .Site.Language.Lang "kr" }}🇰🇷 한국어
+      {{ else if eq .Site.Language.Lang "fr" }}🇫🇷 Français
+      {{ else if eq .Site.Language.Lang "vn" }}🇻🇳 Tiếng Việt
+      {{ else if eq .Site.Language.Lang "it" }}🇮🇹 Italiano
+      {{ else if eq .Site.Language.Lang "tr" }}🇹🇷 Türkçe
+      {{ else if eq .Site.Language.Lang "id" }}🇮🇩 Bahasa Indonesia
+      {{ else if eq .Site.Language.Lang "th" }}🇹🇭 ไทย
       {{ end }}
       ▾
     </button>
@@ -13,9 +26,22 @@
       {{ range .Site.Home.AllTranslations }}
         {{ if ne .Language.Lang $pageLang }}
           <a href="{{ .Permalink }}" class="lang-switcher__link" lang="{{ .Language.Lang }}">
-            {{ if eq .Language.Lang "en" }}🇺🇸 English
-            {{ else if eq .Language.Lang "ko" }}🇰🇷 한국어
-            {{ else if eq .Language.Lang "ja" }}🇯🇵 日本語
+            {{ if eq .Language.Lang "us" }}🇺🇸 English (US)
+            {{ else if eq .Language.Lang "in" }}🇮🇳 English (India)
+            {{ else if eq .Language.Lang "cn" }}🇨🇳 简体中文
+            {{ else if eq .Language.Lang "tw" }}🇹🇼 繁體中文
+            {{ else if eq .Language.Lang "mx" }}🇲🇽 Español (México)
+            {{ else if eq .Language.Lang "ae" }}🇦🇪 العربية
+            {{ else if eq .Language.Lang "br" }}🇧🇷 Português (Brasil)
+            {{ else if eq .Language.Lang "jp" }}🇯🇵 日本語
+            {{ else if eq .Language.Lang "de" }}🇩🇪 Deutsch
+            {{ else if eq .Language.Lang "kr" }}🇰🇷 한국어
+            {{ else if eq .Language.Lang "fr" }}🇫🇷 Français
+            {{ else if eq .Language.Lang "vn" }}🇻🇳 Tiếng Việt
+            {{ else if eq .Language.Lang "it" }}🇮🇹 Italiano
+            {{ else if eq .Language.Lang "tr" }}🇹🇷 Türkçe
+            {{ else if eq .Language.Lang "id" }}🇮🇩 Bahasa Indonesia
+            {{ else if eq .Language.Lang "th" }}🇹🇭 ไทย
             {{ end }}
           </a>
         {{ end }}

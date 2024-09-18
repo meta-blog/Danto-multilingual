@@ -11,7 +11,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   [languages.us]
     languageCode = "en-us"
     contentDir = "content/us"
-    languageName = "English"
+    languageName = "English (US)"
     weight = 1
     title = "Danto"
     [languages.us.params]
@@ -19,11 +19,22 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
       dateFormat = "January 2, 2006"
       shortDateFormat = "Jan 2"
 
+  [languages.in]
+    languageCode = "en-in"
+    contentDir = "content/in"
+    languageName = "English (India)"
+    weight = 2
+    title = "Danto"
+    [languages.in.params]
+      description = "Danto is a news and magazine Hugo theme"
+      dateFormat = "2 January, 2006"
+      shortDateFormat = "2 Jan"
+
   [languages.cn]
     languageCode = "zh-cn"
     contentDir = "content/cn"
     languageName = "简体中文"
-    weight = 2
+    weight = 3
     title = "丹托"
     [languages.cn.params]
       description = "丹托是一个新闻和杂志Hugo主题"
@@ -34,23 +45,12 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "zh-tw"
     contentDir = "content/tw"
     languageName = "繁體中文"
-    weight = 3
+    weight = 4
     title = "丹托"
     [languages.tw.params]
       description = "丹托是一個新聞和雜誌Hugo主題"
       dateFormat = "2006年1月2日"
       shortDateFormat = "1月2日"
-
-  [languages.in]
-    languageCode = "hi-in"
-    contentDir = "content/in"
-    languageName = "हिन्दी"
-    weight = 4
-    title = "दंतो"
-    [languages.in.params]
-      description = "दंतो एक समाचार और पत्रिका Hugo थीम है"
-      dateFormat = "2 January, 2006"
-      shortDateFormat = "2 Jan"
 
   [languages.mx]
     languageCode = "es-mx"
@@ -85,22 +85,11 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
       dateFormat = "2 de janeiro de 2006"
       shortDateFormat = "2 jan"
 
-  [languages.bd]
-    languageCode = "bn-bd"
-    contentDir = "content/bd"
-    languageName = "বাংলা"
-    weight = 8
-    title = "দান্তো"
-    [languages.bd.params]
-      description = "দান্তো একটি সংবাদ এবং ম্যাগাজিন Hugo থিম"
-      dateFormat = "২ জানুয়ারী, ২০০৬"
-      shortDateFormat = "২ জানু"
-
   [languages.jp]
     languageCode = "ja-jp"
     contentDir = "content/jp"
     languageName = "日本語"
-    weight = 9
+    weight = 8
     title = "ダント"
     [languages.jp.params]
       description = "ダントはニュースと雑誌のためのHugoテーマです"
@@ -111,7 +100,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "de-de"
     contentDir = "content/de"
     languageName = "Deutsch"
-    weight = 10
+    weight = 9
     title = "Danto"
     [languages.de.params]
       description = "Danto ist ein Hugo-Thema für Nachrichten und Magazine"
@@ -122,7 +111,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "ko-kr"
     contentDir = "content/kr"
     languageName = "한국어"
-    weight = 11
+    weight = 10
     title = "단토"
     [languages.kr.params]
       description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
@@ -133,7 +122,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "fr-fr"
     contentDir = "content/fr"
     languageName = "Français"
-    weight = 12
+    weight = 11
     title = "Danto"
     [languages.fr.params]
       description = "Danto est un thème Hugo pour les actualités et les magazines"
@@ -144,7 +133,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "vi-vn"
     contentDir = "content/vn"
     languageName = "Tiếng Việt"
-    weight = 13
+    weight = 12
     title = "Danto"
     [languages.vn.params]
       description = "Danto là chủ đề Hugo cho tin tức và tạp chí"
@@ -155,7 +144,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "it-it"
     contentDir = "content/it"
     languageName = "Italiano"
-    weight = 14
+    weight = 13
     title = "Danto"
     [languages.it.params]
       description = "Danto è un tema Hugo per notizie e riviste"
@@ -166,7 +155,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "tr-tr"
     contentDir = "content/tr"
     languageName = "Türkçe"
-    weight = 15
+    weight = 14
     title = "Danto"
     [languages.tr.params]
       description = "Danto, haberler ve dergiler için bir Hugo temasıdır"
@@ -177,7 +166,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "id-id"
     contentDir = "content/id"
     languageName = "Bahasa Indonesia"
-    weight = 16
+    weight = 15
     title = "Danto"
     [languages.id.params]
       description = "Danto adalah tema Hugo untuk berita dan majalah"
@@ -188,7 +177,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "th-th"
     contentDir = "content/th"
     languageName = "ไทย"
-    weight = 17
+    weight = 16
     title = "แดนโต"
     [languages.th.params]
       description = "แดนโตเป็นธีม Hugo สำหรับข่าวและนิตยสาร"
