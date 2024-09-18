@@ -200,7 +200,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     tag = "sport"
 
   [params.authors_section]
-    enable = true
+    enable = false
     section_title = "Meet our authors"
 
   [params.footer]
@@ -258,6 +258,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 [taxonomies]
   author = "authors"
+  category = "categories"
   tag = "tags"
 
 [markup.goldmark.renderer]
