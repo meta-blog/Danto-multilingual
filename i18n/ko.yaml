@@ -88,3 +88,9 @@ NoVideosFound: "비디오를 찾을 수 없습니다."
 
 # Widget: recent-posts
 RecentPosts: "최근 게시물"
+
+# Widge:: featured-posts
+FeaturedPosts: "추천 게시물"
+
+# Widget: tags-cloud
+PopularTopics: "인기 주제"

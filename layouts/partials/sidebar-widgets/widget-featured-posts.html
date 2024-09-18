@@ -1,11 +1,9 @@
 {{ range first 1 (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) }}
   {{ $.Scratch.Set "featured" true }}
 {{ end }}
-
 {{ if $.Scratch.Get "featured" }}
 <div class="widget-sidebar widget-featured-posts">
-  <h2 class="widget-sidebar-title">Featured posts</h2>
-
+  <h2 class="widget-sidebar-title">{{ T "FeaturedPosts" }}</h2>
   {{ $featured := first 3 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) "Permalink" "!=" .Permalink)}}
   {{ range $featured }}
   <div class="post-featured-content">
@@ -19,7 +17,7 @@
       {{ end }}
       <img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.title }}">
     </a>
-    <h3 class="post-featured-title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+    <h3 class="post-featured-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   </div>
   {{ end }}
 </div>

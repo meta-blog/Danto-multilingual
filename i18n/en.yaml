@@ -80,6 +80,7 @@ sendMessage: "Send Message"
 # Layout: featured
 featuredPosts: "Featured Posts"
 
+
 # Layout: index.json
 dateFormat: "January 2, 2006"
 
@@ -89,3 +90,9 @@ NoVideosFound: "No videos found."
 
 # Widget: recent-posts
 RecentPosts: "Recent posts"
+
+# Widge: featured-posts
+FeaturedPosts: "Featured posts"
+
+# Widget: tags-cloud
+PopularTopics: "Popular topics"

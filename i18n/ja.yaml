@@ -87,3 +87,9 @@ NoVideosFound: "動画が見つかりません。"
 
 # Widget: recent-posts
 RecentPosts: "最近の投稿"
+
+# Widge:: featured-posts
+FeaturedPosts: "おすすめの投稿"
+
+# Widget: tags-cloud
+PopularTopics: "人気のトピック"
