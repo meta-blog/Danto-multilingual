@@ -24,7 +24,7 @@
   </div>
 </section>
 <!-- end tags -->
-{{ else if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "latest") }}
+{{ else if or (eq .Section "news") (eq .Section "new") }}
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
@@ -37,7 +37,7 @@
 <section class="section">
   <div class="container">
     <div class="row grid">
-      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" ) }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "news" ) }}
       {{ range $index, $element := $paginator.Pages }}
       {{ partial "article.html" (dict "context" . "class" "col col-4 col-d-6 col-t-12 animate article--grid") }}
       {{ end }}
