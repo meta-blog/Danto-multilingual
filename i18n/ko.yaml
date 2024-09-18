@@ -1,7 +1,7 @@
 # Sections
-Posts: "게시물"
-News: "뉴스"
-Docs: "문서"
+posts: "게시물"
+news: "뉴스"
+docs: "문서"
 
 # Taxonomies
 Categories: "카테고리"
