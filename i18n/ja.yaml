@@ -49,7 +49,6 @@ mailchimp__button__text: "購読する"
 # header: cta_button
 cta_button_text: "お問い合わせ"
 Search: "検索"
-SearchAriaLabel: "クリックして検索"
 
 
 # Layout: Article Meta
@@ -100,6 +99,10 @@ PopularTopics: "人気のトピック"
 ShowComments: "コメントを表示"
 DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqusによるコメント</a>を表示するにはJavaScriptを有効にしてください。"
 
+# Layout: post-navigation
+OlderPost: "過去の記事"
+NewerPost: "新しい記事"
+
 # Layout: pagination
 LoadMorePosts: "もっと記事を読み込む"
 
@@ -111,3 +114,9 @@ EnableLightMode: "ライトモードを有効にする"
 Light: "ライト"
 Top: "トップ"
 BackToTop: "ページの先頭へ"
+
+# Layout: search
+SearchForBlog: "ブログを検索"
+TypeToSearch: "検索キーワードを入力..."
+SearchIcon: "検索アイコン"
+CloseSearchIcon: "検索を閉じるアイコン"

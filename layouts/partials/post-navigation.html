@@ -1,7 +1,6 @@
 {{ if or .NextInSection .PrevInSection }}
 <div class="container">
   <div class="post__navigation">
-  
     {{ if .PrevInSection }}
     <div class="post__prev">
       {{ if .PrevInSection.Params.Image }}
@@ -17,16 +16,15 @@
       </a>
       {{ end }}
       <div class="prev__box">
-        <span class="post__nav post__nav__prev">Older post</span>
+        <span class="post__nav post__nav__prev">{{ T "OlderPost" }}</span>
         <h2 class="post__nav__title"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h2>
       </div>
     </div>
     {{ end }}
-  
     {{ if .NextInSection }}
     <div class="post__next">
       <div class="next__box">
-        <span class="post__nav post__nav__next">Newer post</span>
+        <span class="post__nav post__nav__next">{{ T "NewerPost" }}</span>
         <h2 class="post__nav__title"><a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a></h2>
       </div>
       {{ if .NextInSection.Params.Image }}
@@ -43,7 +41,6 @@
       {{ end }}
     </div>
     {{ end }}
-  
   </div>
 </div>
 {{ end }}

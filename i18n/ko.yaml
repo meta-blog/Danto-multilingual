@@ -51,7 +51,6 @@ mailchimp__button__text: "구독하기"
 # header: cta_button
 cta_button_text: "문의하기"
 Search: "검색"
-SearchAriaLabel: "클릭하여 검색"
 
 # Layout: Article Meta
 By: "작성자："
@@ -96,6 +95,10 @@ FeaturedPosts: "추천 게시물"
 # Widget: tags-cloud
 PopularTopics: "인기 주제"
 
+# Layout: post-navigation
+OlderPost: "이전 게시물"
+NewerPost: "다음 게시물"
+
 # Layout: disqus-comments
 ShowComments: "댓글 보기"
 DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqus에서 제공하는 댓글</a>을 보려면 JavaScript를 활성화해 주세요."
@@ -111,3 +114,9 @@ EnableLightMode: "라이트 모드 활성화"
 Light: "라이트"
 Top: "맨 위로"
 BackToTop: "맨 위로"
+
+# Layout: search
+SearchForBlog: "블로그 검색"
+TypeToSearch: "검색어를 입력하세요..."
+SearchIcon: "검색 아이콘"
+CloseSearchIcon: "검색 닫기 아이콘"

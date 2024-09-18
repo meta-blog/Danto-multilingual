@@ -33,7 +33,6 @@ sport: "Sport"
 # header: cta_button
 cta_button_text: "Get in touch"
 Search: "Search"
-SearchAriaLabel: "Click to search"
 
 # Section: Hero
 hero_title: "One Stop Daily News, Article, Inspiration, and Tips."
@@ -89,6 +88,9 @@ FeaturedPosts: "Featured posts"
 # Widget: tags-cloud
 PopularTopics: "Popular topics"
 
+# Layout: post-navigation
+OlderPost: "Older post"
+NewerPost: "Newer post"
 
 # Layout: disqus-comments
 ShowComments: "Show Comments"
@@ -115,3 +117,9 @@ mailchimp__title: "Get interesting news"
 mailchimp__description: "Subscribe to our newsletter and we'll send you the emails of latest posts."
 mailchimp__input__text: "Your email address"
 mailchimp__button__text: "Subscribe"
+
+# Layout: search
+SearchForBlog: "Search for Blog"
+TypeToSearch: "Type to search..."
+SearchIcon: "Search icon"
+CloseSearchIcon: "Close search icon"
