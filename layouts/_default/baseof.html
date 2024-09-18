@@ -3,6 +3,12 @@
 
 {{ partial "head.html" . }}
 
+<ul></ul>
+  {{ range .Site.Home.AllTranslations }}
+  <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+  {{ end }}
+</ul>
+
 <body {{ if .IsHome }}class="home-page"{{ end }}>
 
   {{ template "_internal/google_analytics.html" . }}
