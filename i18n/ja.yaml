@@ -1,4 +1,13 @@
+
+## section-hero
+##--------------
 - id: hero_title
   translation: "ワンストップ・デイリーニュース、記事、インスピレーション、そしてヒント。"
 - id: hero_description
   translation: "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を特集しています。成功するブログの立ち上げ方、または既存のブログをより良くする方法を見つけましょう！"
+
+
+## section-authors 
+##-----------------
+authors_section_title: "私たちの著者たちをご紹介します"
+see_all_authors: "すべての著者を見る"
