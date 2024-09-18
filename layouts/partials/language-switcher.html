@@ -25,8 +25,7 @@
       {{ range .Site.Home.AllTranslations }}
         {{ if ne .Language.Lang $pageLang }}
           <a href="{{ .Permalink }}" class="lang-switcher__link" lang="{{ .Language.Lang }}">
-            {{ if eq .Language.Lang "us" }}🇺🇸 English
-            {{ else if eq .Language.Lang "in" }}🇮🇳 English (India)
+            {{ if eq .Site.Language.Lang "in" }}🇺🇸 English
             {{ else if eq .Language.Lang "cn" }}🇨🇳 简体中文
             {{ else if eq .Language.Lang "tw" }}🇹🇼 繁體中文
             {{ else if eq .Language.Lang "mx" }}🇪🇸 Español
