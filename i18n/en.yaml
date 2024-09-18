@@ -101,3 +101,13 @@ PopularTopics: "Popular topics"
 # Layout: disqus-comments
 ShowComments: "Show Comments"
 DisqusNoscriptMessage: "Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a>"
+
+
+# Layout: footer
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. All Right Reserved. Published with <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Enable dark mode"
+Dark: "Dark"
+EnableLightMode: "Enable light mode"
+Light: "Light"
+Top: "Top"
+BackToTop: "Back to top"
