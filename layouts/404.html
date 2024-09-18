@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <!-- begin page -->
 <div class="container">
   <article class="page">
@@ -8,9 +7,9 @@
         <div class="row">
           <div class="col col-12">
             <div class="error">
-              <h2 class="error__title">404</h2>
-              <p class="error__text">The requested page could not be found.</p>
-              <a class="button button--big" href="/">Back to homepage</a>
+              <h2 class="error__title">404 <span class="sr-only">{{ T "ErrorCode" }}</span></h2>
+              <p class="error__text">{{ T "404Message" }}</p>
+              <a class="button button--big" href="{{ "/" | relLangURL }}">{{ T "BackToHomepage" }}</a>
             </div>
           </div>
         </div>
@@ -19,5 +18,4 @@
   </article>
 </div>
 <!-- end page -->
-
 {{ end }}

@@ -141,3 +141,8 @@ ShareZalo: "Share on Zalo"
 ShareReddit: "Share on Reddit"
 Copy: "Copy"
 LinkCopied: "Link copied to clipboard!"
+
+# Page: 404
+ErrorCode: "Error code"
+404Message: "The requested page could not be found."
+BackToHomepage: "Back to homepage"

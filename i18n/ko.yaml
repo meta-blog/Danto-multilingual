@@ -138,3 +138,8 @@ ShareZalo: "Zalo에 공유하기"
 ShareReddit: "Reddit에 공유하기"
 Copy: "복사"
 LinkCopied: "링크가 클립보드에 복사되었습니다!"
+
+# Page: 404
+ErrorCode: "오류 코드"
+404Message: "요청하신 페이지를 찾을 수 없습니다."
+BackToHomepage: "홈페이지로 돌아가기"

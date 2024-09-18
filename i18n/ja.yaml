@@ -138,3 +138,8 @@ ShareZalo: "Zaloでシェア"
 ShareReddit: "Redditでシェア"
 Copy: "コピー"
 LinkCopied: "リンクがクリップボードにコピーされました！"
+
+# Page: 404
+ErrorCode: "エラーコード"
+404Message: "リクエストされたページが見つかりませんでした。"
+BackToHomepage: "ホームページに戻る"
