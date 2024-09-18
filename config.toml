@@ -65,6 +65,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
   [languages.ae]
     languageCode = "ar-ae"
+    dir = "rtl"
     contentDir = "content/ae"
     languageName = "العربية"
     weight = 6
