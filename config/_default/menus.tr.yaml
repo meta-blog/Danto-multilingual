@@ -1,0 +1,36 @@
+main:
+  - name: "Ana Sayfa"
+    url: "/"
+    weight: 1
+  - name: "Son Yazılar"
+    url: "/posts/"
+    weight: 2
+  - name: "Yazarlar"
+    url: "/authors/"
+    weight: 3
+  - name: "Etiketler"
+    url: "/tags/"
+    weight: 4
+  - name: "Sayfalar"
+    weight: 5
+    hasChildren: true
+  - name: "Hakkında"
+    url: "/about/"
+    parent: "Sayfalar"
+    weight: 1
+  - name: "Öğeler"
+    url: "/elements/"
+    parent: "Sayfalar"
+    weight: 2
+  - name: "İletişim"
+    url: "/contact/"
+    parent: "Sayfalar"
+    weight: 3
+  - name: "Videolar"
+    url: "/videos/"
+    parent: "Sayfalar"
+    weight: 4
+  - name: "Öne Çıkanlar"
+    url: "/featured/"
+    parent: "Sayfalar"
+    weight: 5

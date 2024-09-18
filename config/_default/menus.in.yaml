@@ -1,0 +1,37 @@
+
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Latest"
+    url: "/posts/"
+    weight: 2
+  - name: "Authors"
+    url: "/authors/"
+    weight: 3
+  - name: "Tags"
+    url: "/tags/"
+    weight: 4
+  - name: "Pages"
+    weight: 5
+    hasChildren: true
+  - name: "About"
+    url: "/about/"
+    parent: "Pages"
+    weight: 1
+  - name: "Elements"
+    url: "/elements/"
+    parent: "Pages"
+    weight: 2
+  - name: "Contact"
+    url: "/contact/"
+    parent: "Pages"
+    weight: 3
+  - name: "Videos"
+    url: "/videos/"
+    parent: "Pages"
+    weight: 4
+  - name: "Featured"
+    url: "/featured/"
+    parent: "Pages"
+    weight: 5

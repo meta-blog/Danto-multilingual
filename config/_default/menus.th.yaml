@@ -1,0 +1,36 @@
+main:
+  - name: "หน้าแรก"
+    url: "/"
+    weight: 1
+  - name: "ล่าสุด"
+    url: "/posts/"
+    weight: 2
+  - name: "ผู้เขียน"
+    url: "/authors/"
+    weight: 3
+  - name: "แท็ก"
+    url: "/tags/"
+    weight: 4
+  - name: "หน้า"
+    weight: 5
+    hasChildren: true
+  - name: "เกี่ยวกับ"
+    url: "/about/"
+    parent: "หน้า"
+    weight: 1
+  - name: "องค์ประกอบ"
+    url: "/elements/"
+    parent: "หน้า"
+    weight: 2
+  - name: "ติดต่อ"
+    url: "/contact/"
+    parent: "หน้า"
+    weight: 3
+  - name: "วิดีโอ"
+    url: "/videos/"
+    parent: "หน้า"
+    weight: 4
+  - name: "แนะนำ"
+    url: "/featured/"
+    parent: "หน้า"
+    weight: 5

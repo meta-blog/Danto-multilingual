@@ -1,0 +1,36 @@
+main:
+  - name: "首页"
+    url: "/"
+    weight: 1
+  - name: "最新"
+    url: "/posts/"
+    weight: 2
+  - name: "作者"
+    url: "/authors/"
+    weight: 3
+  - name: "标签"
+    url: "/tags/"
+    weight: 4
+  - name: "页面"
+    weight: 5
+    hasChildren: true
+  - name: "关于"
+    url: "/about/"
+    parent: "页面"
+    weight: 1
+  - name: "元素"
+    url: "/elements/"
+    parent: "页面"
+    weight: 2
+  - name: "联系"
+    url: "/contact/"
+    parent: "页面"
+    weight: 3
+  - name: "视频"
+    url: "/videos/"
+    parent: "页面"
+    weight: 4
+  - name: "精选"
+    url: "/featured/"
+    parent: "页面"
+    weight: 5

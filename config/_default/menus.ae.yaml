@@ -1,0 +1,37 @@
+
+main:
+  - name: "الصفحة الرئيسية"
+    url: "/"
+    weight: 1
+  - name: "الأحدث"
+    url: "/posts/"
+    weight: 2
+  - name: "المؤلفون"
+    url: "/authors/"
+    weight: 3
+  - name: "العلامات"
+    url: "/tags/"
+    weight: 4
+  - name: "الصفحات"
+    weight: 5
+    hasChildren: true
+  - name: "حول"
+    url: "/about/"
+    parent: "الصفحات"
+    weight: 1
+  - name: "العناصر"
+    url: "/elements/"
+    parent: "الصفحات"
+    weight: 2
+  - name: "اتصل بنا"
+    url: "/contact/"
+    parent: "الصفحات"
+    weight: 3
+  - name: "الفيديوهات"
+    url: "/videos/"
+    parent: "الصفحات"
+    weight: 4
+  - name: "مميز"
+    url: "/featured/"
+    parent: "الصفحات"
+    weight: 5

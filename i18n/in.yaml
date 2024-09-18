@@ -1,0 +1,148 @@
+# Sections
+"Post": "Post"
+"Posts": "Posts"
+"Latest": "Latest"
+"Blog": "Blog"
+"News": "News"
+"Docs": "Docs"
+
+
+# Taxonomies
+Authors : "Authors"
+Categories: "Categories"
+Tags: "Tags"
+
+# Categories
+apple: "Apple"
+gear: "Gear"
+beauty: "Beauty"
+review: "Review"
+game: "Game"
+
+# Tags
+study: "Study"
+business: "Business"
+lifestyle: "Lifestyle"
+shopping: "Shopping"
+food: "Food"
+people: "People"
+reading: "Reading"
+science: "Science"
+sport: "Sport"
+
+# header: cta_button
+cta_button_text: "Get in touch"
+Search: "Search"
+
+# Section: Hero
+hero_title: "One Stop Daily News, Article, Inspiration, and Tips."
+hero_description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+# section:featured-posts
+Featured: "Featured"
+
+# section: tags
+ViewAll: "View all"
+
+# Section: Authors
+authors_section_title: "Meet our authors"
+see_all_authors: "See all authors"
+
+
+# Layout: Article Meta
+By: "By"
+
+# Layout: author
+websiteLink: "Website link"
+facebookLink: "Facebook link"
+twitterLink: "Twitter link"
+instagramLink: "Instagram link"
+website: "Website"
+
+# Layout: author.terms
+authorsList: "Authors"
+post: "Post"
+posts: "Posts"
+
+# Layout: contact
+yourName: "Your Name"
+yourNamePlaceholder: "Your name..."
+yourEmail: "Your Email"
+yourEmailPlaceholder: "Your email..."
+yourMessage: "Your Message"
+yourMessagePlaceholder: "Your message..."
+sendMessage: "Send Message"
+
+
+# Layout: featured
+featuredPosts: "Featured Posts"
+
+
+# Layout: index.json
+dateFormat: "January 2, 2006"
+
+# Layoud: videos
+Videos: "Videos"
+NoVideosFound: "No videos found."
+
+# Widget: recent-posts
+RecentPosts: "Recent posts"
+
+# Widge: featured-posts
+FeaturedPosts: "Featured posts"
+
+# Widget: tags-cloud
+PopularTopics: "Popular topics"
+
+# Layout: post-navigation
+OlderPost: "Older post"
+NewerPost: "Newer post"
+
+# Layout: disqus-comments
+ShowComments: "Show Comments"
+DisqusNoscriptMessage: "Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a>"
+
+
+# Layout: pagination
+LoadMorePosts: "Load more posts"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. All Right Reserved. Published with <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Enable dark mode"
+Dark: "Dark"
+EnableLightMode: "Enable light mode"
+Light: "Light"
+Top: "Top"
+BackToTop: "Back to top"
+
+# Footer: widget-info
+footer__description: "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Get interesting news"
+mailchimp__description: "Subscribe to our newsletter and we'll send you the emails of latest posts."
+mailchimp__input__text: "Your email address"
+mailchimp__button__text: "Subscribe"
+
+# Layout: search
+SearchForBlog: "Search for Blog"
+TypeToSearch: "Type to search..."
+SearchIcon: "Search icon"
+CloseSearchIcon: "Close search icon"
+
+# Layout: share-buttons
+ShareLinkCopy: "Copy link"
+ShareWhatsApp: "Share on WhatsApp"
+ShareFacebook: "Share on Facebook"
+ShareTwitter: "Share on Twitter"
+ShareWeibo: "Share on Weibo"
+ShareLINE: "Share on LINE"
+ShareZalo: "Share on Zalo"
+ShareReddit: "Share on Reddit"
+Copy: "Copy"
+LinkCopied: "Link copied to clipboard!"
+
+# Page: 404
+ErrorCode: "Error code"
+404Message: "The requested page could not be found."
+BackToHomepage: "Back to homepage"

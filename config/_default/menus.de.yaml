@@ -1,0 +1,36 @@
+main:
+  - name: "Startseite"
+    url: "/"
+    weight: 1
+  - name: "Neueste"
+    url: "/posts/"
+    weight: 2
+  - name: "Autoren"
+    url: "/authors/"
+    weight: 3
+  - name: "Tags"
+    url: "/tags/"
+    weight: 4
+  - name: "Seiten"
+    weight: 5
+    hasChildren: true
+  - name: "Über uns"
+    url: "/about/"
+    parent: "Seiten"
+    weight: 1
+  - name: "Elemente"
+    url: "/elements/"
+    parent: "Seiten"
+    weight: 2
+  - name: "Kontakt"
+    url: "/contact/"
+    parent: "Seiten"
+    weight: 3
+  - name: "Videos"
+    url: "/videos/"
+    parent: "Seiten"
+    weight: 4
+  - name: "Empfohlen"
+    url: "/featured/"
+    parent: "Seiten"
+    weight: 5

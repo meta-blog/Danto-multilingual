@@ -1,0 +1,36 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Ultimi"
+    url: "/posts/"
+    weight: 2
+  - name: "Autori"
+    url: "/authors/"
+    weight: 3
+  - name: "Tag"
+    url: "/tags/"
+    weight: 4
+  - name: "Pagine"
+    weight: 5
+    hasChildren: true
+  - name: "Chi siamo"
+    url: "/about/"
+    parent: "Pagine"
+    weight: 1
+  - name: "Elementi"
+    url: "/elements/"
+    parent: "Pagine"
+    weight: 2
+  - name: "Contatti"
+    url: "/contact/"
+    parent: "Pagine"
+    weight: 3
+  - name: "Video"
+    url: "/videos/"
+    parent: "Pagine"
+    weight: 4
+  - name: "In primo piano"
+    url: "/featured/"
+    parent: "Pagine"
+    weight: 5

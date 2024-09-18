@@ -1,0 +1,36 @@
+main:
+  - name: "Beranda"
+    url: "/"
+    weight: 1
+  - name: "Terbaru"
+    url: "/posts/"
+    weight: 2
+  - name: "Penulis"
+    url: "/authors/"
+    weight: 3
+  - name: "Tag"
+    url: "/tags/"
+    weight: 4
+  - name: "Halaman"
+    weight: 5
+    hasChildren: true
+  - name: "Tentang"
+    url: "/about/"
+    parent: "Halaman"
+    weight: 1
+  - name: "Elemen"
+    url: "/elements/"
+    parent: "Halaman"
+    weight: 2
+  - name: "Kontak"
+    url: "/contact/"
+    parent: "Halaman"
+    weight: 3
+  - name: "Video"
+    url: "/videos/"
+    parent: "Halaman"
+    weight: 4
+  - name: "Unggulan"
+    url: "/featured/"
+    parent: "Halaman"
+    weight: 5

@@ -1,0 +1,36 @@
+main:
+  - name: "Início"
+    url: "/"
+    weight: 1
+  - name: "Últimos"
+    url: "/posts/"
+    weight: 2
+  - name: "Autores"
+    url: "/authors/"
+    weight: 3
+  - name: "Tags"
+    url: "/tags/"
+    weight: 4
+  - name: "Páginas"
+    weight: 5
+    hasChildren: true
+  - name: "Sobre"
+    url: "/about/"
+    parent: "Páginas"
+    weight: 1
+  - name: "Elementos"
+    url: "/elements/"
+    parent: "Páginas"
+    weight: 2
+  - name: "Contato"
+    url: "/contact/"
+    parent: "Páginas"
+    weight: 3
+  - name: "Vídeos"
+    url: "/videos/"
+    parent: "Páginas"
+    weight: 4
+  - name: "Destaques"
+    url: "/featured/"
+    parent: "Páginas"
+    weight: 5

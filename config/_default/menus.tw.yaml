@@ -1,0 +1,36 @@
+main:
+  - name: "首頁"
+    url: "/"
+    weight: 1
+  - name: "最新文章"
+    url: "/posts/"
+    weight: 2
+  - name: "作者"
+    url: "/authors/"
+    weight: 3
+  - name: "標籤"
+    url: "/tags/"
+    weight: 4
+  - name: "頁面"
+    weight: 5
+    hasChildren: true
+  - name: "關於"
+    url: "/about/"
+    parent: "頁面"
+    weight: 1
+  - name: "元素"
+    url: "/elements/"
+    parent: "頁面"
+    weight: 2
+  - name: "聯絡我們"
+    url: "/contact/"
+    parent: "頁面"
+    weight: 3
+  - name: "影片"
+    url: "/videos/"
+    parent: "頁面"
+    weight: 4
+  - name: "精選"
+    url: "/featured/"
+    parent: "頁面"
+    weight: 5

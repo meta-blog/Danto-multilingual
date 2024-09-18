@@ -1,0 +1,36 @@
+main:
+  - name: "Trang chủ"
+    url: "/"
+    weight: 1
+  - name: "Mới nhất"
+    url: "/posts/"
+    weight: 2
+  - name: "Tác giả"
+    url: "/authors/"
+    weight: 3
+  - name: "Thẻ"
+    url: "/tags/"
+    weight: 4
+  - name: "Trang"
+    weight: 5
+    hasChildren: true
+  - name: "Giới thiệu"
+    url: "/about/"
+    parent: "Trang"
+    weight: 1
+  - name: "Phần tử"
+    url: "/elements/"
+    parent: "Trang"
+    weight: 2
+  - name: "Liên hệ"
+    url: "/contact/"
+    parent: "Trang"
+    weight: 3
+  - name: "Video"
+    url: "/videos/"
+    parent: "Trang"
+    weight: 4
+  - name: "Nổi bật"
+    url: "/featured/"
+    parent: "Trang"
+    weight: 5
