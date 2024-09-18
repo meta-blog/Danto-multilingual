@@ -12,11 +12,12 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     languageCode = "en-us"
     contentDir = "content/en"
     languageName = "English"
-    dateFormat = "January 2, 2006"
     weight = 1
     title = "Danto"
     [languages.en.params]
       description = "Danto is a news and magazine Hugo theme"
+      dateFormat = "January 2, 2006"
+      shortDateFormat = "Jan 2"
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
@@ -73,6 +74,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     title = "단토"
     [languages.ko.params]
       description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
+      dateFormat = "2006년 1월 2일"
+      shortDateFormat = "1월 2일"
     [languages.ko.menu]
       [[languages.ko.menu.main]]
         name = "홈"
@@ -129,6 +132,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     title = "ダント"
     [languages.ja.params]
       description = "ダントはニュースと雑誌のためのHugoテーマです"
+      dateFormat = "2006年1月2日"
+      shortDateFormat = "1月2日"
     [languages.ja.menu]
       [[languages.ja.menu.main]]
         name = "ホーム"

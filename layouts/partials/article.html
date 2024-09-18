@@ -24,7 +24,7 @@
         </div>
         {{ end }}
         <span class="article__date">•<time datetime="{{ .context.Date.Format " 2006-01-02T15:04:05Z07:00" }}">
-            {{ .context.Date.Format (index .context.Site.Params.dateFormat .context.Site.Language.Lang).short }}
+            {{ .context.Date.Format .context.Site.Language.Params.shortDateFormat }}
           </time></span>
       </div>
       <h2 class="article__title">
