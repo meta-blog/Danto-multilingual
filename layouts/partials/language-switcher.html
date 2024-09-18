@@ -3,7 +3,8 @@
 <div class="lang-switcher">
   <div class="lang-switcher__dropdown">
     <button class="lang-switcher__dropbtn">
-      {{ if eq .Site.Language.Lang "in" }}🇺🇸 English
+      {{ if eq .Site.Language.Lang "us" }} 🌐
+      {{ else if eq .Site.Language.Lang "in" }}🇺🇸 English
       {{ else if eq .Site.Language.Lang "cn" }}🇨🇳 简体中文
       {{ else if eq .Site.Language.Lang "tw" }}🇹🇼 繁體中文
       {{ else if eq .Site.Language.Lang "mx" }}🇪🇸 Español
@@ -25,7 +26,8 @@
       {{ range .Site.Home.AllTranslations }}
         {{ if ne .Language.Lang $pageLang }}
           <a href="{{ .Permalink }}" class="lang-switcher__link" lang="{{ .Language.Lang }}">
-            {{ if eq .Site.Language.Lang "in" }}🇺🇸 English
+            {{ if eq .Language.Lang "us" }} 🌐
+            {{ else if eq .Language.Lang "in" }}🇺🇸 English
             {{ else if eq .Language.Lang "cn" }}🇨🇳 简体中文
             {{ else if eq .Language.Lang "tw" }}🇹🇼 繁體中文
             {{ else if eq .Language.Lang "mx" }}🇪🇸 Español

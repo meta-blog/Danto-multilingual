@@ -42,15 +42,15 @@
 .post__title,
 .page__title {
   margin-bottom: 24px;
-  font-size: 60px;
+  font-size: 40px;
 
   @media (max-width: $desktop) {
     margin-bottom: 20px;
-    font-size: 48px;
+    font-size: 40px;
   }
 
   @media (max-width: $tablet) {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   @media (max-width: $mobile) {
