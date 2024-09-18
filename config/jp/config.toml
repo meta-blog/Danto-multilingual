@@ -1,5 +1,4 @@
 # config/ja/config.toml
-title = "ダント"
 languageCode = "ja-jp"
 
 [params]

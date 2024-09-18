@@ -1,5 +1,6 @@
 # config/_default/config.toml
 baseURL = "https://hot-deal.store/"
+title = "Danto"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
@@ -22,6 +23,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   logo = "/images/logo.png"
   logo_dark = "/images/logo.png"
   color_scheme = "auto"
+  description = "Danto is a news and magazine Hugo theme"
 
   [params.hero]
     enable = true
@@ -113,3 +115,64 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 [permalinks]
   posts = "/:sections/:slug/"
+
+# 영어(기본 언어) 메뉴 설정
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Latest"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Authors"
+  url = "/authors/"
+  weight = 3
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 4
+
+[[menu.main]]
+  name = "Pages"
+  weight = 5
+  hasChildren = true
+
+[[menu.main]]
+  parent = "Pages"
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  parent = "Pages"
+  name = "Elements"
+  url = "/elements/"
+  weight = 2
+
+[[menu.main]]
+  parent = "Pages"
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
+
+[[menu.main]]
+  parent = "Pages"
+  name = "Videos"
+  url = "/videos/"
+  weight = 4
+
+[[menu.main]]
+  parent = "Pages"
+  name = "Featured"
+  url = "/featured/"
+  weight = 5
+
+[params.cta_button]
+  enable = true
+  cta_button_link = "/contact/"
+  cta_button_text = "Get in touch"

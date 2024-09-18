@@ -1,5 +1,4 @@
 # config/ko/config.toml
-title = "단토"
 languageCode = "ko-kr"
 
 [params]
