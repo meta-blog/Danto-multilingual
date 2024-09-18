@@ -1,8 +1,8 @@
-<aside class="toc">
-    <h2>On this page</h2>
-    {{ if .TableOfContents }}
-      {{ .TableOfContents }}
-    {{ else }}
-      <p>No content available.</p>
-    {{ end }}
-  </aside>
+<aside class="toc" aria-label="{{ T "TableOfContents" }}"></aside>
+  <h2>{{ T "TableOfContents" }}</h2>
+  {{ if .TableOfContents }}
+    {{ .TableOfContents }}
+  {{ else }}
+    <p>{{ T "NoContentAvailable" }}</p>
+  {{ end }}
+</aside>

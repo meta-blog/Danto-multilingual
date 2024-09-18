@@ -94,6 +94,10 @@ FeaturedPosts: "Featured posts"
 # Widget: tags-cloud
 PopularTopics: "Popular topics"
 
+# Widget: toc
+TableOfContents: "Table of Contents"
+NoContentAvailable: "No content available."
+
 # Layout: post-navigation
 OlderPost: "Older post"
 NewerPost: "Newer post"
