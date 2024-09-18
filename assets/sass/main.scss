@@ -32,6 +32,7 @@
     3.10-Sidebar
     3.11-Scroll Button Top
     3.12-Buttons
+    3.13-toc
 :: 4-Layouts
     4.1-Post Page
     4.2-Authors
@@ -102,6 +103,10 @@
 @import '3-modules/scroll-button-top';
 /* >>>>>>>>>>>>>> :: 3.12-Buttons <<<<<<<<<<<<<<< */
 @import '3-modules/buttons';
+/* >>>>>>>>>>>>>> :: 3.12-Buttons <<<<<<<<<<<<<<< */
+@import '3-modules/toc.scss';
+
+
 
 
 /* =======================
