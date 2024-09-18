@@ -81,3 +81,10 @@ featuredPosts: "추천 포스트"
 
 #Layout: index.json
 dateFormat: "2006년 1월 2일"
+
+#Layoud: videos
+Videos: "Videos"
+NoVideosFound: "No videos found."
+
+Videos: "비디오"
+NoVideosFound: "비디오를 찾을 수 없습니다."

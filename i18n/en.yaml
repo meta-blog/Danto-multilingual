@@ -82,3 +82,7 @@ featuredPosts: "Featured Posts"
 
 #Layout: index.json
 dateFormat: "January 2, 2006"
+
+#Layoud: videos
+Videos: "Videos"
+NoVideosFound: "No videos found."
