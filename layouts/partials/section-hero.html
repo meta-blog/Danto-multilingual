@@ -1,16 +1,13 @@
-{{ if (.Site.Params.hero.enable) }}
+<!-- layouts/partials/hero.html -->
+{{ if .Site.Params.hero.enable }}
 <!-- begin hero -->
 <section class="hero">
   <div class="container">
     <div class="row">
       <div class="col col-12">
         <div class="hero__inner">
-          {{ if .Site.Params.hero.hero__title }}
-            <h1 class="hero__title">{{ .Site.Params.hero.hero__title }}</h1>
-          {{ end }}
-          {{ if .Site.Params.hero.hero__description }}
-            <p class="hero__description">{{ .Site.Params.hero.hero__description }}</p>
-          {{ end }}
+          <h1 class="hero__title">{{ i18n "hero_title" }}</h1>
+          <p class="hero__description">{{ i18n "hero_description" }}</p>
         </div>
       </div>
     </div>
