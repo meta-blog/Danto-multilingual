@@ -185,6 +185,9 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   logo = "/images/logo.png"
   logo_dark = "/images/logo.png"
   color_scheme = "auto"
+  mainSections = ["posts", "news", "docs"]
+
+
 
   [params.hero]
     enable = true
