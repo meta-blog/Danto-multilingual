@@ -56,10 +56,13 @@ cta_button_text: "문의하기"
 By: "작성자："
 
 # Layout: author
-Website: "웹사이트"
-Facebook: "페이스북"
-Twitter: "트위터"
-Instagram: "인스타그램"
+websiteLink: "웹사이트 링크"
+facebookLink: "페이스북 링크"
+twitterLink: "트위터 링크"
+instagramLink: "인스타그램 링크"
+website: "웹사이트"
 
 # Layout: author.terms
 authorsList: "저자 목록"
+post: "포스트"
+posts: "포스트"

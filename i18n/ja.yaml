@@ -53,10 +53,14 @@ cta_button_text: "お問い合わせ"
 # Layout: Article Meta
 By: "著者："
 
-Website: "ウェブサイト"
-Facebook: "フェイスブック"
-Twitter: "ツイッター"
-Instagram: "インスタグラム"
+# Layout: author
+websiteLink: "ウェブサイトリンク"
+facebookLink: "フェイスブックリンク"
+twitterLink: "ツイッターリンク"
+instagramLink: "インスタグラムへのリンク"
+website: "ウェブサイト"
 
 # Layout: author.terms
 authorsList: "著者一覧"
+post: "投稿"
+posts: "投稿"

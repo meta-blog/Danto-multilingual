@@ -56,10 +56,13 @@ cta_button_text: "Get in touch"
 By: "By"
 
 # Layout: author
-Website: "Website"
-Facebook: "Facebook"
-Twitter: "Twitter"
-Instagram: "Instagram"
+websiteLink: "Website link"
+facebookLink: "Facebook link"
+twitterLink: "Twitter link"
+instagramLink: "Instagram link"
+website: "Website"
 
 # Layout: author.terms
 authorsList: "Authors"
+post: "Post"
+posts: "Posts"
