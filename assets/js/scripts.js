@@ -29,7 +29,91 @@
    License : GPLv3
    ==================================================== */
 
-var searchResults=document.getElementById("js-results-container"),searchInput=document.getElementById("js-search-input"),contextDive=95,timerUserInput=!1;function getCurrentLanguage(){return document.documentElement.lang||"en"}function search(e){for(;searchResults.firstChild;)searchResults.removeChild(searchResults.firstChild);0===e.length||e.length<1?searchResults.style.display="none":(searchResults.style.display="block",getJSON("/index.json",function(t){var n=[];let s=new RegExp(e,"i");if(t.forEach(function(e){(e.title.match(s)||e.content.match(s))&&n.push(e)}),n.length>0){var currentLang=getCurrentLanguage();n.forEach(function(t,n){let s=t.content.toLowerCase().indexOf(e.toLowerCase()),c=s+e.length,r=s-contextDive;r>0?(r=t.content.indexOf(" ",r)+1)<s?s=r:s-=contextDive/2:s=0;let o=c+contextDive;o<t.content.length?-1!==(o=t.content.indexOf(" ",o))?c=o:c+=contextDive/2:c=t.content.length-1;let l=t.content.substring(s,c);0!==s&&(l="...".concat(l)),c!==t.content.length-1&&(l=l.concat("..."));var permalink=t.translations&&t.translations[currentLang]?t.translations[currentLang]:t.permalink;let a="".concat('<div class="search-results__item" id="search-summary-',n,'" >').concat('<a class="search-results__image" href="',permalink,'" style="background-image: url(',t.image,')"></a> <a class="search-results__link" href="',permalink,'"><time class="search-results-date">',t.date,'</time><div class="search-results-title">',t.title,"</div></a>").concat("</div>");searchResults.appendChild(htmlToElement(a))})}else searchResults.appendChild(htmlToElement('<div class="no-results">No results found...</div>'))}))}function getJSON(e,t){let n=new XMLHttpRequest;n.open("GET",e),n.onload=function(){200===n.status?t(JSON.parse(n.responseText)):console.error("Some error processing ".concat(e,": ",n.status))},n.onerror=function(){console.error("Connection error: ".concat(n.status))},n.send()}function htmlToElement(e){let t=document.createElement("template");return e=e.trim(),t.innerHTML=e,t.content.firstChild}searchInput.addEventListener("keyup",function(){timerUserInput&&clearTimeout(timerUserInput),timerUserInput=setTimeout(function(){search(searchInput.value.trim())},150)});
+   var searchResults = document.getElementById("js-results-container"),
+   searchInput = document.getElementById("js-search-input"),
+   contextDive = 95,
+   timerUserInput = false;
+
+// 현재 언어 감지 함수
+function getCurrentLanguage() {
+   var path = window.location.pathname;
+   if (path.startsWith('/ko/')) return 'ko';
+   if (path.startsWith('/ja/')) return 'ja';
+   return 'en';
+}
+
+// URL 수정 함수
+function adjustUrl(url, currentLang) {
+   if (currentLang === 'en') return url;
+   var urlObj = new URL(url, window.location.origin);
+   if (!urlObj.pathname.startsWith('/' + currentLang + '/')) {
+       urlObj.pathname = '/' + currentLang + urlObj.pathname;
+   }
+   return urlObj.href;
+}
+
+function search(e) {
+   while (searchResults.firstChild) searchResults.removeChild(searchResults.firstChild);
+   if (0 === e.length || e.length < 1) {
+       searchResults.style.display = "none";
+   } else {
+       searchResults.style.display = "block";
+       getJSON("/index.json", function(t) {
+           var n = [];
+           let s = new RegExp(e, "i");
+           t.forEach(function(e) {
+               (e.title.match(s) || e.content.match(s)) && n.push(e)
+           });
+           if (n.length > 0) {
+               var currentLang = getCurrentLanguage();
+               n.forEach(function(t, n) {
+                   let s = t.content.toLowerCase().indexOf(e.toLowerCase()),
+                       c = s + e.length,
+                       r = s - contextDive;
+                   r > 0 ? (r = t.content.indexOf(" ", r) + 1) < s ? s = r : s -= contextDive / 2 : s = 0;
+                   let o = c + contextDive;
+                   o < t.content.length ? -1 !== (o = t.content.indexOf(" ", o)) ? c = o : c += contextDive / 2 : c = t.content.length - 1;
+                   let l = t.content.substring(s, c);
+                   0 !== s && (l = "...".concat(l)), c !== t.content.length - 1 && (l = l.concat("..."));
+                   
+                   // 현재 언어에 맞는 링크 선택 및 URL 조정
+                   var permalink = t.translations && t.translations[currentLang] ? t.translations[currentLang] : t.permalink;
+                   permalink = adjustUrl(permalink, currentLang);
+                   
+                   let a = "".concat('<div class="search-results__item" id="search-summary-', n, '" >').concat('<a class="search-results__image" href="', permalink, '" style="background-image: url(', adjustUrl(t.image, currentLang), ')"></a> <a class="search-results__link" href="', permalink, '"><time class="search-results-date">', t.date, '</time><div class="search-results-title">', t.title, "</div></a>").concat("</div>");
+                   searchResults.appendChild(htmlToElement(a))
+               })
+           } else {
+               var noResultsText = {
+                   'en': 'No results found...',
+                   'ko': '검색 결과가 없습니다...',
+                   'ja': '検索結果がありません...'
+               }[getCurrentLanguage()] || 'No results found...';
+               searchResults.appendChild(htmlToElement('<div class="no-results">' + noResultsText + '</div>'))
+           }
+       })
+   }
+}
+
+function getJSON(e, t) {
+   let n = new XMLHttpRequest;
+   n.open("GET", e), n.onload = function() {
+       200 === n.status ? t(JSON.parse(n.responseText)) : console.error("Some error processing ".concat(e, ": ", n.status))
+   }, n.onerror = function() {
+       console.error("Connection error: ".concat(n.status))
+   }, n.send()
+}
+
+function htmlToElement(e) {
+   let t = document.createElement("template");
+   return e = e.trim(), t.innerHTML = e, t.content.firstChild
+}
+
+searchInput.addEventListener("keyup", function() {
+   timerUserInput && clearTimeout(timerUserInput), timerUserInput = setTimeout(function() {
+       search(searchInput.value.trim())
+   }, 150)
+});
 
 
 
