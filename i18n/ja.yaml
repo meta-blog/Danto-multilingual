@@ -1,35 +1,29 @@
-# Sections and Types
-"Posts": "投稿"
-"Latest": "最新"
-"Blog": "ブログ"
-"News": "ニュース"
-"Docs": "ドキュメント"
-"Authors" : "著者"
+# Sections
+posts: "投稿"
+news: "ニュース"
+docs: "ドキュメント"
 
-### Taxonomy: Category
-###-------------------
-Apple: "アップル"
-Gear: "ギア"
-Beauty: "ビューティー"
-Review: "レビュー"
-Game: "ゲーム"
+# Taxonomies
+category: "カテゴリー"
+tag: "タグ"
 
-### Taxonomy: tag
-###----------------
-Study: "勉強"
-Business: "ビジネス"
-Lifestyle: "ライフスタイル"
-Shopping: "ショッピング"
-Food: "食べ物"
-People: "人々"
-Reading: "読書"
-Science: "科学"
-Sport: "スポーツ"
+# Categories
+apple: "アップル"
+gear: "ギア"
+beauty: "ビューティー"
+review: "レビュー"
+game: "ゲーム"
 
-### Taxonomies
-#-----------------------------
-taxonomy_category: "カテゴリー"
-taxonomy_tag: "タグ"
+# Tags
+study: "勉強"
+business: "ビジネス"
+lifestyle: "ライフスタイル"
+shopping: "ショッピング"
+food: "食べ物"
+people: "人々"
+reading: "読書"
+science: "科学"
+sport: "スポーツ"
 
 # Section: Hero
 hero_title: "ワンストップ・デイリーニュース、記事、インスピレーション、そしてヒント。"

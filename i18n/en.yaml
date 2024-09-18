@@ -1,35 +1,29 @@
-# Sections and Types
-"Posts": "Posts"
-"Latest": "Latest"
-"Blog": "Blog"
-"News": "News"
-"Docs": "Docs"
-"Authors" : "Authors"
+# Sections
+posts: "Posts"
+news: "News"
+docs: "Docs"
 
-### Taxonomy: Category
-###-------------------
-Apple: "Apple"
-Gear: "Gear"
-Beauty: "Beauty"
-Review: "Review"
-Game: "Game"
+# Taxonomies
+category: "Category"
+tag: "Tag"
 
-### Taxonomy: tag
-###----------------
-Study: "Study"
-Business: "Business"
-Lifestyle: "Lifestyle"
-Shopping: "Shopping"
-Food: "Food"
-People: "People"
-Reading: "Reading"
-Science: "Science"
-Sport: "Sport"
+# Categories
+apple: "Apple"
+gear: "Gear"
+beauty: "Beauty"
+review: "Review"
+game: "Game"
 
-### Taxonomies
-#-----------------------------
-taxonomy_category: "Category"
-taxonomy_tag: "Tag"
+# Tags
+study: "Study"
+business: "Business"
+lifestyle: "Lifestyle"
+shopping: "Shopping"
+food: "Food"
+people: "People"
+reading: "Reading"
+science: "Science"
+sport: "Sport"
 
 
 # Section: Hero

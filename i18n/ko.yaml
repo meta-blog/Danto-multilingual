@@ -1,36 +1,29 @@
-# Sections and Types
-"Posts": "게시물"
-"Latest": "최신"
-"Blog": "블로그"
-"News": "뉴스"
-"Docs": "문서"
-"Authors" : "작성자"
+# Sections
+posts: "게시물"
+news: "뉴스"
+docs: "문서"
 
-### Taxonomy: Category
-###-------------------
-Apple: 애플
-Gear: 기어
-Beauty: 뷰티
-Review: 리뷰
-Game: 게임
+# Taxonomies
+category: "카테고리"
+tag: "태그"
 
-### Taxonomy: tag
-###----------------
-Study: "공부"
-Business: "비즈니스"
-Lifestyle: "라이프스타일"
-Shopping: "쇼핑"
-Food: "음식"
-People: "사람"
-Reading: "독서"
-Science: "과학"
-Sport: "스포츠"
+# Categories
+apple: "애플"
+gear: "장비"
+beauty: "뷰티"
+review: "리뷰"
+game: "게임"
 
-### Taxonomies
-#-----------------------------
-taxonomy_category: "카테고리"
-taxonomy_tag: "태그"
-taxonomy_series: "시리즈"
+# Tags
+study: "공부"
+business: "비즈니스"
+lifestyle: "라이프스타일"
+shopping: "쇼핑"
+food: "음식"
+people: "사람들"
+reading: "독서"
+science: "과학"
+sport: "스포츠"
 
 
 # Section: Hero
