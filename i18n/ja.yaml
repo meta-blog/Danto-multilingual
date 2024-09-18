@@ -53,6 +53,11 @@ cta_button_text: "お問い合わせ"
 # Layout: Article Meta
 By: "著者："
 
+Website: "ウェブサイト"
+Facebook: "フェイスブック"
+Twitter: "ツイッター"
+Instagram: "インスタグラム"
+
 # Layour: author.terms
 PostsCount: "投稿"
 LatestPosts: "最新の投稿"
