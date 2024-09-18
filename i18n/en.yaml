@@ -1,7 +1,7 @@
 # Sections
-posts: "Posts"
-news: "News"
-docs: "Docs"
+Posts: "Posts"
+News: "News"
+Docs: "Docs"
 
 # Taxonomies
 Categories: "Categories"
