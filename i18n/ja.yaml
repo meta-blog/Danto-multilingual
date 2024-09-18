@@ -1,11 +1,35 @@
-# Sections, Taxonomies
-section_posts: "投稿"
-section_docs: "ドキュメント"
-section_news: "ニュース"
+# Sections and Types
+"Posts": "投稿"
+"Latest": "最新"
+"Blog": "ブログ"
+"News": "ニュース"
+"Docs": "ドキュメント"
+"Authors" : "著者"
 
-taxonomy_authors: "著者"
-taxonomy_categories: "カテゴリー"
-taxonomy_tags: "タグ"
+### Taxonomy: Category
+###-------------------
+Apple: "アップル"
+Gear: "ギア"
+Beauty: "ビューティー"
+Review: "レビュー"
+Game: "ゲーム"
+
+### Taxonomy: tag
+###----------------
+Study: "勉強"
+Business: "ビジネス"
+Lifestyle: "ライフスタイル"
+Shopping: "ショッピング"
+Food: "食べ物"
+People: "人々"
+Reading: "読書"
+Science: "科学"
+Sport: "スポーツ"
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "カテゴリー"
+taxonomy_tag: "タグ"
 
 # Section: Hero
 hero_title: "ワンストップ・デイリーニュース、記事、インスピレーション、そしてヒント。"

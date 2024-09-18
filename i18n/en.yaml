@@ -1,11 +1,35 @@
-# Sections, Taxonomies
-section_posts: "Posts"
-section_docs: "Documentation"
-section_news: "News"
+# Sections and Types
+"Posts": "Posts"
+"Latest": "Latest"
+"Blog": "Blog"
+"News": "News"
+"Docs": "Docs"
+"Authors" : "Authors"
 
-taxonomy_authors: "Authors"
-taxonomy_categories: "Categories"
-taxonomy_tags: "Tags"
+### Taxonomy: Category
+###-------------------
+Apple: "Apple"
+Gear: "Gear"
+Beauty: "Beauty"
+Review: "Review"
+Game: "Game"
+
+### Taxonomy: tag
+###----------------
+Study: "Study"
+Business: "Business"
+Lifestyle: "Lifestyle"
+Shopping: "Shopping"
+Food: "Food"
+People: "People"
+Reading: "Reading"
+Science: "Science"
+Sport: "Sport"
+
+### Taxonomies
+#-----------------------------
+taxonomy_category: "Category"
+taxonomy_tag: "Tag"
 
 
 # Section: Hero
