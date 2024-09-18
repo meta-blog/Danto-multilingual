@@ -75,3 +75,6 @@ yourEmailPlaceholder: "이메일을 입력하세요..."
 yourMessage: "메시지"
 yourMessagePlaceholder: "메시지를 입력하세요..."
 sendMessage: "메시지 보내기"
+
+# Layout: featured
+featuredPosts: "추천 포스트"

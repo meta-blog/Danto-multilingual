@@ -73,3 +73,6 @@ yourEmailPlaceholder: "メールを入力してください..."
 yourMessage: "メッセージ"
 yourMessagePlaceholder: "メッセージを入力してください..."
 sendMessage: "メッセージを送る"
+
+# Layout: featured
+featuredPosts: "注目の投稿"

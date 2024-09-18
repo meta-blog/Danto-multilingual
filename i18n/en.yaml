@@ -75,3 +75,7 @@ yourEmailPlaceholder: "Your email..."
 yourMessage: "Your Message"
 yourMessagePlaceholder: "Your message..."
 sendMessage: "Send Message"
+
+
+# Layout: featured
+featuredPosts: "Featured Posts"
