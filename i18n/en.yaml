@@ -80,9 +80,12 @@ sendMessage: "Send Message"
 # Layout: featured
 featuredPosts: "Featured Posts"
 
-#Layout: index.json
+# Layout: index.json
 dateFormat: "January 2, 2006"
 
-#Layoud: videos
+# Layoud: videos
 Videos: "Videos"
 NoVideosFound: "No videos found."
+
+# Widget: recent-posts
+RecentPosts: "Recent posts"

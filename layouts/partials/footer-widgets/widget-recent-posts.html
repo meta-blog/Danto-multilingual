@@ -1,11 +1,10 @@
 <div class="col col-4 col-d-12">
   <div class="widget-footer widget-recent-posts">
-    <h3 class="widget-title">Recent posts</h3>
+    <h3 class="widget-title">{{ T "RecentPosts" }}</h3>
     {{ $counter := 0 }}
     {{ range ( where site.RegularPages "Section" "posts" | first 2 ) }}
     {{ $counter = add $counter 1 }}
     <div class="recent-posts">
-
       {{ if .Params.Image }}
       <div class="article__head">
         <a href="{{ .RelPermalink }}" class="recent-posts__image" aria-hidden="true" tabindex="-1">
@@ -20,32 +19,29 @@
         </a>
       </div>
       {{ end }}
-
       <div class="recent-posts__content">
-
         <div class="article__meta">
           {{ if .Params.tags }}
           <div class="article__tags">
-          {{ range (.GetTerms "tags") }}
-            <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
-          {{ end }}
+            {{ range (.GetTerms "tags") }}
+            <a href="{{ .Permalink }}" class="article__tag">{{ T .LinkTitle }}</a>
+            {{ end }}
           </div>
           {{ end }}
-          <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time></span>
+          <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format (.Site.Params.dateFormat | default "2 Jan, 2006") }}
+          </time></span>
         </div>
-
         <h4 class="recent-posts__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-
         <div class="article__info">
-        {{ if .Params.authors }}
+          {{ if .Params.authors }}
           {{ range first 1 .Params.authors }}
-            {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-            By <a class="article__author__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
-            {{ end }}
+          {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+           {{ T "By" }} <a class="article__author__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
           {{ end }}
-        {{ end }}
+          {{ end }}
+          {{ end }}
         </div>
-
       </div>
     </div>
     {{ end }}
