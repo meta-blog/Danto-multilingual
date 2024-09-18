@@ -3,13 +3,12 @@
 <div class="lang-switcher">
   <div class="lang-switcher__dropdown">
     <button class="lang-switcher__dropbtn">
-      {{ if eq .Site.Language.Lang "us" }}🇺🇸 English (US)
-      {{ else if eq .Site.Language.Lang "in" }}🇮🇳 English (India)
+      {{ if eq .Site.Language.Lang "in" }}🇺🇸 English
       {{ else if eq .Site.Language.Lang "cn" }}🇨🇳 简体中文
       {{ else if eq .Site.Language.Lang "tw" }}🇹🇼 繁體中文
-      {{ else if eq .Site.Language.Lang "mx" }}🇲🇽 Español (México)
+      {{ else if eq .Site.Language.Lang "mx" }}🇪🇸 Español
       {{ else if eq .Site.Language.Lang "ae" }}🇦🇪 العربية
-      {{ else if eq .Site.Language.Lang "br" }}🇧🇷 Português (Brasil)
+      {{ else if eq .Site.Language.Lang "br" }}🇵🇹 Português
       {{ else if eq .Site.Language.Lang "jp" }}🇯🇵 日本語
       {{ else if eq .Site.Language.Lang "de" }}🇩🇪 Deutsch
       {{ else if eq .Site.Language.Lang "kr" }}🇰🇷 한국어
@@ -26,13 +25,13 @@
       {{ range .Site.Home.AllTranslations }}
         {{ if ne .Language.Lang $pageLang }}
           <a href="{{ .Permalink }}" class="lang-switcher__link" lang="{{ .Language.Lang }}">
-            {{ if eq .Language.Lang "us" }}🇺🇸 English (US)
+            {{ if eq .Language.Lang "us" }}🇺🇸 English
             {{ else if eq .Language.Lang "in" }}🇮🇳 English (India)
             {{ else if eq .Language.Lang "cn" }}🇨🇳 简体中文
             {{ else if eq .Language.Lang "tw" }}🇹🇼 繁體中文
-            {{ else if eq .Language.Lang "mx" }}🇲🇽 Español (México)
+            {{ else if eq .Language.Lang "mx" }}🇪🇸 Español
             {{ else if eq .Language.Lang "ae" }}🇦🇪 العربية
-            {{ else if eq .Language.Lang "br" }}🇧🇷 Português (Brasil)
+            {{ else if eq .Language.Lang "br" }}🇵🇹 Português
             {{ else if eq .Language.Lang "jp" }}🇯🇵 日本語
             {{ else if eq .Language.Lang "de" }}🇩🇪 Deutsch
             {{ else if eq .Language.Lang "kr" }}🇰🇷 한국어

@@ -2,7 +2,7 @@
 
 baseURL = "https://hot-deal.store/"
 title = "Danto"
-defaultContentLanguage = "us"
+defaultContentLanguage = "en-us"
 defaultContentLanguageInSubdir = false
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
