@@ -1,10 +1,9 @@
 {{ define "main" }}
-
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
     {{ if .Title }}
-    <h1 class="hero__title">{{ .Title }}</h1>
+    <h1 class="hero__title">{{ T .Title }}</h1>
     {{ end }}
   </div>
 </section>
@@ -16,9 +15,9 @@
     <div class="row">
       {{ range .Pages }}
       <div class="col col-2 col-w-3 col-d-6 col-m-12">
-        <a href="{{ .RelPermalink }}" class="tag-image" title="{{ .Title }}">
-          <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | absURL }}" {{ end }} alt="{{ .Title }}">
-          <span class="tag-name">{{ .Title }}</span>
+        <a href="{{ .RelPermalink }}" class="tag-image" title="{{ T .Title }}">
+          <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | absURL }}" {{ end }} alt="{{ T .Title }}">
+          <span class="tag-name">{{ T .Title }}</span>
         </a>
       </div>
       {{ end }}
@@ -26,5 +25,4 @@
   </div>
 </section>
 <!-- end tags -->
-
 {{ end }}
