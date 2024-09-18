@@ -1,0 +1,275 @@
+# config.toml
+
+baseURL = "https://hot-deal.store/"
+title = "Danto"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+
+# 언어 설정
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+    title = "Danto"
+    [languages.en.params]
+      description = "Danto is a news and magazine Hugo theme"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Latest"
+        url = "/posts/"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Authors"
+        url = "/authors/"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Tags"
+        url = "/tags/"
+        weight = 4
+      [[languages.en.menu.main]]
+        name = "Pages"
+        weight = 5
+        hasChildren = true
+      [[languages.en.menu.main]]
+        parent = "Pages"
+        name = "About"
+        url = "/about/"
+        weight = 1
+      [[languages.en.menu.main]]
+        parent = "Pages"
+        name = "Elements"
+        url = "/elements/"
+        weight = 2
+      [[languages.en.menu.main]]
+        parent = "Pages"
+        name = "Contact"
+        url = "/contact/"
+        weight = 3
+      [[languages.en.menu.main]]
+        parent = "Pages"
+        name = "Videos"
+        url = "/videos/"
+        weight = 4
+      [[languages.en.menu.main]]
+        parent = "Pages"
+        name = "Featured"
+        url = "/featured/"
+        weight = 5
+
+  [languages.ko]
+    languageCode = "ko-kr"
+    contentDir = "content/ko"
+    languageName = "한국어"
+    weight = 2
+    title = "단토"
+    [languages.ko.params]
+      description = "단토는 뉴스와 매거진을 위한 Hugo 테마입니다"
+    [languages.ko.menu]
+      [[languages.ko.menu.main]]
+        name = "홈"
+        url = "/"
+        weight = 1
+      [[languages.ko.menu.main]]
+        name = "최신"
+        url = "/posts/"
+        weight = 2
+      [[languages.ko.menu.main]]
+        name = "작가"
+        url = "/authors/"
+        weight = 3
+      [[languages.ko.menu.main]]
+        name = "태그"
+        url = "/tags/"
+        weight = 4
+      [[languages.ko.menu.main]]
+        name = "페이지"
+        weight = 5
+        hasChildren = true
+      [[languages.ko.menu.main]]
+        parent = "페이지"
+        name = "소개"
+        url = "/about/"
+        weight = 1
+      [[languages.ko.menu.main]]
+        parent = "페이지"
+        name = "요소"
+        url = "/elements/"
+        weight = 2
+      [[languages.ko.menu.main]]
+        parent = "페이지"
+        name = "연락처"
+        url = "/contact/"
+        weight = 3
+      [[languages.ko.menu.main]]
+        parent = "페이지"
+        name = "비디오"
+        url = "/videos/"
+        weight = 4
+      [[languages.ko.menu.main]]
+        parent = "페이지"
+        name = "추천"
+        url = "/featured/"
+        weight = 5
+
+  [languages.ja]
+    languageCode = "ja-jp"
+    contentDir = "content/ja"
+    languageName = "日本語"
+    weight = 3
+    title = "ダント"
+    [languages.ja.params]
+      description = "ダントはニュースと雑誌のためのHugoテーマです"
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
+        name = "ホーム"
+        url = "/"
+        weight = 1
+      [[languages.ja.menu.main]]
+        name = "最新"
+        url = "/posts/"
+        weight = 2
+      [[languages.ja.menu.main]]
+        name = "著者"
+        url = "/authors/"
+        weight = 3
+      [[languages.ja.menu.main]]
+        name = "タグ"
+        url = "/tags/"
+        weight = 4
+      [[languages.ja.menu.main]]
+        name = "ページ"
+        weight = 5
+        hasChildren = true
+      [[languages.ja.menu.main]]
+        parent = "ページ"
+        name = "について"
+        url = "/about/"
+        weight = 1
+      [[languages.ja.menu.main]]
+        parent = "ページ"
+        name = "要素"
+        url = "/elements/"
+        weight = 2
+      [[languages.ja.menu.main]]
+        parent = "ページ"
+        name = "お問い合わせ"
+        url = "/contact/"
+        weight = 3
+      [[languages.ja.menu.main]]
+        parent = "ページ"
+        name = "動画"
+        url = "/videos/"
+        weight = 4
+      [[languages.ja.menu.main]]
+        parent = "ページ"
+        name = "おすすめ"
+        url = "/featured/"
+        weight = 5
+
+[params]
+  logo = "/images/logo.png"
+  logo_dark = "/images/logo.png"
+  color_scheme = "auto"
+
+  [params.hero]
+    enable = true
+    hero__title = "One Stop Daily News, Article, Inspiration, and Tips."
+    hero__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+  [params.tags_section]
+    enable = true
+    number_posts = 3
+    number_columns = 3
+
+  [[params.tag]]
+    tag = "lifestyle"
+  [[params.tag]]
+    tag = "shopping"
+  [[params.tag]]
+    tag = "business"
+  [[params.tag]]
+    tag = "food"
+  [[params.tag]]
+    tag = "sport"
+
+  [params.authors_section]
+    enable = true
+    section_title = "Meet our authors"
+
+  [params.footer]
+    footer__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+  [[params.social]]
+    icon = "fa-brands fa-x-twitter"
+    name = "Twitter"
+    link = "https://twitter.com"
+
+  [[params.social]]
+    icon = "fa-brands fa-facebook"
+    name = "Facebook"
+    link = "https://facebook.com"
+
+  [[params.social]]
+    icon = "fa-brands fa-codepen"
+    name = "Codepen"
+    link = "https://codepen.io/"
+
+  [[params.social]]
+    icon = "fa-brands fa-pinterest"
+    name = "Pinterest"
+    link = "https://pinterest.com"
+
+  [[params.social]]
+    icon = "fa-brands fa-github"
+    name = "Github"
+    link = "https://github.com"
+
+  [[params.social]]
+    icon = "fa-brands fa-youtube"
+    name = "Youtube"
+    link = "https://youtube.com"
+
+  [params.mailchimp]
+    enable = true
+    mailchimp__title = "Get interesting news"
+    mailchimp__description = "Subscribe to our newsletter and we'll send you the emails of latest posts."
+    mailchimp__identifier = "gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp"
+    mailchimp__input__text = "Your email address"
+    mailchimp__button__text = "Subscribe"
+
+  [params.contact]
+    email = "your@email.com"
+
+  [params.disqus]
+    enable = true
+    disqusShortname = "anvod-studio-test"
+
+  [params.cta_button]
+    enable = true
+    cta_button_link = "/contact/"
+    cta_button_text = "Get in touch"
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false
+
+[permalinks]
+  posts = "/:sections/:slug/"
