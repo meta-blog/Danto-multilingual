@@ -8,3 +8,12 @@ see_all_authors: "すべての著者を見る"
 
 # Footer: widget-info
 footer__description: 「生産性、ヒント、インスピレーション、大規模な利益のための戦略を備えています。成功するブログの立ち上げ方や、あなたのブログをさらに良くする方法を見つけましょう！」
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "面白いニュースを受け取る"
+mailchimp__description: "ニュースレターを購読すると、最新記事のメールをお送りします。"
+mailchimp__input__text: "あなたのメールアドレス"
+mailchimp__button__text: "購読する"
+
+# header: cta_button
+cta_button_text: "お問い合わせ"
