@@ -1,6 +1,21 @@
 {{ $counter := add 1 (index .Page.Params "img_counter" | default 0) }}
 {{ .Page.Scratch.Set "img_counter" $counter }}
+{{ $image := .Page.Resources.GetMatch (.Get "src") }}
+{{ $alt := .Get "alt" | default (printf "%s_%02d" .Page.Title $counter) }}
 <figure>
-  <img src="{{ .Get "src" }}" alt="{{ .Page.Title }}_{{ printf "%02d" $counter }}">
-  <figcaption>{{ .Get "caption" }}</figcaption>
+  {{ with $image }}
+    {{ $resized := .Resize "800x" }}
+    <img src="{{ $resized.RelPermalink }}" 
+         alt="{{ $alt }}"
+         width="{{ $resized.Width }}" 
+         height="{{ $resized.Height }}"
+         loading="lazy">
+  {{ else }}
+    <img src="{{ .Get "src" }}" 
+         alt="{{ $alt }}"
+         loading="lazy">
+  {{ end }}
+  {{ with .Get "caption" }}
+    <figcaption>{{ . }}</figcaption>
+  {{ end }}
 </figure>
