@@ -1,8 +1,10 @@
 .second-header {
   display: flex;
-  justify-content: flex-end; /* This aligns items to the right */
+  justify-content: flex-end;  /* Align items to the right */
+  align-items: center;        /* Center items vertically */
+  padding: 10px 0;            /* Add padding on top and bottom */
 }
 
 .second-menu-01, .second-menu-02 {
-  margin-left: 20px; /* Adds space between the menu items */
+  margin-left: 20px;          /* Space between the menu items */
 }
