@@ -1,41 +1,10 @@
 {{ $script := resources.Get "js/scripts.js" }}
 {{ $commonJs := resources.Get "js/common.js" }}
-{{ $activeToc := resources.Get "js/active-toc.js" }}
-{{ $languageSwitcher := resources.Get "js/language-switcher.js" }}
-{{ $loadMorePosts := resources.Get "js/lode-more-posts.js" }}
-
-{{ $js := slice $commonJs $script }}
-
-{{ if .HasShortcode "toc" }}
-  {{ $js = $js | append $activeToc }}
-{{ end }}
-
-{{ if .Site.IsMultiLingual }}
-  {{ $js = $js | append $languageSwitcher }}
-{{ end }}
-
-{{ if .IsHome }}
-  {{ $js = $js | append $loadMorePosts }}
-{{ end }}
-
-{{ $jsBundle := $js | resources.Concat "js/bundle.js" }}
 
 {{ if hugo.IsProduction }}
-  {{ $jsBundle = $jsBundle | minify | fingerprint }}
-  <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+  <script src="{{ ($script | minify | fingerprint).RelPermalink }}"></script>
+  <script src="{{ ($commonJs | minify | fingerprint).RelPermalink }}"></script>
 {{ else }}
-  <script src="{{ $jsBundle.RelPermalink }}" defer></script>
+  <script src="{{ $script.Permalink }}"></script>
+  <script src="{{ $commonJs.Permalink }}"></script>
 {{ end }}
-
-<script type="module">
-  // 동적으로 필요한 모듈 로드
-  if (document.querySelector('.toc')) {
-    import('{{ ($activeToc | resources.Minify).RelPermalink }}');
-  }
-  if (document.querySelector('.lang-switcher')) {
-    import('{{ ($languageSwitcher | resources.Minify).RelPermalink }}');
-  }
-  if (document.querySelector('.load-more-posts')) {
-    import('{{ ($loadMorePosts | resources.Minify).RelPermalink }}');
-  }
-</script>
