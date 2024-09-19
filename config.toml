@@ -280,9 +280,6 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
 [markup.goldmark.renderer]
   unsafe = true
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
@@ -297,3 +294,15 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
   posts = "/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "rss"
+
+[services.rss]
+  limit = 20  # RSS 피드에 포함할 최근 항목 수
