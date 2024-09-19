@@ -2,18 +2,13 @@
 {{ .Page.Scratch.Set "img_counter" $counter }}
 {{ $image := .Page.Resources.GetMatch (.Get "src") }}
 {{ $alt := .Get "alt" | default (printf "%s_%02d" .Page.Title $counter) }}
-<figure class="lazyload">
-  {{ with $image }}
-    <img data-src="{{ .RelPermalink }}" 
-         alt="{{ $alt }}"
-         width="{{ .Width }}" 
-         height="{{ .Height }}"
-         class="lazy">
-  {{ else }}
-    <img data-src="{{ .Get "src" }}" 
-         alt="{{ $alt }}"
-         class="lazy">
-  {{ end }}
+{{ $maxHeight := .Get "maxHeight" | default "500px" }}
+<figure class="lazyload" style="max-width: 100%;">
+  <img data-src="{{ with $image }}{{ .RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}" 
+       alt="{{ $alt }}"
+       width="100%"
+       style="height: auto; max-height: {{ $maxHeight }}; object-fit: contain;"
+       class="lazy">
   {{ with .Get "caption" }}
     <figcaption>{{ . }}</figcaption>
   {{ end }}
