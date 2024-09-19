@@ -195,6 +195,7 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
   logo_dark = "/images/logo.png"
   color_scheme = "auto"
   mainSections = ["posts", "news", "docs"]
+  canonifyURLs = true
 
 
   [params.hero]
@@ -294,6 +295,7 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
   posts = "/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
+  
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
