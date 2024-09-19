@@ -305,4 +305,4 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
   baseName = "rss"
 
 [services.rss]
-  limit = 20  # RSS 피드에 포함할 최근 항목 수
+  limit = 50  # RSS 피드에 포함할 최근 항목 수
