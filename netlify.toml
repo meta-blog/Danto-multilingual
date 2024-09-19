@@ -11,9 +11,3 @@
   for = "/*"  # 모든 파일에 대해 적용
   [headers.values]
     Cache-Control = "public, max-age=31536000"  # 1년 동안 캐싱
-
-# Gzip 압축 설정 (Netlify는 기본적으로 적용하지만 명시적으로 작성 가능)
-[[headers]]
-  for = "/*.js"  # 모든 JS 파일에 대해 적용
-  [headers.values]
-    Content-Encoding = "gzip"
