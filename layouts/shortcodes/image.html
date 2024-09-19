@@ -1,16 +1,8 @@
-{{ $counter := add 1 (index .Page.Params "img_counter" | default 0) }}
-{{ .Page.Scratch.Set "img_counter" $counter }}
-{{ $src := .Get "src" }}
-{{ $image := .Page.Resources.GetMatch (printf "%s" ($src | safeURL)) }}
-{{ $filename := path.Base $src }}
-{{ $filenameNoExt := index (split $filename ".") 0 }}
-<figure>
-    <img
-        src="{{ $src | safeURL }}"
-        alt="{{ $filenameNoExt }}"
-        {{ with $image }}
-        width="{{ .Width }}" height="{{ .Height }}"
-        {{ end }}
-    >
-    <figcaption>{{ .Get "caption" }}</figcaption>
-</figure>
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+<img
+    src="{{ .Destination | safeURL }}" alt="{{ .Text }}"
+    {{ with $image }}
+    width="{{ $image.Width }}" height="{{ $image.Height }}"
+    {{ end }}
+    {{ with .Title}} style="width: 100%; max-width: {{ . }};"{{ end }}
+    />
