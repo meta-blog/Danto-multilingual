@@ -1,0 +1,6 @@
+{{ $counter := add 1 (index .Page.Params "img_counter" | default 0) }}
+{{ .Page.Scratch.Set "img_counter" $counter }}
+<figure>
+  <img src="{{ .Get "src" }}" alt="{{ .Page.Title }}_{{ printf "%02d" $counter }}">
+  <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>
