@@ -13,9 +13,6 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
   pagerSize = 12
   path = "page"
 
-[imaging]
-  driver = "imagemagick"  # 또는 "vips"
-
 # 언어 설정
 [languages]
   [languages.us]
