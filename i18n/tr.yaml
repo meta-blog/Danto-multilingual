@@ -1,0 +1,147 @@
+# Sections
+"Post": "Gönderi"
+"Posts": "Gönderiler"
+"Latest": "En Son"
+"Blog": "Blog"
+"News": "Haberler"
+"Docs": "Belgeler"
+
+# Taxonomies
+Authors: "Yazarlar"
+Categories: "Kategoriler"
+Tags: "Etiketler"
+
+# Categories
+apple: "Apple"
+gear: "Ekipman"
+beauty: "Güzellik"
+review: "İnceleme"
+game: "Oyun"
+
+# Tags
+study: "Çalışma"
+business: "İş"
+lifestyle: "Yaşam Tarzı"
+shopping: "Alışveriş"
+food: "Yemek"
+people: "İnsanlar"
+reading: "Okuma"
+science: "Bilim"
+sport: "Spor"
+
+# header: cta_button
+cta_button_text: "Bize Ulaşın"
+Search: "Arama"
+
+# Section: Hero
+hero_title: "Tek bir yerde günlük haberler, makaleler, ilham ve ipuçları."
+hero_description: "Üretkenlik, ipuçları, ilham ve büyük kazançlar için stratejiler sunuyoruz. Başarılı bir blog nasıl kurulur veya mevcut blogunuzu nasıl daha iyi hale getirebileceğinizi öğrenin!"
+
+# section:featured-posts
+Featured: "Öne Çıkanlar"
+
+# section: tags
+ViewAll: "Hepsini Gör"
+
+# Section: Authors
+authors_section_title: "Yazarlarımızla Tanışın"
+see_all_authors: "Tüm yazarları gör"
+
+# Layout: Article Meta
+By: "Tarafından"
+
+# Layout: author
+websiteLink: "Web sitesi bağlantısı"
+facebookLink: "Facebook bağlantısı"
+twitterLink: "Twitter bağlantısı"
+instagramLink: "Instagram bağlantısı"
+website: "Web sitesi"
+
+# Layout: author.terms
+authorsList: "Yazarlar Listesi"
+post: "Gönderi"
+posts: "Gönderiler"
+
+# Layout: contact
+yourName: "Adınız"
+yourNamePlaceholder: "Adınız..."
+yourEmail: "E-posta Adresiniz"
+yourEmailPlaceholder: "E-posta adresiniz..."
+yourMessage: "Mesajınız"
+yourMessagePlaceholder: "Mesajınız..."
+sendMessage: "Mesaj Gönder"
+
+# Layout: featured
+featuredPosts: "Öne Çıkan Gönderiler"
+
+# Layout: index.json
+dateFormat: "2 Ocak 2006"
+
+# Layoud: videos
+Videos: "Videolar"
+NoVideosFound: "Video bulunamadı."
+
+# Widget: recent-posts
+RecentPosts: "Son Gönderiler"
+
+# Widget: featured-posts
+FeaturedPosts: "Öne Çıkan Gönderiler"
+
+# Widget: tags-cloud
+PopularTopics: "Popüler Konular"
+
+# Widget: toc
+TableOfContents: "İçindekiler"
+NoContentAvailable: "Kullanılabilir içerik yok."
+
+# Layout: post-navigation
+OlderPost: "Eski Gönderi"
+NewerPost: "Yeni Gönderi"
+
+# Layout: disqus-comments
+ShowComments: "Yorumları Göster"
+DisqusNoscriptMessage: "Yorumları görmek için JavaScript'i etkinleştirin. <a href='https://disqus.com/?ref_noscript'>Disqus tarafından sağlanan yorumları görüntüleyin.</a>"
+
+# Layout: pagination
+LoadMorePosts: "Daha Fazla Gönderi Yükle"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Tüm Hakları Saklıdır. <a href='https://gohugo.io/'>Hugo</a> ile yayınlandı."
+EnableDarkMode: "Karanlık Modu Etkinleştir"
+Dark: "Karanlık"
+EnableLightMode: "Aydınlık Modu Etkinleştir"
+Light: "Aydınlık"
+Top: "Üst"
+BackToTop: "Başa Dön"
+
+# Footer: widget-info
+footer__description: "Üretkenlik, ipuçları, ilham ve büyük kazançlar için stratejiler sunuyoruz. Başarılı bir blog nasıl kurulur veya mevcut blogunuzu nasıl daha iyi hale getirebileceğinizi öğrenin!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "İlginç Haberler Alın"
+mailchimp__description: "Bültenimize abone olun, en son gönderileri size e-posta ile gönderelim."
+mailchimp__input__text: "E-posta adresiniz"
+mailchimp__button__text: "Abone Ol"
+
+# Layout: search
+SearchForBlog: "Blogda Ara"
+TypeToSearch: "Aramak için yazın..."
+SearchIcon: "Arama simgesi"
+CloseSearchIcon: "Arama simgesini kapat"
+
+# Layout: share-buttons
+ShareLinkCopy: "Bağlantıyı kopyala"
+ShareWhatsApp: "WhatsApp'ta paylaş"
+ShareFacebook: "Facebook'ta paylaş"
+ShareTwitter: "Twitter'da paylaş"
+ShareWeibo: "Weibo'da paylaş"
+ShareLINE: "LINE'da paylaş"
+ShareZalo: "Zalo'da paylaş"
+ShareReddit: "Reddit'te paylaş"
+Copy: "Kopyala"
+LinkCopied: "Bağlantı panoya kopyalandı!"
+
+# Page: 404
+ErrorCode: "Hata Kodu"
+404Message: "İstenen sayfa bulunamadı."
+BackToHomepage: "Ana sayfaya dön"

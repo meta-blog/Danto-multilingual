@@ -1,0 +1,147 @@
+# Sections
+"Post": "Bài viết"
+"Posts": "Bài viết"
+"Latest": "Mới nhất"
+"Blog": "Blog"
+"News": "Tin tức"
+"Docs": "Tài liệu"
+
+# Taxonomies
+Authors: "Tác giả"
+Categories: "Danh mục"
+Tags: "Thẻ"
+
+# Categories
+apple: "Apple"
+gear: "Thiết bị"
+beauty: "Làm đẹp"
+review: "Đánh giá"
+game: "Trò chơi"
+
+# Tags
+study: "Học tập"
+business: "Kinh doanh"
+lifestyle: "Phong cách sống"
+shopping: "Mua sắm"
+food: "Thực phẩm"
+people: "Con người"
+reading: "Đọc sách"
+science: "Khoa học"
+sport: "Thể thao"
+
+# header: cta_button
+cta_button_text: "Liên hệ với chúng tôi"
+Search: "Tìm kiếm"
+
+# Section: Hero
+hero_title: "Tin tức hàng ngày, bài viết, cảm hứng và mẹo trong một nơi."
+hero_description: "Cung cấp các mẹo về năng suất, cảm hứng và chiến lược để đạt lợi nhuận lớn. Tìm hiểu cách tạo blog thành công hoặc cách cải thiện blog của bạn!"
+
+# section:featured-posts
+Featured: "Nổi bật"
+
+# section: tags
+ViewAll: "Xem tất cả"
+
+# Section: Authors
+authors_section_title: "Gặp gỡ các tác giả của chúng tôi"
+see_all_authors: "Xem tất cả tác giả"
+
+# Layout: Article Meta
+By: "Bởi"
+
+# Layout: author
+websiteLink: "Liên kết trang web"
+facebookLink: "Liên kết Facebook"
+twitterLink: "Liên kết Twitter"
+instagramLink: "Liên kết Instagram"
+website: "Trang web"
+
+# Layout: author.terms
+authorsList: "Danh sách tác giả"
+post: "Bài viết"
+posts: "Bài viết"
+
+# Layout: contact
+yourName: "Tên của bạn"
+yourNamePlaceholder: "Tên của bạn..."
+yourEmail: "Email của bạn"
+yourEmailPlaceholder: "Email của bạn..."
+yourMessage: "Tin nhắn của bạn"
+yourMessagePlaceholder: "Tin nhắn của bạn..."
+sendMessage: "Gửi tin nhắn"
+
+# Layout: featured
+featuredPosts: "Bài viết nổi bật"
+
+# Layout: index.json
+dateFormat: "2 tháng 1, 2006"
+
+# Layoud: videos
+Videos: "Video"
+NoVideosFound: "Không tìm thấy video."
+
+# Widget: recent-posts
+RecentPosts: "Bài viết gần đây"
+
+# Widget: featured-posts
+FeaturedPosts: "Bài viết nổi bật"
+
+# Widget: tags-cloud
+PopularTopics: "Chủ đề phổ biến"
+
+# Widget: toc
+TableOfContents: "Mục lục"
+NoContentAvailable: "Không có nội dung."
+
+# Layout: post-navigation
+OlderPost: "Bài viết cũ hơn"
+NewerPost: "Bài viết mới hơn"
+
+# Layout: disqus-comments
+ShowComments: "Hiển thị bình luận"
+DisqusNoscriptMessage: "Vui lòng bật JavaScript để xem <a href='https://disqus.com/?ref_noscript'>bình luận được hỗ trợ bởi Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "Tải thêm bài viết"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Đã đăng ký bản quyền. Được xuất bản với <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Kích hoạt chế độ tối"
+Dark: "Tối"
+EnableLightMode: "Kích hoạt chế độ sáng"
+Light: "Sáng"
+Top: "Lên trên"
+BackToTop: "Trở lại đầu trang"
+
+# Footer: widget-info
+footer__description: "Cung cấp các mẹo về năng suất, cảm hứng và chiến lược để đạt lợi nhuận lớn. Tìm hiểu cách tạo blog thành công hoặc cách cải thiện blog của bạn!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Nhận tin tức thú vị"
+mailchimp__description: "Đăng ký nhận bản tin của chúng tôi và chúng tôi sẽ gửi email cho bạn các bài viết mới nhất."
+mailchimp__input__text: "Địa chỉ email của bạn"
+mailchimp__button__text: "Đăng ký"
+
+# Layout: search
+SearchForBlog: "Tìm kiếm trong Blog"
+TypeToSearch: "Nhập để tìm kiếm..."
+SearchIcon: "Biểu tượng tìm kiếm"
+CloseSearchIcon: "Đóng biểu tượng tìm kiếm"
+
+# Layout: share-buttons
+ShareLinkCopy: "Sao chép liên kết"
+ShareWhatsApp: "Chia sẻ trên WhatsApp"
+ShareFacebook: "Chia sẻ trên Facebook"
+ShareTwitter: "Chia sẻ trên Twitter"
+ShareWeibo: "Chia sẻ trên Weibo"
+ShareLINE: "Chia sẻ trên LINE"
+ShareZalo: "Chia sẻ trên Zalo"
+ShareReddit: "Chia sẻ trên Reddit"
+Copy: "Sao chép"
+LinkCopied: "Liên kết đã được sao chép vào clipboard!"
+
+# Page: 404
+ErrorCode: "Mã lỗi"
+404Message: "Không tìm thấy trang yêu cầu."
+BackToHomepage: "Quay lại trang chủ"

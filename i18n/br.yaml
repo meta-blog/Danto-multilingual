@@ -1,0 +1,147 @@
+# Sections
+"Post": "Postagem"
+"Posts": "Postagens"
+"Latest": "Mais recente"
+"Blog": "Blog"
+"News": "Notícias"
+"Docs": "Documentos"
+
+# Taxonomies
+Authors: "Autores"
+Categories: "Categorias"
+Tags: "Tags"
+
+# Categories
+apple: "Apple"
+gear: "Equipamentos"
+beauty: "Beleza"
+review: "Revisão"
+game: "Jogo"
+
+# Tags
+study: "Estudo"
+business: "Negócios"
+lifestyle: "Estilo de vida"
+shopping: "Compras"
+food: "Comida"
+people: "Pessoas"
+reading: "Leitura"
+science: "Ciência"
+sport: "Esporte"
+
+# header: cta_button
+cta_button_text: "Entre em contato"
+Search: "Pesquisar"
+
+# Section: Hero
+hero_title: "Notícias, artigos, inspirações e dicas diárias em um só lugar."
+hero_description: "Oferecemos produtividade, dicas, inspiração e estratégias para grandes lucros. Descubra como criar um blog de sucesso ou como melhorar o seu!"
+
+# section:featured-posts
+Featured: "Em destaque"
+
+# section: tags
+ViewAll: "Ver tudo"
+
+# Section: Authors
+authors_section_title: "Conheça nossos autores"
+see_all_authors: "Ver todos os autores"
+
+# Layout: Article Meta
+By: "Por"
+
+# Layout: author
+websiteLink: "Link do site"
+facebookLink: "Link do Facebook"
+twitterLink: "Link do Twitter"
+instagramLink: "Link do Instagram"
+website: "Site"
+
+# Layout: author.terms
+authorsList: "Lista de autores"
+post: "Postagem"
+posts: "Postagens"
+
+# Layout: contact
+yourName: "Seu nome"
+yourNamePlaceholder: "Seu nome..."
+yourEmail: "Seu e-mail"
+yourEmailPlaceholder: "Seu e-mail..."
+yourMessage: "Sua mensagem"
+yourMessagePlaceholder: "Sua mensagem..."
+sendMessage: "Enviar mensagem"
+
+# Layout: featured
+featuredPosts: "Postagens em destaque"
+
+# Layout: index.json
+dateFormat: "2 de janeiro de 2006"
+
+# Layoud: videos
+Videos: "Vídeos"
+NoVideosFound: "Nenhum vídeo encontrado."
+
+# Widget: recent-posts
+RecentPosts: "Postagens recentes"
+
+# Widget: featured-posts
+FeaturedPosts: "Postagens em destaque"
+
+# Widget: tags-cloud
+PopularTopics: "Tópicos populares"
+
+# Widget: toc
+TableOfContents: "Índice"
+NoContentAvailable: "Nenhum conteúdo disponível."
+
+# Layout: post-navigation
+OlderPost: "Postagem anterior"
+NewerPost: "Postagem mais recente"
+
+# Layout: disqus-comments
+ShowComments: "Mostrar comentários"
+DisqusNoscriptMessage: "Ative o JavaScript para ver os <a href='https://disqus.com/?ref_noscript'>comentários alimentados pelo Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "Carregar mais postagens"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Todos os direitos reservados. Publicado com <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Ativar modo escuro"
+Dark: "Escuro"
+EnableLightMode: "Ativar modo claro"
+Light: "Claro"
+Top: "Topo"
+BackToTop: "Voltar ao topo"
+
+# Footer: widget-info
+footer__description: "Oferecemos produtividade, dicas, inspiração e estratégias para grandes lucros. Descubra como criar um blog de sucesso ou como melhorar o seu!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Receba notícias interessantes"
+mailchimp__description: "Assine nossa newsletter e enviaremos os últimos posts por e-mail."
+mailchimp__input__text: "Seu endereço de e-mail"
+mailchimp__button__text: "Inscrever-se"
+
+# Layout: search
+SearchForBlog: "Pesquisar no blog"
+TypeToSearch: "Digite para pesquisar..."
+SearchIcon: "Ícone de pesquisa"
+CloseSearchIcon: "Fechar ícone de pesquisa"
+
+# Layout: share-buttons
+ShareLinkCopy: "Copiar link"
+ShareWhatsApp: "Compartilhar no WhatsApp"
+ShareFacebook: "Compartilhar no Facebook"
+ShareTwitter: "Compartilhar no Twitter"
+ShareWeibo: "Compartilhar no Weibo"
+ShareLINE: "Compartilhar no LINE"
+ShareZalo: "Compartilhar no Zalo"
+ShareReddit: "Compartilhar no Reddit"
+Copy: "Copiar"
+LinkCopied: "Link copiado para a área de transferência!"
+
+# Page: 404
+ErrorCode: "Código de erro"
+404Message: "A página solicitada não foi encontrada."
+BackToHomepage: "Voltar para a página inicial"

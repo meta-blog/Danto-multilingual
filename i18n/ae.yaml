@@ -1,0 +1,147 @@
+# Sections
+"Post": "منشور"
+"Posts": "منشورات"
+"Latest": "الأحدث"
+"Blog": "مدونة"
+"News": "أخبار"
+"Docs": "مستندات"
+
+# Taxonomies
+Authors: "الكتّاب"
+Categories: "الفئات"
+Tags: "الوسوم"
+
+# Categories
+apple: "أبل"
+gear: "معدات"
+beauty: "جمال"
+review: "مراجعة"
+game: "لعبة"
+
+# Tags
+study: "دراسة"
+business: "أعمال"
+lifestyle: "أسلوب حياة"
+shopping: "تسوق"
+food: "طعام"
+people: "أشخاص"
+reading: "قراءة"
+science: "علم"
+sport: "رياضة"
+
+# header: cta_button
+cta_button_text: "اتصل بنا"
+Search: "بحث"
+
+# Section: Hero
+hero_title: "كل الأخبار اليومية، المقالات، الإلهام والنصائح في مكان واحد."
+hero_description: "نقدم نصائح لزيادة الإنتاجية، الإلهام، والاستراتيجيات لتحقيق أرباح كبيرة. اكتشف كيف تبدأ مدونة ناجحة أو كيف تحسّن مدونتك الحالية!"
+
+# section:featured-posts
+Featured: "مميز"
+
+# section: tags
+ViewAll: "عرض الكل"
+
+# Section: Authors
+authors_section_title: "تعرف على كتّابنا"
+see_all_authors: "عرض جميع الكتّاب"
+
+# Layout: Article Meta
+By: "بواسطة"
+
+# Layout: author
+websiteLink: "رابط الموقع"
+facebookLink: "رابط فيسبوك"
+twitterLink: "رابط تويتر"
+instagramLink: "رابط إنستجرام"
+website: "موقع"
+
+# Layout: author.terms
+authorsList: "قائمة الكتّاب"
+post: "منشور"
+posts: "منشورات"
+
+# Layout: contact
+yourName: "اسمك"
+yourNamePlaceholder: "اسمك..."
+yourEmail: "بريدك الإلكتروني"
+yourEmailPlaceholder: "بريدك الإلكتروني..."
+yourMessage: "رسالتك"
+yourMessagePlaceholder: "رسالتك..."
+sendMessage: "إرسال الرسالة"
+
+# Layout: featured
+featuredPosts: "المنشورات المميزة"
+
+# Layout: index.json
+dateFormat: "2 يناير 2006"
+
+# Layoud: videos
+Videos: "فيديوهات"
+NoVideosFound: "لم يتم العثور على فيديوهات."
+
+# Widget: recent-posts
+RecentPosts: "المنشورات الأخيرة"
+
+# Widget: featured-posts
+FeaturedPosts: "المنشورات المميزة"
+
+# Widget: tags-cloud
+PopularTopics: "المواضيع الشائعة"
+
+# Widget: toc
+TableOfContents: "جدول المحتويات"
+NoContentAvailable: "لا يوجد محتوى متاح."
+
+# Layout: post-navigation
+OlderPost: "منشور أقدم"
+NewerPost: "منشور أحدث"
+
+# Layout: disqus-comments
+ShowComments: "عرض التعليقات"
+DisqusNoscriptMessage: "يرجى تمكين JavaScript لعرض <a href='https://disqus.com/?ref_noscript'>التعليقات المقدمة من Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "تحميل المزيد من المنشورات"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. جميع الحقوق محفوظة. منشور بواسطة <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "تمكين الوضع الداكن"
+Dark: "داكن"
+EnableLightMode: "تمكين الوضع الفاتح"
+Light: "فاتح"
+Top: "أعلى"
+BackToTop: "العودة إلى الأعلى"
+
+# Footer: widget-info
+footer__description: "نقدم نصائح لزيادة الإنتاجية، الإلهام، والاستراتيجيات لتحقيق أرباح كبيرة. اكتشف كيف تبدأ مدونة ناجحة أو كيف تحسّن مدونتك الحالية!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "احصل على أخبار شيقة"
+mailchimp__description: "اشترك في النشرة الإخبارية وسنرسل لك آخر المنشورات عبر البريد الإلكتروني."
+mailchimp__input__text: "بريدك الإلكتروني"
+mailchimp__button__text: "اشترك"
+
+# Layout: search
+SearchForBlog: "ابحث في المدونة"
+TypeToSearch: "اكتب للبحث..."
+SearchIcon: "أيقونة البحث"
+CloseSearchIcon: "إغلاق أيقونة البحث"
+
+# Layout: share-buttons
+ShareLinkCopy: "نسخ الرابط"
+ShareWhatsApp: "مشاركة على واتساب"
+ShareFacebook: "مشاركة على فيسبوك"
+ShareTwitter: "مشاركة على تويتر"
+ShareWeibo: "مشاركة على ويبو"
+ShareLINE: "مشاركة على LINE"
+ShareZalo: "مشاركة على Zalo"
+ShareReddit: "مشاركة على Reddit"
+Copy: "نسخ"
+LinkCopied: "تم نسخ الرابط إلى الحافظة!"
+
+# Page: 404
+ErrorCode: "رمز الخطأ"
+404Message: "الصفحة المطلوبة غير موجودة."
+BackToHomepage: "العودة إلى الصفحة الرئيسية"

@@ -1,0 +1,147 @@
+# Sections
+"Post": "โพสต์"
+"Posts": "โพสต์"
+"Latest": "ล่าสุด"
+"Blog": "บล็อก"
+"News": "ข่าว"
+"Docs": "เอกสาร"
+
+# Taxonomies
+Authors: "ผู้เขียน"
+Categories: "หมวดหมู่"
+Tags: "แท็ก"
+
+# Categories
+apple: "แอปเปิ้ล"
+gear: "อุปกรณ์"
+beauty: "ความงาม"
+review: "รีวิว"
+game: "เกม"
+
+# Tags
+study: "การศึกษา"
+business: "ธุรกิจ"
+lifestyle: "ไลฟ์สไตล์"
+shopping: "ช้อปปิ้ง"
+food: "อาหาร"
+people: "ผู้คน"
+reading: "การอ่าน"
+science: "วิทยาศาสตร์"
+sport: "กีฬา"
+
+# header: cta_button
+cta_button_text: "ติดต่อเรา"
+Search: "ค้นหา"
+
+# Section: Hero
+hero_title: "ที่เดียวสำหรับข่าวประจำวัน บทความ แรงบันดาลใจ และเคล็ดลับ."
+hero_description: "นำเสนอเคล็ดลับด้านประสิทธิภาพ แรงบันดาลใจ และกลยุทธ์เพื่อให้ได้ผลกำไรมหาศาล ค้นหาวิธีสร้างบล็อกที่ประสบความสำเร็จหรือปรับปรุงบล็อกของคุณให้ดียิ่งขึ้น!"
+
+# section:featured-posts
+Featured: "แนะนำ"
+
+# section: tags
+ViewAll: "ดูทั้งหมด"
+
+# Section: Authors
+authors_section_title: "พบกับผู้เขียนของเรา"
+see_all_authors: "ดูผู้เขียนทั้งหมด"
+
+# Layout: Article Meta
+By: "โดย"
+
+# Layout: author
+websiteLink: "ลิงก์เว็บไซต์"
+facebookLink: "ลิงก์ Facebook"
+twitterLink: "ลิงก์ Twitter"
+instagramLink: "ลิงก์ Instagram"
+website: "เว็บไซต์"
+
+# Layout: author.terms
+authorsList: "รายชื่อผู้เขียน"
+post: "โพสต์"
+posts: "โพสต์"
+
+# Layout: contact
+yourName: "ชื่อของคุณ"
+yourNamePlaceholder: "ชื่อของคุณ..."
+yourEmail: "อีเมลของคุณ"
+yourEmailPlaceholder: "อีเมลของคุณ..."
+yourMessage: "ข้อความของคุณ"
+yourMessagePlaceholder: "ข้อความของคุณ..."
+sendMessage: "ส่งข้อความ"
+
+# Layout: featured
+featuredPosts: "โพสต์แนะนำ"
+
+# Layout: index.json
+dateFormat: "2 มกราคม 2006"
+
+# Layoud: videos
+Videos: "วิดีโอ"
+NoVideosFound: "ไม่พบวิดีโอ."
+
+# Widget: recent-posts
+RecentPosts: "โพสต์ล่าสุด"
+
+# Widget: featured-posts
+FeaturedPosts: "โพสต์แนะนำ"
+
+# Widget: tags-cloud
+PopularTopics: "หัวข้อยอดนิยม"
+
+# Widget: toc
+TableOfContents: "สารบัญ"
+NoContentAvailable: "ไม่มีเนื้อหาที่พร้อมใช้งาน"
+
+# Layout: post-navigation
+OlderPost: "โพสต์ก่อนหน้า"
+NewerPost: "โพสต์ใหม่กว่า"
+
+# Layout: disqus-comments
+ShowComments: "แสดงความเห็น"
+DisqusNoscriptMessage: "โปรดเปิดใช้งาน JavaScript เพื่อดู <a href='https://disqus.com/?ref_noscript'>ความคิดเห็นที่รองรับโดย Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "โหลดโพสต์เพิ่มเติม"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. สงวนลิขสิทธิ์ทั้งหมด. เผยแพร่ด้วย <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "เปิดใช้งานโหมดมืด"
+Dark: "มืด"
+EnableLightMode: "เปิดใช้งานโหมดสว่าง"
+Light: "สว่าง"
+Top: "บนสุด"
+BackToTop: "กลับไปด้านบน"
+
+# Footer: widget-info
+footer__description: "นำเสนอเคล็ดลับด้านประสิทธิภาพ แรงบันดาลใจ และกลยุทธ์เพื่อให้ได้ผลกำไรมหาศาล ค้นหาวิธีสร้างบล็อกที่ประสบความสำเร็จหรือปรับปรุงบล็อกของคุณให้ดียิ่งขึ้น!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "รับข่าวสารที่น่าสนใจ"
+mailchimp__description: "สมัครรับจดหมายข่าวของเราและเราจะส่งอีเมลโพสต์ล่าสุดให้คุณ."
+mailchimp__input__text: "ที่อยู่อีเมลของคุณ"
+mailchimp__button__text: "สมัครรับข้อมูล"
+
+# Layout: search
+SearchForBlog: "ค้นหาบล็อก"
+TypeToSearch: "พิมพ์เพื่อค้นหา..."
+SearchIcon: "ไอคอนค้นหา"
+CloseSearchIcon: "ปิดไอคอนค้นหา"
+
+# Layout: share-buttons
+ShareLinkCopy: "คัดลอกลิงก์"
+ShareWhatsApp: "แชร์บน WhatsApp"
+ShareFacebook: "แชร์บน Facebook"
+ShareTwitter: "แชร์บน Twitter"
+ShareWeibo: "แชร์บน Weibo"
+ShareLINE: "แชร์บน LINE"
+ShareZalo: "แชร์บน Zalo"
+ShareReddit: "แชร์บน Reddit"
+Copy: "คัดลอก"
+LinkCopied: "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!"
+
+# Page: 404
+ErrorCode: "รหัสข้อผิดพลาด"
+404Message: "ไม่พบหน้าที่ร้องขอ."
+BackToHomepage: "กลับไปยังหน้าแรก"
