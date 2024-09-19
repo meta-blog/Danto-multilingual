@@ -1,22 +1,23 @@
-    <!-- 캐노니컬 URL 설정 -->
     {{ if .IsTranslated }}
-        {{ $canonicalLang := .Site.Language.Lang }}
-        {{ range .Translations }}
-            {{ if lt .Language.Weight $.Site.Language.Weight }}
-                {{ $canonicalLang = .Language.Lang }}
-            {{ end }}
+    {{ $canonicalLang := .Site.Language.Lang }}
+    {{ range .Translations }}
+        {{ if lt .Language.Weight $.Site.Language.Weight }}
+            {{ $canonicalLang = .Language.Lang }}
         {{ end }}
-        {{ $canonicalPage := .Site.Home.Translations.GetPage (printf "/%s%s" $canonicalLang .RelPermalink) }}
-        <link rel="canonical" href="{{ $canonicalPage.Permalink }}">
-    {{ else }}
-        <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
+    {{ $canonicalPage := .Translations.GetPage $canonicalLang }}
+    {{ if not $canonicalPage }}
+        {{ $canonicalPage = . }}
+    {{ end }}
+    <link rel="canonical" href="{{ $canonicalPage.Permalink }}">
+{{ else }}
+    <link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
 
-    <!-- hreflang 태그 설정 -->
-    {{ if .IsTranslated }}
-        {{ range .Translations }}
-            <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-        {{ end }}
+{{ if .IsTranslated }}
+    {{ range .Translations }}
         <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-        <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
     {{ end }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
+{{ end }}
