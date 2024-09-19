@@ -1,10 +1,18 @@
-{{ .Scratch.Add "index" slice }}
+{{ $.Scratch.Set "index" slice }}
 {{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-  {{ $dateFormat := (.Site.Language.Params.dateFormat | default "2006-01-02") }}
-  {{ $translations := dict }}
-  {{ range .Translations }}
-    {{ $translations = merge $translations (dict .Lang .Permalink) }}
-  {{ end }}
-  {{ $.Scratch.Add "index" (dict "title" .Title "content" (.Summary | plainify) "date" (.Date.Format $dateFormat) "permalink" .Permalink "image" (.Params.Image | absURL) "lang" .Lang "translations" $translations) }}
+    {{ $dateFormat := (.Site.Language.Params.dateFormat | default "2006-01-02") }}
+    {{ $translations := dict }}
+    {{ range .Translations }}
+        {{ $translations = merge $translations (dict .Lang .Permalink) }}
+    {{ end }}
+    {{ $.Scratch.Add "index" (dict 
+        "title" .Title 
+        "content" (.Summary | plainify) 
+        "date" (.Date.Format $dateFormat) 
+        "permalink" .Permalink 
+        "image" (.Params.Image | absURL) 
+        "lang" .Lang 
+        "translations" $translations
+    ) }}
 {{ end }}
 {{ $.Scratch.Get "index" | jsonify }}
