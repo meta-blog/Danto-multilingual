@@ -1,13 +1,11 @@
-    {{ if .IsTranslated }}
+{{ if .IsTranslated }}
     {{ $canonicalLang := .Site.Language.Lang }}
+    {{ $canonicalPage := . }}
     {{ range .Translations }}
         {{ if lt .Language.Weight $.Site.Language.Weight }}
             {{ $canonicalLang = .Language.Lang }}
+            {{ $canonicalPage = . }}
         {{ end }}
-    {{ end }}
-    {{ $canonicalPage := .Translations.GetPage $canonicalLang }}
-    {{ if not $canonicalPage }}
-        {{ $canonicalPage = . }}
     {{ end }}
     <link rel="canonical" href="{{ $canonicalPage.Permalink }}">
 {{ else }}
