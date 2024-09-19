@@ -1,22 +1,6 @@
 {{ $counter := add 1 (index .Page.Params "img_counter" | default 0) }}
 {{ .Page.Scratch.Set "img_counter" $counter }}
-{{ $image := .Page.Resources.GetMatch (.Get "src") }}
-{{ $alt := .Get "alt" | default (printf "%s_%02d" .Page.Title $counter) }}
-{{ $link := .Get "link" }}
-{{ $noLightense := .Get "noLightense" }}
-<figure class="lazyload">
-  {{ if $link }}
-    <a href="{{ $link }}" class="image-link">
-  {{ end }}
-  <img data-src="{{ with $image }}{{ .RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}" 
-       alt="{{ $alt }}"
-       class="lazy{{ if $noLightense }} no-lightense{{ end }}"
-       {{ with .Get "data-lightense-padding" }}data-lightense-padding="{{ . }}"{{ end }}
-       {{ with .Get "data-padding" }}data-padding="{{ . }}"{{ end }}>
-  {{ if $link }}
-    </a>
-  {{ end }}
-  {{ with .Get "caption" }}
-    <figcaption>{{ . }}</figcaption>
-  {{ end }}
+<figure>
+  <img src="{{ .Get "src" }}" alt="{{ .Page.Title }}_{{ printf "%02d" $counter }}">
+  <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
