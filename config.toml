@@ -283,6 +283,11 @@ disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언�
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [markup.highlight]
   codeFences = true
   guessSyntax = true
