@@ -3,7 +3,7 @@ title: 5 Beach Read Novels You Want to Pick Up This Summer
 description: Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis convallis tristique.
 date: 2022-12-24 15:01:35 +0300
 authors: [justin]
-image: 'https://via.placeholder.com/1920x1080'
+image: "/images/Complex compositions using foregrounds.webp"
 tags: [lifestyle]
 ---
 Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.
