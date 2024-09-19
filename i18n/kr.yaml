@@ -1,14 +1,13 @@
 # Sections
-"Post": "포스트"
-"Posts": "포스트"
-"Latest": "최근"
+"Post": "게시물"
+"Posts": "게시물들"
+"Latest": "최신"
 "Blog": "블로그"
-"News": "새로운 소식"
+"News": "뉴스"
 "Docs": "문서"
 
-
 # Taxonomies
-Authors : "작가"
+Authors: "저자"
 Categories: "카테고리"
 Tags: "태그"
 
@@ -20,46 +19,36 @@ review: "리뷰"
 game: "게임"
 
 # Tags
-study: "공부"
+study: "학습"
 business: "비즈니스"
 lifestyle: "라이프스타일"
 shopping: "쇼핑"
 food: "음식"
-people: "사람들"
+people: "사람"
 reading: "독서"
 science: "과학"
 sport: "스포츠"
-
-
-# Section: Hero
-hero_title: "원스톱 일일 뉴스, 기사, 영감, 그리고 팁."
-hero_description: "생산성, 팁, 영감 및 대규모 수익을 위한 전략을 제공합니다. 성공적인 블로그를 설정하는 방법 또는 기존 블로그를 개선하는 방법을 알아보세요!"
-
-# section:featured-posts
-Featured: "추천 게시물"
-
-# section: tags
-ViewAll: "모두 보기"
-
-# Section: Authors
-authors_section_title: "우리의 작가들을 만나보세요"
-see_all_authors: "모든 작가 보기"
-
-# Footer: widget-info
-footer__description: “생산성, 팁, 영감, 막대한 수익을 위한 전략을 제공합니다. 성공적인 블로그를 설정하는 방법과 더 나은 블로그를 만드는 방법을 알아보세요!”
-
-# Footer: mailchimp_Subscribe
-mailchimp__title: "흥미로운 소식 받아보기"
-mailchimp__description: "뉴스레터를 구독하시면 최신 게시물을 이메일로 보내드립니다."
-mailchimp__input__text: "이메일 주소를 입력하세요"
-mailchimp__button__text: "구독하기"
 
 # header: cta_button
 cta_button_text: "문의하기"
 Search: "검색"
 
+# Section: Hero
+hero_title: "뉴스, 기사, 영감, 팁을 한곳에서 만나보세요."
+hero_description: "생산성, 팁, 영감 및 전략으로 큰 수익을 올릴 수 있는 방법을 제공합니다. 성공적인 블로그를 시작하는 방법이나 기존 블로그를 더욱 개선하는 방법을 알아보세요!"
+
+# section:featured-posts
+Featured: "추천"
+
+# section: tags
+ViewAll: "전체 보기"
+
+# Section: Authors
+authors_section_title: "저자를 소개합니다"
+see_all_authors: "모든 저자 보기"
+
 # Layout: Article Meta
-By: "작성자："
+By: "작성자"
 
 # Layout: author
 websiteLink: "웹사이트 링크"
@@ -70,36 +59,40 @@ website: "웹사이트"
 
 # Layout: author.terms
 authorsList: "저자 목록"
-post: "포스트"
-posts: "포스트"
+post: "게시물"
+posts: "게시물들"
 
 # Layout: contact
 yourName: "이름"
-yourNamePlaceholder: "이름을 입력하세요..."
+yourNamePlaceholder: "이름..."
 yourEmail: "이메일"
-yourEmailPlaceholder: "이메일을 입력하세요..."
+yourEmailPlaceholder: "이메일..."
 yourMessage: "메시지"
-yourMessagePlaceholder: "메시지를 입력하세요..."
+yourMessagePlaceholder: "메시지..."
 sendMessage: "메시지 보내기"
 
 # Layout: featured
-featuredPosts: "추천 포스트"
+featuredPosts: "추천 게시물"
 
 # Layout: index.json
 dateFormat: "2006년 1월 2일"
 
 # Layoud: videos
-Videos: "비디오"
-NoVideosFound: "비디오를 찾을 수 없습니다."
+Videos: "동영상"
+NoVideosFound: "동영상을 찾을 수 없습니다."
 
 # Widget: recent-posts
 RecentPosts: "최근 게시물"
 
-# Widge:: featured-posts
+# Widget: featured-posts
 FeaturedPosts: "추천 게시물"
 
 # Widget: tags-cloud
 PopularTopics: "인기 주제"
+
+# Widget: toc
+TableOfContents: "목차"
+NoContentAvailable: "이용 가능한 콘텐츠가 없습니다."
 
 # Layout: post-navigation
 OlderPost: "이전 게시물"
@@ -107,35 +100,44 @@ NewerPost: "다음 게시물"
 
 # Layout: disqus-comments
 ShowComments: "댓글 보기"
-DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqus에서 제공하는 댓글</a>을 보려면 JavaScript를 활성화해 주세요."
+DisqusNoscriptMessage: "댓글을 보려면 JavaScript를 활성화하세요. <a href='https://disqus.com/?ref_noscript'>Disqus가 제공하는 댓글입니다.</a>"
 
 # Layout: pagination
 LoadMorePosts: "더 많은 게시물 불러오기"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 제작되었습니다."
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 발행됨."
 EnableDarkMode: "다크 모드 활성화"
 Dark: "다크"
 EnableLightMode: "라이트 모드 활성화"
 Light: "라이트"
-Top: "맨 위로"
-BackToTop: "맨 위로"
+Top: "상단"
+BackToTop: "상단으로 이동"
+
+# Footer: widget-info
+footer__description: "생산성, 팁, 영감 및 전략으로 큰 수익을 올릴 수 있는 방법을 제공합니다. 성공적인 블로그를 시작하는 방법이나 기존 블로그를 더욱 개선하는 방법을 알아보세요!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "흥미로운 소식을 받아보세요"
+mailchimp__description: "뉴스레터를 구독하시면 최신 게시물을 이메일로 보내드립니다."
+mailchimp__input__text: "이메일 주소"
+mailchimp__button__text: "구독하기"
 
 # Layout: search
 SearchForBlog: "블로그 검색"
-TypeToSearch: "검색어를 입력하세요..."
+TypeToSearch: "검색하려면 입력하세요..."
 SearchIcon: "검색 아이콘"
-CloseSearchIcon: "검색 닫기 아이콘"
+CloseSearchIcon: "검색 아이콘 닫기"
 
 # Layout: share-buttons
 ShareLinkCopy: "링크 복사"
-ShareWhatsApp: "WhatsApp에 공유하기"
-ShareFacebook: "Facebook에 공유하기"
-ShareTwitter: "Twitter에 공유하기"
-ShareWeibo: "Weibo에 공유하기"
-ShareLINE: "LINE에 공유하기"
-ShareZalo: "Zalo에 공유하기"
-ShareReddit: "Reddit에 공유하기"
+ShareWhatsApp: "WhatsApp으로 공유"
+ShareFacebook: "페이스북으로 공유"
+ShareTwitter: "트위터로 공유"
+ShareWeibo: "웨이보로 공유"
+ShareLINE: "LINE으로 공유"
+ShareZalo: "Zalo로 공유"
+ShareReddit: "Reddit으로 공유"
 Copy: "복사"
 LinkCopied: "링크가 클립보드에 복사되었습니다!"
 

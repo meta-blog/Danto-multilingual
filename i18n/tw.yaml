@@ -1,0 +1,147 @@
+# Sections
+"Post": "文章"
+"Posts": "文章"
+"Latest": "最新"
+"Blog": "部落格"
+"News": "新聞"
+"Docs": "文件"
+
+# Taxonomies
+Authors: "作者"
+Categories: "分類"
+Tags: "標籤"
+
+# Categories
+apple: "蘋果"
+gear: "裝備"
+beauty: "美容"
+review: "評論"
+game: "遊戲"
+
+# Tags
+study: "學習"
+business: "商業"
+lifestyle: "生活方式"
+shopping: "購物"
+food: "美食"
+people: "人物"
+reading: "閱讀"
+science: "科學"
+sport: "運動"
+
+# header: cta_button
+cta_button_text: "聯繫我們"
+Search: "搜尋"
+
+# Section: Hero
+hero_title: "一站式每日新聞、文章、靈感和提示。"
+hero_description: "涵蓋提高生產力的技巧、靈感和策略，幫助你獲得豐厚利潤。了解如何建立一個成功的部落格，或如何讓你的部落格更上一層樓！"
+
+# section:featured-posts
+Featured: "精選"
+
+# section: tags
+ViewAll: "查看全部"
+
+# Section: Authors
+authors_section_title: "認識我們的作者"
+see_all_authors: "查看所有作者"
+
+# Layout: Article Meta
+By: "作者"
+
+# Layout: author
+websiteLink: "網站連結"
+facebookLink: "Facebook 連結"
+twitterLink: "Twitter 連結"
+instagramLink: "Instagram 連結"
+website: "網站"
+
+# Layout: author.terms
+authorsList: "作者列表"
+post: "文章"
+posts: "文章"
+
+# Layout: contact
+yourName: "你的名字"
+yourNamePlaceholder: "你的名字..."
+yourEmail: "你的電子郵件"
+yourEmailPlaceholder: "你的電子郵件..."
+yourMessage: "你的訊息"
+yourMessagePlaceholder: "你的訊息..."
+sendMessage: "發送訊息"
+
+# Layout: featured
+featuredPosts: "精選文章"
+
+# Layout: index.json
+dateFormat: "2006年1月2日"
+
+# Layoud: videos
+Videos: "影片"
+NoVideosFound: "未找到影片。"
+
+# Widget: recent-posts
+RecentPosts: "最新文章"
+
+# Widget: featured-posts
+FeaturedPosts: "精選文章"
+
+# Widget: tags-cloud
+PopularTopics: "熱門話題"
+
+# Widget: toc
+TableOfContents: "目錄"
+NoContentAvailable: "沒有可用內容。"
+
+# Layout: post-navigation
+OlderPost: "較舊的文章"
+NewerPost: "較新的文章"
+
+# Layout: disqus-comments
+ShowComments: "顯示評論"
+DisqusNoscriptMessage: "請啟用JavaScript以查看<a href='https://disqus.com/?ref_noscript'>由Disqus提供的評論。</a>"
+
+# Layout: pagination
+LoadMorePosts: "載入更多文章"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有權利。使用 <a href='https://gohugo.io/'>Hugo</a> 發佈。"
+EnableDarkMode: "啟用深色模式"
+Dark: "深色"
+EnableLightMode: "啟用淺色模式"
+Light: "淺色"
+Top: "頂部"
+BackToTop: "返回頂部"
+
+# Footer: widget-info
+footer__description: "涵蓋提高生產力的技巧、靈感和策略，幫助你獲得豐厚利潤。了解如何建立一個成功的部落格，或如何讓你的部落格更上一層樓！"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "獲取有趣的新聞"
+mailchimp__description: "訂閱我們的電子報，我們會將最新文章通過電子郵件發送給你。"
+mailchimp__input__text: "你的電子郵件地址"
+mailchimp__button__text: "訂閱"
+
+# Layout: search
+SearchForBlog: "搜尋部落格"
+TypeToSearch: "輸入以搜尋..."
+SearchIcon: "搜尋圖標"
+CloseSearchIcon: "關閉搜尋圖標"
+
+# Layout: share-buttons
+ShareLinkCopy: "複製連結"
+ShareWhatsApp: "分享到WhatsApp"
+ShareFacebook: "分享到Facebook"
+ShareTwitter: "分享到Twitter"
+ShareWeibo: "分享到微博"
+ShareLINE: "分享到LINE"
+ShareZalo: "分享到Zalo"
+ShareReddit: "分享到Reddit"
+Copy: "複製"
+LinkCopied: "連結已複製到剪貼簿！"
+
+# Page: 404
+ErrorCode: "錯誤代碼"
+404Message: "無法找到請求的頁面。"
+BackToHomepage: "返回主頁"

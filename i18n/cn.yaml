@@ -1,0 +1,147 @@
+# Sections
+"Post": "文章"
+"Posts": "文章"
+"Latest": "最新"
+"Blog": "博客"
+"News": "新闻"
+"Docs": "文档"
+
+# Taxonomies
+Authors: "作者"
+Categories: "分类"
+Tags: "标签"
+
+# Categories
+apple: "苹果"
+gear: "装备"
+beauty: "美容"
+review: "评论"
+game: "游戏"
+
+# Tags
+study: "学习"
+business: "商业"
+lifestyle: "生活方式"
+shopping: "购物"
+food: "美食"
+people: "人物"
+reading: "阅读"
+science: "科学"
+sport: "运动"
+
+# header: cta_button
+cta_button_text: "联系我们"
+Search: "搜索"
+
+# Section: Hero
+hero_title: "一站式每日新闻、文章、灵感和提示。"
+hero_description: "涵盖提高生产力的技巧、灵感和策略，帮助你获取丰厚利润。了解如何建立一个成功的博客，或如何让你的博客更上一层楼！"
+
+# section:featured-posts
+Featured: "精选"
+
+# section: tags
+ViewAll: "查看全部"
+
+# Section: Authors
+authors_section_title: "认识我们的作者"
+see_all_authors: "查看所有作者"
+
+# Layout: Article Meta
+By: "作者"
+
+# Layout: author
+websiteLink: "网站链接"
+facebookLink: "Facebook 链接"
+twitterLink: "Twitter 链接"
+instagramLink: "Instagram 链接"
+website: "网站"
+
+# Layout: author.terms
+authorsList: "作者列表"
+post: "文章"
+posts: "文章"
+
+# Layout: contact
+yourName: "你的名字"
+yourNamePlaceholder: "你的名字..."
+yourEmail: "你的电子邮件"
+yourEmailPlaceholder: "你的电子邮件..."
+yourMessage: "你的信息"
+yourMessagePlaceholder: "你的信息..."
+sendMessage: "发送信息"
+
+# Layout: featured
+featuredPosts: "精选文章"
+
+# Layout: index.json
+dateFormat: "2006年1月2日"
+
+# Layoud: videos
+Videos: "视频"
+NoVideosFound: "未找到视频。"
+
+# Widget: recent-posts
+RecentPosts: "最新文章"
+
+# Widget: featured-posts
+FeaturedPosts: "精选文章"
+
+# Widget: tags-cloud
+PopularTopics: "热门话题"
+
+# Widget: toc
+TableOfContents: "目录"
+NoContentAvailable: "没有可用内容。"
+
+# Layout: post-navigation
+OlderPost: "较旧的文章"
+NewerPost: "较新的文章"
+
+# Layout: disqus-comments
+ShowComments: "显示评论"
+DisqusNoscriptMessage: "请启用JavaScript以查看<a href='https://disqus.com/?ref_noscript'>由Disqus提供的评论。</a>"
+
+# Layout: pagination
+LoadMorePosts: "加载更多文章"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有权利。使用 <a href='https://gohugo.io/'>Hugo</a> 发布。"
+EnableDarkMode: "启用深色模式"
+Dark: "深色"
+EnableLightMode: "启用浅色模式"
+Light: "浅色"
+Top: "顶部"
+BackToTop: "返回顶部"
+
+# Footer: widget-info
+footer__description: "涵盖提高生产力的技巧、灵感和策略，帮助你获取丰厚利润。了解如何建立一个成功的博客，或如何让你的博客更上一层楼！"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "获取有趣的新闻"
+mailchimp__description: "订阅我们的新闻简报，我们会将最新文章通过电子邮件发送给你。"
+mailchimp__input__text: "你的电子邮件地址"
+mailchimp__button__text: "订阅"
+
+# Layout: search
+SearchForBlog: "搜索博客"
+TypeToSearch: "输入以搜索..."
+SearchIcon: "搜索图标"
+CloseSearchIcon: "关闭搜索图标"
+
+# Layout: share-buttons
+ShareLinkCopy: "复制链接"
+ShareWhatsApp: "分享到WhatsApp"
+ShareFacebook: "分享到Facebook"
+ShareTwitter: "分享到Twitter"
+ShareWeibo: "分享到微博"
+ShareLINE: "分享到LINE"
+ShareZalo: "分享到Zalo"
+ShareReddit: "分享到Reddit"
+Copy: "复制"
+LinkCopied: "链接已复制到剪贴板！"
+
+# Page: 404
+ErrorCode: "错误代码"
+404Message: "无法找到请求的页面。"
+BackToHomepage: "返回主页"

@@ -1,0 +1,147 @@
+# Sections
+"Post": "Postingan"
+"Posts": "Postingan"
+"Latest": "Terbaru"
+"Blog": "Blog"
+"News": "Berita"
+"Docs": "Dokumen"
+
+# Taxonomies
+Authors: "Penulis"
+Categories: "Kategori"
+Tags: "Tag"
+
+# Categories
+apple: "Apple"
+gear: "Peralatan"
+beauty: "Kecantikan"
+review: "Ulasan"
+game: "Permainan"
+
+# Tags
+study: "Belajar"
+business: "Bisnis"
+lifestyle: "Gaya Hidup"
+shopping: "Belanja"
+food: "Makanan"
+people: "Orang"
+reading: "Membaca"
+science: "Ilmu Pengetahuan"
+sport: "Olahraga"
+
+# header: cta_button
+cta_button_text: "Hubungi Kami"
+Search: "Cari"
+
+# Section: Hero
+hero_title: "Berita Harian, Artikel, Inspirasi, dan Tips di Satu Tempat."
+hero_description: "Menampilkan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau bagaimana membuat blog Anda lebih baik lagi!"
+
+# section:featured-posts
+Featured: "Unggulan"
+
+# section: tags
+ViewAll: "Lihat semua"
+
+# Section: Authors
+authors_section_title: "Kenali penulis kami"
+see_all_authors: "Lihat semua penulis"
+
+# Layout: Article Meta
+By: "Oleh"
+
+# Layout: author
+websiteLink: "Tautan situs web"
+facebookLink: "Tautan Facebook"
+twitterLink: "Tautan Twitter"
+instagramLink: "Tautan Instagram"
+website: "Situs web"
+
+# Layout: author.terms
+authorsList: "Daftar penulis"
+post: "Postingan"
+posts: "Postingan"
+
+# Layout: contact
+yourName: "Nama Anda"
+yourNamePlaceholder: "Nama Anda..."
+yourEmail: "Email Anda"
+yourEmailPlaceholder: "Email Anda..."
+yourMessage: "Pesan Anda"
+yourMessagePlaceholder: "Pesan Anda..."
+sendMessage: "Kirim Pesan"
+
+# Layout: featured
+featuredPosts: "Postingan Unggulan"
+
+# Layout: index.json
+dateFormat: "2 Januari 2006"
+
+# Layoud: videos
+Videos: "Video"
+NoVideosFound: "Tidak ada video ditemukan."
+
+# Widget: recent-posts
+RecentPosts: "Postingan Terbaru"
+
+# Widget: featured-posts
+FeaturedPosts: "Postingan Unggulan"
+
+# Widget: tags-cloud
+PopularTopics: "Topik Populer"
+
+# Widget: toc
+TableOfContents: "Daftar Isi"
+NoContentAvailable: "Tidak ada konten yang tersedia."
+
+# Layout: post-navigation
+OlderPost: "Postingan Lama"
+NewerPost: "Postingan Baru"
+
+# Layout: disqus-comments
+ShowComments: "Tampilkan Komentar"
+DisqusNoscriptMessage: "Aktifkan JavaScript untuk melihat <a href='https://disqus.com/?ref_noscript'>komentar yang didukung oleh Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "Muat lebih banyak postingan"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Semua Hak Dilindungi. Diterbitkan dengan <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Aktifkan mode gelap"
+Dark: "Gelap"
+EnableLightMode: "Aktifkan mode terang"
+Light: "Terang"
+Top: "Atas"
+BackToTop: "Kembali ke atas"
+
+# Footer: widget-info
+footer__description: "Menampilkan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau bagaimana membuat blog Anda lebih baik lagi!"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Dapatkan berita menarik"
+mailchimp__description: "Langganan newsletter kami dan kami akan mengirimkan postingan terbaru melalui email."
+mailchimp__input__text: "Alamat email Anda"
+mailchimp__button__text: "Langganan"
+
+# Layout: search
+SearchForBlog: "Cari Blog"
+TypeToSearch: "Ketik untuk mencari..."
+SearchIcon: "Ikon pencarian"
+CloseSearchIcon: "Tutup ikon pencarian"
+
+# Layout: share-buttons
+ShareLinkCopy: "Salin tautan"
+ShareWhatsApp: "Bagikan di WhatsApp"
+ShareFacebook: "Bagikan di Facebook"
+ShareTwitter: "Bagikan di Twitter"
+ShareWeibo: "Bagikan di Weibo"
+ShareLINE: "Bagikan di LINE"
+ShareZalo: "Bagikan di Zalo"
+ShareReddit: "Bagikan di Reddit"
+Copy: "Salin"
+LinkCopied: "Tautan disalin ke papan klip!"
+
+# Page: 404
+ErrorCode: "Kode Kesalahan"
+404Message: "Halaman yang diminta tidak dapat ditemukan."
+BackToHomepage: "Kembali ke beranda"

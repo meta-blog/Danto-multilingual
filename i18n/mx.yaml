@@ -1,0 +1,147 @@
+# Sections
+"Post": "Publicación"
+"Posts": "Publicaciones"
+"Latest": "Último"
+"Blog": "Blog"
+"News": "Noticias"
+"Docs": "Documentos"
+
+# Taxonomies
+Authors: "Autores"
+Categories: "Categorías"
+Tags: "Etiquetas"
+
+# Categories
+apple: "Apple"
+gear: "Equipo"
+beauty: "Belleza"
+review: "Reseña"
+game: "Juego"
+
+# Tags
+study: "Estudio"
+business: "Negocios"
+lifestyle: "Estilo de vida"
+shopping: "Compras"
+food: "Comida"
+people: "Personas"
+reading: "Lectura"
+science: "Ciencia"
+sport: "Deporte"
+
+# header: cta_button
+cta_button_text: "Contáctanos"
+Search: "Buscar"
+
+# Section: Hero
+hero_title: "Noticias diarias, artículos, inspiración y consejos en un solo lugar."
+hero_description: "Ofrecemos productividad, consejos, inspiración y estrategias para grandes ganancias. Descubre cómo crear un blog exitoso o cómo mejorar el tuyo."
+
+# section:featured-posts
+Featured: "Destacado"
+
+# section: tags
+ViewAll: "Ver todo"
+
+# Section: Authors
+authors_section_title: "Conoce a nuestros autores"
+see_all_authors: "Ver todos los autores"
+
+# Layout: Article Meta
+By: "Por"
+
+# Layout: author
+websiteLink: "Enlace al sitio web"
+facebookLink: "Enlace a Facebook"
+twitterLink: "Enlace a Twitter"
+instagramLink: "Enlace a Instagram"
+website: "Sitio web"
+
+# Layout: author.terms
+authorsList: "Lista de autores"
+post: "Publicación"
+posts: "Publicaciones"
+
+# Layout: contact
+yourName: "Tu nombre"
+yourNamePlaceholder: "Tu nombre..."
+yourEmail: "Tu correo electrónico"
+yourEmailPlaceholder: "Tu correo electrónico..."
+yourMessage: "Tu mensaje"
+yourMessagePlaceholder: "Tu mensaje..."
+sendMessage: "Enviar mensaje"
+
+# Layout: featured
+featuredPosts: "Publicaciones destacadas"
+
+# Layout: index.json
+dateFormat: "2 de enero de 2006"
+
+# Layoud: videos
+Videos: "Videos"
+NoVideosFound: "No se encontraron videos."
+
+# Widget: recent-posts
+RecentPosts: "Publicaciones recientes"
+
+# Widget: featured-posts
+FeaturedPosts: "Publicaciones destacadas"
+
+# Widget: tags-cloud
+PopularTopics: "Temas populares"
+
+# Widget: toc
+TableOfContents: "Tabla de contenidos"
+NoContentAvailable: "No hay contenido disponible."
+
+# Layout: post-navigation
+OlderPost: "Publicación anterior"
+NewerPost: "Publicación más reciente"
+
+# Layout: disqus-comments
+ShowComments: "Mostrar comentarios"
+DisqusNoscriptMessage: "Por favor, habilita JavaScript para ver los <a href='https://disqus.com/?ref_noscript'>comentarios proporcionados por Disqus.</a>"
+
+# Layout: pagination
+LoadMorePosts: "Cargar más publicaciones"
+
+# Layout: footer ########## Custom
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Todos los derechos reservados. Publicado con <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Activar modo oscuro"
+Dark: "Oscuro"
+EnableLightMode: "Activar modo claro"
+Light: "Claro"
+Top: "Arriba"
+BackToTop: "Volver arriba"
+
+# Footer: widget-info
+footer__description: "Ofrecemos productividad, consejos, inspiración y estrategias para grandes ganancias. Descubre cómo crear un blog exitoso o cómo mejorar el tuyo."
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "Recibe noticias interesantes"
+mailchimp__description: "Suscríbete a nuestro boletín y te enviaremos correos electrónicos con las últimas publicaciones."
+mailchimp__input__text: "Tu dirección de correo electrónico"
+mailchimp__button__text: "Suscribirse"
+
+# Layout: search
+SearchForBlog: "Buscar en el blog"
+TypeToSearch: "Escribe para buscar..."
+SearchIcon: "Icono de búsqueda"
+CloseSearchIcon: "Cerrar icono de búsqueda"
+
+# Layout: share-buttons
+ShareLinkCopy: "Copiar enlace"
+ShareWhatsApp: "Compartir en WhatsApp"
+ShareFacebook: "Compartir en Facebook"
+ShareTwitter: "Compartir en Twitter"
+ShareWeibo: "Compartir en Weibo"
+ShareLINE: "Compartir en LINE"
+ShareZalo: "Compartir en Zalo"
+ShareReddit: "Compartir en Reddit"
+Copy: "Copiar"
+LinkCopied: "¡Enlace copiado al portapapeles!"
+
+# Page: 404
+ErrorCode: "Código de error"
+404Message: "No se pudo encontrar la página solicitada."
+BackToHomepage: "Volver a la página de inicio"

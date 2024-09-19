@@ -7,14 +7,14 @@
 "Docs": "ドキュメント"
 
 # Taxonomies
-Authors : "著者"
+Authors: "著者"
 Categories: "カテゴリー"
 Tags: "タグ"
 
 # Categories
 apple: "アップル"
 gear: "ギア"
-beauty: "ビューティー"
+beauty: "美容"
 review: "レビュー"
 game: "ゲーム"
 
@@ -29,42 +29,32 @@ reading: "読書"
 science: "科学"
 sport: "スポーツ"
 
+# header: cta_button
+cta_button_text: "お問い合わせ"
+Search: "検索"
+
 # Section: Hero
-hero_title: "ワンストップ・デイリーニュース、記事、インスピレーション、そしてヒント。"
-hero_description: "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を特集しています。成功するブログの立ち上げ方、または既存のブログをより良くする方法を見つけましょう！"
+hero_title: "ニュース、記事、インスピレーション、ヒントがすべて揃う場所。"
+hero_description: "生産性向上のヒント、インスピレーション、戦略を提供し、大きな利益を得る方法を紹介します。成功するブログの立ち上げ方、または既存のブログをさらに改善する方法を見つけましょう！"
 
 # section:featured-posts
-Featured: "おすすめ記事"
+Featured: "注目"
 
 # section: tags
 ViewAll: "すべて見る"
 
 # Section: Authors
-authors_section_title: "私たちの著者たちをご紹介します"
+authors_section_title: "私たちの著者をご紹介"
 see_all_authors: "すべての著者を見る"
 
-# Footer: widget-info
-footer__description: 「生産性、ヒント、インスピレーション、大規模な利益のための戦略を備えています。成功するブログの立ち上げ方や、あなたのブログをさらに良くする方法を見つけましょう！」
-
-# Footer: mailchimp_Subscribe
-mailchimp__title: "面白いニュースを受け取る"
-mailchimp__description: "ニュースレターを購読すると、最新記事のメールをお送りします。"
-mailchimp__input__text: "あなたのメールアドレス"
-mailchimp__button__text: "購読する"
-
-# header: cta_button
-cta_button_text: "お問い合わせ"
-Search: "検索"
-
-
 # Layout: Article Meta
-By: "著者："
+By: "投稿者"
 
 # Layout: author
 websiteLink: "ウェブサイトリンク"
-facebookLink: "フェイスブックリンク"
-twitterLink: "ツイッターリンク"
-instagramLink: "インスタグラムへのリンク"
+facebookLink: "Facebookリンク"
+twitterLink: "Twitterリンク"
+instagramLink: "Instagramリンク"
 website: "ウェブサイト"
 
 # Layout: author.terms
@@ -73,13 +63,13 @@ post: "投稿"
 posts: "投稿"
 
 # Layout: contact
-yourName: "名前"
-yourNamePlaceholder: "名前を入力してください..."
+yourName: "お名前"
+yourNamePlaceholder: "お名前..."
 yourEmail: "メールアドレス"
-yourEmailPlaceholder: "メールを入力してください..."
+yourEmailPlaceholder: "メールアドレス..."
 yourMessage: "メッセージ"
-yourMessagePlaceholder: "メッセージを入力してください..."
-sendMessage: "メッセージを送る"
+yourMessagePlaceholder: "メッセージ..."
+sendMessage: "メッセージを送信"
 
 # Layout: featured
 featuredPosts: "注目の投稿"
@@ -89,53 +79,65 @@ dateFormat: "2006年1月2日"
 
 # Layoud: videos
 Videos: "動画"
-NoVideosFound: "動画が見つかりません。"
-
+NoVideosFound: "動画が見つかりませんでした。"
 
 # Widget: recent-posts
 RecentPosts: "最近の投稿"
 
-# Widge:: featured-posts
-FeaturedPosts: "おすすめの投稿"
+# Widget: featured-posts
+FeaturedPosts: "注目の投稿"
 
 # Widget: tags-cloud
 PopularTopics: "人気のトピック"
 
-# Layout: disqus-comments
-ShowComments: "コメントを表示"
-DisqusNoscriptMessage: "<a href='https://disqus.com/?ref_noscript'>Disqusによるコメント</a>を表示するにはJavaScriptを有効にしてください。"
+# Widget: toc
+TableOfContents: "目次"
+NoContentAvailable: "利用可能なコンテンツがありません。"
 
 # Layout: post-navigation
-OlderPost: "過去の記事"
-NewerPost: "新しい記事"
+OlderPost: "前の投稿"
+NewerPost: "次の投稿"
+
+# Layout: disqus-comments
+ShowComments: "コメントを表示"
+DisqusNoscriptMessage: "コメントを表示するにはJavaScriptを有効にしてください。<a href='https://disqus.com/?ref_noscript'>Disqusで提供されたコメントを表示</a>"
 
 # Layout: pagination
-LoadMorePosts: "もっと記事を読み込む"
+LoadMorePosts: "さらに投稿を読み込む"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 全著作権所有. <a href='https://gohugo.io/'>Hugo</a>で公開されています。"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。すべての権利を保有。<a href='https://gohugo.io/'>Hugo</a>で発行されました。"
 EnableDarkMode: "ダークモードを有効にする"
 Dark: "ダーク"
 EnableLightMode: "ライトモードを有効にする"
 Light: "ライト"
 Top: "トップ"
-BackToTop: "ページの先頭へ"
+BackToTop: "トップに戻る"
+
+# Footer: widget-info
+footer__description: "生産性向上のヒント、インスピレーション、戦略を提供し、大きな利益を得る方法を紹介します。成功するブログの立ち上げ方、または既存のブログをさらに改善する方法を見つけましょう！"
+
+# Footer: mailchimp_Subscribe
+mailchimp__title: "興味深いニュースを受け取る"
+mailchimp__description: "ニュースレターに登録すると、最新の投稿をメールでお届けします。"
+mailchimp__input__text: "あなたのメールアドレス"
+mailchimp__button__text: "購読"
 
 # Layout: search
 SearchForBlog: "ブログを検索"
-TypeToSearch: "検索キーワードを入力..."
+TypeToSearch: "検索するには入力..."
 SearchIcon: "検索アイコン"
-CloseSearchIcon: "検索を閉じるアイコン"
+CloseSearchIcon: "検索アイコンを閉じる"
 
 # Layout: share-buttons
 ShareLinkCopy: "リンクをコピー"
-ShareWhatsApp: "WhatsAppでシェア"
-ShareFacebook: "Facebookでシェア"
-ShareTwitter: "Twitterでシェア"
-ShareWeibo: "Weiboでシェア"
-ShareLINE: "LINEでシェア"
-ShareZalo: "Zaloでシェア"
-ShareReddit: "Redditでシェア"
+ShareWhatsApp: "WhatsAppで共有"
+ShareFacebook: "Facebookで共有"
+ShareTwitter: "Twitterで共有"
+ShareWeibo: "Weiboで共有"
+ShareLINE: "LINEで共有"
+ShareZalo: "Zaloで共有"
+ShareReddit: "Redditで共有"
 Copy: "コピー"
 LinkCopied: "リンクがクリップボードにコピーされました！"
 

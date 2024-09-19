@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
 Sitemap: https://hot-deal.store/sitemap.xml
 Sitemap: https://hot-deal.store/mx/sitemap.xml
 Sitemap: https://hot-deal.store/br/sitemap.xml
