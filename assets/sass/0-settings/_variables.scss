@@ -24,7 +24,7 @@ $base-line-height: 1.6;
 
 // Headings
 $heading-font-weight: 700;
-$heading-font-family: 'Noto Sans', Arial, serif; // 헤딩 폰트
+$heading-font-family: 'Noto Sans', Arial, sans-serif; // 모든 언어에서 Noto Sans 사용
 
 $font-size-h1: 32px;
 $font-size-h2: 28px;
@@ -39,24 +39,30 @@ $heading-letter-spacing: normal;
 // 언어별 폰트 최적화 (Noto Sans 사용)
 body[lang="ko-kr"] {
   $base-font-family: 'Noto Sans KR', Arial, sans-serif; // 한국어
+  $heading-font-family: 'Noto Sans KR', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Sans KR로 변경
 }
 
 body[lang="zh-cn"], body[lang="zh-tw"] {
-  $base-font-family: 'Noto Sans SC', 'Noto Sans TC', Arial, sans-serif; // 중국어 간체 및 번체
+  $base-font-family: 'Noto Sans SC', 'Noto Sans TC', Arial, sans-serif; // 중국어
+  $heading-font-family: 'Noto Sans SC', 'Noto Sans TC', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Sans SC/TC로 변경
 }
 
 body[lang="ja-jp"] {
   $base-font-family: 'Noto Sans JP', Arial, sans-serif; // 일본어
+  $heading-font-family: 'Noto Sans JP', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Sans JP로 변경
 }
 
 body[lang="ar-ae"] {
   $base-font-family: 'Noto Naskh Arabic', Arial, sans-serif; // 아랍어
+  $heading-font-family: 'Noto Naskh Arabic', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Naskh Arabic로 변경
 }
 
 body[lang="th-th"] {
   $base-font-family: 'Noto Sans Thai', Arial, sans-serif; // 태국어
+  $heading-font-family: 'Noto Sans Thai', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Sans Thai로 변경
 }
 
 body[lang="en-us"], body[lang="en-in"], body[lang="es-mx"], body[lang="fr-fr"], body[lang="de-de"], body[lang="pt-br"], body[lang="it-it"], body[lang="tr-tr"], body[lang="vi-vn"], body[lang="id-id"] {
-  $base-font-family: 'Noto Sans', Arial, sans-serif; // 나머지 언어에 대해 Noto Sans 사용
+  $base-font-family: 'Noto Sans', Arial, sans-serif; // 기타 언어
+  $heading-font-family: 'Noto Sans', Arial, sans-serif; // 헤딩 폰트도 동일하게 Noto Sans로 변경
 }
