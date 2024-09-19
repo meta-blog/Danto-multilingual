@@ -1,10 +1,8 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if .IsTranslated }}
-  {{ $siteLanguages := site.Languages }}
-  {{ $pageLang := .Page.Lang }}
   {{ range .Translations }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
   {{ end }}
-  <link rel="alternate" hreflang="{{ $pageLang }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.Home.Permalink }}">
 {{ end }}
