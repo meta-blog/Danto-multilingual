@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ .Params.name }}",
+      "image": "{{ .Params.image }}",
+      {{ with .Params.location }}"homeLocation": "{{ . }}",{{ end }}
+      {{ with .Params.website }}"url": "{{ . }}",{{ end }}
+      "description": "{{ .Content | plainify | truncate 150 }}",
+      {{ with .Params.facebook }}"sameAs": ["{{ . }}"{{ with $.Params.twitter }}, "{{ . }}"{{ end }}{{ with $.Params.instagram }}, "{{ . }}"{{ end }}],{{ end }}
+      "jobTitle": "Author",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      }
+    }
+    </script>

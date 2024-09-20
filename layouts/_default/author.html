@@ -3,6 +3,7 @@
 <section class="section author">
   <div class="container">
     <div class="author__content">
+      {{ partial "schema/author.html" . }}
       <div class="author__image"><img class="lazy" data-src="{{ .Params.image }}" alt="{{ .Params.name }}"></div>
       <h1 class="author__name">{{ .Params.name }}</h1>
       <div class="author__info">
