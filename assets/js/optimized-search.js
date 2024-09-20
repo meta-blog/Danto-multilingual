@@ -1,8 +1,9 @@
 let searchIndex = null;
 let searchResults = document.getElementById("js-results-container");
 let searchInput = document.getElementById("js-search-input");
+let searchClose = document.querySelector(".icon__search__close");
+let searchOverlay = document.querySelector(".search__overlay");
 const contextDive = 95;
-let timerUserInput = false;
 
 function getCurrentLanguage() {
     const path = window.location.pathname.split('/')[1];
@@ -72,10 +73,10 @@ function search(query) {
         return;
     }
 
-    searchResults.style.display = "block";
     const results = searchIndex.search(query);
 
     if (results.length > 0) {
+        searchResults.style.display = "block";
         results.slice(0, 10).forEach((result, index) => {
             const item = result.item;
             const matches = result.matches[0];
@@ -83,19 +84,20 @@ function search(query) {
             snippet = snippet.replace(new RegExp(query, 'gi'), match => `<mark>${match}</mark>`);
 
             const html = `
-                <div class="search-results__item" id="search-summary-${index}">
-                    <a class="search-results__image" href="${item.permalink}" style="background-image: url(${item.image})"></a>
-                    <a class="search-results__link" href="${item.permalink}">
-                        <time class="search-results-date">${item.date}</time>
-                        <div class="search-results-title">${item.title}</div>
-                        <div class="search-results-snippet">${snippet}</div>
-                    </a>
+                <div class="search-results-item">
+                    <a href="${item.permalink}" class="search-results-image" style="background-image: url(${item.image})"></a>
+                    <div class="search-results-content">
+                        <time class="search-result-date" datetime="${item.date}">${item.date}</time>
+                        <a href="${item.permalink}" class="search-result-title">${item.title}</a>
+                        <p class="search-result-excerpt">${snippet}</p>
+                    </div>
                 </div>
             `;
 
             searchResults.insertAdjacentHTML('beforeend', html);
         });
     } else {
+        searchResults.style.display = "block";
         searchResults.insertAdjacentHTML('beforeend', `<div class="no-results">${getTranslation('noResults')}</div>`);
     }
 }
@@ -106,6 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSearchIndex().then(() => {
         searchInput.addEventListener("input", function() {
             debouncedSearch(this.value.trim());
+        });
+
+        searchClose.addEventListener("click", function() {
+            searchInput.value = "";
+            searchResults.style.display = "none";
+        });
+
+        searchOverlay.addEventListener("click", function() {
+            searchInput.value = "";
+            searchResults.style.display = "none";
         });
     });
 });
