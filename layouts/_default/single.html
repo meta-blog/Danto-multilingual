@@ -52,7 +52,8 @@
         {{ end }}
         <div class="post__content">
           <!-- Schema -->
-          {{ partial "schema/blogpost.html" . }}
+          {{ partial "schema/Article.html" . }}
+          {{ partial "schema/howto-faq.html" . }}
           <!-- Content -->
           {{ .Content }}
         </div>

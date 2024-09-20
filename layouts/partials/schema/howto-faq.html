@@ -1,0 +1,57 @@
+{{ if .Params.how_to.enable }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ .Params.how_to.name }}",
+  "description": "{{ .Params.how_to.description }}",
+  "totalTime": "{{ .Params.how_to.total_time }}",
+  "supply": [
+    {{ range $index, $supply := .Params.how_to.supply }}
+      {{- if $index }},{{ end -}}
+      "{{ $supply }}"
+    {{- end }}
+  ],
+  "tool": [
+    {{ range $index, $tool := .Params.how_to.tool }}
+      {{- if $index }},{{ end -}}
+      "{{ $tool }}"
+    {{- end }}
+  ],
+  "step": [
+    {{ range $index, $step := .Params.how_to.step }}
+      {{- if $index }},{{ end -}}
+      {
+        "@type": "HowToStep",
+        "name": "{{ $step.name }}",
+        "text": "{{ $step.text }}",
+        "image": "{{ $step.image }}",
+        "url": "{{ $step.url }}"
+      }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ if .Params.faq.enable }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $index, $faq := .Params.faq.questions }}
+      {{- if $index }},{{ end -}}
+      {
+        "@type": "Question",
+        "name": "{{ $faq.question }}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{ $faq.answer }}"
+        }
+      }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
