@@ -1,32 +1,32 @@
-/* 구글 프로그래머블 검색 엔진 개선된 커스텀 스타일 */
+/* 간소화된 구글 프로그래머블 검색 엔진 커스텀 스타일 */
 .gsc-control-cse {
-    font-family: Arial, sans-serif;
-    border: none !important;
     background-color: transparent !important;
+    border: none !important;
     padding: 0 !important;
   }
   
   .gsc-search-box {
-    margin-bottom: 0 !important;
+    max-width: 200px !important; /* 검색창 전체 너비 조정 */
   }
   
   .gsc-input-box {
-    border: none !important;
-    background-color: var(--background-color) !important;
+    background-color: #333 !important; /* 어두운 배경에 맞춤 */
+    border: 1px solid #444 !important;
     border-radius: 4px 0 0 4px !important;
+    height: 30px !important; /* 높이 조정 */
   }
   
   input.gsc-input {
-    color: var(--text-color) !important;
-    padding: 10px !important;
+    color: #fff !important;
+    padding: 5px 8px !important;
   }
   
   .gsc-search-button-v2 {
     background-color: #05BDBA !important;
     border: none !important;
     border-radius: 0 4px 4px 0 !important;
-    padding: 10px 15px !important;
-    margin-left: 0 !important;
+    height: 30px !important; /* 높이 조정 */
+    padding: 5px 10px !important;
   }
   
   .gsc-search-button-v2:hover {
@@ -34,37 +34,6 @@
   }
   
   .gsc-search-button-v2 svg {
-    width: 16px !important;
-    height: 16px !important;
-  }
-  
-  /* 검색 결과 스타일 */
-  .gsc-webResult.gsc-result {
-    border: none !important;
-    background-color: var(--background-color) !important;
-  }
-  
-  .gs-webResult.gs-result a.gs-title:link,
-  .gs-webResult.gs-result a.gs-title:link b {
-    color: #05BDBA !important;
-  }
-  
-  .gs-webResult.gs-result a.gs-title:hover,
-  .gs-webResult.gs-result a.gs-title:hover b {
-    color: #04a9a7 !important;
-  }
-  
-  .gs-webResult div.gs-visibleUrl {
-    color: var(--text-alt-color) !important;
-  }
-  
-  /* 다크 모드 지원 */
-  :root[dark] .gsc-control-cse,
-  :root[dark] .gsc-input-box,
-  :root[dark] .gsc-webResult.gsc-result {
-    background-color: var(--background-color) !important;
-  }
-  
-  :root[dark] input.gsc-input {
-    color: var(--text-color) !important;
+    width: 13px !important;
+    height: 13px !important;
   }
