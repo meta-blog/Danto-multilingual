@@ -1,36 +1,18 @@
 <script type="application/ld+json">
-  {{ $schema := dict 
-    "@context" "https://schema.org"
-    "@type" "WebSite"
-    "name" .Site.Title
-    "url" .Site.BaseURL
-    "description" .Site.Params.description
-    "inLanguage" .Site.LanguageCode
-    "publisher" (dict
-      "@type" "Organization"
-      "name" .Site.Title
-      "logo" (dict
-        "@type" "ImageObject"
-        "url" ("images/logo.png" | absURL)
-      )
-    )
-  }}
-  
-  {{ with .Site.Params.alternatePageName }}
-    {{ $schema = merge $schema (dict "alternateName" .) }}
-  {{ end }}
-  
-  {{ with .Site.Params.socialProfiles }}
-    {{ $schema = merge $schema (dict "sameAs" .) }}
-  {{ end }}
-  
-  {{ if .Site.Params.searchAction }}
-    {{ $schema = merge $schema (dict "potentialAction" (dict
-      "@type" "SearchAction"
-      "target" (printf "%ssearch?q={search_term_string}" .Site.BaseURL)
-      "query-input" "required name=search_term_string"
-    )) }}
-  {{ end }}
-  
-  {{ $schema | jsonify | safeJS }}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}",
+    "inLanguage": "{{ .Site.LanguageCode }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ "images/logo.png" | absURL }}"
+      }
+    }
+  }
   </script>

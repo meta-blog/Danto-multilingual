@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{{ .Site.Title }}",
+          "item": "{{ .Site.BaseURL }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ .Title }}",
+          "item": "{{ .Permalink }}"
+        }
+        {{ $headings := findRE "<h[1-6].*?>(.|\n)*?</h[1-6]>" .TableOfContents }}
+        {{ range $index, $heading := $headings }}
+        {{ $title := $heading | replaceRE "<.*?>" "" }}
+        {{ $id := $heading | replaceRE ".*id=\"([^\"]*)\".*" "$1" }}
+        ,{
+          "@type": "ListItem",
+          "position": {{ add $index 3 }},
+          "name": "{{ $title }}",
+          "item": "{{ $.Permalink }}#{{ $id }}"
+        }
+        {{ end }}
+      ]
+    }
+    </script>
