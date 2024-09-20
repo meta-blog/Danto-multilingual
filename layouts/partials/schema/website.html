@@ -16,41 +16,37 @@
         {{- if $index }},{{ end -}}
         "{{ $social.url }}"
       {{- end }}
-    ],
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ .Permalink }}"
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "{{ .Site.Params.logo | absURL }}"
-    },
-    "mainEntity": {
-      "@type": "ItemList",
-      "itemListElement": [
-        {{ range $index, $element := .Site.Menus.main }}
-          {{- if $index }},{{ end -}}
-          {
-            "@type": "ListItem",
-            "position": {{ add $index 1 }},
-            "name": "{{ .Name }}",
-            "url": "{{ .URL | absLangURL }}"
-            {{ if .HasChildren }},
-            "hasPart": [
-              {{ range $childIndex, $child := .Children }}
-                {{- if $childIndex }},{{ end -}}
-                {
-                  "@type": "ListItem",
-                  "position": {{ add $childIndex 1 }},
-                  "name": "{{ $child.Name }}",
-                  "url": "{{ $child.URL | absLangURL }}"
-                }
-              {{ end }}
-            ]
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {{ range $index, $element := .Site.Menus.main }}
+        {{- if $index }},{{ end -}}
+        {
+          "@type": "SiteNavigationElement",
+          "position": {{ add $index 1 }},
+          "name": "{{ .Name }}",
+          "url": "{{ .URL | absLangURL }}"
+          {{ if .HasChildren }},
+          "subMenu": [
+            {{ range $childIndex, $child := .Children }}
+              {{- if $childIndex }},{{ end -}}
+              {
+                "@type": "SiteNavigationElement",
+                "position": {{ add $childIndex 1 }},
+                "name": "{{ $child.Name }}",
+                "url": "{{ $child.URL | absLangURL }}"
+              }
             {{ end }}
-          }
-        {{ end }}
-      ]
-    }
+          ]
+          {{ end }}
+        }
+      {{ end }}
+    ]
   }
   </script>
