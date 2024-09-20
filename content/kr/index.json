@@ -1,0 +1,26 @@
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $notHidden := where $pages ".Params.hidden" "!=" true }}
+{{ $filtered := ($notHidden | intersect (where $notHidden "Kind" "page")) }}
+[
+  {{ range $index, $element := $filtered }}
+    {
+      "title": {{ .Title | jsonify }},
+      "content": {{ .Plain | jsonify }},
+      "permalink": {{ .Permalink | jsonify }},
+      "summary": {{ .Summary | jsonify }},
+      "date": {{ .Date.Format "2006-01-02" | jsonify }}
+      {{- with .Params.tags -}}
+        ,
+        "tags": {{ . | jsonify }}
+      {{- end -}}
+      {{- with .Params.categories -}}
+        ,
+        "categories": {{ . | jsonify }}
+      {{- end -}}
+      {{- with .Params.image -}}
+        ,
+        "image": {{ . | absURL | jsonify }}
+      {{- end -}}
+    }{{ if ne (add $index 1) (len $filtered) }},{{ end }}
+  {{ end }}
+]
