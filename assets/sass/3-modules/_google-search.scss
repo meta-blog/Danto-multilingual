@@ -1,39 +1,70 @@
-/* 간소화된 구글 프로그래머블 검색 엔진 커스텀 스타일 */
 .gsc-control-cse {
+    background-color: #387deb !important;
+    border: 0 !important;
+    padding: 6px 8px 6px 10px !important;
+    margin: 0px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+form.gsc-search-box,
+table.gsc-search-box {
+    margin-bottom: 0 !important;
+}
+.gcse-search-box {
+    border: 0 !important;
+    background: #387deb !important;
+}
+.gcse-search-box-tools .gcse-search-box .gcse-input {
+    padding-right: 0 !important;
+}
+#gs_tti50 {
+    padding: 6px 0 !important;
+}
+#gsc-i-id1 {
+    color: #000 !important;
+    text-indent: 0 !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    background: none !important;
+}
+#gsc-i-id1::-webkit-input-placeholder {
+    color: #000 !important;
+}
+#gsc-i-id1::-as-input-placeholder {
+    color: #fff;
+}
+#gsc-i-id1::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+#gsc-i-id1::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.gsib_b {
+    display: none !important;
+}
+.gsc-search-button -v2 {
+    padding: 7.5px !important;
+    margin-left: !important;
+    outline: none !important;
+    border: !important;
+    cursor: pointer;
+}
+.gsc-search-button-v2,gsc-search-button-v2: hover {
+    cursor: pointer;
+}
+.gsc-search-button-v2,gsc-search-button-v2: hover {
     background-color: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-  }
-  
-  .gsc-search-box {
-    max-width: 200px !important; /* 검색창 전체 너비 조정 */
-  }
-  
-  .gsc-input-box {
-    background-color: #333 !important; /* 어두운 배경에 맞춤 */
-    border: 1px solid #444 !important;
-    border-radius: 4px 0 0 4px !important;
-    height: 30px !important; /* 높이 조정 */
-  }
-  
-  input.gsc-input {
-    color: #fff !important;
-    padding: 5px 8px !important;
-  }
-  
-  .gsc-search-button-v2 {
-    background-color: #05BDBA !important;
-    border: none !important;
-    border-radius: 0 4px 4px 0 !important;
-    height: 30px !important; /* 높이 조정 */
-    padding: 5px 10px !important;
-  }
-  
-  .gsc-search-button-v2:hover {
-    background-color: #04a9a7 !important;
-  }
-  
-  .gsc-search-button-v2 svg {
-    width: 13px !important;
-    height: 13px !important;
-  }
+    background-image: none !important;
+}
+.gsc-search-button -v2:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+.gsc-search-button -v2:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
