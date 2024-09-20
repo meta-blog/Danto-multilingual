@@ -34,12 +34,13 @@ faq:
 
 Welcome to our guide on baking the perfect chocolate cake! 
 
-{{</* howto */>}}
+{{< howto >}}
 
 ## Frequently Asked Questions
 
 Before we wrap up, let's address some common questions:
 
-{{</* faq */>}}
+{{< faq >}}
 
 We hope you enjoy baking and eating your delicious chocolate cake!
+
