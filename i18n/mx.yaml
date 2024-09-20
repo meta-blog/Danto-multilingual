@@ -33,6 +33,9 @@ sport: "Deporte"
 cta_button_text: "Contáctanos"
 Search: "Buscar"
 
+# header widget: language-switcher
+global: "Global"
+
 # Section: Hero
 hero_title: "Noticias diarias, artículos, inspiración y consejos en un solo lugar."
 hero_description: "Ofrecemos productividad, consejos, inspiración y estrategias para grandes ganancias. Descubre cómo crear un blog exitoso o cómo mejorar el tuyo."

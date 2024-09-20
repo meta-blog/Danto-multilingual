@@ -33,6 +33,9 @@ sport: "运动"
 cta_button_text: "联系我们"
 Search: "搜索"
 
+# header widget: language-switcher
+global: "全球"
+
 # Section: Hero
 hero_title: "一站式每日新闻、文章、灵感和提示。"
 hero_description: "涵盖提高生产力的技巧、灵感和策略，帮助你获取丰厚利润。了解如何建立一个成功的博客，或如何让你的博客更上一层楼！"

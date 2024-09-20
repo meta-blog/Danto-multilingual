@@ -33,6 +33,9 @@ sport: "Spor"
 cta_button_text: "Bize Ulaşın"
 Search: "Arama"
 
+# header widget: language-switcher
+global: "Küresel"
+
 # Section: Hero
 hero_title: "Tek bir yerde günlük haberler, makaleler, ilham ve ipuçları."
 hero_description: "Üretkenlik, ipuçları, ilham ve büyük kazançlar için stratejiler sunuyoruz. Başarılı bir blog nasıl kurulur veya mevcut blogunuzu nasıl daha iyi hale getirebileceğinizi öğrenin!"

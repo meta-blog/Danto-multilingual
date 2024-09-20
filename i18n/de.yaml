@@ -33,6 +33,9 @@ sport: "Sport"
 cta_button_text: "Kontakt aufnehmen"
 Search: "Suche"
 
+# header widget: language-switcher
+global: "Global"
+
 # Section: Hero
 hero_title: "Tägliche Nachrichten, Artikel, Inspirationen und Tipps an einem Ort."
 hero_description: "Bietet Produktivitätstipps, Inspirationen und Strategien für große Gewinne. Erfahren Sie, wie Sie einen erfolgreichen Blog einrichten oder wie Sie Ihren Blog noch besser machen können!"

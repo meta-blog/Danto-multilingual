@@ -33,6 +33,9 @@ sport: "スポーツ"
 cta_button_text: "お問い合わせ"
 Search: "検索"
 
+# header widget: language-switcher
+global: "グローバル"
+
 # Section: Hero
 hero_title: "ニュース、記事、インスピレーション、ヒントがすべて揃う場所。"
 hero_description: "生産性向上のヒント、インスピレーション、戦略を提供し、大きな利益を得る方法を紹介します。成功するブログの立ち上げ方、または既存のブログをさらに改善する方法を見つけましょう！"

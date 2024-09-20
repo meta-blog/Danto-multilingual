@@ -33,6 +33,9 @@ sport: "Thể thao"
 cta_button_text: "Liên hệ với chúng tôi"
 Search: "Tìm kiếm"
 
+# header widget: language-switcher
+global: "Toàn cầu"
+
 # Section: Hero
 hero_title: "Tin tức hàng ngày, bài viết, cảm hứng và mẹo trong một nơi."
 hero_description: "Cung cấp các mẹo về năng suất, cảm hứng và chiến lược để đạt lợi nhuận lớn. Tìm hiểu cách tạo blog thành công hoặc cách cải thiện blog của bạn!"

@@ -33,6 +33,9 @@ sport: "Olahraga"
 cta_button_text: "Hubungi Kami"
 Search: "Cari"
 
+# header widget: language-switcher
+global: "Global"
+
 # Section: Hero
 hero_title: "Berita Harian, Artikel, Inspirasi, dan Tips di Satu Tempat."
 hero_description: "Menampilkan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau bagaimana membuat blog Anda lebih baik lagi!"

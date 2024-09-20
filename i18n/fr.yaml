@@ -33,6 +33,9 @@ sport: "Sport"
 cta_button_text: "Contactez-nous"
 Search: "Recherche"
 
+# header widget: language-switcher
+global: "Global"
+
 # Section: Hero
 hero_title: "Un guichet unique pour les actualités, articles, inspirations et conseils quotidiens."
 hero_description: "Propose des astuces de productivité, d'inspiration et des stratégies pour des profits massifs. Découvrez comment créer un blog réussi ou comment améliorer le vôtre !"
