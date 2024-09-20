@@ -5,6 +5,34 @@
 
 <body {{ if .IsHome }}class="home-page"{{ end }}>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "{{ .Site.Params.description }}",
+      "inLanguage": "{{ .Site.LanguageCode }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ "images/logo.png" | absURL }}"
+        }
+      },
+      {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
+      {{ with .Site.Params.socialProfiles }}
+      "sameAs": [
+        {{ range $index, $profile := . }}
+        {{- if $index }},{{ end }}
+        "{{ $profile }}"
+        {{- end }}
+      ],
+      {{ end }}
+    }
+    </script>
+
   <div class="second-header">
     <div class="second-menu-01">{{ partial "language-switcher.html" . }}</div>
     <div class="second-menu-02">{{ partial "toggle-theme.html" . }}</div>
