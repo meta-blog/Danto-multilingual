@@ -29,7 +29,115 @@
    License : GPLv3
    ==================================================== */
 
-   var searchResults=document.getElementById("js-results-container"),searchInput=document.getElementById("js-search-input"),contextDive=95,timerUserInput=!1;function search(e){for(;searchResults.firstChild;)searchResults.removeChild(searchResults.firstChild);0===e.length||e.length<1?searchResults.style.display="none":(searchResults.style.display="block",getJSON("/index.json",function(t){var n=[];let s=new RegExp(e,"iu");t.forEach(function(e){(e.title.match(s)||e.content.match(s))&&n.push(e)}),n.length>0?(n.forEach(function(t,n){let s=t.content.toLowerCase().indexOf(e.toLowerCase()),c=s+e.length,r=s-contextDive;r>0?(r=t.content.indexOf(" ",r)+1)<s?s=r:s-=contextDive/2:s=0;let o=c+contextDive;o<t.content.length?-1!==(o=t.content.indexOf(" ",o))?c=o:c+=contextDive/2:c=t.content.length-1;let l=t.content.substring(s,c);0!==s&&(l="...".concat(l)),c!==t.content.length-1&&(l=l.concat("..."));let a="".concat('<div class="search-results__item" id="search-summary-',n,'" >').concat('<a class="search-results__image" href="',t.permalink,'" style="background-image: url(',t.image,')"></a> <a class="search-results__link" href="',t.permalink,'"><time class="search-results-date">',t.date,'</time><div class="search-results-title">',t.title,"</div></a>").concat("</div>");searchResults.appendChild(htmlToElement(a))})):searchResults.appendChild(htmlToElement('<div class="no-results">No results found...</div>'))}))}function getJSON(e,t){let n=new XMLHttpRequest;n.open("GET",e),n.onload=function(){200===n.status?t(JSON.parse(n.responseText)):console.error("Some error processing ".concat(e,": ",n.status))},n.onerror=function(){console.error("Connection error: ".concat(n.status))},n.send()}function htmlToElement(e){let t=document.createElement("template");return e=e.trim(),t.innerHTML=e,t.content.firstChild}searchInput.addEventListener("keyup",function(){timerUserInput&&clearTimeout(timerUserInput),timerUserInput=setTimeout(function(){search(searchInput.value.trim())},150)});
+   /* Search [with modifications for multilingual support]
+ ====================================================
+ Original Website : https://retifrav.github.io/blog/2020/01/05/hugo-search/
+ Original Author : Retif
+ License : GPLv3
+ Modified by: Assistant
+ ==================================================== */
+
+var searchResults = document.getElementById("js-results-container");
+var searchInput = document.getElementById("js-search-input");
+var contextDive = 95;
+var timerUserInput = false;
+var currentLang = document.documentElement.lang || 'en'; // 현재 페이지 언어 가져오기, 기본값은 영어
+
+function search(query) {
+    while (searchResults.firstChild) {
+        searchResults.removeChild(searchResults.firstChild);
+    }
+
+    if (query.length === 0 || query.length < 1) {
+        searchResults.style.display = "none";
+    } else {
+        searchResults.style.display = "block";
+        getJSON("/index.json", function(pages) {
+            var results = [];
+            var regex = new RegExp(query, "iu");
+
+            pages.forEach(function(page) {
+                if (page.lang === currentLang && (page.title.match(regex) || page.content.match(regex))) {
+                    results.push(page);
+                }
+            });
+
+            if (results.length > 0) {
+                results.forEach(function(result, i) {
+                    let start = result.content.toLowerCase().indexOf(query.toLowerCase());
+                    let end = start + query.length;
+                    let previewStart = start - contextDive;
+                    let previewEnd = end + contextDive;
+                    let preview = "";
+
+                    if (previewStart > 0) {
+                        previewStart = result.content.indexOf(" ", previewStart) + 1;
+                        preview = (previewStart < start ? result.content.substring(previewStart, start) : "");
+                    } else {
+                        previewStart = 0;
+                    }
+
+                    if (previewEnd < result.content.length) {
+                        previewEnd = result.content.indexOf(" ", previewEnd);
+                        preview += result.content.substring(start, (previewEnd > end ? previewEnd : result.content.length));
+                    } else {
+                        preview += result.content.substring(start);
+                    }
+
+                    if (preview.length > 0) {
+                        preview = (previewStart > 0 ? "..." : "") + preview + (previewEnd < result.content.length ? "..." : "");
+                    }
+
+                    let resultHtml = `
+                        <div class="search-results__item" id="search-summary-${i}">
+                            <a class="search-results__image" href="${result.permalink}" style="background-image: url(${result.image})"></a>
+                            <a class="search-results__link" href="${result.permalink}">
+                                <time class="search-results-date">${result.date}</time>
+                                <div class="search-results-title">${result.title}</div>
+                            </a>
+                            <div class="search-results-preview">${preview}</div>
+                        </div>
+                    `;
+                    searchResults.appendChild(htmlToElement(resultHtml));
+                });
+            } else {
+                searchResults.appendChild(htmlToElement('<div class="no-results">No results found...</div>'));
+            }
+        });
+    }
+}
+
+function getJSON(url, callback) {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            callback(JSON.parse(xhr.responseText));
+        } else {
+            console.error(`Some error processing ${url}: ${xhr.status}`);
+        }
+    };
+    xhr.onerror = function() {
+        console.error(`Connection error: ${xhr.status}`);
+    };
+    xhr.send();
+}
+
+function htmlToElement(html) {
+    let template = document.createElement("template");
+    html = html.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
+
+searchInput.addEventListener("keyup", function() {
+    if (timerUserInput) {
+        clearTimeout(timerUserInput);
+    }
+    timerUserInput = setTimeout(function() {
+        search(searchInput.value.trim());
+    }, 150);
+});
 
 
 
