@@ -1,10 +1,10 @@
 {{ if .Page.Params.how_to.enable }}
 <div class="howto-section">
-  <h2>{{ .Page.Params.how_to.name }}</h2>
+  <h2 id="howto-section">{{ .Page.Params.how_to.name }}</h2>
   <p class="howto-description">{{ .Page.Params.how_to.description }}</p>
   
   {{ if .Page.Params.how_to.supply }}
-    <h3>{{ T "howto_supplies" }}</h3>
+    <h3 id="howto-supplies">{{ T "howto_supplies" }}</h3>
     <ul>
       {{ range .Page.Params.how_to.supply }}
         <li>{{ . }}</li>
@@ -13,7 +13,7 @@
   {{ end }}
   
   {{ if .Page.Params.how_to.tool }}
-    <h3>{{ T "howto_tools" }}</h3>
+    <h3 id="howto-tools">{{ T "howto_tools" }}</h3>
     <ul>
       {{ range .Page.Params.how_to.tool }}
         <li>{{ . }}</li>
@@ -21,11 +21,11 @@
     </ul>
   {{ end }}
   
-  <h3>{{ T "howto_steps" }}</h3>
+  <h3 id="howto-steps">{{ T "howto_steps" }}</h3>
   <ol>
-    {{ range .Page.Params.how_to.step }}
+    {{ range $index, $step := .Page.Params.how_to.step }}
       <li>
-        <h4>{{ .name }}</h4>
+        <h4 id="howto-step-{{ add $index 1 }}">{{ .name }}</h4>
         <p>{{ .text }}</p>
         {{ if .image }}
           <img src="{{ .image }}" alt="{{ .name }}">
