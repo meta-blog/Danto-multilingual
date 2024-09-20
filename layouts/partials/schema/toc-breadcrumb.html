@@ -15,15 +15,18 @@
           "name": "{{ .Title }}",
           "item": "{{ .Permalink }}"
         }
-        {{ $headings := findRE "<h[1-6].*?>(.|\n)*?</h[1-6]>" .TableOfContents }}
-        {{ range $index, $heading := $headings }}
-        {{ $title := $heading | replaceRE "<.*?>" "" }}
-        {{ $id := $heading | replaceRE ".*id=\"([^\"]*)\".*" "$1" }}
+        {{ $toc := .TableOfContents }}
+        {{ $tocItems := findRE "<a href=\"#([^\"]*)\"[^>]*>([^<]+)</a>" $toc }}
+        {{ range $index, $item := $tocItems }}
+          {{ $href := index (findRE "href=\"([^\"]*)\"" .) 0 }}
+          {{ $href := replaceRE "href=\"|\"" "" $href }}
+          {{ $title := index (findRE ">([^<]+)<" .) 0 }}
+          {{ $title := replaceRE "^>|<$" "" $title }}
         ,{
           "@type": "ListItem",
           "position": {{ add $index 3 }},
           "name": "{{ $title }}",
-          "item": "{{ $.Permalink }}#{{ $id }}"
+          "item": "{{ $.Permalink }}{{ $href }}"
         }
         {{ end }}
       ]
