@@ -1,10 +1,7 @@
 {{ .Scratch.Add "index" slice }}
-{{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-  {{ $dateFormat := (.Site.Language.Params.dateFormat | default "2006-01-02") }}
-  {{ $translations := dict }}
-  {{ range .Translations }}
-    {{ $translations = merge $translations (dict .Lang .Permalink) }}
-  {{ end }}
-  {{ $.Scratch.Add "index" (dict "title" .Title "content" (.Summary | plainify) "date" (.Date.Format $dateFormat) "permalink" .Permalink "image" (.Params.Image | absURL) "lang" .Lang "translations" $translations) }}
+
+{{ range (where .Site.RegularPages "Type" "in" (slice "posts" "news" "docs")) }}
+    {{ $.Scratch.Add "index" (dict "title" .Title "content" (.Summary | plainify) "date" (.Date | dateFormat "2 January 2006") "permalink" .Permalink "image" (.Params.Image | absURL)) }}
 {{ end }}
+
 {{ $.Scratch.Get "index" | jsonify }}
