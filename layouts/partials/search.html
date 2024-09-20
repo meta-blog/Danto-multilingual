@@ -8,14 +8,7 @@
             <span class="search-input-icon fa-solid fa-magnifying-glass" aria-hidden="true"></span>
             <span class="icon__search__close fa-solid fa-xmark" aria-hidden="true"></span>
             <label for="js-search-input" class="screen-reader-text">{{ T "SearchForBlog" }}</label>
-            <input 
-              type="text" 
-              id="js-search-input" 
-              class="search__text" 
-              autocomplete="off" 
-              placeholder="{{ T "TypeToSearch" }}"
-              data-lang="{{ .Site.Language.Lang }}"
-            >
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off" placeholder="{{ T "TypeToSearch" }}">
           </div>
           <div id="js-results-container" class="search-results-list" style="display:none;"></div>
         </div>
