@@ -4,15 +4,53 @@
     "@type": "WebSite",
     "name": "{{ .Site.Title }}",
     "url": "{{ .Site.BaseURL }}",
+    "inLanguage": "{{ .Site.Language.Lang }}",
     "description": "{{ .Site.Params.description }}",
-    "inLanguage": "{{ .Site.LanguageCode }}",
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ .Site.Title }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ "images/logo.png" | absURL }}"
-      }
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ .Site.BaseURL }}search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": [
+      {{ range $index, $social := .Site.Params.social }}
+        {{- if $index }},{{ end -}}
+        "{{ $social.url }}"
+      {{- end }}
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.logo | absURL }}"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{ range $index, $element := .Site.Menus.main }}
+          {{- if $index }},{{ end -}}
+          {
+            "@type": "ListItem",
+            "position": {{ add $index 1 }},
+            "name": "{{ .Name }}",
+            "url": "{{ .URL | absLangURL }}"
+            {{ if .HasChildren }},
+            "hasPart": [
+              {{ range $childIndex, $child := .Children }}
+                {{- if $childIndex }},{{ end -}}
+                {
+                  "@type": "ListItem",
+                  "position": {{ add $childIndex 1 }},
+                  "name": "{{ $child.Name }}",
+                  "url": "{{ $child.URL | absLangURL }}"
+                }
+              {{ end }}
+            ]
+            {{ end }}
+          }
+        {{ end }}
+      ]
     }
   }
   </script>
