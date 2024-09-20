@@ -1,0 +1,11 @@
+{{ if .Page.Params.faq.enable }}
+<div class="faq-section">
+  <h2>{{ T "faq_title" }}</h2>
+  {{ range $index, $faq := .Page.Params.faq.questions }}
+    <div class="faq-item">
+      <h3 class="faq-question">{{ $faq.question }}</h3>
+      <div class="faq-answer">{{ $faq.answer | markdownify }}</div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

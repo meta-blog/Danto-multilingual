@@ -18,14 +18,28 @@ how_to:
     - name: "Prepare ingredients"
       text: "Measure out all ingredients according to the recipe."
       image: "/images/cake-ingredients.jpg"
-      url: "#step1"
     - name: "Mix dry ingredients"
       text: "In a large bowl, mix flour, sugar, and cocoa powder."
       image: "/images/mix-dry-ingredients.jpg"
-      url: "#step2"
+faq:
+  enable: true
+  questions:
+    - question: "Can I use gluten-free flour?"
+      answer: "Yes, you can substitute regular flour with a gluten-free all-purpose flour blend."
+    - question: "How long does the cake stay fresh?"
+      answer: "When properly stored in an airtight container, the cake can stay fresh for up to 3 days at room temperature."
 ---
 
+# How to Bake a Delicious Chocolate Cake
 
+Welcome to our guide on baking the perfect chocolate cake! 
 
-"How to Bake a Delicious Chocolate Cake"
-"A step-by-step guide to baking a moist and delicious chocolate cake."
+{{</* howto */>}}
+
+## Frequently Asked Questions
+
+Before we wrap up, let's address some common questions:
+
+{{</* faq */>}}
+
+We hope you enjoy baking and eating your delicious chocolate cake!

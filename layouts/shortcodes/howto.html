@@ -1,0 +1,39 @@
+{{ if .Page.Params.how_to.enable }}
+<div class="howto-section">
+  <h2>{{ .Page.Params.how_to.name }}</h2>
+  <p class="howto-description">{{ .Page.Params.how_to.description }}</p>
+  
+  {{ if .Page.Params.how_to.supply }}
+    <h3>{{ T "howto_supplies" }}</h3>
+    <ul>
+      {{ range .Page.Params.how_to.supply }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  
+  {{ if .Page.Params.how_to.tool }}
+    <h3>{{ T "howto_tools" }}</h3>
+    <ul>
+      {{ range .Page.Params.how_to.tool }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  
+  <h3>{{ T "howto_steps" }}</h3>
+  <ol>
+    {{ range .Page.Params.how_to.step }}
+      <li>
+        <h4>{{ .name }}</h4>
+        <p>{{ .text }}</p>
+        {{ if .image }}
+          <img src="{{ .image }}" alt="{{ .name }}">
+        {{ end }}
+      </li>
+    {{ end }}
+  </ol>
+  
+  <p>{{ T "howto_total_time" }}: {{ .Page.Params.how_to.total_time }}</p>
+</div>
+{{ end }}
