@@ -25,27 +25,27 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "itemListElement": [
+      {{ $menuIndex := 0 }}
       {{ range $index, $element := .Site.Menus.main }}
         {{- if $index }},{{ end -}}
         {
           "@type": "SiteNavigationElement",
-          "position": {{ add $index 1 }},
+          "position": {{ add $menuIndex 1 }},
           "name": "{{ .Name }}",
           "url": "{{ .URL | absLangURL }}"
-          {{ if .HasChildren }},
-          "subMenu": [
-            {{ range $childIndex, $child := .Children }}
-              {{- if $childIndex }},{{ end -}}
-              {
-                "@type": "SiteNavigationElement",
-                "position": {{ add $childIndex 1 }},
-                "name": "{{ $child.Name }}",
-                "url": "{{ $child.URL | absLangURL }}"
-              }
-            {{ end }}
-          ]
-          {{ end }}
         }
+        {{ $menuIndex = add $menuIndex 1 }}
+        {{ if .HasChildren }}
+          {{ range $childIndex, $child := .Children }}
+            ,{
+              "@type": "SiteNavigationElement",
+              "position": {{ add $menuIndex 1 }},
+              "name": "{{ $child.Name }}",
+              "url": "{{ $child.URL | absLangURL }}"
+            }
+            {{ $menuIndex = add $menuIndex 1 }}
+          {{ end }}
+        {{ end }}
       {{ end }}
     ]
   }
