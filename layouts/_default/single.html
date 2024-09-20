@@ -45,7 +45,10 @@
             <iframe src="{{ .Params.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
-
+        {{ else if .Params.image }}
+        <div class="post-image">
+          <img class="" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+        </div>
         {{ end }}
         <div class="post__content">
           {{ .Content }}
