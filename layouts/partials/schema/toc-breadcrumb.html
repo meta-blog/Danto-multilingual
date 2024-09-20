@@ -1,34 +1,31 @@
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "{{ .Site.Title }}",
-          "item": "{{ .Site.BaseURL }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "{{ .Title }}",
-          "item": "{{ .Permalink }}"
-        }
-        {{ $toc := .TableOfContents }}
-        {{ $tocItems := findRE "<a href=\"#([^\"]*)\"[^>]*>([^<]+)</a>" $toc }}
-        {{ range $index, $item := $tocItems }}
-          {{ $href := index (findRE "href=\"([^\"]*)\"" .) 0 }}
-          {{ $href := replaceRE "href=\"|\"" "" $href }}
-          {{ $title := index (findRE ">([^<]+)<" .) 0 }}
-          {{ $title := replaceRE "^>|<$" "" $title }}
-        ,{
-          "@type": "ListItem",
-          "position": {{ add $index 3 }},
-          "name": "{{ $title }}",
-          "item": "{{ $.Permalink }}{{ $href }}"
-        }
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "{{ .Site.Title }}",
+        "item": "{{ .Site.BaseURL }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ .Title }}",
+        "item": "{{ .Permalink }}"
+      }
+      {{ $customTOC := .Scratch.Get "customTOC" }}
+      {{ if $customTOC }}
+        {{ range $index, $item := first 3 $customTOC }}
+          ,{
+            "@type": "ListItem",
+            "position": {{ add $index 3 }},
+            "name": "{{ $item.Title }}",
+            "item": "{{ $.Permalink }}#{{ $item.AnchorID }}"
+          }
         {{ end }}
-      ]
-    }
-    </script>
+      {{ end }}
+    ]
+  }
+  </script>
