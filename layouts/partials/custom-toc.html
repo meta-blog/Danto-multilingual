@@ -1,0 +1,42 @@
+{{ $headers := findRE "<h[2-4].*?>(.|\n)*?</h[2-4]>" .Content }}
+{{ $toc := slice }}
+
+{{ range $headers }}
+  {{ $header := . }}
+  {{ $level := int (index (findRE "[2-4]" . 1) 0) }}
+  {{ $anchorId := index (findRE "id=\"(.*)\"" . 1) 0 }}
+  {{ $anchorId := replace $anchorId "id=\"" "" }}
+  {{ $anchorId := replace $anchorId "\"" "" }}
+  {{ $title := $header | plainify }}
+  {{ $toc = $toc | append (dict "Level" $level "AnchorID" $anchorId "Title" $title) }}
+{{ end }}
+
+{{ if ge (len $toc) 1 }}
+<aside class="toc" aria-label="{{ T "TableOfContents" }}">
+  <h2>{{ T "TableOfContents" }}</h2>
+  <nav id="TableOfContents">
+    <ul>
+      {{ $prevLevel := 1 }}
+      {{ range $toc }}
+        {{ $currentLevel := .Level }}
+        {{ if gt $currentLevel $prevLevel }}
+          <ul>
+        {{ else if lt $currentLevel $prevLevel }}
+          {{ range seq (sub $prevLevel $currentLevel) }}
+            </ul>
+          {{ end }}
+        {{ end }}
+        <li>
+          <a href="#{{ .AnchorID }}">{{ .Title }}</a>
+        </li>
+        {{ $prevLevel = $currentLevel }}
+      {{ end }}
+      {{ range seq (sub $prevLevel 1) }}
+        </ul>
+      {{ end }}
+    </ul>
+  </nav>
+</aside>
+{{ else }}
+<p>{{ T "NoContentAvailable" }}</p>
+{{ end }}
