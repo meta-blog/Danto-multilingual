@@ -51,13 +51,14 @@
         </div>
         {{ end }}
         <div class="post__content">
+          <!-- Schema -->
+          {{ partial "schema/blogpost.html" . }}
+          <!-- Content -->
           {{ .Content }}
         </div>
         {{ partial "share-buttons.html" . }}
       </article>
     </div>
-
-    {{< blogpost-schema >}}
 
     <!-- Sidebar Right -->
     <div class="sidebar-right col col-3 col-w-3 col-d-12">
