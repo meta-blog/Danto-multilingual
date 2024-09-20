@@ -201,6 +201,8 @@ disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr",
   color_scheme = "auto"
   mainSections = ["posts", "news", "docs"]
   canonifyURLs = true
+  alternatePageName = "Your Alternate Site Name"
+  socialProfiles = ["https://facebook.com/yourpage", "https://twitter.com/yourhandle", "https://instagram.com/yourprofile"]
 
 
   [params.hero]

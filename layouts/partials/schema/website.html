@@ -1,18 +1,27 @@
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}",
+    "inLanguage": "{{ .Site.LanguageCode }}",
+    "publisher": {
+      "@type": "Organization",
       "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}",
-      "description": "{{ .Site.Params.description }}",
-      "inLanguage": "{{ .Site.LanguageCode }}",
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ .Site.Title }}",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ "images/logo.png" | absURL }}"
-        }
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ "images/logo.png" | absURL }}"
       }
-    }
-    </script>
+    },
+    {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
+    {{ with .Site.Params.socialProfiles }}
+    "sameAs": [
+      {{ range $index, $profile := . }}
+      {{- if $index }},{{ end }}
+      "{{ $profile }}"
+      {{- end }}
+    ],
+    {{ end }}
+  }
+  </script>
