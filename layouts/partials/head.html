@@ -25,6 +25,9 @@
   <!-- canonical -->
   {{ partial "multilingual-canonical.html" . }}
 
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/js/optimized-search.js"></script>
+
   <script>
     {{ if eq .Site.Params.color_scheme "auto" }}
     if (localStorage.getItem("theme") === "dark") {
@@ -49,5 +52,7 @@
   {{ with resources.Get "sass/main.scss" | toCSS | minify }}
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
+
+  
 
 </head>
