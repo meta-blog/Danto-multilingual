@@ -1,3 +1,4 @@
+<!-- layouts/partials/custom-toc.html -->
 {{ $headers := findRE "<h[2-4].*?>(.|\n)*?</h[2-4]>" .Content }}
 {{ $toc := slice }}
 
@@ -10,6 +11,8 @@
   {{ $title := $header | plainify }}
   {{ $toc = $toc | append (dict "Level" $level "AnchorID" $anchorId "Title" $title) }}
 {{ end }}
+
+{{ .Scratch.Set "customTOC" $toc }}
 
 {{ if ge (len $toc) 1 }}
 <aside class="toc" aria-label="{{ T "TableOfContents" }}">
@@ -40,7 +43,6 @@
       </li>
     </ul>
   </nav>
-  {{ partial "schema/toc-breadcrumb.html" . }}
 </aside>
 {{ else }}
 <p>{{ T "NoContentAvailable" }}</p>
