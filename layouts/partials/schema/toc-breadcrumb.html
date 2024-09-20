@@ -17,13 +17,34 @@
       }
       {{ $customTOC := .Scratch.Get "customTOC" }}
       {{ if $customTOC }}
-        {{ range $index, $item := first 3 $customTOC }}
+        {{ $position := 3 }}
+        {{ $path := slice }}
+        {{ range $index, $item := $customTOC }}
+          {{ if gt $item.Level (len $path) }}
+            {{ $path = $path | append $item }}
+          {{ else }}
+            {{ $path = first $item.Level $path | append $item }}
+          {{ end }}
           ,{
             "@type": "ListItem",
-            "position": {{ add $index 3 }},
+            "position": {{ $position }},
             "name": "{{ $item.Title }}",
-            "item": "{{ $.Permalink }}#{{ $item.AnchorID }}"
+            "item": "{{ $.Permalink }}#{{ $item.AnchorID }}",
+            "children": [
+              {{ range $childIndex, $child := after (add $index 1) $customTOC }}
+                {{ if le $child.Level $item.Level }}
+                  {{ break }}
+                {{ end }}
+                {
+                  "@type": "ListItem",
+                  "position": {{ add $position (add $childIndex 1) }},
+                  "name": "{{ $child.Title }}",
+                  "item": "{{ $.Permalink }}#{{ $child.AnchorID }}"
+                }{{ if not (eq (add $childIndex 1) (sub (len $customTOC) (add $index 1))) }},{{ end }}
+              {{ end }}
+            ]
           }
+          {{ $position = add $position 1 }}
         {{ end }}
       {{ end }}
     ]
