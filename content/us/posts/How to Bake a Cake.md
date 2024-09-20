@@ -24,3 +24,8 @@ how_to:
       image: "/images/mix-dry-ingredients.jpg"
       url: "#step2"
 ---
+
+
+
+"How to Bake a Delicious Chocolate Cake"
+"A step-by-step guide to baking a moist and delicious chocolate cake."
