@@ -30,13 +30,12 @@ faq:
       answer: "When properly stored in an airtight container, the cake can stay fresh for up to 3 days at room temperature."
 ---
 
-# How to Bake a Delicious Chocolate Cake
+
 
 Welcome to our guide on baking the perfect chocolate cake! 
 
 {{< howto >}}
 
-## Frequently Asked Questions
 
 Before we wrap up, let's address some common questions:
 
