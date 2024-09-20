@@ -1,79 +1,70 @@
-/* 구글 프로그래머블 검색 엔진 커스텀 스타일 */
+/* 구글 프로그래머블 검색 엔진 개선된 커스텀 스타일 */
 .gsc-control-cse {
     font-family: Arial, sans-serif;
-    border-color: var(--border-color) !important;
-    background-color: var(--background-color) !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  
+  .gsc-search-box {
+    margin-bottom: 0 !important;
   }
   
   .gsc-input-box {
-    border-color: var(--border-color) !important;
-    background-color: var(--background-alt-color) !important;
+    border: none !important;
+    background-color: var(--background-color) !important;
+    border-radius: 4px 0 0 4px !important;
   }
   
   input.gsc-input {
     color: var(--text-color) !important;
+    padding: 10px !important;
   }
   
   .gsc-search-button-v2 {
-    background-color: var(--button-background-color) !important;
-    border-color: var(--button-background-color) !important;
+    background-color: #05BDBA !important;
+    border: none !important;
+    border-radius: 0 4px 4px 0 !important;
+    padding: 10px 15px !important;
+    margin-left: 0 !important;
   }
   
   .gsc-search-button-v2:hover {
-    background-color: var(--button-background-hover) !important;
+    background-color: #04a9a7 !important;
   }
   
-  .gsc-tabHeader.gsc-tabhActive {
-    border-color: var(--border-color) !important;
-    background-color: var(--background-alt-color-2) !important;
+  .gsc-search-button-v2 svg {
+    width: 16px !important;
+    height: 16px !important;
   }
   
-  .gsc-tabsArea {
-    border-color: var(--border-color) !important;
-  }
-  
+  /* 검색 결과 스타일 */
   .gsc-webResult.gsc-result {
-    border-color: var(--border-color) !important;
+    border: none !important;
     background-color: var(--background-color) !important;
   }
   
   .gs-webResult.gs-result a.gs-title:link,
   .gs-webResult.gs-result a.gs-title:link b {
-    color: var(--link-color) !important;
+    color: #05BDBA !important;
   }
   
   .gs-webResult.gs-result a.gs-title:hover,
   .gs-webResult.gs-result a.gs-title:hover b {
-    color: var(--link-color-hover) !important;
+    color: #04a9a7 !important;
   }
   
   .gs-webResult div.gs-visibleUrl {
     color: var(--text-alt-color) !important;
   }
   
-  .gsc-cursor-page {
-    color: var(--link-color) !important;
-  }
-  
-  .gsc-cursor-current-page {
-    color: var(--text-color) !important;
-  }
-  
   /* 다크 모드 지원 */
-  :root[dark] .gsc-control-cse {
+  :root[dark] .gsc-control-cse,
+  :root[dark] .gsc-input-box,
+  :root[dark] .gsc-webResult.gsc-result {
     background-color: var(--background-color) !important;
-    border-color: var(--border-color) !important;
-  }
-  
-  :root[dark] .gsc-input-box {
-    background-color: var(--background-alt-color) !important;
   }
   
   :root[dark] input.gsc-input {
     color: var(--text-color) !important;
-  }
-  
-  :root[dark] .gsc-webResult.gsc-result {
-    background-color: var(--background-color) !important;
-    border-color: var(--border-color) !important;
   }
