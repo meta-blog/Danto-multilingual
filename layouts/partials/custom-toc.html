@@ -16,7 +16,7 @@
   <h2>{{ T "TableOfContents" }}</h2>
   <nav id="TableOfContents">
     <ul>
-      {{ $prevLevel := 1 }}
+      {{ $prevLevel := 2 }}
       {{ range $toc }}
         {{ $currentLevel := .Level }}
         {{ if gt $currentLevel $prevLevel }}
@@ -25,15 +25,19 @@
           {{ range seq (sub $prevLevel $currentLevel) }}
             </ul>
           {{ end }}
+        {{ else if eq $currentLevel $prevLevel }}
+          {{ if ne $prevLevel 2 }}
+            </li>
+          {{ end }}
         {{ end }}
         <li>
           <a href="#{{ .AnchorID }}">{{ .Title }}</a>
-        </li>
         {{ $prevLevel = $currentLevel }}
       {{ end }}
-      {{ range seq (sub $prevLevel 1) }}
-        </ul>
+      {{ range seq (sub $prevLevel 2) }}
+        </li></ul>
       {{ end }}
+      </li>
     </ul>
   </nav>
   {{ partial "schema/toc-breadcrumb.html" . }}
