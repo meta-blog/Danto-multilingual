@@ -59,6 +59,9 @@
             <div class="search-button">
               <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
               <span class="search-button__text">{{ T "Search" }}</span>
+              <script async src="https://cse.google.com/cse.js?cx=14c70a10a1ae14ec9">
+              </script>
+              <div class="gcse-search"></div>
             </div>
             {{ if .Site.Params.cta_button.enable }}
             <a href="{{ if .Site.Params.cta_button.cta_button_link }}{{ .Site.Params.cta_button.cta_button_link }}{{ else }}#{{ end }}"
