@@ -5,7 +5,7 @@ title = "Danto"
 defaultContentLanguage = "us"
 defaultContentLanguageInSubdir = false
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
-disableLanguages = ["ar-ae", "de-de", "fr-fr", "it-it"]  # 비활성화할 언어 나열
+disableLanguages = ["us","in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr","id","th"]  # 비활성화할 언어 나열
 
 # 전역 페이지네이션 설정
 [pagination]
