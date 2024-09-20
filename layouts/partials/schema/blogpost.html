@@ -9,10 +9,16 @@
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "image": "{{ .Params.image | absURL }}",
     "url": "{{ .Permalink }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ range .Params.authors }}{{ . }}{{ end }}"
-    },
+    "author": [
+      {{ range $index, $author := .Params.authors }}
+        {{ if $index }},{{ end }}
+        {
+          "@type": "Person",
+          "name": "{{ . }}",
+          "url": "{{ $.Site.BaseURL }}{{ $.Site.LanguagePrefix }}/authors/{{ . | urlize }}/"
+        }
+      {{ end }}
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "{{ .Site.Title }}",
