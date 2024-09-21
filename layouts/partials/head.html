@@ -45,9 +45,10 @@
     {{ end }}
   </script>
 
-<!-- CSS -->
-{{ $styles := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  <!-- CSS -->
+  {{ with resources.Get "sass/main.scss" | toCSS | minify }}
+  <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
 
   
 
