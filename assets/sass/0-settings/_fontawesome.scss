@@ -1,5 +1,53 @@
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
+/* 기본 Font Awesome 스타일 */
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+}
+
+.fa,
+.fas,
+.fa-solid,
+.far,
+.fa-regular,
+.fab,
+.fa-brands {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+/* 소셜 공유 아이콘 */
+.fa-facebook::before { content: "\f09a"; }
+.fa-twitter::before { content: "\f099"; }
+.fa-linkedin::before { content: "\f08c"; }
+
+/* 링크 복사 아이콘 */
+.fa-link::before { content: "\f0c1"; }
+
+/* 검색 아이콘 */
+.fa-search::before { content: "\f002"; }
+
+/* 메뉴 화살표 아이콘 */
+.fa-chevron-down::before { content: "\f078"; }
+.fa-chevron-up::before { content: "\f077"; }
+.fa-chevron-right::before { content: "\f054"; }
+
+/* 필요한 경우 추가 아이콘을 여기에 포함하세요 */
+
+/* 접근성을 위한 SR-only 클래스 */
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
