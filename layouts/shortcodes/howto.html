@@ -1,39 +1,38 @@
 {{ if .Page.Params.how_to.enable }}
-<div class="howto-section">
-  <h2 id="howto-section">{{ .Page.Params.how_to.name }}</h2>
-  <p class="howto-description">{{ .Page.Params.how_to.description }}</p>
-  
-  {{ if .Page.Params.how_to.supply }}
-    <h3 id="howto-supplies">{{ T "howto_supplies" }}</h3>
-    <ul>
-      {{ range .Page.Params.how_to.supply }}
-        <li>{{ . }}</li>
-      {{ end }}
-    </ul>
-  {{ end }}
-  
-  {{ if .Page.Params.how_to.tool }}
-    <h3 id="howto-tools">{{ T "howto_tools" }}</h3>
-    <ul>
-      {{ range .Page.Params.how_to.tool }}
-        <li>{{ . }}</li>
-      {{ end }}
-    </ul>
-  {{ end }}
-  
-  <h3 id="howto-steps">{{ T "howto_steps" }}</h3>
-  <ol>
-    {{ range $index, $step := .Page.Params.how_to.step }}
-      <li>
-        <h4 id="howto-step-{{ add $index 1 }}">{{ .name }}</h4>
-        <p>{{ .text }}</p>
-        {{ if .image }}
-          <img src="{{ .image }}" alt="{{ .name }}">
+  <div class="howto-section" itemscope itemtype="https://schema.org/HowTo">
+    <h2 id="howto-section" itemprop="name">{{ .Page.Params.how_to.name }}</h2>
+    <p class="howto-description" itemprop="description">{{ .Page.Params.how_to.description }}</p>
+    
+    {{ with .Page.Params.how_to.supply }}
+      <h3 id="howto-supplies">{{ T "howto_supplies" }}</h3>
+      <ul>
+        {{ range . }}
+          <li itemprop="supply">{{ . }}</li>
         {{ end }}
-      </li>
+      </ul>
     {{ end }}
-  </ol>
-  
-  <p class="total-time">{{ T "howto_total_time" }}: {{ .Page.Params.how_to.total_time }}</p>
-</div>
+    
+    {{ with .Page.Params.how_to.tool }}
+      <h3 id="howto-tools">{{ T "howto_tools" }}</h3>
+      <ul>
+        {{ range . }}
+          <li itemprop="tool">{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    
+    <h3 id="howto-steps">{{ T "howto_steps" }}</h3>
+    <ol>
+      {{ range $index, $step := .Page.Params.how_to.step }}
+        <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+          <h4 id="howto-step-{{ add $index 1 }}" itemprop="name">{{ .name }}</h4>
+          <p itemprop="text">{{ .text }}</p>
+          {{ with .image }}
+            <img itemprop="image" src="{{ . }}" alt="{{ $step.name }}">
+          {{ end }}
+        </li>
+      {{ end }}
+    </ol>
+    <p class="total-time">{{ T "howto_total_time" }}: <span itemprop="totalTime">{{ .Page.Params.how_to.total_time }}</span></p>
+  </div>
 {{ end }}
