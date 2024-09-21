@@ -1,13 +1,13 @@
 {{ if .Page.Params.how_to.enable }}
-  <div class="howto-section" itemscope itemtype="https://schema.org/HowTo">
-    <h2 id="howto-section" itemprop="name">{{ .Page.Params.how_to.name }}</h2>
-    <p class="howto-description" itemprop="description">{{ .Page.Params.how_to.description }}</p>
+  <div class="howto-section">
+    <h2 id="howto-section">{{ .Page.Params.how_to.name }}</h2>
+    <p class="howto-description">{{ .Page.Params.how_to.description }}</p>
     
     {{ with .Page.Params.how_to.supply }}
       <h3 id="howto-supplies">{{ T "howto_supplies" }}</h3>
       <ul>
         {{ range . }}
-          <li itemprop="supply">{{ . }}</li>
+          <li>{{ . }}</li>
         {{ end }}
       </ul>
     {{ end }}
@@ -16,7 +16,7 @@
       <h3 id="howto-tools">{{ T "howto_tools" }}</h3>
       <ul>
         {{ range . }}
-          <li itemprop="tool">{{ . }}</li>
+          <li>{{ . }}</li>
         {{ end }}
       </ul>
     {{ end }}
@@ -24,15 +24,15 @@
     <h3 id="howto-steps">{{ T "howto_steps" }}</h3>
     <ol>
       {{ range $index, $step := .Page.Params.how_to.step }}
-        <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-          <h4 id="howto-step-{{ add $index 1 }}" itemprop="name">{{ .name }}</h4>
-          <p itemprop="text">{{ .text }}</p>
+        <li>
+          <h4 id="howto-step-{{ add $index 1 }}">{{ .name }}</h4>
+          <p>{{ .text }}</p>
           {{ with .image }}
-            <img itemprop="image" src="{{ . }}" alt="{{ $step.name }}">
+            <img src="{{ . }}" alt="{{ $step.name }}">
           {{ end }}
         </li>
       {{ end }}
     </ol>
-    <p class="total-time">{{ T "howto_total_time" }}: <span itemprop="totalTime">{{ .Page.Params.how_to.total_time }}</span></p>
+    <p class="total-time">{{ T "howto_total_time" }}: {{ .Page.Params.how_to.total_time }}</p>
   </div>
 {{ end }}

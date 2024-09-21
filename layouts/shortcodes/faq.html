@@ -1,11 +1,11 @@
 {{ if .Page.Params.faq.enable }}
-  <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="faq-section">
     <h2 id="faq-section">{{ T "faq_title" }}</h2>
     {{ range $index, $faq := .Page.Params.faq.questions }}
-      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h3 id="faq-question-{{ $index }}" itemprop="name">{{ $faq.question }}</h3>
-        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">{{ $faq.answer | markdownify }}</div>
+      <div class="faq-item">
+        <h3 id="faq-question-{{ $index }}">{{ $faq.question }}</h3>
+        <div class="faq-answer">
+          {{ $faq.answer | markdownify }}
         </div>
       </div>
     {{ end }}
