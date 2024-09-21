@@ -173,12 +173,12 @@ document.addEventListener("DOMContentLoaded", function() {
   ======================= */
   document.addEventListener("DOMContentLoaded", function() {
     const tocLinks = document.querySelectorAll(".toc a");
-    const contentArea = document.querySelector(".post-content") || document.body; // 컨텐츠 영역 선택
+    const contentArea = document.querySelector(".post-content") || document.body;
     let activeLink = null;
   
     const observerOptions = {
       root: null,
-      rootMargin: '-20% 0px -60% 0px', // 상단 20%, 하단 60% 영역에서 감지
+      rootMargin: '-20% 0px -60% 0px',
       threshold: 0
     };
   
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+          const tocLink = findTocLink(id);
           
           if (activeLink) {
             activeLink.classList.remove('active');
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // TOC의 각 링크에 해당하는 헤딩 요소를 찾아 관찰
     tocLinks.forEach(link => {
-      const targetId = link.getAttribute('href').substring(1); // '#' 제거
+      const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
-    // 스크롤 이벤트 핸들러 (옵션)
+    // 스크롤 이벤트 핸들러
     let ticking = false;
     document.addEventListener('scroll', function(e) {
       if (!ticking) {
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let closestDistance = Infinity;
   
       tocLinks.forEach(link => {
-        const targetId = link.getAttribute('href').substring(1);
+        const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
         const targetElement = document.getElementById(targetId);
         
         if (targetElement) {
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (closestHeading) {
         const id = closestHeading.id;
-        const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+        const tocLink = findTocLink(id);
         
         if (activeLink) {
           activeLink.classList.remove('active');
@@ -254,7 +254,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
     }
+  
+    function findTocLink(id) {
+      for (let link of tocLinks) {
+        if (decodeURIComponent(link.getAttribute('href').substring(1)) === id) {
+          return link;
+        }
+      }
+      return null;
+    }
   });
+  
 
 /* =======================
   // language-switcher
