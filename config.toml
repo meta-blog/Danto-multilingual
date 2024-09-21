@@ -72,7 +72,6 @@ disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr",
 
   [languages.ae]
     languageCode = "ar-ae"
-    dir = "rtl"
     contentDir = "content/ae"
     languageName = "العربية"
     weight = 6
@@ -81,6 +80,7 @@ disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr",
       description = "دانتو هو موضوع Hugo للأخبار والمجلات"
       dateFormat = "2 يناير 2006"
       shortDateFormat = "2 يناير"
+      dir = "rtl"
 
   [languages.br]
     languageCode = "pt-br"
