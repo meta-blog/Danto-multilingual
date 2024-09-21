@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          const tocLink = findTocLink(id);
+          const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
           
           if (activeLink) {
             activeLink.classList.remove('active');
@@ -200,9 +200,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }, observerOptions);
   
-    // TOC의 각 링크에 해당하는 헤딩 요소를 찾아 관찰
     tocLinks.forEach(link => {
-      const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
+      const targetId = link.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
@@ -210,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
-    // 스크롤 이벤트 핸들러
+    // 스크롤 이벤트 핸들러 (옵션)
     let ticking = false;
     document.addEventListener('scroll', function(e) {
       if (!ticking) {
@@ -228,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let closestDistance = Infinity;
   
       tocLinks.forEach(link => {
-        const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
+        const targetId = link.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
         
         if (targetElement) {
@@ -242,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (closestHeading) {
         const id = closestHeading.id;
-        const tocLink = findTocLink(id);
+        const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
         
         if (activeLink) {
           activeLink.classList.remove('active');
@@ -254,17 +253,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
     }
-  
-    function findTocLink(id) {
-      for (let link of tocLinks) {
-        if (decodeURIComponent(link.getAttribute('href').substring(1)) === id) {
-          return link;
-        }
-      }
-      return null;
-    }
   });
-  
+
 
 /* =======================
   // language-switcher
