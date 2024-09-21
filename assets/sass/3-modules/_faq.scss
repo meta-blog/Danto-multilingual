@@ -15,14 +15,9 @@
 
 .faq-item h3 {
   /* 질문 제목 스타일 */
-  margin-bottom: 1.5rem; /* 제목과 답변 사이 간격 줄이기 */
+  margin-bottom: 1rem; /* 제목과 답변 사이 간격 줄이기 */
   font-size: 1.2em;
   color: #333;
-}
-
-.faq-answer {
-  /* 답변 스타일 */
-  margin-top: 0.5rem;
 }
 
 .faq-answer p {
