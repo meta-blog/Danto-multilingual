@@ -168,21 +168,80 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const tocLinks = document.querySelectorAll(".toc a");
-  const headings = document.querySelectorAll("h2, h3, h4");
-  let activeLink = null;
-
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -75% 0px',
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
+/* =======================
+  // active-toc (Optimized)
+  ======================= */
+  document.addEventListener("DOMContentLoaded", function() {
+    const tocLinks = document.querySelectorAll(".toc a");
+    const contentArea = document.querySelector(".post-content") || document.body; // 컨텐츠 영역 선택
+    let activeLink = null;
+  
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px', // 상단 20%, 하단 60% 영역에서 감지
+      threshold: 0
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+          
+          if (activeLink) {
+            activeLink.classList.remove('active');
+          }
+          
+          if (tocLink) {
+            tocLink.classList.add('active');
+            activeLink = tocLink;
+          }
+        }
+      });
+    }, observerOptions);
+  
+    // TOC의 각 링크에 해당하는 헤딩 요소를 찾아 관찰
+    tocLinks.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1); // '#' 제거
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        observer.observe(targetElement);
+      }
+    });
+  
+    // 스크롤 이벤트 핸들러 (옵션)
+    let ticking = false;
+    document.addEventListener('scroll', function(e) {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          highlightTocOnScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  
+    function highlightTocOnScroll() {
+      const scrollPosition = window.scrollY;
+      let closestHeading = null;
+      let closestDistance = Infinity;
+  
+      tocLinks.forEach(link => {
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          const distance = Math.abs(targetElement.getBoundingClientRect().top);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestHeading = targetElement;
+          }
+        }
+      });
+  
+      if (closestHeading) {
+        const id = closestHeading.id;
         const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
         
         if (activeLink) {
@@ -194,15 +253,8 @@ document.addEventListener("DOMContentLoaded", function() {
           activeLink = tocLink;
         }
       }
-    });
-  }, observerOptions);
-
-  headings.forEach(heading => {
-    if (heading.id) {
-      observer.observe(heading);
     }
   });
-});
 
 /* =======================
   // language-switcher
