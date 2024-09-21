@@ -148,3 +148,10 @@ LinkCopied: "リンクがクリップボードにコピーされました！"
 ErrorCode: "エラーコード"
 404Message: "リクエストされたページが見つかりませんでした。"
 BackToHomepage: "ホームページに戻る"
+
+# Schema:faq+howto
+faq_title: "よくある質問"
+howto_supplies: "必要な用品"
+howto_tools: "必要な工具"
+howto_steps: "手順"
+howto_total_time: "合計時間"

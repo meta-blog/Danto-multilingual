@@ -148,3 +148,10 @@ LinkCopied: "链接已复制到剪贴板！"
 ErrorCode: "错误代码"
 404Message: "无法找到请求的页面。"
 BackToHomepage: "返回主页"
+
+# Schema:faq+howto
+faq_title: "常见问题"
+howto_supplies: "所需材料"
+howto_tools: "所需工具"
+howto_steps: "步骤"
+howto_total_time: "总时间"

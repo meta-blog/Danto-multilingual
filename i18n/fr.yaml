@@ -148,3 +148,10 @@ LinkCopied: "Lien copié dans le presse-papiers !"
 ErrorCode: "Code d'erreur"
 404Message: "La page demandée est introuvable."
 BackToHomepage: "Retour à la page d'accueil"
+
+# Schema:faq+howto
+faq_title: "Questions Fréquentes"
+howto_supplies: "Fournitures Nécessaires"
+howto_tools: "Outils Nécessaires"
+howto_steps: "Étapes"
+howto_total_time: "Temps Total"

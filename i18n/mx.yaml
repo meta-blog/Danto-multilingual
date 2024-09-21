@@ -148,3 +148,10 @@ LinkCopied: "¡Enlace copiado al portapapeles!"
 ErrorCode: "Código de error"
 404Message: "No se pudo encontrar la página solicitada."
 BackToHomepage: "Volver a la página de inicio"
+
+# Schema:faq+howto
+faq_title: "Preguntas Frecuentes"
+howto_supplies: "Suministros Necesarios"
+howto_tools: "Herramientas Necesarias"
+howto_steps: "Pasos"
+howto_total_time: "Tiempo Total"

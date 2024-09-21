@@ -148,3 +148,10 @@ LinkCopied: "Tautan disalin ke papan klip!"
 ErrorCode: "Kode Kesalahan"
 404Message: "Halaman yang diminta tidak dapat ditemukan."
 BackToHomepage: "Kembali ke beranda"
+
+# Schema:faq+howto
+faq_title: "Pertanyaan yang Sering Diajukan"
+howto_supplies: "Persediaan yang Dibutuhkan"
+howto_tools: "Alat yang Dibutuhkan"
+howto_steps: "Langkah-langkah"
+howto_total_time: "Total Waktu"

@@ -148,3 +148,10 @@ LinkCopied: "Bağlantı panoya kopyalandı!"
 ErrorCode: "Hata Kodu"
 404Message: "İstenen sayfa bulunamadı."
 BackToHomepage: "Ana sayfaya dön"
+
+# Schema:faq+howto
+faq_title: "Sıkça Sorulan Sorular"
+howto_supplies: "Gerekli Malzemeler"
+howto_tools: "Gerekli Araçlar"
+howto_steps: "Adımlar"
+howto_total_time: "Toplam Süre"

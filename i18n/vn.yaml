@@ -148,3 +148,10 @@ LinkCopied: "Liên kết đã được sao chép vào clipboard!"
 ErrorCode: "Mã lỗi"
 404Message: "Không tìm thấy trang yêu cầu."
 BackToHomepage: "Quay lại trang chủ"
+
+# Schema:faq+howto
+faq_title: "Câu Hỏi Thường Gặp"
+howto_supplies: "Vật Dụng Cần Thiết"
+howto_tools: "Công Cụ Cần Thiết"
+howto_steps: "Các Bước"
+howto_total_time: "Tổng Thời Gian"

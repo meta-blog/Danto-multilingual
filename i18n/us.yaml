@@ -154,7 +154,6 @@ ErrorCode: "Error code"
 404Message: "The requested page could not be found."
 BackToHomepage: "Back to homepage"
 
-
 # Schema:faq+howto
 faq_title: "Frequently Asked Questions"
 howto_supplies: "Supplies Needed"

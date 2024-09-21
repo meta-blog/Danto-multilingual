@@ -149,3 +149,10 @@ LinkCopied: "تم نسخ الرابط إلى الحافظة!"
 ErrorCode: "رمز الخطأ"
 404Message: "الصفحة المطلوبة غير موجودة."
 BackToHomepage: "العودة إلى الصفحة الرئيسية"
+
+# Schema:faq+howto
+faq_title: "الأسئلة الشائعة"
+howto_supplies: "اللوازم المطلوبة"
+howto_tools: "الأدوات المطلوبة"
+howto_steps: "الخطوات"
+howto_total_time: "إجمالي الوقت"

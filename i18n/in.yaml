@@ -149,3 +149,10 @@ LinkCopied: "Link copied to clipboard!"
 ErrorCode: "Error code"
 404Message: "The requested page could not be found."
 BackToHomepage: "Back to homepage"
+
+# Schema:faq+howto
+faq_title: "Frequently Asked Questions"
+howto_supplies: "Supplies Needed"
+howto_tools: "Tools Needed"
+howto_steps: "Steps"
+howto_total_time: "Total Time"

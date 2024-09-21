@@ -148,3 +148,10 @@ LinkCopied: "連結已複製到剪貼簿！"
 ErrorCode: "錯誤代碼"
 404Message: "無法找到請求的頁面。"
 BackToHomepage: "返回主頁"
+
+# Schema:faq+howto
+faq_title: "常見問題"
+howto_supplies: "所需材料"
+howto_tools: "所需工具"
+howto_steps: "步驟"
+howto_total_time: "總時間"

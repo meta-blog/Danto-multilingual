@@ -148,3 +148,10 @@ LinkCopied: "링크가 클립보드에 복사되었습니다!"
 ErrorCode: "오류 코드"
 404Message: "요청하신 페이지를 찾을 수 없습니다."
 BackToHomepage: "홈페이지로 돌아가기"
+
+# Schema:faq+howto
+faq_title: "자주 묻는 질문"
+howto_supplies: "필요한 준비물"
+howto_tools: "필요한 도구"
+howto_steps: "단계"
+howto_total_time: "총 소요 시간"
