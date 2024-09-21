@@ -1,8 +1,30 @@
-/css/*
+# /static/_headers
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;
+  X-XSS-Protection: 1; mode=block
+
+# 캐시 제어
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.css
   Cache-Control: public, max-age=31536000, immutable
 
-/js/*
+/*.js
   Cache-Control: public, max-age=31536000, immutable
 
 /images/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=31536000, immutable
+
+# 언어별 경로에 대한 설정
+/*/
+  Content-Language: {{.Lang}}
+  Vary: Accept-Language
+
+# HSTS 설정
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
