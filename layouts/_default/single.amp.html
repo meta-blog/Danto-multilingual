@@ -1,0 +1,94 @@
+<!doctype html>
+<html ⚡ lang="{{ .Lang }}">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        /* 여기에 AMP 호환 CSS를 넣습니다 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .post__meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .post__content {
+            margin-top: 30px;
+        }
+        .post__tag {
+            display: inline-block;
+            background-color: #eee;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{{ .Site.BaseURL }}">
+                {{ if or (.Site.Params.logo) (.Site.Params.logo_dark) }}
+                <amp-img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" width="150" height="50" alt="{{ .Site.Title }}"></amp-img>
+                {{ else }}
+                {{ .Site.Title }}
+                {{ end }}
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h1>{{ .Title }}</h1>
+            <div class="post__meta">
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format (.Site.Params.dateFormat | default "2 Jan, 2006") }}
+                </time>
+                <div class="post__tags">
+                    {{ range ($.GetTerms "tags") }}
+                    <a href="{{ .Permalink }}" class="post__tag">{{ .LinkTitle }}</a>
+                    {{ end }}
+                </div>
+            </div>
+
+            {{ if .Params.image }}
+            <amp-img src="{{ .Params.Image | absURL }}" width="800" height="400" layout="responsive" alt="{{ .Title }}"></amp-img>
+            {{ end }}
+
+            <div class="post__content">
+                {{ .Content }}
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -25,6 +25,11 @@
   <!-- canonical -->
   {{ partial "multilingual-canonical.html" . }}
 
+  <!-- amp -->
+  {{ if .OutputFormats.Get "AMP" }}
+  <link rel="amphtml" href="{{ .Permalink }}amp/">
+  {{ end }}
+
   <script>
     {{ if eq .Site.Params.color_scheme "auto" }}
     if (localStorage.getItem("theme") === "dark") {
