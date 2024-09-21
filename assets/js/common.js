@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+          const tocLink = findTocLink(id);
           
           if (activeLink) {
             activeLink.classList.remove('active');
@@ -201,8 +201,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, observerOptions);
   
     tocLinks.forEach(link => {
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
+      const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
+      const targetElement = findTargetElement(targetId);
       
       if (targetElement) {
         observer.observe(targetElement);
@@ -227,8 +227,8 @@ document.addEventListener("DOMContentLoaded", function() {
       let closestDistance = Infinity;
   
       tocLinks.forEach(link => {
-        const targetId = link.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+        const targetId = decodeURIComponent(link.getAttribute('href').substring(1));
+        const targetElement = findTargetElement(targetId);
         
         if (targetElement) {
           const distance = Math.abs(targetElement.getBoundingClientRect().top);
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (closestHeading) {
         const id = closestHeading.id;
-        const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+        const tocLink = findTocLink(id);
         
         if (activeLink) {
           activeLink.classList.remove('active');
@@ -253,7 +253,41 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
     }
+  
+    function findTocLink(id) {
+      for (let link of tocLinks) {
+        const linkId = decodeURIComponent(link.getAttribute('href').substring(1));
+        if (linkId === id || linkId === cleanId(id)) {
+          return link;
+        }
+      }
+      return null;
+    }
+  
+    function findTargetElement(id) {
+      // 정확한 ID 매치
+      let element = document.getElementById(id);
+      if (element) return element;
+  
+      // 정제된 ID로 매치 시도
+      element = document.getElementById(cleanId(id));
+      if (element) return element;
+  
+      // 부분 ID 매치 (howto-step-1, faq-question-0 등)
+      const partialMatches = document.querySelectorAll(`[id^="${cleanId(id)}"]`);
+      if (partialMatches.length === 1) return partialMatches[0];
+  
+      return null;
+    }
+  
+    function cleanId(id) {
+      // URL 인코딩된 문자 디코딩
+      id = decodeURIComponent(id);
+      // 공백과 특수 문자 제거
+      return id.replace(/[^\w\-]+/g, '');
+    }
   });
+
 
 
 /* =======================
