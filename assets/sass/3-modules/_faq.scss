@@ -1,6 +1,6 @@
 .faq-section {
   /* 전체 FAQ 섹션에 대한 스타일 */
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .faq-section h2 {
@@ -10,12 +10,12 @@
 
 .faq-item {
   /* 각 FAQ 항목 스타일 */
-  margin-bottom: 2rem; /* 질문 사이의 간격 늘리기 */
+  margin-bottom: 2.5rem; /* 질문 사이의 간격 늘리기 */
 }
 
 .faq-item h3 {
   /* 질문 제목 스타일 */
-  margin-bottom: 0.5rem; /* 제목과 답변 사이 간격 줄이기 */
+  margin-bottom: 1.5rem; /* 제목과 답변 사이 간격 줄이기 */
   font-size: 1.2em;
   color: #333;
 }
