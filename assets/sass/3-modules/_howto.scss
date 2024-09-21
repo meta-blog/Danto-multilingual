@@ -1,13 +1,13 @@
 .howto-section {
   /* 전체 섹션에 대한 스타일 */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .howto-section h2,
 .howto-section h3,
 .howto-section h4 {
   /* 제목들의 하단 마진 줄이기 */
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .howto-section p {
@@ -17,8 +17,8 @@
 
 .howto-section img {
   /* 이미지의 상단 마진 추가 및 하단 마진 줄이기 */
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .howto-section ol {
@@ -29,19 +29,18 @@
 
 .howto-section ol > li {
   /* 각 스텝 사이의 간격 늘리기 */
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .howto-section ul {
   /* 순서 없는 리스트(재료, 도구)의 마진 조정 */
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .howto-description {
   /* 설명 문단 스타일 */
-  font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .howto-section .total-time {
