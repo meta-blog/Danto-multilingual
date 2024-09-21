@@ -1,0 +1,36 @@
+.faq-section {
+  /* 전체 FAQ 섹션에 대한 스타일 */
+  margin-bottom: 2rem;
+}
+
+.faq-section h2 {
+  /* FAQ 섹션 제목 스타일 */
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  /* 각 FAQ 항목 스타일 */
+  margin-bottom: 2rem; /* 질문 사이의 간격 늘리기 */
+}
+
+.faq-item h3 {
+  /* 질문 제목 스타일 */
+  margin-bottom: 0.5rem; /* 제목과 답변 사이 간격 줄이기 */
+  font-size: 1.2em;
+  color: #333;
+}
+
+.faq-answer {
+  /* 답변 스타일 */
+  margin-top: 0.5rem;
+}
+
+.faq-answer p {
+  /* 답변 내 문단 스타일 */
+  margin-bottom: 0.5rem; /* 문단 간 간격 줄이기 */
+}
+
+.faq-answer p:last-child {
+  /* 마지막 문단의 하단 마진 제거 */
+  margin-bottom: 0;
+}
