@@ -1,10 +1,9 @@
 {{ $script := resources.Get "js/scripts.js" }}
 {{ $commonJs := resources.Get "js/common.js" }}
-
 {{ if hugo.IsProduction }}
-  <script src="{{ ($script | minify | fingerprint).RelPermalink }}"></script>
-  <script src="{{ ($commonJs | minify | fingerprint).RelPermalink }}"></script>
+<script src="{{ ($script | minify | fingerprint).RelPermalink }}" defer></script>
+<script src="{{ ($commonJs | minify | fingerprint).RelPermalink }}" defer></script>
 {{ else }}
-  <script src="{{ $script.Permalink }}"></script>
-  <script src="{{ $commonJs.Permalink }}"></script>
+<script src="{{ $script.Permalink }}" defer></script>
+<script src="{{ $commonJs.Permalink }}" defer></script>
 {{ end }}
