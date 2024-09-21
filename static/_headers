@@ -12,7 +12,12 @@
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 
+# 스타일 파일에 대한 캐시 설정
 /*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# 컴파일된 SCSS 파일도 포함 (파일명에 .scss가 포함될 경우)
+/*scss*.css
   Cache-Control: public, max-age=31536000, immutable
 
 /*.js
