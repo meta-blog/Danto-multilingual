@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Danto</title>
+    <link>http://localhost:1313/us/categories/</link>
+    <description>Recent content in Categories on Danto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jan 2023 15:01:35 +0300</lastBuildDate><atom:link href="http://localhost:1313/us/categories/rss.xml" rel="self" type="application/rss+xml" />
+     <item>
+      <title>Apple</title>
+      <link>http://localhost:1313/us/categories/apple/</link>
+      <pubDate>Sat, 14 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Sat, 14 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/categories/apple/</guid>
+      <description></description>
+     </item>
+    
+     <item>
+      <title>Gear</title>
+      <link>http://localhost:1313/us/categories/gear/</link>
+      <pubDate>Sat, 14 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Sat, 14 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/categories/gear/</guid>
+      <description></description>
+     </item>
+    
+     <item>
+      <title>Beauty</title>
+      <link>http://localhost:1313/us/categories/beauty/</link>
+      <pubDate>Mon, 09 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Mon, 09 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/categories/beauty/</guid>
+      <description></description>
+     </item>
+    
+     <item>
+      <title>Review</title>
+      <link>http://localhost:1313/us/categories/review/</link>
+      <pubDate>Mon, 09 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Mon, 09 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/categories/review/</guid>
+      <description></description>
+     </item>
+    
+     <item>
+      <title>Game</title>
+      <link>http://localhost:1313/us/categories/game/</link>
+      <pubDate>Wed, 05 Oct 2022 15:01:35 +0300</pubDate>
+      
+      <lastmod>Wed, 05 Oct 2022 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/categories/game/</guid>
+      <description></description>
+     </item>
+    
+  </channel>
+</rss>

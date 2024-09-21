@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Danto</title>
+    <link>http://localhost:1313/us/authors/</link>
+    <description>Recent content in Authors on Danto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jan 2023 15:01:35 +0300</lastBuildDate><atom:link href="http://localhost:1313/us/authors/rss.xml" rel="self" type="application/rss+xml" />
+     <item>
+      <title></title>
+      <link>http://localhost:1313/us/authors/livia/</link>
+      <pubDate>Wed, 18 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Wed, 18 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/authors/livia/</guid>
+      <description>&lt;p&gt;We live our lives through stories. I enjoy listening to a good story, and I take pride in crafting someone else&amp;rsquo;s.&lt;/p&gt;</description>
+     </item>
+    
+     <item>
+      <title></title>
+      <link>http://localhost:1313/us/authors/admin/</link>
+      <pubDate>Mon, 16 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Mon, 16 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/authors/admin/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a seasoned veteran of editorial and content management with the skills to make a difference.&lt;/p&gt;</description>
+     </item>
+    
+     <item>
+      <title></title>
+      <link>http://localhost:1313/us/authors/justin/</link>
+      <pubDate>Thu, 12 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Thu, 12 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/authors/justin/</guid>
+      <description>&lt;p&gt;I offer English editing and language facilitation services to improve the fluency and impact of written English.&lt;/p&gt;</description>
+     </item>
+    
+     <item>
+      <title></title>
+      <link>http://localhost:1313/us/authors/kaiya/</link>
+      <pubDate>Tue, 10 Jan 2023 15:01:35 +0300</pubDate>
+      
+      <lastmod>Tue, 10 Jan 2023 15:01:35 +0300</lastmod>
+      
+      
+      <guid>http://localhost:1313/us/authors/kaiya/</guid>
+      <description>&lt;p&gt;I am an award-winning novelist who has published two books with a major New York City publishing house.&lt;/p&gt;</description>
+     </item>
+    
+  </channel>
+</rss>
