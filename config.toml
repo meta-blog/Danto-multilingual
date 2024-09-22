@@ -226,6 +226,9 @@ disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr",
 
   [params.authors_section]
     enable = false
+    
+  [params.footer]
+    footer__description = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
 
   [[params.social]]
     icon = "fa-brands fa-x-twitter"
