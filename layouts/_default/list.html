@@ -1,58 +1,49 @@
 {{ define "main" }}
-
-{{ if (eq .Section "tags") }}
-
+{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
 <!-- begin tags -->
 <section class="section tags">
-
   <div class="tags__inner">
     <div class="container">
       <div class="row">
         <div class="col col-12">
           <div class="tag__info">
-            <h1 class="tag__title">{{ humanize .Title }} <span class="tag__counter">{{ len .Pages }}</span></h1>
+            <h1 class="tag__title">{{ T (.Title | lower) }} <span class="tag__counter">{{ len .Pages }}</span></h1>
           </div>
         </div>
       </div>
     </div>
     <div class="container animate">
       <div class="row">
-      {{ range .Data.Pages }}
+        {{ range .Data.Pages }}
         <div class="col col-4 col-d-6 col-t-12">
           {{ partial "article.html" (dict "context" .) }}
         </div>
-      {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
-
 </section>
 <!-- end tags -->
-
 {{ else if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "latest") }}
-
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
     {{ if .Title }}
-    <h1 class="hero__title">{{ .Title }}</h1>
+    <h1 class="hero__title">{{ T (.Title | lower) }}</h1>
     {{ end }}
   </div>
 </section>
 <!-- end hero -->
-
 <section class="section">
   <div class="container">
     <div class="row grid">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" ) }}
-    {{ range $index, $element := $paginator.Pages }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" ) }}
+      {{ range $index, $element := $paginator.Pages }}
       {{ partial "article.html" (dict "context" . "class" "col col-4 col-d-6 col-t-12 animate article--grid") }}
-    {{ end }}
+      {{ end }}
     </div>
   </div>
-
+</section>
 {{ partial "pagination.html" . }}
-
 {{ end }}
-
 {{ end }}
