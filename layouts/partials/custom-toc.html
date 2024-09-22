@@ -24,7 +24,7 @@
   {{ $prevLevel := .PrevLevel }}
   {{ range .Items }}
     {{ if gt .Level $prevLevel }}
-      <ul>
+      <li><ul>
     {{ else if lt .Level $prevLevel }}
       {{ range seq (sub $prevLevel .Level) }}
         </ul></li>
