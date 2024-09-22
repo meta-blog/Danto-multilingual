@@ -144,40 +144,12 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 
-// =====================
-// Load More Posts
-// =====================
-var load_posts_button = document.querySelector('.load-more-posts');
-var current_page = 1;
+  // =====================
+  // Load More Posts
+  // =====================
+  var load_posts_button = document.querySelector('.load-more-posts');
 
-load_posts_button && load_posts_button.addEventListener("click", function(e) {
-  e.preventDefault();
-  var o = document.querySelector(".pagination");
-  current_page++;
-
-  if (current_page <= pagination_available_pages_number) {
-    var e = base_url + '/page/' + current_page + '/';
-    fetch(e).then(function(e) {
-      if (e.ok) return e.text()
-    }).then(function(e) {
-      var n = document.createElement("div");
-      n.innerHTML = e;
-      var t = document.querySelector(".grid");
-      var a = n.querySelectorAll(".article--grid");
-      for (var i = 0; i < a.length; i++) t.appendChild(a.item(i));
-      new LazyLoad({
-        elements_selector: ".lazy"
-      });
-
-      // Check if we've reached the last page
-      if (current_page >= pagination_available_pages_number) {
-        o.style.display = "none";
-      }
-    });
-  } else {
-    o.style.display = "none";
-  }
-});
+  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".article--grid"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
 
 
   /* =======================
