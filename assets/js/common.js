@@ -148,74 +148,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // Load More Posts
 // =====================
 var load_posts_button = document.querySelector('.load-more-posts');
-var current_page = 1;
 
-function loadMorePosts(e) {
-  e.preventDefault();
-  console.log('Load more posts clicked');
-  var paginationContainer = document.querySelector(".pagination");
-  current_page++;
-  console.log('Current page:', current_page);
-  console.log('Total pages:', pagination_available_pages_number);
-
-  if (current_page <= pagination_available_pages_number) {
-    var nextPageUrl = new URL(`page/${current_page}/`, base_url).href;
-    console.log('Fetching URL:', nextPageUrl);
-    
-    fetch(nextPageUrl)
-      .then(response => {
-        console.log('Response status:', response.status);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.text();
-      })
-      .then(html => {
-        console.log('HTML received, length:', html.length);
-        console.log('HTML content:', html.substring(0, 200) + '...'); // Log the first 200 characters
-        var parser = new DOMParser();
-        var doc = parser.parseFromString(html, 'text/html');
-        var newPosts = doc.querySelectorAll(".article--grid");
-        console.log('New posts found:', newPosts.length);
-        var grid = document.querySelector(".grid");
-        
-        newPosts.forEach(post => {
-          grid.appendChild(post);
-        });
-
-        console.log('Posts appended to grid');
-
-        // Reinitialize LazyLoad for new images
-        new LazyLoad({
-          elements_selector: ".lazy"
-        });
-
-        // Check if we've reached the last page
-        if (current_page >= pagination_available_pages_number) {
-          console.log('Last page reached, hiding button');
-          paginationContainer.style.display = "none";
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        paginationContainer.style.display = "none";
-      });
-  } else {
-    console.log('No more pages, hiding button');
-    paginationContainer.style.display = "none";
-  }
-}
-
-if (load_posts_button) {
-  load_posts_button.addEventListener("click", loadMorePosts);
-  console.log('Load more posts button listener added');
-} else {
-  console.log('Load more posts button not found');
-}
-
-console.log('base_url:', base_url);
-console.log('pagination_available_pages_number:', pagination_available_pages_number);
-
+  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".article--grid"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
 
   /* =======================
   // Scroll Top Button
