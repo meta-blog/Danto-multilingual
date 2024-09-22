@@ -1,4 +1,3 @@
-<!-- begin header -->
 <header class="header">
   <div class="container-big">
     <div class="row">
@@ -27,13 +26,16 @@
               {{ $currentPage := . }}
               {{ range.Site.Menus.main }}
               {{ $menuURL := .URL | absLangURL }}
-              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+              {{ $pageURL := $currentPage.Permalink | absLangURL }}
               {{ $active := eq $menuURL $pageURL }}
 
               {{ if .HasChildren }}
               <li class="nav__item dropdown">
-                <span class="nav__link dropdown-toggle">{{ .Name }} <i
-                    class="fa-solid fa-angle-down arrow-down"></i></span>
+                <span class="nav__link dropdown-toggle">{{ .Name }} 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="currentColor">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L160 302.1l119-119.7c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L177 352.3c-9.4 9.4-24.6 9.4-33.9 0z"/>
+                  </svg>
+                </span>
                 <div class="dropdown-menu">
                   {{ range .Children }}
                   {{ $childURL := .URL | absLangURL }}
@@ -57,7 +59,9 @@
 
           <div class="nav-button">
             <div class="search-button">
-              <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" class="search-button__icon">
+                <path d="M500.3 443.8l-93.2-93.2c29.3-35.3 47-80.7 47-130.6 0-114.9-93.1-208-208-208s-208 93.1-208 208 93.1 208 208 208c49.9 0 95.2-17.6 130.6-47l93.2 93.2c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 0-33.9zM208 336c-70.7 0-128-57.3-128-128s57.3-128 128-128 128 57.3 128 128-57.3 128-128 128z"/>
+              </svg>
               <span class="search-button__text">{{ T "Search" }}</span>
             </div>
             {{ if .Site.Params.cta_button.enable }}
@@ -72,6 +76,3 @@
     </div>
   </div>
 </header>
-<!-- end header -->
-
-{{ partial "search.html" . }}
