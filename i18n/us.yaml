@@ -13,11 +13,11 @@ Categories: "Categories"
 Tags: "Tags"
 
 # Categories
-Apple: "Apple"
-Gear: "Gear"
-Beauty: "Beauty"
-Review: "Review"
-Game: "Game"
+apple: "Apple"
+gear: "Gear"
+beauty: "Beauty"
+review: "Review"
+game: "Game"
 
 # Tags
 study: "Study"
