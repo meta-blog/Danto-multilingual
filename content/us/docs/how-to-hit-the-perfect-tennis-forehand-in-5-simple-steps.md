@@ -1,6 +1,7 @@
 ---
 title: How to Hit The Perfect Tennis Forehand in 5 Simple Steps
 description: Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+keywords: [Tennis, Forehand]
 date: 2022-06-20 15:01:35 +0300
 authors: [livia]
 image: 'https://via.placeholder.com/1920x1080'
