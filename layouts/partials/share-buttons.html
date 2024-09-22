@@ -35,12 +35,13 @@
     </li>
     <li class="share__item">
       <a class="share__link share__zalo" href="https://zalo.me/share?u={{ .Permalink | absLangURL }}&t={{ .Title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ T "ShareZalo" }}" rel="nofollow">
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50">
-           <path d="M25,2C12.3178711,2,2,12.3178711,2,25s10.3178711,23,23,23s23-10.3178711,23-23S37.6821289,2,25,2z M37.6478271,29.5661011l-6.0300903-7.2342529l2.5677795-3.1903687l0.6081238,0.5789795c0.9283066,0.8835449,1.9500732,1.8588257,2.8071899,2.8669434c0.8572388,1.0082397,1.7825928,2.1593018,2.5809326,3.2657471C38.0092773,25.8238525,36.6100464,27.4835815,37.6478271,29.5661011z M34.7978516,32.0803223H15.0144043v-3.1623535h19.7834473V32.0803223z M22.2073975,21.8476563c-1.6328125-0.0527344-3.0125122,0.6292725-3.414856,2.7454224c-0.3379517,1.7779541,0.8427734,2.5424805,2.1381836,2.7940674c1.5026245,0.2925415,2.9008789-0.3487549,3.4790649-1.7144165c0.5683594-1.3415527,0.2653809-2.6997681-0.7478638-3.5202026C23.1878052,21.7705688,22.6710815,21.8564453,22.2073975,21.8476563z M20.0460815,18.2874756l-2.9602051-3.4868164c1.1022949-0.5117798,2.159668-1.2291718,3.5995483-1.3049316c1.6276245-0.0855713,3.2308959,0.3466797,4.5013428,1.3629761c1.2703857,1.0163574,2.0581665,2.4541626,2.2631226,4.0999756L20.0460815,18.2874756z"></path>
-         </svg>
-         <span class="share-name">Zalo</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zalo-icon">
+          <path d="M4 6h16M4 12h16M4 18h7"></path>
+          <text x="17" y="19" font-family="Arial" font-size="11" font-weight="bold">Z</text>
+        </svg>
+        <span class="share-name">Zalo</span>
       </a>
-     </li>
+    </li>
     <li class="share__item">
       <a class="share__link share__reddit" href="https://reddit.com/submit?url={{ .Permalink | absLangURL }}&title={{ .Title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="{{ T "ShareReddit" }}" rel="nofollow">
         <i class="fa-brands fa-reddit"></i><span class="share-name">Reddit</span>
