@@ -2,6 +2,7 @@
 title: How Changing Your Thinking Can Change Your Life
 description: Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis convallis tristique.
 date: 2022-10-05 15:01:35 +0300
+keyword: [life, How to changing, Change]
 authors: [justin]
 image: 'https://via.placeholder.com/1920x1080'
 Categories: [Apple, Game, Review]
