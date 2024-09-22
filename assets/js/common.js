@@ -144,49 +144,39 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 
-  // =====================
+// =====================
 // Load More Posts
 // =====================
 var load_posts_button = document.querySelector('.load-more-posts');
+var current_page = 1;
+
 load_posts_button && load_posts_button.addEventListener("click", function(e) {
   e.preventDefault();
   var o = document.querySelector(".pagination");
-  var e = pagination_next_url;
-  fetch(e).then(function(e) {
-    if (e.ok) return e.text()
-  }).then(function(e) {
-    var n = document.createElement("div");
-    n.innerHTML = e;
-    var t = document.querySelector(".grid");
-    var a = n.querySelectorAll(".article--grid");
-    for (var i = 0; i < a.length; i++) t.appendChild(a.item(i));
-    new LazyLoad({
-      elements_selector: ".lazy"
+  current_page++;
+
+  if (current_page <= pagination_available_pages_number) {
+    var e = base_url + '/page/' + current_page + '/';
+    fetch(e).then(function(e) {
+      if (e.ok) return e.text()
+    }).then(function(e) {
+      var n = document.createElement("div");
+      n.innerHTML = e;
+      var t = document.querySelector(".grid");
+      var a = n.querySelectorAll(".article--grid");
+      for (var i = 0; i < a.length; i++) t.appendChild(a.item(i));
+      new LazyLoad({
+        elements_selector: ".lazy"
+      });
+
+      // Check if we've reached the last page
+      if (current_page >= pagination_available_pages_number) {
+        o.style.display = "none";
+      }
     });
-    var newScript = n.querySelector('script:not([src])');
-    if (newScript) {
-      eval(newScript.textContent);
-    }
-    if (pagination_next_page_number > pagination_available_pages_number) {
-      o.style.display = "none"
-    }
-  });
-});
-
-
-  /* =======================
-  // Scroll Top Button
-  ======================= */
-  btnScrollToTop.addEventListener("click", function () {
-    if (window.scrollY != 0) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      })
-    }
-  });
-
+  } else {
+    o.style.display = "none";
+  }
 });
 
 
