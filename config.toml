@@ -6,7 +6,7 @@ defaultContentLanguage = "us"
 defaultContentLanguageInSubdir = true
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr","id","th"]  # 비활성화할 언어 나열
-pagerSize = 12
+paginate = 12
 
 # 언어 설정
 [languages]
