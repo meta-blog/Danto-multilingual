@@ -145,54 +145,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   // =====================
-// Load More Posts
-// =====================
-var loadMorePosts = function() {
-  var loadMoreButton = document.querySelector('.load-more-posts');
-  var grid = document.querySelector('.grid');
+  // Load More Posts
+  // =====================
+  var load_posts_button = document.querySelector('.load-more-posts');
 
-  if (loadMoreButton) {
-    loadMoreButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      if (pagination_next_url) {
-        fetch(pagination_next_url)
-          .then(response => response.text())
-          .then(html => {
-            var parser = new DOMParser();
-            var doc = parser.parseFromString(html, 'text/html');
-            var newPosts = doc.querySelectorAll('.article--grid');
-            var newPaginationScript = doc.querySelector('script:not([src])');
-            
-            newPosts.forEach(function(post) {
-              grid.appendChild(post);
-            });
-
-            if (newPaginationScript) {
-              eval(newPaginationScript.textContent);
-            }
-
-            new LazyLoad({
-              elements_selector: ".lazy"
-            });
-
-            // Hide load more button if no more posts
-            if (pagination_next_page_number > pagination_available_pages_number) {
-              loadMoreButton.style.display = 'none';
-            }
-          })
-          .catch(error => {
-            console.error('Error loading more posts:', error);
-            loadMoreButton.style.display = 'none';
-          });
-      } else {
-        loadMoreButton.style.display = 'none';
-      }
-    });
-  }
-};
-
-document.addEventListener('DOMContentLoaded', loadMorePosts);
+  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".article--grid"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
 
 
   /* =======================
