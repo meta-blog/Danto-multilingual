@@ -315,6 +315,16 @@
   }
 }
 
+.top svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.top:hover svg {
+  transform: translateY(-3px);
+}
+
 /* Toggle Theme */
 .toggle-theme {
   margin-right: 24px;

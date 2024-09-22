@@ -16,7 +16,13 @@
           </div>
           <div class="footer__info__right">
             {{ partial "toggle-theme.html" . }}
-            <div class="top" title='{{ T "Top" }}'><i class="fa-solid fa-arrow-up"></i> <span class="top__text">{{ T "BackToTop" }}</span></div>
+            <div class="top" title='{{ T "Top" }}'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+              <span class="top__text">{{ T "BackToTop" }}</span>
+            </div>
           </div>
         </div>
       </div>
