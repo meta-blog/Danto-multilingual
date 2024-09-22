@@ -1,14 +1,14 @@
 {{ $headers := findRE "<h[2-4].*?>(.|\n)*?</h[2-4]>" .Content }}
-{{ $toc := slice }}
-{{ range $headers }}
+  {{ $toc := slice }}
+  {{ range $headers }}
   {{ $level := int (index (findRE "[2-4]" . 1) 0) }}
   {{ $anchorId := index (findRE "id=\"(.*)\"" . 1) 0 | replaceRE "id=\"|\"" "" }}
   {{ $title := . | plainify }}
   {{ $toc = $toc | append (dict "Level" $level "AnchorID" $anchorId "Title" $title) }}
-{{ end }}
-
-{{ if ge (len $toc) 1 }}
-  <aside class="toc" aria-label="{{ T "TableOfContents" }}">
+  {{ end }}
+  {{ .Scratch.Set "customTOC" $toc }} <!-- 여기에 $toc를 .Scratch에 저장 -->
+  {{ if ge (len $toc) 1 }}
+  <aside class="toc" aria-label="{{ T " TableOfContents" }}">
     <h2>{{ T "TableOfContents" }}</h2>
     <nav id="TableOfContents">
       <ul>
@@ -17,27 +17,29 @@
       {{ partial "schema/toc-breadcrumb.html" . }}
     </nav>
   </aside>
-{{ else }}
+  {{ else }}
   <p>{{ T "NoContentAvailable" }}</p>
-{{ end }}
-
-{{ define "toc-item" }}
+  {{ end }}
+  {{ define "toc-item" }}
   {{ $prevLevel := .PrevLevel }}
   {{ range .Items }}
-    {{ if gt .Level $prevLevel }}
-      <li><ul>
-    {{ else if lt .Level $prevLevel }}
+  {{ if gt .Level $prevLevel }}
+  <li>
+    <ul>
+      {{ else if lt .Level $prevLevel }}
       {{ range seq (sub $prevLevel .Level) }}
-        </ul></li>
-      {{ end }}
-    {{ else if ne $prevLevel 2 }}
-      </li>
-    {{ end }}
-    <li>
-      <a href="#{{ .AnchorID }}">{{ .Title }}</a>
+    </ul>
+  </li>
+  {{ end }}
+  {{ else if ne $prevLevel 2 }}
+  </li>
+  {{ end }}
+  <li>
+    <a href="#{{ .AnchorID }}">{{ .Title }}</a>
     {{ $prevLevel = .Level }}
+    {{ end }}
+    {{ range seq (sub $prevLevel 2) }}
+  </li>
+  </ul>
   {{ end }}
-  {{ range seq (sub $prevLevel 2) }}
-    </li></ul>
   {{ end }}
-{{ end }}
