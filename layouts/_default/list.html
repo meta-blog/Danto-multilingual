@@ -39,7 +39,7 @@
     <div class="row grid">
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") 12 }}
       {{ range $index, $element := $paginator.Pages }}
-        {{ partial "article.html" (dict "context" . "class" "col col-4 col-d-6 col-t-12 animate article--grid") }}
+      {{ partial "article.html" (dict "context" . "class" "col col-4 col-d-6 col-t-12 animate article--grid") }}
       {{ end }}
     </div>
   </div>

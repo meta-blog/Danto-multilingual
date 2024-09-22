@@ -159,7 +159,7 @@ function loadMorePosts(e) {
   console.log('Total pages:', pagination_available_pages_number);
 
   if (current_page <= pagination_available_pages_number) {
-    var nextPageUrl = `${base_url}/page/${current_page}/`;
+    var nextPageUrl = new URL(`page/${current_page}/`, base_url).href;
     console.log('Fetching URL:', nextPageUrl);
     
     fetch(nextPageUrl)
@@ -172,6 +172,7 @@ function loadMorePosts(e) {
       })
       .then(html => {
         console.log('HTML received, length:', html.length);
+        console.log('HTML content:', html.substring(0, 200) + '...'); // Log the first 200 characters
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var newPosts = doc.querySelectorAll(".article--grid");

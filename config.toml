@@ -10,8 +10,8 @@ disableLanguages = ["in","cn","tw","mx","ae","br","jp","de","fr","vn","it","tr",
 # 전역 페이지네이션 설정
 [pagination]
   disableAliases = false
-  pagerSize = 12
-  path = "page"
+  paginate = 12  # 또는 원하는 페이지당 포스트 수
+  paginatePath = "page"
 
 # 언어 설정
 [languages]
