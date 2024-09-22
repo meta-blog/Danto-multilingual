@@ -145,11 +145,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   // =====================
-  // Load More Posts
-  // =====================
-  var load_posts_button = document.querySelector('.load-more-posts');
+// Load More Posts
+// =====================
+var load_posts_button = document.querySelector('.load-more-posts');
+var current_page = 1;
 
-  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".article--grid"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
+function loadMorePosts(e) {
+  e.preventDefault();
+  var paginationContainer = document.querySelector(".pagination");
+  current_page++;
+
+  if (current_page <= pagination_available_pages_number) {
+    var nextPageUrl = `${base_url}/page/${current_page}/`;
+    
+    fetch(nextPageUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var newPosts = doc.querySelectorAll(".article--grid");
+        var grid = document.querySelector(".grid");
+        
+        newPosts.forEach(post => {
+          grid.appendChild(post);
+        });
+
+        // Reinitialize LazyLoad for new images
+        new LazyLoad({
+          elements_selector: ".lazy"
+        });
+
+        // Check if we've reached the last page
+        if (current_page >= pagination_available_pages_number) {
+          paginationContainer.style.display = "none";
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        paginationContainer.style.display = "none";
+      });
+  } else {
+    paginationContainer.style.display = "none";
+  }
+}
+
+if (load_posts_button) {
+  load_posts_button.addEventListener("click", loadMorePosts);
+}
 
 
   /* =======================
