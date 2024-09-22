@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 
-  // =====================
+// =====================
 // Load More Posts
 // =====================
 var load_posts_button = document.querySelector('.load-more-posts');
@@ -152,28 +152,37 @@ var current_page = 1;
 
 function loadMorePosts(e) {
   e.preventDefault();
+  console.log('Load more posts clicked');
   var paginationContainer = document.querySelector(".pagination");
   current_page++;
+  console.log('Current page:', current_page);
+  console.log('Total pages:', pagination_available_pages_number);
 
   if (current_page <= pagination_available_pages_number) {
     var nextPageUrl = `${base_url}/page/${current_page}/`;
+    console.log('Fetching URL:', nextPageUrl);
     
     fetch(nextPageUrl)
       .then(response => {
+        console.log('Response status:', response.status);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         return response.text();
       })
       .then(html => {
+        console.log('HTML received, length:', html.length);
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var newPosts = doc.querySelectorAll(".article--grid");
+        console.log('New posts found:', newPosts.length);
         var grid = document.querySelector(".grid");
         
         newPosts.forEach(post => {
           grid.appendChild(post);
         });
+
+        console.log('Posts appended to grid');
 
         // Reinitialize LazyLoad for new images
         new LazyLoad({
@@ -182,6 +191,7 @@ function loadMorePosts(e) {
 
         // Check if we've reached the last page
         if (current_page >= pagination_available_pages_number) {
+          console.log('Last page reached, hiding button');
           paginationContainer.style.display = "none";
         }
       })
@@ -190,13 +200,20 @@ function loadMorePosts(e) {
         paginationContainer.style.display = "none";
       });
   } else {
+    console.log('No more pages, hiding button');
     paginationContainer.style.display = "none";
   }
 }
 
 if (load_posts_button) {
   load_posts_button.addEventListener("click", loadMorePosts);
+  console.log('Load more posts button listener added');
+} else {
+  console.log('Load more posts button not found');
 }
+
+console.log('base_url:', base_url);
+console.log('pagination_available_pages_number:', pagination_available_pages_number);
 
 
   /* =======================
