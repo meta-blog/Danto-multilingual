@@ -23,9 +23,6 @@
   {{ if .IsHome}}<meta property="og:image" content="{{ .Site.Params.hero.hero__image | absURL }}">{{ else }}<meta property="og:image" content="{{ .Params.Image | absURL }}">{{ end }}
 
   <!-- canonical -->
-  {{ if .Params.keywords }}
-    <meta name="keywords" content="{{ delimit .Params.keywords ", " }}">
-{{ end }}
   {{ partial "multilingual-canonical.html" . }}
 
   <script>
