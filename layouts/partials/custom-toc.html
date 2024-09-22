@@ -14,6 +14,7 @@
       <ul>
         {{ template "toc-item" (dict "Items" $toc "PrevLevel" 2) }}
       </ul>
+      {{ partial "schema/toc-breadcrumb.html" . }}
     </nav>
   </aside>
 {{ else }}
