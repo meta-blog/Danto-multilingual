@@ -180,6 +180,22 @@ load_posts_button && load_posts_button.addEventListener("click", function(e) {
 });
 
 
+  /* =======================
+  // Scroll Top Button
+  ======================= */
+  btnScrollToTop.addEventListener("click", function () {
+    if (window.scrollY != 0) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      })
+    }
+  });
+
+});
+
+
 /* =======================
   // active-toc (Optimized)
   ======================= */
