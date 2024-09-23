@@ -19,8 +19,9 @@ Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integ
 
 Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
 
-{{</* youtube-thumbnail "Gavw0A9oPls" "English | Coffee with the Cla(i)res and OM SYSTEM Ambassador Lisa Michele Burns" */>}}
+{{< youtube-thumbnail "Gavw0A9oPls" "English | Coffee with the Cla(i)res and OM SYSTEM Ambassador Lisa Michele Burns" >}}
 
+{{< image src="/images/https://via.placeholder.com/1920x1080.webp" caption="" >}} 
 
 Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
 
