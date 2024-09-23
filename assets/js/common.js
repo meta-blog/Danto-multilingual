@@ -311,3 +311,21 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+
+/* =======================
+  // youtube-thumbnail
+  ======================= */
+  document.addEventListener('DOMContentLoaded', function() {
+    var players = document.querySelectorAll('.youtube-player');
+    players.forEach(function(player) {
+        player.addEventListener('click', function() {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + this.dataset.id + '?autoplay=1');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+            this.innerHTML = '';
+            this.appendChild(iframe);
+        });
+    });
+});
