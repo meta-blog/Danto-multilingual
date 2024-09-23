@@ -21,9 +21,9 @@ Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ul
 
 {{< youtube-thumbnail "Gavw0A9oPls" "English | Coffee with the Cla(i)res and OM SYSTEM Ambassador Lisa Michele Burns" >}}
 
-{{< image src="/images/https://via.placeholder.com/1920x1080.webp" caption="" >}} 
-
 Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+
+{{< image src="https://via.placeholder.com/1920x1080.webp" caption="" >}} 
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.
 
