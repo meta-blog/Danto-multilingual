@@ -1,4 +1,7 @@
-<div class="youtube-player" data-id="{{ .videoID }}">
-    <img src="https://i.ytimg.com/vi/{{ .videoID }}/hqdefault.jpg" alt="{{ .title }}">
+{{ $videoID := .Get 0 }}
+{{ $title := .Get 1 | default "YouTube Video" }}
+
+<div class="youtube-player" data-id="{{ $videoID }}">
+    <img src="https://i.ytimg.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ $title }}">
     <div class="play-button"></div>
 </div>
