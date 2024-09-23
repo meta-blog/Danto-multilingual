@@ -3,7 +3,7 @@ title: How to Start Investing Money for the First Time
 description: Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis convallis tristique.
 date: 2023-01-16 15:01:35 +0300
 authors: [admin]
-image:
+image: 'https://via.placeholder.com/1920x1080'
 video_embed: "https://www.youtube.com/embed/d84DjtztKfo"
 tags: [business]
 ---
