@@ -39,10 +39,10 @@
     <div class="col col-6 col-w-6 col-d-12">
       <article class="post">
         {{ if .Params.video_embed }}
-          {{ $videoID := index (split .Params.video_embed "/") (sub (len (split .Params.video_embed "/")) 1) }}
+          {{ $videoID := index (last 1 (split .Params.video_embed "/")) 0 }}
           {{ $videoTitle := .Title }}
           {{ with $videoID }}
-            {{ (printf "{{< youtube-thumbnail \"%s\" \"%s\" >}}" . $videoTitle) | safeHTML }}
+            {{ partial "youtube-thumbnail.html" (dict "videoID" . "title" $videoTitle) }}
           {{ end }}
         {{ else if .Params.image }}
         <div class="post-image">
@@ -85,10 +85,10 @@
         {{ end }}
       </div>
       {{ if .Params.video_embed }}
-        {{ $videoID := index (split .Params.video_embed "/") (sub (len (split .Params.video_embed "/")) 1) }}
+        {{ $videoID := index (last 1 (split .Params.video_embed "/")) 0 }}
         {{ $videoTitle := .Title }}
         {{ with $videoID }}
-          {{ (printf "{{< youtube-thumbnail \"%s\" \"%s\" >}}" . $videoTitle) | safeHTML }}
+          {{ partial "youtube-thumbnail.html" (dict "videoID" . "title" $videoTitle) }}
         {{ end }}
       {{ else if .Params.image }}
       <div class="post-image">
