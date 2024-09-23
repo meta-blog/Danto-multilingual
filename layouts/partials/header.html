@@ -56,7 +56,7 @@
               <span class="search-button__text">{{ T "Search" }}</span>
             </div>
             {{ if .Site.Params.cta_button.enable }}
-              <a href="{{ if .Site.Params.cta_button.cta_button_link }}{{ .Site.Params.cta_button.cta_button_link }}{{ else }}#{{ end }}" class="nav__link cta-button button button--small">{{ i18n "cta_button_text" }}</a>
+              <a href="{{ if .Site.Params.cta_button.cta_button_link }}{{ relLangURL .Site.Params.cta_button.cta_button_link }}{{ else }}#{{ end }}" class="nav__link cta-button button button--small">{{ i18n "cta_button_text" }}</a>
             {{ end }}
           </div>
         </nav>

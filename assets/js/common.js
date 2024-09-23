@@ -147,69 +147,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // =====================
   // Load More Posts
   // =====================
-  // Load More Posts
-var load_posts_button = document.querySelector('.load-more-posts');
-if (load_posts_button) {
-    load_posts_button.addEventListener("click", function(e) {
-        e.preventDefault();
-        var pagination = document.querySelector(".pagination");
-        
-        // 현재 URL에서 언어 코드 추출
-        var currentPath = window.location.pathname;
-        var langCode = currentPath.split('/')[1];  // URL의 첫 번째 세그먼트를 언어 코드로 가정
-        
-        // URL 구성 (언어 코드 포함)
-        var nextPageUrl = '/' + langCode + '/posts/page/' + pagination_next_page_number + '/';
-        console.log("Next page URL:", nextPageUrl);
+  var load_posts_button=document.querySelector('.load-more-posts');if(load_posts_button){load_posts_button.addEventListener("click",function(e){e.preventDefault();var pagination=document.querySelector(".pagination");var currentPath=window.location.pathname;var langCode=currentPath.split('/')[1];var nextPageUrl='/'+langCode+'/posts/page/'+pagination_next_page_number+'/';console.log("Next page URL:",nextPageUrl);fetch(nextPageUrl).then(function(response){if(response.ok){return response.text()}throw new Error('Network response was not ok.')}).then(function(html){var parser=new DOMParser();var doc=parser.parseFromString(html,'text/html');var newArticles=doc.querySelectorAll(".article--grid");var grid=document.querySelector(".grid");console.log("New articles found:",newArticles.length);newArticles.forEach(function(article){grid.appendChild(article)});if(typeof LazyLoad!=='undefined'){new LazyLoad({elements_selector:".lazy"})}else{console.error("LazyLoad is not defined")}pagination_next_page_number++;console.log("Next page number:",pagination_next_page_number);console.log("Available pages:",pagination_available_pages_number);if(pagination_next_page_number>pagination_available_pages_number){pagination.style.display="none"}}).catch(function(error){console.error('Error:',error)})})}else{console.error("Load more button not found")}console.log("Current URL:",window.location.href);console.log("Initial pagination_next_page_number:",pagination_next_page_number);console.log("Initial pagination_available_pages_number:",pagination_available_pages_number);
 
-        fetch(nextPageUrl)
-            .then(function(response) {
-                if (response.ok) {
-                    return response.text();
-                }
-                throw new Error('Network response was not ok.');
-            })
-            .then(function(html) {
-                var parser = new DOMParser();
-                var doc = parser.parseFromString(html, 'text/html');
-                var newArticles = doc.querySelectorAll(".article--grid");
-                var grid = document.querySelector(".grid");
-
-                console.log("New articles found:", newArticles.length);
-
-                newArticles.forEach(function(article) {
-                    grid.appendChild(article);
-                });
-
-                // LazyLoad 적용
-                if (typeof LazyLoad !== 'undefined') {
-                    new LazyLoad({
-                        elements_selector: ".lazy"
-                    });
-                } else {
-                    console.error("LazyLoad is not defined");
-                }
-
-                pagination_next_page_number++;
-                console.log("Next page number:", pagination_next_page_number);
-                console.log("Available pages:", pagination_available_pages_number);
-
-                if (pagination_next_page_number > pagination_available_pages_number) {
-                    pagination.style.display = "none";
-                }
-            })
-            .catch(function(error) {
-                console.error('Error:', error);
-            });
-    });
-} else {
-    console.error("Load more button not found");
-}
-
-// 페이지 로드 시 변수 확인
-console.log("Current URL:", window.location.href);
-console.log("Initial pagination_next_page_number:", pagination_next_page_number);
-console.log("Initial pagination_available_pages_number:", pagination_available_pages_number);
 
 
   /* =======================
