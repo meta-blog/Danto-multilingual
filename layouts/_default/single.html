@@ -42,7 +42,7 @@
           {{ $videoID := index (split .Params.video_embed "/") (sub (len (split .Params.video_embed "/")) 1) }}
           {{ $videoTitle := .Title }}
           {{ with $videoID }}
-            {{ (printf "{{</* youtube-thumbnail \"%s\" \"%s\" */>}}" . $videoTitle) | safeHTML }}
+            {{ (printf "{{< youtube-thumbnail \"%s\" \"%s\" >}}" . $videoTitle) | safeHTML }}
           {{ end }}
         {{ else if .Params.image }}
         <div class="post-image">
@@ -88,7 +88,7 @@
         {{ $videoID := index (split .Params.video_embed "/") (sub (len (split .Params.video_embed "/")) 1) }}
         {{ $videoTitle := .Title }}
         {{ with $videoID }}
-          {{ (printf "{{</* youtube-thumbnail \"%s\" \"%s\" */>}}" . $videoTitle) | safeHTML }}
+          {{ (printf "{{< youtube-thumbnail \"%s\" \"%s\" >}}" . $videoTitle) | safeHTML }}
         {{ end }}
       {{ else if .Params.image }}
       <div class="post-image">
