@@ -5,3 +5,47 @@
     <img src="https://i.ytimg.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ $title }}">
     <div class="play-button"></div>
 </div>
+
+<style>
+.youtube-player {
+    position: relative;
+    cursor: pointer;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 14px;
+}
+.play-button::before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var players = document.querySelectorAll('.youtube-player');
+    players.forEach(function(player) {
+        player.addEventListener('click', function() {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + this.dataset.id + '?autoplay=1');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+            this.innerHTML = '';
+            this.appendChild(iframe);
+        });
+    });
+});
+</script>
