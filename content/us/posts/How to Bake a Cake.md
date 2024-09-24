@@ -1,6 +1,5 @@
 ---
 title: "How to B"ake a Cake"
-date: "2023-05-20"
 series: ["My first Series"]
 how_to:
   enable: true
