@@ -293,7 +293,7 @@ paginate = 12
   noClasses = false
 
 [permalinks]
-  posts = "/:post/:slug/"
+  posts = "/:sections/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
   apps = "/:slug/"
