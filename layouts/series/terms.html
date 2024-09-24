@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ T "Series" }}</h1>
+    <div class="series-grid">
+        {{ range .Data.Terms.ByCount }}
+            <div class="series-item">
+                <a href="{{ .Page.RelPermalink }}">
+                    <h2>{{ .Page.Title }}</h2>
+                    <p>{{ .Count }} {{ if eq .Count 1 }}article{{ else }}articles{{ end }}</p>
+                </a>
+            </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

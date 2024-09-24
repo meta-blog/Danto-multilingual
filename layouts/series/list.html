@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }} Series</h1>
+    <div class="series-articles">
+        {{ range .Pages.ByDate }}
+            <article>
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <time>{{ .Date.Format "2006-01-02" }}</time>
+                {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
