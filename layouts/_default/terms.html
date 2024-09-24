@@ -1,3 +1,8 @@
+{{ define "title" }}
+  {{ $title := .Title | lower }}
+  {{ T $title }} | {{ .Site.Title }}
+{{ end }}
+
 {{ define "main" }}
 <!-- begin hero -->
 <section class="hero hero--left">
