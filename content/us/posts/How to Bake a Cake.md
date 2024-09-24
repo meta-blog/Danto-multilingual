@@ -1,6 +1,7 @@
 ---
 title: "How to B"ake a Cake"
-series: ["My first Series"]
+series:
+  - My first Series
 how_to:
   enable: true
   name: "How to Bake a Delicious Chocolate Cake"
