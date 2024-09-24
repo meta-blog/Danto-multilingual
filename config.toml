@@ -1,6 +1,6 @@
 # config.toml
 
-baseURL = "https://hot-deal.store/"
+baseURL = "https://danto-multilingual.pages.dev/"
 title = "Danto"
 defaultContentLanguage = "us"
 defaultContentLanguageInSubdir = true
