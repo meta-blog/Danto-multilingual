@@ -11,6 +11,7 @@ docs: "Docs"
 Authors : "Authors"
 Categories: "Categories"
 Tags: "Tags"
+Series: "Series"
 
 # Categories
 apple: "Apple"
@@ -29,6 +30,9 @@ people: "People"
 reading: "Reading"
 science: "Science"
 sport: "Sport"
+
+# Series
+my first series: "My First Series"
 
 # header: cta_button
 cta_button_text: "Get in touch"
