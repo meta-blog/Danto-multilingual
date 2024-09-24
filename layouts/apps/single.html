@@ -1,0 +1,106 @@
+{{ define "main" }}
+{{ if or (eq .Section "app") (eq .Section "apps") }}
+<div class="container">
+  <div class="row">
+    <div class="col col-10 col-w-12">
+      <div class="post__head">
+        <div class="post__meta">
+          <div class="post__tags">
+            {{ range ($.GetTerms "tags") }}
+            <a href="{{ .Permalink }}" class="post__tag">{{ T .LinkTitle }}</a>
+            {{ end }}
+          </div>
+          <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+              {{ .Date.Format (.Site.Params.dateFormat | default "2 Jan, 2006") }}
+            </time></span>
+        </div>
+        {{ if .Title }}
+        <h1 class="post__title">{{ .Title }}</h1>
+        {{ end }}
+        {{ if .Params.description }}
+        <div class="post__description">{{ .Params.description }}</div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- begin post -->
+<div class="container">
+  <div class="row">
+    <!-- Sidebar Left -->
+    <div class="sidebar-left col col-3 col-w-3 col-d-12">
+      <aside class="sidebar">
+        {{ partial "sidebar-widgets/widget-post-author.html" . }}
+        {{ partial "sidebar-widgets/widget-featured-posts.html" . }}
+        {{ partial "sidebar-widgets/widget-tags.html" . }}
+      </aside>
+    </div>
+    <!-- Main Content Area -->
+    <div class="col col-6 col-w-6 col-d-12">
+      <article class="post">
+        {{ if .Params.video_embed }}
+          {{ $videoID := index (last 1 (split .Params.video_embed "/")) 0 }}
+          {{ $videoTitle := .Title }}
+          {{ with $videoID }}
+            {{ partial "youtube-thumbnail.html" (dict "videoID" . "title" $videoTitle) }}
+          {{ end }}
+        {{ else if .Params.image }}
+        <div class="post-image">
+          <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+        </div>
+        {{ end }}
+        <div class="post__content">
+          <!-- Schema -->
+          {{ partial "schema/Article.html" . }}
+          {{ partial "schema/howto-faq.html" . }}
+          <!-- Content -->
+          {{ .Content }}
+        </div>
+        {{ partial "share-buttons.html" . }}
+      </article>
+    </div>
+    <!-- Sidebar Right -->
+    <div class="sidebar-right col col-3 col-w-3 col-d-12">
+      <aside class="sidebar">
+        {{ partial "custom-toc.html" . }}
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+{{ partial "post-navigation.html" . }}
+{{ partial "related-posts.html" . }}
+{{ if and (.Site.Params.disqus.disqusShortname) (.Site.Params.disqus.enable) }}
+{{ partial "disqus-comments.html" . }}
+{{ end }}
+{{ else }}
+<!-- begin page -->
+<div class="container">
+  <article class="page">
+    <div class="page__head">
+      <div class="page__info">
+        <h1 class="page__title">{{ T .Title }}</h1>
+        {{ if .Params.description }}
+        <div class="page__description">{{ T .Params.description }}</div>
+        {{ end }}
+      </div>
+      {{ if .Params.video_embed }}
+        {{ $videoID := index (last 1 (split .Params.video_embed "/")) 0 }}
+        {{ $videoTitle := .Title }}
+        {{ with $videoID }}
+          {{ partial "youtube-thumbnail.html" (dict "videoID" . "title" $videoTitle) }}
+        {{ end }}
+      {{ else if .Params.image }}
+      <div class="post-image">
+        <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+      </div>
+      {{ end }}
+    </div>
+    <div class="page__content">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+<!-- end page -->
+{{ end }}
+{{ end }}
