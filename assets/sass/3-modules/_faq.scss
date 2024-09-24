@@ -6,6 +6,7 @@
 .faq-section h2 {
   /* FAQ 섹션 제목 스타일 */
   margin-bottom: 1.5rem;
+  color: var(--heading-font-color);
 }
 
 .faq-item {
@@ -17,12 +18,13 @@
   /* 질문 제목 스타일 */
   margin-bottom: 1rem; /* 제목과 답변 사이 간격 줄이기 */
   font-size: 1.2em;
-  color: #333;
+  color: var(--heading-font-color);
 }
 
 .faq-answer p {
   /* 답변 내 문단 스타일 */
   margin-bottom: 0.5rem; /* 문단 간 간격 줄이기 */
+  color: var(--text-color);
 }
 
 .faq-answer p:last-child {

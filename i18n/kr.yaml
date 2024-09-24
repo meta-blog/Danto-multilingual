@@ -18,6 +18,13 @@ beauty: "뷰티"
 review: "리뷰"
 game: "게임"
 
+category:
+  name: "카테고리"
+  title: "Category"
+category_review:
+  name: "리뷰"
+  title: "Review"
+
 # Tags
 study: "학습"
 business: "비즈니스"

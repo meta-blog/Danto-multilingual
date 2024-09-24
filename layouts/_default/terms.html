@@ -1,14 +1,9 @@
-{{ define "title" }}
-  {{ $title := .Title | lower }}
-  {{ T $title }} | {{ .Site.Title }}
-{{ end }}
-
 {{ define "main" }}
 <!-- begin hero -->
 <section class="hero hero--left">
   <div class="container">
     {{ if .Title }}
-    <h1 class="hero__title">{{ T (.Title | lower) }}</h1>
+    <h1 class="hero__title">{{ T .Title }}</h1>
     {{ end }}
   </div>
 </section>
@@ -18,12 +13,11 @@
   <div class="container">
     <div class="row">
       {{ range .Data.Terms.ByCount }}
-      {{ $termName := .Page.Title | lower }}
       <div class="col col-2 col-w-3 col-d-6 col-m-12">
-        <a href="{{ .Page.RelPermalink }}" class="tag-image" title="{{ T $termName }}">
-          <img class="lazy" {{ range first 1 .Pages }}data-src="{{ .Params.Image | absURL }}"{{ end }}
-               alt="{{ T $termName }}">
-          <span class="tag-name">{{ T $termName }}</span>
+        <a href="{{ .Page.RelPermalink }}" class="tag-image" title="{{ T (.Page.Title | lower) }}">
+          <img class="lazy" {{ range .Pages }}data-src="{{ .Params.Image | absURL }}" {{ end }}
+            alt="{{ T (.Page.Title | lower) }}">
+          <span class="tag-name">{{ T (.Page.Title | lower) }}</span>
         </a>
       </div>
       {{ end }}
