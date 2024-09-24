@@ -293,10 +293,9 @@ paginate = 12
   noClasses = false
 
 [permalinks]
-  posts = "/:sections/:slug/"
+  posts = "/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
-  apps = "/:slug/"
   
 [outputs]
   home = ["HTML", "RSS", "JSON"]
