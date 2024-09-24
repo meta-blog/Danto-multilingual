@@ -1,5 +1,4 @@
 # config.toml
-
 baseURL = "https://danto-multilingual.pages.dev/"
 title = "Danto"
 defaultContentLanguage = "us"
@@ -294,9 +293,10 @@ paginate = 12
   noClasses = false
 
 [permalinks]
-  posts = "/:slug/"
+  posts = "/:post/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
+  apps = "/:slug/"
   
 [outputs]
   home = ["HTML", "RSS", "JSON"]
