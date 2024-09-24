@@ -1,6 +1,7 @@
 ---
-title: "How to Bake a Cake"
-date: 2023-05-20
+title: "How to B"ake a Cake"
+date: "2023-05-20"
+series: ["My first Series"]
 how_to:
   enable: true
   name: "How to Bake a Delicious Chocolate Cake"

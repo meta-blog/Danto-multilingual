@@ -278,6 +278,7 @@ paginate = 12
   author = "authors"
   category = "categories"
   tag = "tags"
+  series = "series"
 
 [markup.goldmark.renderer]
   unsafe = true
