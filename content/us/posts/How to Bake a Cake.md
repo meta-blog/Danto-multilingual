@@ -1,5 +1,5 @@
 ---
-title: "How to B"ake a Cake"
+title: "How to Bake a Cake"
 series:
   - My first Series
 how_to:
