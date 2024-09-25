@@ -4,58 +4,82 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   overflow: hidden;
+  color: #fff; // 항상 흰색 텍스트
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; // 어두운 배경색
+    z-index: -1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/images/raycast-background.jpg'); // 배경 이미지 경로
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7; // 배경 이미지 투명도 조절
+    }
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    z-index: 1; // 컨텐츠를 배경 위에 표시
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--primary {
+      background-color: #ff4b4b;
+      color: #fff;
+
+      &:hover {
+        background-color: darken(#ff4b4b, 10%);
+      }
+    }
+
+    &--secondary {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }
 
-.hero-raycast__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/hero-background.webp');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.hero-raycast__content {
-  text-align: center;
-  max-width: 800px;
-  padding: 0 20px;
-}
-
-.hero-raycast__title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.hero-raycast__description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.hero-raycast__cta {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.hero-raycast__button {
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.hero-raycast__button--primary {
-  background-color: #ff4b4b;
-  color: #fff;
-}
-
-.hero-raycast__button--secondary {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
+// 다크모드와 라이트모드에 대한 추가적인 스타일 조정이 필요 없음
