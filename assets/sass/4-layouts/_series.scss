@@ -95,8 +95,15 @@
 }
 
 .series-list-item {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
 }
+
+.series-list-item:last-child {
+    border-bottom: none; /* 마지막 항목의 border 제거 */
+}
+
 
 .series-list-item a {
     color: var(--link-color);
