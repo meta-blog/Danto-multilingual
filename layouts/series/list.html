@@ -3,9 +3,6 @@
     <div class="row">
         <div class="col col-12">
             <h1 class="series-list-title">{{ .Title }}</h1>
-            <div class="series-breadcrumb">
-                <a href="{{ "categories" | relLangURL }}">{{ T "Categories" }}</a> » {{ .Title }}
-            </div>
             <ul class="series-list">
                 {{ range .Pages.ByDate.Reverse }}
                 <li class="series-list-item">

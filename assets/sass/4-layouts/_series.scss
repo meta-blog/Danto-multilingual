@@ -1,3 +1,71 @@
+/*Series terms*/
+.series-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--heading-font-color);
+}
+
+.series-item-link {
+    text-decoration: none;
+    display: block;
+}
+
+.series-item {
+    background-color: var(--background-alt-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.series-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    background-color: var(--background-alt-color-2);
+}
+
+.series-content {
+    max-width: 100%;
+}
+
+.series-item h2 {
+    color: var(--heading-font-color);
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.series-item p {
+    color: var(--text-alt-color);
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+/* 다크 모드 특정 조정 */
+:root[dark] .series-item {
+    box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+}
+
+:root[dark] .series-item:hover {
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+}
+
+@media (max-width: $mobile) {
+    .series-item {
+        height: 180px;
+    }
+}
+
+
+
+/*Series list*/
 .series-list-title {
     font-size: 2.5em;
     color: var(--heading-font-color);
@@ -8,15 +76,6 @@
     font-size: 0.9em;
     color: var(--text-alt-color);
     margin-bottom: 30px;
-}
-
-.series-breadcrumb a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.series-breadcrumb a:hover {
-    text-decoration: underline;
 }
 
 .series-list {
