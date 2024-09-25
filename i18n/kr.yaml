@@ -167,9 +167,9 @@ howto_total_time: "총 소요 시간"
 #######################
 
 # hero-raycast
-raycastHeroTitle: "Your shortcut to everything."
-raycastHeroDescription: "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."
+raycastHeroTitle: "모든 것에 대한 지름길."
+raycastHeroDescription: "확장 가능한 런처에 강력한 생산성 도구가 모두 모여 있습니다. 빠르고, 인체공학적이고, 안정적입니다."
 raycastCtaPrimaryLink: "/download/mac"
-raycastCtaPrimaryText: "Download for Mac"
+raycastCtaPrimaryText: "맥OS용 다운로드"
 raycastCtaSecondaryLink: "/windows-waitlist"
-raycastCtaSecondaryText: "Join Windows waitlist"
+raycastCtaSecondaryText: "Windows 사전 예약"
