@@ -198,6 +198,12 @@ paginate = 12
   alternatePageName = "Your Alternate Site Name"
   socialProfiles = ["https://facebook.com/yourpage", "https://twitter.com/yourhandle", "https://instagram.com/yourprofile"]
 
+  heroTitle = "Your shortcut to everything."
+  heroDescription = "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."
+  ctaPrimaryLink = "/download/mac"
+  ctaPrimaryText = "Download for Mac"
+  ctaSecondaryLink = "/windows-waitlist"
+  ctaSecondaryText = "Join Windows waitlist"
 
   [params.hero]
     enable = true

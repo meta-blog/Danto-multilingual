@@ -36,6 +36,8 @@
     4.3-Tags + Tag Page
     4.4-Second-header
     4.5-series
+:: 5-Landing
+    5.1-hero
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -128,3 +130,11 @@
 @import '4-layouts/second-header';
 /* >>>>>>>>>>>>>> :: 4.5-series-terms <<<<<<<<<<<<<<< */
 @import '4-layouts/series';
+
+
+
+/* =======================
+:: 4-Lading
+======================= */
+/* >>>>>>>>>>>>>> :: 4.1-Hero <<<<<<<<<<<<<<< */
+@import '5-landing/hero';

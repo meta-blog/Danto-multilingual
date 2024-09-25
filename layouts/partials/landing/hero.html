@@ -1,0 +1,13 @@
+<section class="hero">
+    <div class="hero-background">
+      <!-- 배경 이미지는 CSS에서 처리 -->
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">{{ .Site.Params.heroTitle | default "Your shortcut to everything." }}</h1>
+      <p class="hero-description">{{ .Site.Params.heroDescription | default "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable." }}</p>
+      <div class="hero-cta">
+        <a href="{{ .Site.Params.ctaPrimaryLink }}" class="button button-primary">{{ .Site.Params.ctaPrimaryText | default "Download for Mac" }}</a>
+        <a href="{{ .Site.Params.ctaSecondaryLink }}" class="button button-secondary">{{ .Site.Params.ctaSecondaryText | default "Join Windows waitlist" }}</a>
+      </div>
+    </div>
+  </section>
