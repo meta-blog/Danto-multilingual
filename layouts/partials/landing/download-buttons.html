@@ -5,10 +5,10 @@
     <div class="download-grid">
       {{ range .Site.Params.downloadButtons }}
         <div class="download-card">
-          <div class="download-icon">
+          <div class="download-info">
             <i class="fa-brands {{ .icon }}"></i>
+            <span class="download-os">{{ i18n .text }}</span>
           </div>
-          <span class="download-os">{{ i18n .text }}</span>
           <a href="{{ .link }}" class="download-button" aria-label="{{ i18n .ariaLabel }}">
             {{ i18n "downloadButtonText" }}
           </a>
