@@ -25,7 +25,7 @@
 
 .download-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -37,6 +37,8 @@
   background-color: var(--card-background-color);
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--text-color);
 
   &:hover {
     transform: translateY(-3px);
@@ -57,20 +59,24 @@
 
 .download-os {
   font-size: 1rem;
-  color: var(--text-color);
 }
 
 .download-button {
-  padding: 8px 16px;
-  background-color: var(--button-background-color);
-  color: var(--button-text-color);
-  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--text-color);
   border-radius: 5px;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    background-color: var(--button-hover-background-color);
+    background-color: var(--text-color);
+    color: var(--card-background-color);
+  }
+}
+
+@media (max-width: 1024px) {
+  .download-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -4,15 +4,15 @@
     <p class="section-description">{{ i18n "downloadDescription" }}</p>
     <div class="download-grid">
       {{ range .Site.Params.downloadButtons }}
-        <div class="download-card">
+        <a href="{{ .link }}" class="download-card" aria-label="{{ i18n .ariaLabel }}">
           <div class="download-info">
             <i class="fa-brands {{ .icon }}"></i>
             <span class="download-os">{{ i18n .text }}</span>
           </div>
-          <a href="{{ .link }}" class="download-button" aria-label="{{ i18n .ariaLabel }}">
+          <span class="download-button">
             {{ i18n "downloadButtonText" }}
-          </a>
-        </div>
+          </span>
+        </a>
       {{ end }}
     </div>
   </div>
