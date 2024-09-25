@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="container series-page series-list-page">
-    <div class="row justify-content-center">
-        <div class="col col-8 col-t-10 col-m-12">
+<div class="container">
+    <div class="row">
+        <div class="col col-12">
             <h1 class="series-list-title">{{ .Title }}</h1>
             <ul class="series-list">
                 {{ range .Pages.ByDate.Reverse }}
@@ -10,9 +10,6 @@
                 </li>
                 {{ end }}
             </ul>
-            
-            <!-- 페이지네이션 추가 -->
-            {{ partial "pagination.html" . }}
         </div>
     </div>
 </div>

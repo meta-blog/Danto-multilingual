@@ -82,35 +82,27 @@
 
 
 /*Series list*/
-.series-list-page {
-    max-width: 1200px;  /* 더 넓은 최대 너비 설정 */
-    margin: 0 auto;
-    padding: 60px 20px;
-}
-
 .series-list-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    margin-bottom: 48px;
+    font-size: 2em;
     color: var(--heading-font-color);
 }
 
 .series-list {
     list-style-type: square;
     padding: 0;
-    max-width: 800px;  /* 리스트 자체의 최대 너비 제한 */
-    margin: 0 auto;  /* 중앙 정렬 */
 }
 
 .series-list-item {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid var(--border-color);
 }
 
 .series-list-item:last-child {
-    border-bottom: none;
+    border-bottom: none; /* 마지막 항목의 border 제거 */
 }
+
 
 .series-list-item a {
     color: var(--link-color);
