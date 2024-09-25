@@ -6,7 +6,6 @@ blog: "Blog"
 news: "News"
 docs: "Docs"
 
-
 # Taxonomies
 Authors : "Authors"
 Categories: "Categories"
@@ -34,6 +33,10 @@ sport: "Sport"
 # Series
 "my first series": "My First Series"
 "How to customizing Hugo": "How to customizing Hugo"
+
+# Pages
+About: "about"
+Contact: "contact"
 
 # header: cta_button
 cta_button_text: "Get in touch"
@@ -89,7 +92,7 @@ featuredPosts: "Featured Posts"
 # Layout: index.json
 dateFormat: "January 2, 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Videos"
 NoVideosFound: "No videos found."
 

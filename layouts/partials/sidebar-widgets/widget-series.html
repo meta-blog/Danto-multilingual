@@ -1,0 +1,18 @@
+{{ if .Params.series }}
+  {{ $series := .Params.series }}
+  {{ $currentPageTitle := .Title }}
+  <div class="widget-sidebar widget-series">
+    <h3 class="widget-series-title">
+      {{ T "Series" }}: {{ with T (lower $series) }}{{ . }}{{ else }}{{ $series }}{{ end }}
+    </h3>
+    <ul class="widget-series-list">
+      {{ range where .Site.RegularPages.ByDate "Params.series" $series }}
+        <li class="widget-series-item{{ if eq .Title $currentPageTitle }} widget-series-item--current{{ end }}">
+          <a href="{{ .Permalink }}" class="widget-series-link">
+            {{ with T (lower .Title) }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
