@@ -182,7 +182,7 @@ raycastCtaPrimaryText: "Download for Mac"
 raycastCtaSecondaryLink: "/windows-waitlist"
 raycastCtaSecondaryText: "Join Windows waitlist"
 
-# features
+# features-card
 featureCardTitle1: "Easy Sharing"
 featureCardDescription1: "Share content easily with just one link."
 featureCardImageAlt1: "Easy Sharing Icon"
@@ -230,3 +230,22 @@ featureCardImageAlt11: "Real-time Sync Icon"
 featureCardTitle12: "Variety of Tools"
 featureCardDescription12: "Work efficiently with a variety of built-in tools."
 featureCardImageAlt12: "Variety of Tools Icon"
+
+
+# features-grid
+featureGridTitle1: "Say Anything"
+featureGridDescription1: "Share text, voice messages, photos, videos, GIFs and files for free. Signal uses your phone's data connection so you can avoid SMS and MMS fees."
+featureGridImageAlt1: "Messaging feature illustration"
+
+featureGridTitle2: "Speak Freely"
+featureGridDescription2: "Make crystal-clear voice and video calls to people who live across town, or across the ocean, with no long-distance charges."
+featureGridImageAlt2: "Voice and video calls illustration"
+
+featureGridTitle3: "Make Privacy Stick"
+featureGridDescription3: "Add a new layer of expression to your conversations with encrypted stickers. You can also create and share your own sticker packs."
+featureGridImageAlt3: "Stickers feature illustration"
+
+featureGridTitle4: "Get Together with Groups"
+featureGridDescription4: "Group chats make it easy to stay connected to your family, friends, and coworkers."
+featureGridImageAlt4: "Group chat feature illustration"
+# ... 나머지 4개의 기능에 대한 번역도 추가

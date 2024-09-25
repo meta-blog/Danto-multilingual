@@ -1,0 +1,13 @@
+<section class="feature-grid">
+    <div class="feature-grid-container">
+      {{ range $index, $element := .Site.Params.featureGrid }}
+        <a href="{{ .link }}" class="feature-box">
+          <div class="feature-image">
+            <img src="{{ .image }}" alt="{{ i18n (printf "featureGridImageAlt%d" (add $index 1)) }}">
+          </div>
+          <h3 class="feature-title">{{ i18n (printf "featureGridTitle%d" (add $index 1)) }}</h3>
+          <p class="feature-description">{{ i18n (printf "featureGridDescription%d" (add $index 1)) }}</p>
+        </a>
+      {{ end }}
+    </div>
+  </section>

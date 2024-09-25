@@ -201,7 +201,7 @@ paginate = 12
   [params.hero]
     enable = true
 
-  # 랜딩 페이지 - 기능
+  # 랜딩 페이지 - 기능 카드
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
     link = "/features/easy-sharing"
@@ -238,6 +238,23 @@ paginate = 12
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
     link = "/features/cross-platform"
+    # ... 나머지 기능도 같은 방식으로 추가
+
+
+  # 랜딩 페이지 - 기능 그리드
+  [[params.featureGrid]]
+    image = "/images/say-anything.jpg"
+    link = "/features/messaging"
+  [[params.featureGrid]]
+    image = "/images/speak-freely.jpg"
+    link = "/features/voice-video"
+  [[params.featureGrid]]
+    image = "/images/privacy-stick.jpg"
+    link = "/features/stickers"
+  [[params.featureGrid]]
+    image = "/images/group-chat.jpg"
+    link = "/features/groups"
+  # ... 나머지 기능도 같은 방식으로 추가
 
   [params.tags_section]
     enable = true
