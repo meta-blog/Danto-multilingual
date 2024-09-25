@@ -31,8 +31,8 @@ science: "과학"
 sport: "스포츠"
 
 # Series
-my first series: "내 첫번째 시리즈"
-How to customizing Hugo: "휴고 커스터마이징"
+"my first series": "내 첫번째 시리즈"
+"How to customizing Hugo": "휴고 커스터마이징"
 
 # header: cta_button
 cta_button_text: "문의하기"
