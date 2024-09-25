@@ -10,12 +10,21 @@
       {{ end }}
       {{ with T (lower $seriesTitle) }}{{ . }}{{ else }}{{ $seriesTitle }}{{ end }}
     </h3>
+    <!-- Debug: Current series -->
+    <p>Debug - Current series: {{ $seriesTitle }}</p>
+    
     <ul class="widget-series-list">
       {{ $seriesToUse := $series }}
       {{ if reflect.IsSlice $series }}
         {{ $seriesToUse = index $series 0 }}
       {{ end }}
+      <!-- Debug: Series to use for filtering -->
+      <p>Debug - Series to use: {{ $seriesToUse }}</p>
+      
       {{ $seriesPosts := where .Site.RegularPages "Params.series" $seriesToUse }}
+      <!-- Debug: Number of posts found -->
+      <p>Debug - Number of posts found: {{ len $seriesPosts }}</p>
+      
       {{ $seriesPosts := $seriesPosts.ByWeight }}
       {{ $seriesPosts := $seriesPosts.ByDate.Reverse }}
       {{ range $seriesPosts }}
@@ -34,7 +43,13 @@
             {{ end }}
           </a>
         </li>
+      {{ else }}
+        <!-- Debug: No posts found message -->
+        <li>Debug - No posts found in this series</li>
       {{ end }}
     </ul>
   </div>
+{{ else }}
+  <!-- Debug: No series parameter found -->
+  <p>Debug - No series parameter found for this page</p>
 {{ end }}
