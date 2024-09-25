@@ -253,8 +253,8 @@ featureGridImageAlt4: "Group chat feature illustration"
 
 
 # downlaod-buttons
-downloadTitle: "My Software Title"
-downloadDescription: "Access our software on various operating systems, whether on PC or mobile, anywhere!"
+downloadTitle: "Download MySoftware"
+downloadDescription: "Access Naver MySoftware across various OS platforms on PC and mobile, anytime and anywhere!"
 downloadWindows: "Windows"
 downloadMacOS: "macOS"
 downloadAndroid: "Android"
@@ -262,9 +262,11 @@ downloadIOS: "iOS"
 downloadLinux: "Linux"
 downloadDirect: "Direct Download"
 
-downloadWindowsAria: "Download My Software for Windows"
-downloadMacOSAria: "Download My Software for macOS"
-downloadAndroidAria: "Download My Software for Android"
-downloadIOSAria: "Download My Software for iOS"
-downloadLinuxAria: "Download My Software for Linux"
-downloadDirectAria: "Direct File Download for My Software"
+downloadWindowsAria: "Download MySoftware for Windows"
+downloadMacOSAria: "Download MySoftware for macOS"
+downloadAndroidAria: "Download MySoftware for Android"
+downloadIOSAria: "Download MySoftware for iOS"
+downloadLinuxAria: "Download MySoftware for Linux"
+downloadDirectAria: "Direct file download of MySoftware"
+
+downloadButtonText: "Download"

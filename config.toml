@@ -288,10 +288,12 @@ paginate = 12
     link = "/download/direct"
     ariaLabel = "downloadDirectAria"
 
+
   [params.tags_section]
     enable = true
     number_posts = 3
     number_columns = 3
+    
 
   [[params.tag]]
     tag = "lifestyle"

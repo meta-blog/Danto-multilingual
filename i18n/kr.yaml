@@ -244,8 +244,8 @@ featureGridImageAlt4: "그룹 채팅 기능 일러스트"
 
 
 # downlaod-buttons
-downloadTitle: "마이 소프트웨어 제목"
-downloadDescription: "PC, 모바일 어디서나 다양한 OS에서 우리 소프트웨어를 만나보세요=!"
+downloadTitle: "마이소프트웨어 다운로드"
+downloadDescription: "PC, 모바일 어디서나 다양한 OS에서 네이버 마이소프트웨어를 만나 보세요!"
 downloadWindows: "Windows"
 downloadMacOS: "macOS"
 downloadAndroid: "Android"
@@ -259,3 +259,5 @@ downloadAndroidAria: "Android용 마이소프트웨어 다운로드"
 downloadIOSAria: "iOS용 마이소프트웨어 다운로드"
 downloadLinuxAria: "Linux용 마이소프트웨어 다운로드"
 downloadDirectAria: "마이소프트웨어 직접 파일 다운로드"
+
+downloadButtonText: "다운로드"

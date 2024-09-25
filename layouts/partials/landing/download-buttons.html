@@ -1,14 +1,19 @@
 <section id="download" class="download-section">
-    <div class="container">
-      <h2 class="section-title">{{ i18n "downloadTitle" }}</h2>
-      <p class="section-description">{{ i18n "downloadDescription" }}</p>
-      <div class="download-grid">
-        {{ range .Site.Params.downloadButtons }}
-          <a href="{{ .link }}" class="download-button" aria-label="{{ i18n .ariaLabel }}">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "downloadTitle" }}</h2>
+    <p class="section-description">{{ i18n "downloadDescription" }}</p>
+    <div class="download-grid">
+      {{ range .Site.Params.downloadButtons }}
+        <div class="download-card">
+          <div class="download-icon">
             <i class="fa-brands {{ .icon }}"></i>
-            <span>{{ i18n .text }}</span>
+          </div>
+          <span class="download-os">{{ i18n .text }}</span>
+          <a href="{{ .link }}" class="download-button" aria-label="{{ i18n .ariaLabel }}">
+            {{ i18n "downloadButtonText" }}
           </a>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
     </div>
-  </section>
+  </div>
+</section>
