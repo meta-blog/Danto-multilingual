@@ -208,6 +208,22 @@ featureCardTitle8: "크로스 플랫폼"
 featureCardDescription8: "어디서나, 어떤 기기에서도 사용 가능합니다."
 featureCardImageAlt8: "크로스 플랫폼 아이콘"
 
+featureCardTitle9: "간편한 공유"
+featureCardDescription9: "링크 하나로 간편하게 콘텐츠를 공유하세요."
+featureCardImageAlt9: "간편한 공유 아이콘"
+
+featureCardTitle10: "쉬운 협업"
+featureCardDescription10: "워크스페이스에서 팀과 쉽게 협업하세요."
+featureCardImageAlt10: "쉬운 협업 아이콘"
+
+featureCardTitle11: "실시간 동기화"
+featureCardDescription11: "변경사항이 실시간으로 모든 기기에 동기화됩니다."
+featureCardImageAlt11: "실시간 동기화 아이콘"
+
+featureCardTitle12: "다양한 도구"
+featureCardDescription12: "다양한 내장 도구로 작업을 효율적으로 수행하세요."
+featureCardImageAlt12: "다양한 도구 아이콘"
+
 # features-grid
 featureGridTitle1: "무엇이든 말하세요"
 featureGridDescription1: "문자, 음성 메시지, 사진, 동영상, GIF, 파일을 무료로 공유하세요. Signal은 전화의 데이터 연결을 사용하여 SMS 및 MMS 요금을 피할 수 있습니다."
