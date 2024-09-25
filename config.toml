@@ -199,7 +199,7 @@ paginate = 12
   socialProfiles = ["https://facebook.com/yourpage", "https://twitter.com/yourhandle", "https://instagram.com/yourprofile"]
 
   [params.hero]
-    enable = true
+    enable = false
 
   # 랜딩 페이지 - 기능
   [[params.features]]
@@ -210,6 +210,14 @@ paginate = 12
     image = "/images/feature3.jpg"
   [[params.features]]
     image = "/images/feature4.jpg"
+  [[params.features]]
+    image = "/images/feature5.jpg"
+  [[params.features]]
+    image = "/images/feature6.jpg"
+  [[params.features]]
+    image = "/images/feature7.jpg"
+  [[params.features]]
+    image = "/images/feature8.jpg"
 
   [params.tags_section]
     enable = true

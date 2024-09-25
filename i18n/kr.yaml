@@ -177,17 +177,33 @@ raycastCtaSecondaryText: "Windows 사전 예약"
 
 # features
 featureTitle1: "오픈 채팅"
-featureDescription1: "같은 관심사를 가진 새로운 친구를 가장 쉽게 찾는 방법. 오픈 채팅에 가서 관심사에 맞는 친구를 찾아보세요."
+featureDescription1: "공통 관심사를 가진 새로운 친구를 찾아보세요."
 featureImageAlt1: "오픈 채팅 기능"
 
 featureTitle2: "관심사 그룹"
-featureDescription2: "취미, 직업, 또는 열정을 가진 주제에 따라 그룹에 참여하세요. 전 세계에서 같은 생각을 가진 사람들과 연결될 수 있습니다."
+featureDescription2: "취미에 기반한 그룹에 참여하세요."
 featureImageAlt2: "관심사 그룹 기능"
 
 featureTitle3: "실시간 메시지"
-featureDescription3: "새로운 친구들과 끊김 없는 실시간 대화를 즐기세요. 텍스트, 이미지, 동영상을 즉시 공유할 수 있습니다."
+featureDescription3: "끊김 없는 대화를 즐기세요."
 featureImageAlt3: "실시간 메시지 기능"
 
 featureTitle4: "프라이버시 제어"
-featureDescription4: "고급 프라이버시 설정으로 온라인 존재감을 제어하세요. 누가 내 프로필을 보고 연락할 수 있을지 선택할 수 있습니다."
+featureDescription4: "온라인 존재를 관리하세요."
 featureImageAlt4: "프라이버시 제어 기능"
+
+featureTitle5: "파일 공유"
+featureDescription5: "문서와 미디어를 쉽게 공유하세요."
+featureImageAlt5: "파일 공유 기능"
+
+featureTitle6: "영상 통화"
+featureDescription6: "친구와 얼굴을 맞대고 소통하세요."
+featureImageAlt6: "영상 통화 기능"
+
+featureTitle7: "맞춤형 테마"
+featureDescription7: "채팅 경험을 개인화하세요."
+featureImageAlt7: "맞춤형 테마 기능"
+
+featureTitle8: "크로스 플랫폼 지원"
+featureDescription8: "어디서나, 어떤 기기에서든 사용하세요."
+featureImageAlt8: "크로스 플랫폼 지원 기능"
