@@ -201,6 +201,16 @@ paginate = 12
   [params.hero]
     enable = true
 
+  # 랜딩 페이지 - 기능
+  [[params.features]]
+    image = "/images/feature1.jpg"
+  [[params.features]]
+    image = "/images/feature2.jpg"
+  [[params.features]]
+    image = "/images/feature3.jpg"
+  [[params.features]]
+    image = "/images/feature4.jpg"
+
   [params.tags_section]
     enable = true
     number_posts = 3

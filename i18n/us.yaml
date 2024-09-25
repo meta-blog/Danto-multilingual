@@ -181,3 +181,20 @@ raycastCtaPrimaryLink: "/download/mac"
 raycastCtaPrimaryText: "Download for Mac"
 raycastCtaSecondaryLink: "/windows-waitlist"
 raycastCtaSecondaryText: "Join Windows waitlist"
+
+# features
+featureTitle1: "Open Chat"
+featureDescription1: "The easiest way to find new friends that share the same interests. Go to Open Chat and search for friends based on your interests."
+featureImageAlt1: "Open Chat Feature"
+
+featureTitle2: "Interest Groups"
+featureDescription2: "Join groups based on your hobbies, profession, or any topic you're passionate about. Connect with like-minded individuals from around the world."
+featureImageAlt2: "Interest Groups Feature"
+
+featureTitle3: "Real-time Messaging"
+featureDescription3: "Enjoy seamless, real-time conversations with your new friends. Share text, images, and videos instantly."
+featureImageAlt3: "Real-time Messaging Feature"
+
+featureTitle4: "Privacy Controls"
+featureDescription4: "Take control of your online presence with our advanced privacy settings. Choose who can see your profile and contact you."
+featureImageAlt4: "Privacy Controls Feature"
