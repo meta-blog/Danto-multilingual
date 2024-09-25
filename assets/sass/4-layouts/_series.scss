@@ -89,16 +89,9 @@
     color: var(--heading-font-color);
 }
 
-.series-breadcrumb {
-    font-size: 0.9em;
-    color: var(--text-alt-color);
-    margin-bottom: 30px;
-}
-
 .series-list {
-    list-style-type: none;
+    list-style-type: square;
     padding: 0;
-    margin: 0;
 }
 
 .series-list-item {
