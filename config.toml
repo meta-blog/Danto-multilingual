@@ -199,7 +199,7 @@ paginate = 12
   socialProfiles = ["https://facebook.com/yourpage", "https://twitter.com/yourhandle", "https://instagram.com/yourprofile"]
 
   [params.hero]
-    enable = false
+    enable = true
 
   # 랜딩 페이지 - 기능
   [[params.features]]

@@ -1,10 +1,10 @@
-<section class="features">
-  <div class="container">
-    {{ range $index, $element := .Site.Params.features }}
+<section class="feature-cards-section">
+  <div class="feature-cards-container">
+    {{ range $index, $element := .Site.Params.featureCards }}
       <div class="feature-card">
-        <img src="{{ .image }}" alt="{{ i18n (printf "featureImageAlt%d" (add $index 1)) }}" class="feature-image">
-        <h2 class="feature-title">{{ i18n (printf "featureTitle%d" (add $index 1)) }}</h2>
-        <p class="feature-description">{{ i18n (printf "featureDescription%d" (add $index 1)) }}</p>
+        <img src="{{ .image }}" alt="{{ i18n (printf "featureCardImageAlt%d" (add $index 1)) }}" class="feature-card-image">
+        <h3 class="feature-card-title">{{ i18n (printf "featureCardTitle%d" (add $index 1)) }}</h3>
+        <p class="feature-card-description">{{ i18n (printf "featureCardDescription%d" (add $index 1)) }}</p>
       </div>
     {{ end }}
   </div>
