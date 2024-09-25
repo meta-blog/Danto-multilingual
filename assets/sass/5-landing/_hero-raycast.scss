@@ -1,0 +1,110 @@
+.hero-raycast {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #000, #333);
+    z-index: -1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/images/raycast-background.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--primary {
+      background-color: #ff4b4b;
+      color: #fff;
+
+      &:hover {
+        background-color: darken(#ff4b4b, 10%);
+      }
+    }
+
+    &--secondary {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+// 라이트 모드
+@media (prefers-color-scheme: light) {
+  .hero-raycast {
+    &__background {
+      background-image: linear-gradient(45deg, #f0f0f0, #fff);
+
+      &::before {
+        opacity: 0.1;
+      }
+    }
+
+    &__content {
+      color: #333;
+    }
+
+    &__button {
+      &--secondary {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #333;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}

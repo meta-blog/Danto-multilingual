@@ -168,3 +168,16 @@ howto_supplies: "Supplies Needed"
 howto_tools: "Tools Needed"
 howto_steps: "Steps"
 howto_total_time: "Total Time"
+
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Your shortcut to everything."
+raycastHeroDescription: "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Download for Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Join Windows waitlist"

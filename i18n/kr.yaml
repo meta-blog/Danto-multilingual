@@ -160,3 +160,16 @@ howto_supplies: "필요한 준비물"
 howto_tools: "필요한 도구"
 howto_steps: "단계"
 howto_total_time: "총 소요 시간"
+
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Your shortcut to everything."
+raycastHeroDescription: "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Download for Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Join Windows waitlist"
