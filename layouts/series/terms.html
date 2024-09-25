@@ -11,7 +11,19 @@
       <a href="{{ .Page.Permalink }}" class="series-item-link">
         <div class="series-item">
           <div class="series-content">
-            <h2>{{ T (.Page.Title | lower) }}</h2>
+            <h2>
+              {{ $title := .Page.Title }}
+              {{ $lowercaseTitle := lower $title }}
+              {{ with T $lowercaseTitle }}
+                {{ . }}
+              {{ else }}
+                {{ with T $title }}
+                  {{ . }}
+                {{ else }}
+                  {{ $title }}
+                {{ end }}
+              {{ end }}
+            </h2>
             <p>{{ .Count }} {{ if eq .Count 1 }}{{ T "article" }}{{ else }}{{ T "articles" }}{{ end }}</p>
           </div>
         </div>
