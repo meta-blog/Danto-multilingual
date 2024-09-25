@@ -1,11 +1,7 @@
 {{ define "main" }}
-
-{{ partial "section-hero.html" . }}
-
-{{ partial "section-featured-posts.html" . }}
-
-{{ partial "section-tags.html" . }}
-
-{{ partial "section-authors.html" . }}
-
+{{ partial "landing/hero.html" . }}
+{{ partial "landing/featured-posts.html" . }}
+{{ partial "landing/tags.html" . }}
+{{ partial "landing/authors.html" . }}
+<!-- 추가적인 랜딩 페이지 섹션들 -->
 {{ end }}
