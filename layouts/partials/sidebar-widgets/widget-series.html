@@ -8,7 +8,9 @@
       {{ if reflect.IsSlice $series }}
         {{ $seriesTitle = index $series 0 }}
       {{ end }}
-      {{ with T (lower $seriesTitle) }}{{ . }}{{ else }}{{ $seriesTitle }}{{ end }}
+      <a href="{{ "/series/" | relLangURL }}{{ $seriesTitle | urlize }}/" class="widget-series-link">
+        {{ with T (lower $seriesTitle) }}{{ . }}{{ else }}{{ $seriesTitle }}{{ end }}
+      </a>
     </h3>
     
     <ul class="widget-series-list">
