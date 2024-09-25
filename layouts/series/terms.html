@@ -1,12 +1,18 @@
 {{ define "main" }}
 <div class="container">
-    <h1 class="series-title">{{ T "Series" }}</h1>
-    <div class="series-grid">
+    <div class="row">
+        <div class="col col-12">
+            <h1 class="series-title">{{ T "Series" }}</h1>
+        </div>
+    </div>
+    <div class="row">
         {{ range .Data.Terms.ByCount }}
-            <div class="series-item">
-                <div class="series-content">
-                    <h2>{{ .Page.Title }}</h2>
-                    <p>{{ .Count }} {{ if eq .Count 1 }}article{{ else }}articles{{ end }}</p>
+            <div class="col col-4 col-d-6 col-t-12">
+                <div class="series-item">
+                    <div class="series-content">
+                        <h2>{{ .Page.Title }}</h2>
+                        <p>{{ .Count }} {{ if eq .Count 1 }}article{{ else }}articles{{ end }}</p>
+                    </div>
                 </div>
             </div>
         {{ end }}
