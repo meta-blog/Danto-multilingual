@@ -1,0 +1,75 @@
+.download-section {
+    padding: 60px 0;
+    background-color: var(--background-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: var(--heading-font-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .download-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: var(--background-alt-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--button-text-color);
+      transform: translateY(-3px);
+    }
+  
+    i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+  
+    span {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .download-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .download-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .download-grid {
+      grid-template-columns: 1fr;
+    }
+  }

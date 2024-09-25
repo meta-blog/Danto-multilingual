@@ -249,3 +249,22 @@ featureGridTitle4: "Get Together with Groups"
 featureGridDescription4: "Group chats make it easy to stay connected to your family, friends, and coworkers."
 featureGridImageAlt4: "Group chat feature illustration"
 # ... 나머지 4개의 기능에 대한 번역도 추가
+
+
+
+# downlaod-buttons
+downloadTitle: "My Software Title"
+downloadDescription: "Access our software on various operating systems, whether on PC or mobile, anywhere!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Direct Download"
+
+downloadWindowsAria: "Download My Software for Windows"
+downloadMacOSAria: "Download My Software for macOS"
+downloadAndroidAria: "Download My Software for Android"
+downloadIOSAria: "Download My Software for iOS"
+downloadLinuxAria: "Download My Software for Linux"
+downloadDirectAria: "Direct File Download for My Software"

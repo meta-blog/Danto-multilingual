@@ -256,6 +256,38 @@ paginate = 12
     link = "/#"
   # ... 나머지 기능도 같은 방식으로 추가
 
+  # 랜딩 페이지 - 다운로드 버튼
+  [[params.downloadButtons]]
+    icon = "fa-windows"
+    text = "downloadWindows"
+    link = "/download/windows"
+    ariaLabel = "downloadWindowsAria"
+  [[params.downloadButtons]]
+    icon = "fa-apple"
+    text = "downloadMacOS"
+    link = "/download/macos"
+    ariaLabel = "downloadMacOSAria"
+  [[params.downloadButtons]]
+    icon = "fa-android"
+    text = "downloadAndroid"
+    link = "/download/android"
+    ariaLabel = "downloadAndroidAria"
+  [[params.downloadButtons]]
+    icon = "fa-apple"
+    text = "downloadIOS"
+    link = "/download/ios"
+    ariaLabel = "downloadIOSAria"
+  [[params.downloadButtons]]
+    icon = "fa-linux"
+    text = "downloadLinux"
+    link = "/download/linux"
+    ariaLabel = "downloadLinuxAria"
+  [[params.downloadButtons]]
+    icon = "fa-download"
+    text = "downloadDirect"
+    link = "/download/direct"
+    ariaLabel = "downloadDirectAria"
+
   [params.tags_section]
     enable = true
     number_posts = 3
