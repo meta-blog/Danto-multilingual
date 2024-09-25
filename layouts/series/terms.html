@@ -1,23 +1,23 @@
 {{ define "main" }}
 <div class="container series-page series-terms-page">
-    <div class="row">
-        <div class="col col-12">
-            <h1 class="series-title">{{ T "Series" }}</h1>
+  <div class="row">
+    <div class="col col-12">
+      <h1 class="series-title">{{ T "Series" }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    {{ range .Data.Terms.ByCount }}
+    <div class="col col-4 col-d-6 col-t-12">
+      <a href="{{ .Page.Permalink }}" class="series-item-link">
+        <div class="series-item">
+          <div class="series-content">
+            <h2>{{ T (.Page.Title | lower) }}</h2>
+            <p>{{ .Count }} {{ if eq .Count 1 }}{{ T "article" }}{{ else }}{{ T "articles" }}{{ end }}</p>
+          </div>
         </div>
+      </a>
     </div>
-    <div class="row">
-        {{ range .Data.Terms.ByCount }}
-            <div class="col col-4 col-d-6 col-t-12">
-                <a href="{{ .Page.Permalink }}" class="series-item-link">
-                    <div class="series-item">
-                        <div class="series-content">
-                            <h2>{{ .Page.Title }}</h2>
-                            <p>{{ .Count }} {{ if eq .Count 1 }}article{{ else }}articles{{ end }}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        {{ end }}
-    </div>
+    {{ end }}
+  </div>
 </div>
 {{ end }}

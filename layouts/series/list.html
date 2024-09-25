@@ -1,19 +1,19 @@
 {{ define "main" }}
 <div class="container series-page series-list-page">
-    <div class="row">
-        <div class="col col-12">
-            <h1 class="series-list-title">{{ T (.Title | lower) }}</h1>
-            <ul class="series-list">
-                {{ $pages := .Pages }}
-                {{ $pages := $pages.ByWeight }}
-                {{ $pages := $pages.ByDate.Reverse }}
-                {{ range $pages }}
-                <li class="series-list-item">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col col-12">
+      <h1 class="series-list-title">{{ T (.Title | lower) }}</h1>
+      <ul class="series-list">
+        {{ $pages := .Pages }}
+        {{ $pages := $pages.ByWeight }}
+        {{ $pages := $pages.ByDate.Reverse }}
+        {{ range $pages }}
+        <li class="series-list-item">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
+  </div>
 </div>
 {{ end }}
