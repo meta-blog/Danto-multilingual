@@ -1,16 +1,32 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.series-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--heading-font-color);
+}
+
 .series-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .series-item {
     background-color: var(--background-alt-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
+    height: 200px; /* 고정 높이 설정 */
 }
 
 .series-item:hover {
@@ -19,29 +35,43 @@
     background-color: var(--background-alt-color-2);
 }
 
+.series-content {
+    max-width: 100%;
+}
+
 .series-item h2 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 .series-item p {
     color: var(--text-alt-color);
+    font-size: 1em;
 }
 
-.series-item a {
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-.series-item a:hover {
-    color: var(--link-color-hover);
-}
-
-/* Dark mode specific adjustments */
+/* 다크 모드 특정 조정 */
 :root[dark] .series-item {
     box-shadow: 0 5px 15px rgba(255,255,255,0.1);
 }
 
 :root[dark] .series-item:hover {
     box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .series-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .series-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .series-item {
+        height: 180px; /* 모바일에서 약간 더 작게 조정 */
+    }
 }
