@@ -204,56 +204,56 @@ paginate = 12
   # 랜딩 페이지 - 기능 카드
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/easy-sharing"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/collaboration"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/real-time-sync"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/tools"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/file-sharing"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/video-calls"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/custom-themes"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/cross-platform"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/file-sharing"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/video-calls"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/custom-themes"
+    link = "/#"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
-    link = "/features/cross-platform"
+    link = "/#"
     # ... 나머지 기능도 같은 방식으로 추가
 
 
   # 랜딩 페이지 - 기능 그리드
   [[params.featureGrid]]
-    image = "/images/say-anything.jpg"
-    link = "/features/messaging"
+    image = "/images/feature-grid.webp"
+    link = "/#"
   [[params.featureGrid]]
-    image = "/images/speak-freely.jpg"
-    link = "/features/voice-video"
+    image = "/images/feature-grid.webp"
+    link = "/#"
   [[params.featureGrid]]
-    image = "/images/privacy-stick.jpg"
-    link = "/features/stickers"
+    image = "/images/feature-grid.webp"
+    link = "/#"
   [[params.featureGrid]]
-    image = "/images/group-chat.jpg"
-    link = "/features/groups"
+    image = "/images/feature-grid.webp"
+    link = "/#"
   # ... 나머지 기능도 같은 방식으로 추가
 
   [params.tags_section]
