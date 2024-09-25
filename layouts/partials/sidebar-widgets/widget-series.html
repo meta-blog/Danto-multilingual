@@ -3,10 +3,19 @@
   {{ $currentPageTitle := .Title }}
   <div class="widget-sidebar widget-series">
     <h3 class="widget-series-title">
-      {{ T "Series" }}: {{ with T (lower $series) }}{{ . }}{{ else }}{{ $series }}{{ end }}
+      {{ T "Series" }}: 
+      {{ if reflect.IsSlice $series }}
+        {{ with T (lower (index $series 0)) }}{{ . }}{{ else }}{{ index $series 0 }}{{ end }}
+      {{ else }}
+        {{ with T (lower $series) }}{{ . }}{{ else }}{{ $series }}{{ end }}
+      {{ end }}
     </h3>
     <ul class="widget-series-list">
-      {{ range where .Site.RegularPages.ByDate "Params.series" $series }}
+      {{ $seriesToUse := $series }}
+      {{ if reflect.IsSlice $series }}
+        {{ $seriesToUse = index $series 0 }}
+      {{ end }}
+      {{ range where .Site.RegularPages.ByDate "Params.series" $seriesToUse }}
         <li class="widget-series-item{{ if eq .Title $currentPageTitle }} widget-series-item--current{{ end }}">
           <a href="{{ .Permalink }}" class="widget-series-link">
             {{ with T (lower .Title) }}{{ . }}{{ else }}{{ .Title }}{{ end }}
