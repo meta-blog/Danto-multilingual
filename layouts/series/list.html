@@ -4,7 +4,10 @@
         <div class="col col-12">
             <h1 class="series-list-title">{{ .Title }}</h1>
             <ul class="series-list">
-                {{ range .Pages.ByDate.Reverse }}
+                {{ $pages := .Pages }}
+                {{ $pages := $pages.ByWeight }}
+                {{ $pages := $pages.ByDate.Reverse }}
+                {{ range $pages }}
                 <li class="series-list-item">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </li>
