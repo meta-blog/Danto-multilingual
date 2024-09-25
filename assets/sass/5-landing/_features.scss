@@ -1,65 +1,61 @@
 .features {
-    padding: 80px 0;
-    background-color: #f8f8f8;
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-card {
+  width: calc(25% - 20px);
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: var(--background-alt-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--heading-font-color);
+}
+
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+  .feature-card {
+    width: calc(50% - 20px);
   }
-  
-  .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 80px;
-    
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
   }
-  
-  .feature-content {
-    flex: 1;
-    padding-right: 40px;
-  }
-  
-  .feature-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .feature-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  .feature-image {
-    flex: 1;
-    
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .feature {
-      flex-direction: column !important;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    
-    .feature-content {
-      padding-right: 0;
-      margin-bottom: 30px;
-    }
-  }
+}
