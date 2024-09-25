@@ -10,31 +10,17 @@
       {{ end }}
       {{ with T (lower $seriesTitle) }}{{ . }}{{ else }}{{ $seriesTitle }}{{ end }}
     </h3>
-    <!-- Debug: Current series -->
-    <p>Debug - Current series: {{ $seriesTitle }}</p>
     
     <ul class="widget-series-list">
       {{ $seriesToUse := $series }}
       {{ if reflect.IsSlice $series }}
         {{ $seriesToUse = index $series 0 }}
       {{ end }}
-      <!-- Debug: Series to use for filtering -->
-      <p>Debug - Series to use: {{ $seriesToUse }}</p>
       
       {{ $seriesPosts := where .Site.RegularPages "Params.series" "intersect" (slice $seriesToUse) }}
-      <!-- Debug: Number of posts found -->
-      <p>Debug - Number of posts found: {{ len $seriesPosts }}</p>
-      
-      <!-- Debug: List all pages and their series -->
-      <p>Debug - All pages and their series:</p>
-      <ul>
-      {{ range .Site.RegularPages }}
-        <li>{{ .Title }} - Series: {{ .Params.series }}</li>
-      {{ end }}
-      </ul>
-      
       {{ $seriesPosts := $seriesPosts.ByWeight }}
       {{ $seriesPosts := $seriesPosts.ByDate.Reverse }}
+      
       {{ range $seriesPosts }}
         <li class="widget-series-item{{ if eq .Title $currentPageTitle }} widget-series-item--current{{ end }}">
           <a href="{{ .Permalink }}" class="widget-series-link">
@@ -51,13 +37,7 @@
             {{ end }}
           </a>
         </li>
-      {{ else }}
-        <!-- Debug: No posts found message -->
-        <li>Debug - No posts found in this series</li>
       {{ end }}
     </ul>
   </div>
-{{ else }}
-  <!-- Debug: No series parameter found -->
-  <p>Debug - No series parameter found for this page</p>
 {{ end }}
