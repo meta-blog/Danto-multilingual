@@ -68,7 +68,10 @@
   font-size: 0.9rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 
-
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
 }
 
 @media (max-width: 1024px) {
