@@ -16,11 +16,22 @@
         {{ $seriesToUse = index $series 0 }}
       {{ end }}
       {{ $seriesPosts := where .Site.RegularPages "Params.series" $seriesToUse }}
-      {{ range $seriesPosts.ByDate }}
+      {{ $seriesPosts := $seriesPosts.ByWeight }}
+      {{ $seriesPosts := $seriesPosts.ByDate.Reverse }}
+      {{ range $seriesPosts }}
         <li class="widget-series-item{{ if eq .Title $currentPageTitle }} widget-series-item--current{{ end }}">
           <a href="{{ .Permalink }}" class="widget-series-link">
             {{ $pageTitle := .Title }}
-            {{ with T (lower $pageTitle) }}{{ . }}{{ else }}{{ $pageTitle }}{{ end }}
+            {{ $lowercasePageTitle := lower $pageTitle }}
+            {{ with T $lowercasePageTitle }}
+              {{ . }}
+            {{ else }}
+              {{ with T $pageTitle }}
+                {{ . }}
+              {{ else }}
+                {{ $pageTitle }}
+              {{ end }}
+            {{ end }}
           </a>
         </li>
       {{ end }}
