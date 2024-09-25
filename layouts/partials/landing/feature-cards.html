@@ -1,11 +1,13 @@
 <section class="feature-cards-section">
   <div class="feature-cards-container">
     {{ range $index, $element := .Site.Params.featureCards }}
-      <div class="feature-card">
-        <img src="{{ .image }}" alt="{{ i18n (printf "featureCardImageAlt%d" (add $index 1)) }}" class="feature-card-image">
-        <h3 class="feature-card-title">{{ i18n (printf "featureCardTitle%d" (add $index 1)) }}</h3>
-        <p class="feature-card-description">{{ i18n (printf "featureCardDescription%d" (add $index 1)) }}</p>
-      </div>
+      <a href="{{ .link }}" class="feature-card-link">
+        <div class="feature-card">
+          <img src="{{ .image }}" alt="{{ i18n (printf "featureCardImageAlt%d" (add $index 1)) }}" class="feature-card-image">
+          <h3 class="feature-card-title">{{ i18n (printf "featureCardTitle%d" (add $index 1)) }}</h3>
+          <p class="feature-card-description">{{ i18n (printf "featureCardDescription%d" (add $index 1)) }}</p>
+        </div>
+      </a>
     {{ end }}
   </div>
 </section>

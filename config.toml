@@ -204,20 +204,28 @@ paginate = 12
   # 랜딩 페이지 - 기능
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/easy-sharing"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/collaboration"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/real-time-sync"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/tools"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/file-sharing"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/video-calls"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/custom-themes"
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
+    link = "/features/cross-platform"
 
   [params.tags_section]
     enable = true

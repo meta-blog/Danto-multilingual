@@ -12,6 +12,12 @@
   gap: 20px;
 }
 
+.feature-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .feature-card {
   background-color: var(--background-alt-color);
   border-radius: 10px;
