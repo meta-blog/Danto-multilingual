@@ -3,8 +3,7 @@
     padding-bottom: 80px;
 }
 
-.series-terms-page .series-title,
-.series-list-page .series-list-title {
+.series-terms-page .series-title {
     margin-bottom: 30px;
 }
 
@@ -83,27 +82,39 @@
 
 
 /*Series list*/
+.series-list-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
 .series-list-title {
-    margin-bottom: 48px;
-    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
     color: var(--heading-font-color);
 }
 
+.series-breadcrumb {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-alt-color);
+}
+
 .series-list {
-    list-style-type: square;
+    list-style-type: none;
     padding: 0;
 }
 
 .series-list-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
 }
 
 .series-list-item:last-child {
-    border-bottom: none; /* 마지막 항목의 border 제거 */
+    border-bottom: none;
 }
-
 
 .series-list-item a {
     color: var(--link-color);
