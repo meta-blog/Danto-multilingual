@@ -4,21 +4,23 @@
   <div class="widget-sidebar widget-series">
     <h3 class="widget-series-title">
       {{ T "Series" }}: 
+      {{ $seriesTitle := $series }}
       {{ if reflect.IsSlice $series }}
-        {{ with T (lower (index $series 0)) }}{{ . }}{{ else }}{{ index $series 0 }}{{ end }}
-      {{ else }}
-        {{ with T (lower $series) }}{{ . }}{{ else }}{{ $series }}{{ end }}
+        {{ $seriesTitle = index $series 0 }}
       {{ end }}
+      {{ with T (lower $seriesTitle) }}{{ . }}{{ else }}{{ $seriesTitle }}{{ end }}
     </h3>
     <ul class="widget-series-list">
       {{ $seriesToUse := $series }}
       {{ if reflect.IsSlice $series }}
         {{ $seriesToUse = index $series 0 }}
       {{ end }}
-      {{ range where .Site.RegularPages.ByDate "Params.series" $seriesToUse }}
+      {{ $seriesPosts := where .Site.RegularPages "Params.series" $seriesToUse }}
+      {{ range $seriesPosts.ByDate }}
         <li class="widget-series-item{{ if eq .Title $currentPageTitle }} widget-series-item--current{{ end }}">
           <a href="{{ .Permalink }}" class="widget-series-link">
-            {{ with T (lower .Title) }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+            {{ $pageTitle := .Title }}
+            {{ with T (lower $pageTitle) }}{{ . }}{{ else }}{{ $pageTitle }}{{ end }}
           </a>
         </li>
       {{ end }}
