@@ -226,6 +226,18 @@ paginate = 12
   [[params.featureCards]]
     image = "/images/feature-cards.webp"
     link = "/features/cross-platform"
+  [[params.featureCards]]
+    image = "/images/feature-cards.webp"
+    link = "/features/file-sharing"
+  [[params.featureCards]]
+    image = "/images/feature-cards.webp"
+    link = "/features/video-calls"
+  [[params.featureCards]]
+    image = "/images/feature-cards.webp"
+    link = "/features/custom-themes"
+  [[params.featureCards]]
+    image = "/images/feature-cards.webp"
+    link = "/features/cross-platform"
 
   [params.tags_section]
     enable = true
