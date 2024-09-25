@@ -1,7 +1,24 @@
+.series-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.series-terms-page .series-title,
+.series-list-page .series-list-title {
+    margin-bottom: 30px;
+}
+
+@media (max-width: $mobile) {
+    .series-page {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 /*Series terms*/
 .series-title {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
     color: var(--heading-font-color);
 }
 
@@ -67,9 +84,9 @@
 
 /*Series list*/
 .series-list-title {
+    margin-bottom: 48px;
     font-size: 2em;
     color: var(--heading-font-color);
-    margin-bottom: 64px;
 }
 
 .series-breadcrumb {
