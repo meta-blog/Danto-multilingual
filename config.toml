@@ -203,21 +203,21 @@ paginate = 12
 
   # 랜딩 페이지 - 기능
   [[params.featureCards]]
-    image = "/images/feature-card1.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card2.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card3.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card4.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card5.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card6.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card7.svg"
+    image = "/images/feature-cards.webp"
   [[params.featureCards]]
-    image = "/images/feature-card8.svg"
+    image = "/images/feature-cards.webp"
 
   [params.tags_section]
     enable = true
