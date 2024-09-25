@@ -1,14 +1,19 @@
 {{ define "main" }}
 <div class="container">
-    <h1>{{ .Title }} Series</h1>
-    <div class="series-articles">
-        {{ range .Pages.ByDate }}
-            <article>
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <time>{{ .Date.Format "2006-01-02" }}</time>
-                {{ with .Description }}<p>{{ . }}</p>{{ end }}
-            </article>
-        {{ end }}
+    <div class="row">
+        <div class="col col-12">
+            <h1 class="series-list-title">{{ .Title }}</h1>
+            <div class="series-breadcrumb">
+                <a href="{{ "categories" | relLangURL }}">{{ T "Categories" }}</a> » {{ .Title }}
+            </div>
+            <ul class="series-list">
+                {{ range .Pages.ByDate.Reverse }}
+                <li class="series-list-item">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
     </div>
 </div>
 {{ end }}
