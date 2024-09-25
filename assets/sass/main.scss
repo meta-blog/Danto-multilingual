@@ -28,7 +28,8 @@
     3.14-language-switcher
     3.15-howto
     3.16-faq
-    3.17youtube-thumbnail
+    3.17-youtube-thumbnail
+    3.18-widget-series
 :: 4-Layouts
     4.1-Post Page
     4.2-Authors
@@ -107,8 +108,10 @@
 @import '3-modules/howto';
 /* >>>>>>>>>>>>>> :: 3.16-faq <<<<<<<<<<<<<<< */
 @import '3-modules/faq';
-/* >>>>>>>>>>>>>> :: 3.16-youtube-thumbnail <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.17-youtube-thumbnail <<<<<<<<<<<<<<< */
 @import '3-modules/youtube-thumbnail';
+/* >>>>>>>>>>>>>> :: 3.18-widget-series <<<<<<<<<<<<<<< */
+@import '3-modules/widget-series';
 
 
 

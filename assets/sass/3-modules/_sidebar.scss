@@ -258,36 +258,3 @@
     }
   }
 }
-
-/* Widget Series list */
-
-.widget-series {
-  margin-bottom: 32px;
-  
-  .widget-series-title {
-    margin-bottom: 16px;
-    font-size: 20px;
-  }
-
-  .widget-series-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .widget-series-item {
-    margin-bottom: 8px;
-    
-    &--current {
-      font-weight: bold;
-    }
-  }
-
-  .widget-series-link {
-    text-decoration: none;
-    color: var(--link-color);
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
