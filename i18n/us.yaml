@@ -5,6 +5,7 @@ latest: "Latest"
 blog: "Blog"
 news: "News"
 docs: "Docs"
+reviews: "Reviews"
 
 # Taxonomies
 Authors : "Authors"
