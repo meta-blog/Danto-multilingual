@@ -1,0 +1,42 @@
+{{ if .Params.product }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ .Params.product.name }}",
+  "description": "{{ .Params.product.description }}",
+  "sku": "{{ .Params.product.sku }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ .Params.product.brand }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ .Permalink }}",
+    "priceCurrency": "{{ .Params.product.priceCurrency }}",
+    "price": "{{ .Params.product.price }}",
+    "availability": "{{ .Params.product.availability }}",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "image": "{{ .Params.product.image | absURL }}",
+  "productID": "{{ .Params.product.productID }}"
+  {{ if .Params.review }},
+  "review": {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Params.review.author }}"
+    },
+    "datePublished": "{{ .Params.review.datePublished }}",
+    "reviewBody": "{{ .Params.review.reviewBody }}",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "{{ .Params.review.reviewRating.ratingValue }}",
+      "bestRating": "{{ .Params.review.reviewRating.bestRating }}",
+      "worstRating": "{{ .Params.review.reviewRating.worstRating }}"
+    }
+  }
+  {{ end }}
+}
+</script>
+{{ end }}

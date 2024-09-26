@@ -1,0 +1,26 @@
+{{ if .Params.itemList }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "ItemList",
+  "itemListElement": [
+    {{ range $index, $element := .Params.itemList.itemListElement }}
+    {
+      "@type": "ListItem",
+      "position": {{ $element.position }},
+      "item": {
+        "@type": "Product",
+        "name": "{{ $element.item.name }}",
+        "description": "{{ $element.item.description }}",
+        "brand": {
+          "@type": "Brand",
+          "name": "{{ $element.item.brand }}"
+        },
+        "image": "{{ $element.item.image | absURL }}"
+      }
+    }{{ if ne (add $index 1) (len $.Params.itemList.itemListElement) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
