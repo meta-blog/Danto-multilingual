@@ -1,15 +1,17 @@
 # Sections
-"Post": "Gönderi"
-"Posts": "Gönderiler"
-"Latest": "En Son"
-"Blog": "Blog"
-"News": "Haberler"
-"Docs": "Belgeler"
+post: "Gönderi"
+posts: "Gönderiler"
+latest: "En Son"
+blog: "Blog"
+news: "Haberler"
+docs: "Dokümanlar"
+reviews: "İncelemeler"
 
 # Taxonomies
 Authors: "Yazarlar"
 Categories: "Kategoriler"
 Tags: "Etiketler"
+Series: "Seriler"
 
 # Categories
 apple: "Apple"
@@ -29,22 +31,30 @@ reading: "Okuma"
 science: "Bilim"
 sport: "Spor"
 
+# Series
+"my first series": "İlk Serim"
+"how to customizing hugo": "Hugo'yu Özelleştirme Yöntemi"
+
+# Pages
+About: "Hakkında"
+Contact: "İletişim"
+
 # header: cta_button
-cta_button_text: "Bize Ulaşın"
-Search: "Arama"
+cta_button_text: "Bizimle iletişime geçin"
+Search: "Ara"
 
 # header widget: language-switcher
-global: "Küresel"
+global: "Global"
 
 # Section: Hero
-hero_title: "Tek bir yerde günlük haberler, makaleler, ilham ve ipuçları."
-hero_description: "Üretkenlik, ipuçları, ilham ve büyük kazançlar için stratejiler sunuyoruz. Başarılı bir blog nasıl kurulur veya mevcut blogunuzu nasıl daha iyi hale getirebileceğinizi öğrenin!"
+hero_title: "Tek Noktadan Günlük Haberler, Makaleler, İlham ve İpuçları."
+hero_description: "Büyük kârlar için üretkenlik, ipuçları, ilham ve stratejiler sunar. Başarılı bir blog oluşturmayı veya mevcut blogunuzu daha da iyi hale getirmeyi öğrenin!"
 
-# section:featured-posts
-Featured: "Öne Çıkanlar"
+# section: featured-posts
+Featured: "Öne Çıkan"
 
 # section: tags
-ViewAll: "Hepsini Gör"
+ViewAll: "Tümünü Gör"
 
 # Section: Authors
 authors_section_title: "Yazarlarımızla Tanışın"
@@ -61,7 +71,7 @@ instagramLink: "Instagram bağlantısı"
 website: "Web sitesi"
 
 # Layout: author.terms
-authorsList: "Yazarlar Listesi"
+authorsList: "Yazarlar"
 post: "Gönderi"
 posts: "Gönderiler"
 
@@ -80,7 +90,7 @@ featuredPosts: "Öne Çıkan Gönderiler"
 # Layout: index.json
 dateFormat: "2 Ocak 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Videolar"
 NoVideosFound: "Video bulunamadı."
 
@@ -95,7 +105,7 @@ PopularTopics: "Popüler Konular"
 
 # Widget: toc
 TableOfContents: "İçindekiler"
-NoContentAvailable: "Kullanılabilir içerik yok."
+NoContentAvailable: "Mevcut içerik yok."
 
 # Layout: post-navigation
 OlderPost: "Eski Gönderi"
@@ -103,26 +113,26 @@ NewerPost: "Yeni Gönderi"
 
 # Layout: disqus-comments
 ShowComments: "Yorumları Göster"
-DisqusNoscriptMessage: "Yorumları görmek için JavaScript'i etkinleştirin. <a href='https://disqus.com/?ref_noscript'>Disqus tarafından sağlanan yorumları görüntüleyin.</a>"
+DisqusNoscriptMessage: "Yorumları görmek için lütfen JavaScript'i etkinleştirin <a href='https://disqus.com/?ref_noscript'>Disqus tarafından desteklenen yorumları</a>"
 
 # Layout: pagination
 LoadMorePosts: "Daha Fazla Gönderi Yükle"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Tüm Hakları Saklıdır. <a href='https://gohugo.io/'>Hugo</a> ile yayınlandı."
-EnableDarkMode: "Karanlık Modu Etkinleştir"
-Dark: "Karanlık"
-EnableLightMode: "Aydınlık Modu Etkinleştir"
-Light: "Aydınlık"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Tüm Hakları Saklıdır. <a href='https://gohugo.io/'>Hugo</a> ile yayımlanmıştır."
+EnableDarkMode: "Koyu Modu Etkinleştir"
+Dark: "Koyu"
+EnableLightMode: "Açık Modu Etkinleştir"
+Light: "Açık"
 Top: "Üst"
 BackToTop: "Başa Dön"
 
 # Footer: widget-info
-footer__description: "Üretkenlik, ipuçları, ilham ve büyük kazançlar için stratejiler sunuyoruz. Başarılı bir blog nasıl kurulur veya mevcut blogunuzu nasıl daha iyi hale getirebileceğinizi öğrenin!"
+footer__description: "Büyük kârlar için üretkenlik, ipuçları, ilham ve stratejiler sunar. Başarılı bir blog oluşturmayı veya mevcut blogunuzu daha da iyi hale getirmeyi öğrenin!"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "İlginç Haberler Alın"
-mailchimp__description: "Bültenimize abone olun, en son gönderileri size e-posta ile gönderelim."
+mailchimp__description: "Bültenimize abone olun, size en son gönderileri e-posta ile gönderelim."
 mailchimp__input__text: "E-posta adresiniz"
 mailchimp__button__text: "Abone Ol"
 
@@ -134,24 +144,121 @@ CloseSearchIcon: "Arama simgesini kapat"
 
 # Layout: share-buttons
 ShareLinkCopy: "Bağlantıyı kopyala"
-ShareWhatsApp: "WhatsApp'ta paylaş"
-ShareFacebook: "Facebook'ta paylaş"
-ShareTwitter: "Twitter'da paylaş"
-ShareWeibo: "Weibo'da paylaş"
-ShareLINE: "LINE'da paylaş"
-ShareZalo: "Zalo'da paylaş"
-ShareReddit: "Reddit'te paylaş"
+ShareWhatsApp: "WhatsApp'ta Paylaş"
+ShareFacebook: "Facebook'ta Paylaş"
+ShareTwitter: "Twitter'da Paylaş"
+ShareWeibo: "Weibo'da Paylaş"
+ShareLINE: "LINE'da Paylaş"
+ShareZalo: "Zalo'da Paylaş"
+ShareReddit: "Reddit'te Paylaş"
 Copy: "Kopyala"
 LinkCopied: "Bağlantı panoya kopyalandı!"
 
 # Page: 404
 ErrorCode: "Hata Kodu"
 404Message: "İstenen sayfa bulunamadı."
-BackToHomepage: "Ana sayfaya dön"
+BackToHomepage: "Ana Sayfaya Dön"
 
-# Schema:faq+howto
-faq_title: "Sıkça Sorulan Sorular"
+# Schema: faq+howto
+faq_title: "Sık Sorulan Sorular"
 howto_supplies: "Gerekli Malzemeler"
 howto_tools: "Gerekli Araçlar"
 howto_steps: "Adımlar"
 howto_total_time: "Toplam Süre"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Her Şey İçin Kısayolunuz."
+raycastHeroDescription: "Genişletilebilir bir başlatıcı içinde güçlü üretkenlik araçları koleksiyonu. Hızlı, ergonomik ve güvenilir."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Mac İçin İndir"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Windows Bekleme Listesine Katıl"
+
+# features-card
+featureCardTitle1: "Kolay Paylaşım"
+featureCardDescription1: "Sadece bir bağlantı ile içeriği kolayca paylaşın."
+featureCardImageAlt1: "Kolay Paylaşım Simgesi"
+
+featureCardTitle2: "Sorunsuz İşbirliği"
+featureCardDescription2: "Çalışma alanında ekibinizle sorunsuz işbirliği yapın."
+featureCardImageAlt2: "Sorunsuz İşbirliği Simgesi"
+
+featureCardTitle3: "Gerçek Zamanlı Senkronizasyon"
+featureCardDescription3: "Değişiklikler tüm cihazlarda gerçek zamanlı olarak senkronize edilir."
+featureCardImageAlt3: "Gerçek Zamanlı Senkronizasyon Simgesi"
+
+featureCardTitle4: "Çeşitli Araçlar"
+featureCardDescription4: "Yerleşik çeşitli araçlarla verimli bir şekilde çalışın."
+featureCardImageAlt4: "Çeşitli Araçlar Simgesi"
+
+featureCardTitle5: "Dosya Paylaşımı"
+featureCardDescription5: "Belgeleri ve medyayı kolayca paylaşın."
+featureCardImageAlt5: "Dosya Paylaşımı Simgesi"
+
+featureCardTitle6: "Görüntülü Aramalar"
+featureCardDescription6: "Arkadaşlarınızla veya iş arkadaşlarınızla yüz yüze konuşun."
+featureCardImageAlt6: "Görüntülü Arama Simgesi"
+
+featureCardTitle7: "Kişiselleştirilebilir Temalar"
+featureCardDescription7: "Sohbet ortamınızı kişiselleştirin."
+featureCardImageAlt7: "Kişiselleştirilebilir Tema Simgesi"
+
+featureCardTitle8: "Çoklu Platform"
+featureCardDescription8: "Herhangi bir cihazda, her yerde kullanılabilir."
+featureCardImageAlt8: "Çoklu Platform Simgesi"
+
+featureCardTitle9: "Kolay Paylaşım"
+featureCardDescription9: "Sadece bir bağlantı ile içeriği kolayca paylaşın."
+featureCardImageAlt9: "Kolay Paylaşım Simgesi"
+
+featureCardTitle10: "Sorunsuz İşbirliği"
+featureCardDescription10: "Çalışma alanında ekibinizle sorunsuz işbirliği yapın."
+featureCardImageAlt10: "Sorunsuz İşbirliği Simgesi"
+
+featureCardTitle11: "Gerçek Zamanlı Senkronizasyon"
+featureCardDescription11: "Değişiklikler tüm cihazlarda gerçek zamanlı olarak senkronize edilir."
+featureCardImageAlt11: "Gerçek Zamanlı Senkronizasyon Simgesi"
+
+featureCardTitle12: "Çeşitli Araçlar"
+featureCardDescription12: "Yerleşik çeşitli araçlarla verimli bir şekilde çalışın."
+featureCardImageAlt12: "Çeşitli Araçlar Simgesi"
+
+# features-grid
+featureGridTitle1: "Her şeyi söyle"
+featureGridDescription1: "Metinler, sesli mesajlar, fotoğraflar, videolar, GIF'ler ve dosyaları ücretsiz olarak paylaşın. Signal, SMS ve MMS ücretlerinden kaçınmak için telefonunuzun veri bağlantısını kullanır."
+featureGridImageAlt1: "Mesajlaşma Özelliği İllüstrasyonu"
+
+featureGridTitle2: "Özgürce Konuş"
+featureGridDescription2: "Yakındaki veya dünyanın öbür ucundaki insanlarla uzak mesafe ücretleri olmadan kristal netliğinde sesli ve görüntülü aramalar yapın."
+featureGridImageAlt2: "Sesli ve Görüntülü Arama İllüstrasyonu"
+
+featureGridTitle3: "Gizliliği Kalıcı Yap"
+featureGridDescription3: "Şifrelenmiş çıkartmalarla konuşmalarınıza yeni bir ifade katmanı ekleyin. Kendi çıkartma paketlerinizi de oluşturup paylaşabilirsiniz."
+featureGridImageAlt3: "Çıkartma Özelliği İllüstrasyonu"
+
+featureGridTitle4: "Gruplarla Bir Araya Gel"
+featureGridDescription4: "Grup sohbetleri, aileniz, arkadaşlarınız ve iş arkadaşlarınızla bağlantıda kalmanızı kolaylaştırır."
+featureGridImageAlt4: "Grup Sohbet Özelliği İllüstrasyonu"
+
+# download-buttons
+downloadTitle: "MySoftware İndir"
+downloadDescription: "PC ve mobil cihazlarda, çeşitli işletim sistemi platformlarında Naver MySoftware'e her zaman ve her yerden erişin!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Doğrudan İndir"
+
+downloadWindowsAria: "MySoftware'ı Windows için İndir"
+downloadMacOSAria: "MySoftware'ı macOS için İndir"
+downloadAndroidAria: "MySoftware'ı Android için İndir"
+downloadIOSAria: "MySoftware'ı iOS için İndir"
+downloadLinuxAria: "MySoftware'ı Linux için İndir"
+downloadDirectAria: "MySoftware doğrudan dosyasını indir"
+
+downloadButtonText: "İndir"

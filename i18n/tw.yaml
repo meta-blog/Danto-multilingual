@@ -1,15 +1,17 @@
 # Sections
-"Post": "文章"
-"Posts": "文章"
-"Latest": "最新"
-"Blog": "部落格"
-"News": "新聞"
-"Docs": "文件"
+post: "文章"
+posts: "文章"
+latest: "最新"
+blog: "部落格"
+news: "新聞"
+docs: "文件"
+reviews: "評論"
 
 # Taxonomies
 Authors: "作者"
 Categories: "分類"
 Tags: "標籤"
+Series: "系列"
 
 # Categories
 apple: "蘋果"
@@ -23,24 +25,32 @@ study: "學習"
 business: "商業"
 lifestyle: "生活方式"
 shopping: "購物"
-food: "美食"
+food: "食物"
 people: "人物"
 reading: "閱讀"
 science: "科學"
 sport: "運動"
 
+# Series
+"my first series": "我的第一個系列"
+"how to customizing hugo": "如何自定義 Hugo"
+
+# Pages
+About: "關於"
+Contact: "聯絡"
+
 # header: cta_button
-cta_button_text: "聯繫我們"
-Search: "搜尋"
+cta_button_text: "聯絡我們"
+Search: "搜索"
 
 # header widget: language-switcher
 global: "全球"
 
 # Section: Hero
-hero_title: "一站式每日新聞、文章、靈感和提示。"
-hero_description: "涵蓋提高生產力的技巧、靈感和策略，幫助你獲得豐厚利潤。了解如何建立一個成功的部落格，或如何讓你的部落格更上一層樓！"
+hero_title: "一站式每日新聞、文章、靈感與提示。"
+hero_description: "提供有關提高生產力的建議、靈感和策略，幫助您獲得可觀利潤。了解如何建立成功的部落格，或提升您的部落格！"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "精選"
 
 # section: tags
@@ -51,7 +61,7 @@ authors_section_title: "認識我們的作者"
 see_all_authors: "查看所有作者"
 
 # Layout: Article Meta
-By: "作者"
+By: "由"
 
 # Layout: author
 websiteLink: "網站連結"
@@ -61,17 +71,17 @@ instagramLink: "Instagram 連結"
 website: "網站"
 
 # Layout: author.terms
-authorsList: "作者列表"
+authorsList: "作者"
 post: "文章"
 posts: "文章"
 
 # Layout: contact
-yourName: "你的名字"
-yourNamePlaceholder: "你的名字..."
-yourEmail: "你的電子郵件"
-yourEmailPlaceholder: "你的電子郵件..."
-yourMessage: "你的訊息"
-yourMessagePlaceholder: "你的訊息..."
+yourName: "您的名字"
+yourNamePlaceholder: "您的名字..."
+yourEmail: "您的電子郵件"
+yourEmailPlaceholder: "您的電子郵件..."
+yourMessage: "您的訊息"
+yourMessagePlaceholder: "您的訊息..."
 sendMessage: "發送訊息"
 
 # Layout: featured
@@ -80,7 +90,7 @@ featuredPosts: "精選文章"
 # Layout: index.json
 dateFormat: "2006年1月2日"
 
-# Layoud: videos
+# Layout: videos
 Videos: "影片"
 NoVideosFound: "未找到影片。"
 
@@ -95,7 +105,7 @@ PopularTopics: "熱門話題"
 
 # Widget: toc
 TableOfContents: "目錄"
-NoContentAvailable: "沒有可用內容。"
+NoContentAvailable: "沒有可用的內容。"
 
 # Layout: post-navigation
 OlderPost: "較舊的文章"
@@ -103,55 +113,152 @@ NewerPost: "較新的文章"
 
 # Layout: disqus-comments
 ShowComments: "顯示評論"
-DisqusNoscriptMessage: "請啟用JavaScript以查看<a href='https://disqus.com/?ref_noscript'>由Disqus提供的評論。</a>"
+DisqusNoscriptMessage: "請啟用 JavaScript 以查看 <a href='https://disqus.com/?ref_noscript'>Disqus 提供的評論。</a>"
 
 # Layout: pagination
 LoadMorePosts: "載入更多文章"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有權利。使用 <a href='https://gohugo.io/'>Hugo</a> 發佈。"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有權利。以 <a href='https://gohugo.io/'>Hugo</a> 發佈。"
 EnableDarkMode: "啟用深色模式"
 Dark: "深色"
 EnableLightMode: "啟用淺色模式"
 Light: "淺色"
 Top: "頂部"
-BackToTop: "返回頂部"
+BackToTop: "回到頂部"
 
 # Footer: widget-info
-footer__description: "涵蓋提高生產力的技巧、靈感和策略，幫助你獲得豐厚利潤。了解如何建立一個成功的部落格，或如何讓你的部落格更上一層樓！"
+footer__description: "提供有關提高生產力的建議、靈感和策略，幫助您獲得可觀利潤。了解如何建立成功的部落格，或提升您的部落格！"
 
 # Footer: mailchimp_Subscribe
-mailchimp__title: "獲取有趣的新聞"
-mailchimp__description: "訂閱我們的電子報，我們會將最新文章通過電子郵件發送給你。"
-mailchimp__input__text: "你的電子郵件地址"
+mailchimp__title: "接收有趣的新聞"
+mailchimp__description: "訂閱我們的電子報，我們會將最新的文章發送到您的電子郵箱。"
+mailchimp__input__text: "您的電子郵件地址"
 mailchimp__button__text: "訂閱"
 
 # Layout: search
-SearchForBlog: "搜尋部落格"
+SearchForBlog: "搜索部落格"
 TypeToSearch: "輸入以搜尋..."
-SearchIcon: "搜尋圖標"
-CloseSearchIcon: "關閉搜尋圖標"
+SearchIcon: "搜索圖示"
+CloseSearchIcon: "關閉搜索圖示"
 
 # Layout: share-buttons
 ShareLinkCopy: "複製連結"
-ShareWhatsApp: "分享到WhatsApp"
-ShareFacebook: "分享到Facebook"
-ShareTwitter: "分享到Twitter"
-ShareWeibo: "分享到微博"
-ShareLINE: "分享到LINE"
-ShareZalo: "分享到Zalo"
-ShareReddit: "分享到Reddit"
+ShareWhatsApp: "分享到 WhatsApp"
+ShareFacebook: "分享到 Facebook"
+ShareTwitter: "分享到 Twitter"
+ShareWeibo: "分享到 微博"
+ShareLINE: "分享到 LINE"
+ShareZalo: "分享到 Zalo"
+ShareReddit: "分享到 Reddit"
 Copy: "複製"
 LinkCopied: "連結已複製到剪貼簿！"
 
 # Page: 404
 ErrorCode: "錯誤代碼"
-404Message: "無法找到請求的頁面。"
-BackToHomepage: "返回主頁"
+404Message: "未找到請求的頁面。"
+BackToHomepage: "返回首頁"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "常見問題"
 howto_supplies: "所需材料"
 howto_tools: "所需工具"
 howto_steps: "步驟"
 howto_total_time: "總時間"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "您的萬能捷徑。"
+raycastHeroDescription: "集強大生產力工具於一身的可擴展啟動器。快速、符合人體工學且可靠。"
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "下載適用於 Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "加入 Windows 等候名單"
+
+# features-card
+featureCardTitle1: "輕鬆分享"
+featureCardDescription1: "只需一個連結即可輕鬆分享內容。"
+featureCardImageAlt1: "輕鬆分享圖示"
+
+featureCardTitle2: "無縫協作"
+featureCardDescription2: "在工作空間與團隊無縫合作。"
+featureCardImageAlt2: "無縫協作圖示"
+
+featureCardTitle3: "實時同步"
+featureCardDescription3: "更改會在所有設備上實時同步。"
+featureCardImageAlt3: "實時同步圖示"
+
+featureCardTitle4: "多樣工具"
+featureCardDescription4: "使用內建的多樣工具高效工作。"
+featureCardImageAlt4: "多樣工具圖示"
+
+featureCardTitle5: "檔案分享"
+featureCardDescription5: "輕鬆分享文件和媒體。"
+featureCardImageAlt5: "檔案分享圖示"
+
+featureCardTitle6: "視頻通話"
+featureCardDescription6: "與朋友或同事面對面交談。"
+featureCardImageAlt6: "視頻通話圖示"
+
+featureCardTitle7: "可自定義主題"
+featureCardDescription7: "個性化您的聊天環境。"
+featureCardImageAlt7: "可自定義主題圖示"
+
+featureCardTitle8: "跨平台"
+featureCardDescription8: "隨時隨地可在任何設備上使用。"
+featureCardImageAlt8: "跨平台圖示"
+
+featureCardTitle9: "輕鬆分享"
+featureCardDescription9: "只需一個連結即可輕鬆分享內容。"
+featureCardImageAlt9: "輕鬆分享圖示"
+
+featureCardTitle10: "無縫協作"
+featureCardDescription10: "在工作空間與團隊無縫合作。"
+featureCardImageAlt10: "無縫協作圖示"
+
+featureCardTitle11: "實時同步"
+featureCardDescription11: "更改會在所有設備上實時同步。"
+featureCardImageAlt11: "實時同步圖示"
+
+featureCardTitle12: "多樣工具"
+featureCardDescription12: "使用內建的多樣工具高效工作。"
+featureCardImageAlt12: "多樣工具圖示"
+
+# features-grid
+featureGridTitle1: "說任何話"
+featureGridDescription1: "免費分享文字、語音訊息、照片、影片、GIF 和檔案。Signal 使用您的手機數據連接，讓您避免支付 SMS 和 MMS 費用。"
+featureGridImageAlt1: "消息功能插圖"
+
+featureGridTitle2: "暢所欲言"
+featureGridDescription2: "與居住在附近或跨越大洋的朋友進行清晰的語音和視頻通話，無需長途費。"
+featureGridImageAlt2: "語音和視頻通話插圖"
+
+featureGridTitle3: "保持隱私"
+featureGridDescription3: "使用加密的貼圖為對話增添新的表現層。您還可以創建和分享自己的貼圖包。"
+featureGridImageAlt3: "貼圖功能插圖"
+
+featureGridTitle4: "與群組相聚"
+featureGridDescription4: "群組聊天讓您輕鬆與家人、朋友和同事保持聯繫。"
+featureGridImageAlt4: "群組聊天功能插圖"
+
+# download-buttons
+downloadTitle: "下載 MySoftware"
+downloadDescription: "隨時隨地在 PC 和移動設備上通過各種操作系統平台訪問 Naver MySoftware！"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "直接下載"
+
+downloadWindowsAria: "下載適用於 Windows 的 MySoftware"
+downloadMacOSAria: "下載適用於 macOS 的 MySoftware"
+downloadAndroidAria: "下載適用於 Android 的 MySoftware"
+downloadIOSAria: "下載適用於 iOS 的 MySoftware"
+downloadLinuxAria: "下載適用於 Linux 的 MySoftware"
+downloadDirectAria: "直接下載 MySoftware 文件"
+
+downloadButtonText: "下載"

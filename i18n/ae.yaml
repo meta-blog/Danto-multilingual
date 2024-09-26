@@ -1,19 +1,20 @@
 # Sections
-"Post": "منشور"
-"Posts": "منشورات"
-"Latest": "الأحدث"
-"Blog": "مدونة"
-"News": "أخبار"
-"Docs": "مستندات"
-
+post: "منشور"
+posts: "منشورات"
+latest: "الأحدث"
+blog: "مدونة"
+news: "أخبار"
+docs: "مستندات"
+reviews: "مراجعات"
 
 # Taxonomies
-Authors: "الكتّاب"
+Authors: "المؤلفون"
 Categories: "الفئات"
-Tags: "الوسوم"
+Tags: "العلامات"
+Series: "السلاسل"
 
 # Categories
-apple: "أبل"
+apple: "آبل"
 gear: "معدات"
 beauty: "جمال"
 review: "مراجعة"
@@ -22,7 +23,7 @@ game: "لعبة"
 # Tags
 study: "دراسة"
 business: "أعمال"
-lifestyle: "أسلوب حياة"
+lifestyle: "أسلوب الحياة"
 shopping: "تسوق"
 food: "طعام"
 people: "أشخاص"
@@ -30,26 +31,34 @@ reading: "قراءة"
 science: "علم"
 sport: "رياضة"
 
+# Series
+"my first series": "سلسلتي الأولى"
+"how to customizing hugo": "كيفية تخصيص هوجو"
+
+# Pages
+About: "حول"
+Contact: "اتصل"
+
 # header: cta_button
-cta_button_text: "اتصل بنا"
+cta_button_text: "تواصل معنا"
 Search: "بحث"
 
 # header widget: language-switcher
 global: "عالمي"
 
 # Section: Hero
-hero_title: "كل الأخبار اليومية، المقالات، الإلهام والنصائح في مكان واحد."
-hero_description: "نقدم نصائح لزيادة الإنتاجية، الإلهام، والاستراتيجيات لتحقيق أرباح كبيرة. اكتشف كيف تبدأ مدونة ناجحة أو كيف تحسّن مدونتك الحالية!"
+hero_title: "مصدر واحد للأخبار اليومية، المقالات، الإلهام، والنصائح."
+hero_description: "تتضمن إنتاجية، نصائح، إلهام واستراتيجيات لتحقيق أرباح ضخمة. اكتشف كيفية إنشاء مدونة ناجحة أو كيفية تحسين مدونتك الحالية!"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "مميز"
 
 # section: tags
 ViewAll: "عرض الكل"
 
 # Section: Authors
-authors_section_title: "تعرف على كتّابنا"
-see_all_authors: "عرض جميع الكتّاب"
+authors_section_title: "تعرف على مؤلفينا"
+see_all_authors: "عرض جميع المؤلفين"
 
 # Layout: Article Meta
 By: "بواسطة"
@@ -58,11 +67,11 @@ By: "بواسطة"
 websiteLink: "رابط الموقع"
 facebookLink: "رابط فيسبوك"
 twitterLink: "رابط تويتر"
-instagramLink: "رابط إنستجرام"
+instagramLink: "رابط إنستغرام"
 website: "موقع"
 
 # Layout: author.terms
-authorsList: "قائمة الكتّاب"
+authorsList: "المؤلفون"
 post: "منشور"
 posts: "منشورات"
 
@@ -76,23 +85,23 @@ yourMessagePlaceholder: "رسالتك..."
 sendMessage: "إرسال الرسالة"
 
 # Layout: featured
-featuredPosts: "المنشورات المميزة"
+featuredPosts: "منشورات مميزة"
 
 # Layout: index.json
 dateFormat: "2 يناير 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "فيديوهات"
 NoVideosFound: "لم يتم العثور على فيديوهات."
 
 # Widget: recent-posts
-RecentPosts: "المنشورات الأخيرة"
+RecentPosts: "منشورات حديثة"
 
 # Widget: featured-posts
-FeaturedPosts: "المنشورات المميزة"
+FeaturedPosts: "منشورات مميزة"
 
 # Widget: tags-cloud
-PopularTopics: "المواضيع الشائعة"
+PopularTopics: "مواضيع شائعة"
 
 # Widget: toc
 TableOfContents: "جدول المحتويات"
@@ -104,34 +113,34 @@ NewerPost: "منشور أحدث"
 
 # Layout: disqus-comments
 ShowComments: "عرض التعليقات"
-DisqusNoscriptMessage: "يرجى تمكين JavaScript لعرض <a href='https://disqus.com/?ref_noscript'>التعليقات المقدمة من Disqus.</a>"
+DisqusNoscriptMessage: "يرجى تفعيل JavaScript لعرض <a href='https://disqus.com/?ref_noscript'>التعليقات المدعومة بواسطة Disqus.</a>"
 
 # Layout: pagination
 LoadMorePosts: "تحميل المزيد من المنشورات"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. جميع الحقوق محفوظة. منشور بواسطة <a href='https://gohugo.io/'>Hugo</a>."
-EnableDarkMode: "تمكين الوضع الداكن"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. جميع الحقوق محفوظة. تم النشر بواسطة <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "تفعيل الوضع الداكن"
 Dark: "داكن"
-EnableLightMode: "تمكين الوضع الفاتح"
+EnableLightMode: "تفعيل الوضع الفاتح"
 Light: "فاتح"
-Top: "أعلى"
+Top: "الأعلى"
 BackToTop: "العودة إلى الأعلى"
 
 # Footer: widget-info
-footer__description: "نقدم نصائح لزيادة الإنتاجية، الإلهام، والاستراتيجيات لتحقيق أرباح كبيرة. اكتشف كيف تبدأ مدونة ناجحة أو كيف تحسّن مدونتك الحالية!"
+footer__description: "تتضمن إنتاجية، نصائح، إلهام واستراتيجيات لتحقيق أرباح ضخمة. اكتشف كيفية إنشاء مدونة ناجحة أو كيفية تحسين مدونتك الحالية!"
 
 # Footer: mailchimp_Subscribe
-mailchimp__title: "احصل على أخبار شيقة"
-mailchimp__description: "اشترك في النشرة الإخبارية وسنرسل لك آخر المنشورات عبر البريد الإلكتروني."
-mailchimp__input__text: "بريدك الإلكتروني"
+mailchimp__title: "احصل على أخبار مثيرة"
+mailchimp__description: "اشترك في نشرتنا الإخبارية وسنرسل لك أحدث المنشورات عبر البريد الإلكتروني."
+mailchimp__input__text: "عنوان بريدك الإلكتروني"
 mailchimp__button__text: "اشترك"
 
 # Layout: search
 SearchForBlog: "ابحث في المدونة"
 TypeToSearch: "اكتب للبحث..."
-SearchIcon: "أيقونة البحث"
-CloseSearchIcon: "إغلاق أيقونة البحث"
+SearchIcon: "رمز البحث"
+CloseSearchIcon: "إغلاق رمز البحث"
 
 # Layout: share-buttons
 ShareLinkCopy: "نسخ الرابط"
@@ -139,9 +148,9 @@ ShareWhatsApp: "مشاركة على واتساب"
 ShareFacebook: "مشاركة على فيسبوك"
 ShareTwitter: "مشاركة على تويتر"
 ShareWeibo: "مشاركة على ويبو"
-ShareLINE: "مشاركة على LINE"
-ShareZalo: "مشاركة على Zalo"
-ShareReddit: "مشاركة على Reddit"
+ShareLINE: "مشاركة على لاين"
+ShareZalo: "مشاركة على زالو"
+ShareReddit: "مشاركة على ريديت"
 Copy: "نسخ"
 LinkCopied: "تم نسخ الرابط إلى الحافظة!"
 
@@ -150,9 +159,106 @@ ErrorCode: "رمز الخطأ"
 404Message: "الصفحة المطلوبة غير موجودة."
 BackToHomepage: "العودة إلى الصفحة الرئيسية"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "الأسئلة الشائعة"
-howto_supplies: "اللوازم المطلوبة"
+howto_supplies: "المستلزمات المطلوبة"
 howto_tools: "الأدوات المطلوبة"
 howto_steps: "الخطوات"
-howto_total_time: "إجمالي الوقت"
+howto_total_time: "الوقت الإجمالي"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "اختصارك إلى كل شيء."
+raycastHeroDescription: "مجموعة من أدوات الإنتاجية القوية داخل مشغل قابل للتوسيع. سريع، مريح وموثوق."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "تحميل لنظام Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "الانضمام إلى قائمة انتظار Windows"
+
+# features-card
+featureCardTitle1: "مشاركة سهلة"
+featureCardDescription1: "شارك المحتوى بسهولة باستخدام رابط واحد."
+featureCardImageAlt1: "رمز المشاركة السهلة"
+
+featureCardTitle2: "تعاون سلس"
+featureCardDescription2: "تعاون بسلاسة مع فريقك في مساحة العمل."
+featureCardImageAlt2: "رمز التعاون السلس"
+
+featureCardTitle3: "مزامنة في الوقت الحقيقي"
+featureCardDescription3: "يتم مزامنة التغييرات في الوقت الفعلي عبر جميع الأجهزة."
+featureCardImageAlt3: "رمز المزامنة في الوقت الحقيقي"
+
+featureCardTitle4: "مجموعة متنوعة من الأدوات"
+featureCardDescription4: "اعمل بكفاءة باستخدام مجموعة متنوعة من الأدوات المدمجة."
+featureCardImageAlt4: "رمز مجموعة متنوعة من الأدوات"
+
+featureCardTitle5: "مشاركة الملفات"
+featureCardDescription5: "شارك المستندات والوسائط بسهولة."
+featureCardImageAlt5: "رمز مشاركة الملفات"
+
+featureCardTitle6: "مكالمات فيديو"
+featureCardDescription6: "تحدث وجهاً لوجه مع الأصدقاء أو الزملاء."
+featureCardImageAlt6: "رمز مكالمات الفيديو"
+
+featureCardTitle7: "مواضيع قابلة للتخصيص"
+featureCardDescription7: "خصص بيئة الدردشة الخاصة بك."
+featureCardImageAlt7: "رمز المواضيع القابلة للتخصيص"
+
+featureCardTitle8: "عبر الأنظمة الأساسية"
+featureCardDescription8: "متاح على أي جهاز، في أي مكان."
+featureCardImageAlt8: "رمز عبر الأنظمة الأساسية"
+
+featureCardTitle9: "مشاركة سهلة"
+featureCardDescription9: "شارك المحتوى بسهولة باستخدام رابط واحد."
+featureCardImageAlt9: "رمز المشاركة السهلة"
+
+featureCardTitle10: "تعاون سلس"
+featureCardDescription10: "تعاون بسلاسة مع فريقك في مساحة العمل."
+featureCardImageAlt10: "رمز التعاون السلس"
+
+featureCardTitle11: "مزامنة في الوقت الحقيقي"
+featureCardDescription11: "يتم مزامنة التغييرات في الوقت الفعلي عبر جميع الأجهزة."
+featureCardImageAlt11: "رمز المزامنة في الوقت الحقيقي"
+
+featureCardTitle12: "مجموعة متنوعة من الأدوات"
+featureCardDescription12: "اعمل بكفاءة باستخدام مجموعة متنوعة من الأدوات المدمجة."
+featureCardImageAlt12: "رمز مجموعة متنوعة من الأدوات"
+
+# features-grid
+featureGridTitle1: "قل أي شيء"
+featureGridDescription1: "شارك النصوص، الرسائل الصوتية، الصور، الفيديوهات، GIFs والملفات مجانًا. يستخدم Signal اتصال بيانات هاتفك لتجنب رسوم SMS و MMS."
+featureGridImageAlt1: "رسم توضيحي لميزة المراسلة"
+
+featureGridTitle2: "تحدث بحرية"
+featureGridDescription2: "قم بإجراء مكالمات صوتية ومرئية واضحة تمامًا مع الأشخاص الذين يعيشون في نفس المدينة أو عبر المحيط دون رسوم مكالمات دولية."
+featureGridImageAlt2: "رسم توضيحي لمكالمات الصوت والفيديو"
+
+featureGridTitle3: "اجعل الخصوصية دائمًا"
+featureGridDescription3: "أضف طبقة جديدة من التعبير إلى محادثاتك مع الملصقات المشفرة. يمكنك أيضًا إنشاء ومشاركة حزم الملصقات الخاصة بك."
+featureGridImageAlt3: "رسم توضيحي لميزة الملصقات"
+
+featureGridTitle4: "اجتمع مع المجموعات"
+featureGridDescription4: "تجعل الدردشة الجماعية من السهل البقاء على اتصال مع عائلتك وأصدقائك وزملائك."
+featureGridImageAlt4: "رسم توضيحي لميزة الدردشة الجماعية"
+
+# download-buttons
+downloadTitle: "تنزيل MySoftware"
+downloadDescription: "الوصول إلى Naver MySoftware عبر أنظمة تشغيل مختلفة على أجهزة الكمبيوتر والأجهزة المحمولة، في أي وقت وفي أي مكان!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "تنزيل مباشر"
+
+downloadWindowsAria: "تنزيل MySoftware لنظام Windows"
+downloadMacOSAria: "تنزيل MySoftware لنظام macOS"
+downloadAndroidAria: "تنزيل MySoftware لنظام Android"
+downloadIOSAria: "تنزيل MySoftware لنظام iOS"
+downloadLinuxAria: "تنزيل MySoftware لنظام Linux"
+downloadDirectAria: "تنزيل ملف MySoftware مباشرة"
+
+downloadButtonText: "تنزيل"

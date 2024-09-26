@@ -1,20 +1,22 @@
 # Sections
-"Post": "文章"
-"Posts": "文章"
-"Latest": "最新"
-"Blog": "博客"
-"News": "新闻"
-"Docs": "文档"
+post: "文章"
+posts: "文章"
+latest: "最新"
+blog: "博客"
+news: "新闻"
+docs: "文档"
+reviews: "评论"
 
 # Taxonomies
 Authors: "作者"
 Categories: "分类"
 Tags: "标签"
+Series: "系列"
 
 # Categories
 apple: "苹果"
-gear: "装备"
-beauty: "美容"
+gear: "设备"
+beauty: "美妆"
 review: "评论"
 game: "游戏"
 
@@ -23,11 +25,19 @@ study: "学习"
 business: "商业"
 lifestyle: "生活方式"
 shopping: "购物"
-food: "美食"
+food: "食物"
 people: "人物"
 reading: "阅读"
 science: "科学"
 sport: "运动"
+
+# Series
+"my first series": "我的第一个系列"
+"how to customizing hugo": "如何定制 Hugo"
+
+# Pages
+About: "关于"
+Contact: "联系"
 
 # header: cta_button
 cta_button_text: "联系我们"
@@ -37,10 +47,10 @@ Search: "搜索"
 global: "全球"
 
 # Section: Hero
-hero_title: "一站式每日新闻、文章、灵感和提示。"
-hero_description: "涵盖提高生产力的技巧、灵感和策略，帮助你获取丰厚利润。了解如何建立一个成功的博客，或如何让你的博客更上一层楼！"
+hero_title: "一站式每日新闻、文章、灵感与提示。"
+hero_description: "提供生产力、提示、灵感和策略，帮助你获取丰厚利润。了解如何建立成功的博客，或如何让你的博客更上一层楼！"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "精选"
 
 # section: tags
@@ -51,7 +61,7 @@ authors_section_title: "认识我们的作者"
 see_all_authors: "查看所有作者"
 
 # Layout: Article Meta
-By: "作者"
+By: "由"
 
 # Layout: author
 websiteLink: "网站链接"
@@ -61,15 +71,15 @@ instagramLink: "Instagram 链接"
 website: "网站"
 
 # Layout: author.terms
-authorsList: "作者列表"
+authorsList: "作者"
 post: "文章"
 posts: "文章"
 
 # Layout: contact
 yourName: "你的名字"
 yourNamePlaceholder: "你的名字..."
-yourEmail: "你的电子邮件"
-yourEmailPlaceholder: "你的电子邮件..."
+yourEmail: "你的邮箱"
+yourEmailPlaceholder: "你的邮箱..."
 yourMessage: "你的信息"
 yourMessagePlaceholder: "你的信息..."
 sendMessage: "发送信息"
@@ -80,7 +90,7 @@ featuredPosts: "精选文章"
 # Layout: index.json
 dateFormat: "2006年1月2日"
 
-# Layoud: videos
+# Layout: videos
 Videos: "视频"
 NoVideosFound: "未找到视频。"
 
@@ -95,21 +105,21 @@ PopularTopics: "热门话题"
 
 # Widget: toc
 TableOfContents: "目录"
-NoContentAvailable: "没有可用内容。"
+NoContentAvailable: "暂无内容。"
 
 # Layout: post-navigation
-OlderPost: "较旧的文章"
+OlderPost: "较早的文章"
 NewerPost: "较新的文章"
 
 # Layout: disqus-comments
 ShowComments: "显示评论"
-DisqusNoscriptMessage: "请启用JavaScript以查看<a href='https://disqus.com/?ref_noscript'>由Disqus提供的评论。</a>"
+DisqusNoscriptMessage: "请启用 JavaScript 查看 <a href='https://disqus.com/?ref_noscript'>Disqus 支持的评论。</a>"
 
 # Layout: pagination
 LoadMorePosts: "加载更多文章"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有权利。使用 <a href='https://gohugo.io/'>Hugo</a> 发布。"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。保留所有权利。由 <a href='https://gohugo.io/'>Hugo</a> 发布。"
 EnableDarkMode: "启用深色模式"
 Dark: "深色"
 EnableLightMode: "启用浅色模式"
@@ -118,40 +128,137 @@ Top: "顶部"
 BackToTop: "返回顶部"
 
 # Footer: widget-info
-footer__description: "涵盖提高生产力的技巧、灵感和策略，帮助你获取丰厚利润。了解如何建立一个成功的博客，或如何让你的博客更上一层楼！"
+footer__description: "提供生产力、提示、灵感和策略，帮助你获取丰厚利润。了解如何建立成功的博客，或如何让你的博客更上一层楼！"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "获取有趣的新闻"
-mailchimp__description: "订阅我们的新闻简报，我们会将最新文章通过电子邮件发送给你。"
-mailchimp__input__text: "你的电子邮件地址"
+mailchimp__description: "订阅我们的新闻通讯，我们将发送最新文章到您的邮箱。"
+mailchimp__input__text: "你的邮箱地址"
 mailchimp__button__text: "订阅"
 
 # Layout: search
 SearchForBlog: "搜索博客"
-TypeToSearch: "输入以搜索..."
+TypeToSearch: "输入搜索内容..."
 SearchIcon: "搜索图标"
 CloseSearchIcon: "关闭搜索图标"
 
 # Layout: share-buttons
 ShareLinkCopy: "复制链接"
-ShareWhatsApp: "分享到WhatsApp"
-ShareFacebook: "分享到Facebook"
-ShareTwitter: "分享到Twitter"
-ShareWeibo: "分享到微博"
-ShareLINE: "分享到LINE"
-ShareZalo: "分享到Zalo"
-ShareReddit: "分享到Reddit"
+ShareWhatsApp: "在 WhatsApp 上分享"
+ShareFacebook: "在 Facebook 上分享"
+ShareTwitter: "在 Twitter 上分享"
+ShareWeibo: "在 微博 上分享"
+ShareLINE: "在 LINE 上分享"
+ShareZalo: "在 Zalo 上分享"
+ShareReddit: "在 Reddit 上分享"
 Copy: "复制"
 LinkCopied: "链接已复制到剪贴板！"
 
 # Page: 404
 ErrorCode: "错误代码"
-404Message: "无法找到请求的页面。"
-BackToHomepage: "返回主页"
+404Message: "未找到请求的页面。"
+BackToHomepage: "返回首页"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "常见问题"
-howto_supplies: "所需材料"
+howto_supplies: "所需物品"
 howto_tools: "所需工具"
 howto_steps: "步骤"
 howto_total_time: "总时间"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "你的一切快捷方式。"
+raycastHeroDescription: "一个集成多种强大生产力工具的可扩展启动器。快速、符合人体工程学且可靠。"
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "下载 Mac 版"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "加入 Windows 等候名单"
+
+# features-card
+featureCardTitle1: "轻松分享"
+featureCardDescription1: "只需一个链接即可轻松分享内容。"
+featureCardImageAlt1: "轻松分享图标"
+
+featureCardTitle2: "无缝协作"
+featureCardDescription2: "在工作区与团队无缝协作。"
+featureCardImageAlt2: "无缝协作图标"
+
+featureCardTitle3: "实时同步"
+featureCardDescription3: "更改会实时同步到所有设备。"
+featureCardImageAlt3: "实时同步图标"
+
+featureCardTitle4: "多种工具"
+featureCardDescription4: "使用各种内置工具高效工作。"
+featureCardImageAlt4: "多种工具图标"
+
+featureCardTitle5: "文件分享"
+featureCardDescription5: "轻松分享文档和媒体。"
+featureCardImageAlt5: "文件分享图标"
+
+featureCardTitle6: "视频通话"
+featureCardDescription6: "与朋友或同事进行面对面交谈。"
+featureCardImageAlt6: "视频通话图标"
+
+featureCardTitle7: "可定制主题"
+featureCardDescription7: "个性化您的聊天环境。"
+featureCardImageAlt7: "可定制主题图标"
+
+featureCardTitle8: "跨平台"
+featureCardDescription8: "随时随地在任何设备上使用。"
+featureCardImageAlt8: "跨平台图标"
+
+featureCardTitle9: "轻松分享"
+featureCardDescription9: "只需一个链接即可轻松分享内容。"
+featureCardImageAlt9: "轻松分享图标"
+
+featureCardTitle10: "无缝协作"
+featureCardDescription10: "在工作区与团队无缝协作。"
+featureCardImageAlt10: "无缝协作图标"
+
+featureCardTitle11: "实时同步"
+featureCardDescription11: "更改会实时同步到所有设备。"
+featureCardImageAlt11: "实时同步图标"
+
+featureCardTitle12: "多种工具"
+featureCardDescription12: "使用各种内置工具高效工作。"
+featureCardImageAlt12: "多种工具图标"
+
+# features-grid
+featureGridTitle1: "随心所欲"
+featureGridDescription1: "免费分享文本、语音信息、照片、视频、GIF 和文件。Signal 使用你的手机数据连接，避免短信和彩信费用。"
+featureGridImageAlt1: "消息功能插图"
+
+featureGridTitle2: "畅所欲言"
+featureGridDescription2: "无需长途费用，与跨城或跨海的亲友进行高清语音和视频通话。"
+featureGridImageAlt2: "语音和视频通话插图"
+
+featureGridTitle3: "隐私保护"
+featureGridDescription3: "使用加密贴纸为你的对话增添新色彩。你还可以创建和分享自己的贴纸包。"
+featureGridImageAlt3: "贴纸功能插图"
+
+featureGridTitle4: "群组聊天"
+featureGridDescription4: "群聊让你轻松与家人、朋友和同事保持联系。"
+featureGridImageAlt4: "群组聊天功能插图"
+
+# download-buttons
+downloadTitle: "下载 MySoftware"
+downloadDescription: "通过各种操作系统平台，在 PC 和移动设备上随时随地访问 Naver MySoftware！"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "直接下载"
+
+downloadWindowsAria: "下载 Windows 版 MySoftware"
+downloadMacOSAria: "下载 macOS 版 MySoftware"
+downloadAndroidAria: "下载 Android 版 MySoftware"
+downloadIOSAria: "下载 iOS 版 MySoftware"
+downloadLinuxAria: "下载 Linux 版 MySoftware"
+downloadDirectAria: "直接下载 MySoftware 文件"
+
+downloadButtonText: "下载"

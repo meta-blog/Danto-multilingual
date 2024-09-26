@@ -1,20 +1,22 @@
 # Sections
-"Post": "投稿"
-"Posts": "投稿"
-"Latest": "最新"
-"Blog": "ブログ"
-"News": "ニュース"
-"Docs": "ドキュメント"
+post: "投稿"
+posts: "投稿"
+latest: "最新"
+blog: "ブログ"
+news: "ニュース"
+docs: "ドキュメント"
+reviews: "レビュー"
 
 # Taxonomies
 Authors: "著者"
-Categories: "カテゴリー"
+Categories: "カテゴリ"
 Tags: "タグ"
+Series: "シリーズ"
 
 # Categories
 apple: "アップル"
 gear: "ギア"
-beauty: "美容"
+beauty: "ビューティー"
 review: "レビュー"
 game: "ゲーム"
 
@@ -29,6 +31,14 @@ reading: "読書"
 science: "科学"
 sport: "スポーツ"
 
+# Series
+"my first series": "私の最初のシリーズ"
+"how to customizing hugo": "Hugoのカスタマイズ方法"
+
+# Pages
+About: "紹介"
+Contact: "連絡"
+
 # header: cta_button
 cta_button_text: "お問い合わせ"
 Search: "検索"
@@ -37,21 +47,21 @@ Search: "検索"
 global: "グローバル"
 
 # Section: Hero
-hero_title: "ニュース、記事、インスピレーション、ヒントがすべて揃う場所。"
-hero_description: "生産性向上のヒント、インスピレーション、戦略を提供し、大きな利益を得る方法を紹介します。成功するブログの立ち上げ方、または既存のブログをさらに改善する方法を見つけましょう！"
+hero_title: "ワンストップのデイリーニュース、記事、インスピレーション、ヒント。"
+hero_description: "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を紹介します。成功するブログを作成する方法や、既存のブログをさらに向上させる方法を見つけましょう！"
 
-# section:featured-posts
-Featured: "注目"
+# section: featured-posts
+Featured: "特集"
 
 # section: tags
 ViewAll: "すべて見る"
 
 # Section: Authors
-authors_section_title: "私たちの著者をご紹介"
+authors_section_title: "私たちの著者を紹介します"
 see_all_authors: "すべての著者を見る"
 
 # Layout: Article Meta
-By: "投稿者"
+By: "著者"
 
 # Layout: author
 websiteLink: "ウェブサイトリンク"
@@ -61,34 +71,34 @@ instagramLink: "Instagramリンク"
 website: "ウェブサイト"
 
 # Layout: author.terms
-authorsList: "著者一覧"
+authorsList: "著者"
 post: "投稿"
 posts: "投稿"
 
 # Layout: contact
-yourName: "お名前"
-yourNamePlaceholder: "お名前..."
-yourEmail: "メールアドレス"
-yourEmailPlaceholder: "メールアドレス..."
-yourMessage: "メッセージ"
-yourMessagePlaceholder: "メッセージ..."
+yourName: "あなたの名前"
+yourNamePlaceholder: "あなたの名前..."
+yourEmail: "あなたのメールアドレス"
+yourEmailPlaceholder: "あなたのメールアドレス..."
+yourMessage: "あなたのメッセージ"
+yourMessagePlaceholder: "あなたのメッセージ..."
 sendMessage: "メッセージを送信"
 
 # Layout: featured
-featuredPosts: "注目の投稿"
+featuredPosts: "特集記事"
 
 # Layout: index.json
 dateFormat: "2006年1月2日"
 
-# Layoud: videos
-Videos: "動画"
-NoVideosFound: "動画が見つかりませんでした。"
+# Layout: videos
+Videos: "ビデオ"
+NoVideosFound: "ビデオが見つかりません。"
 
 # Widget: recent-posts
 RecentPosts: "最近の投稿"
 
 # Widget: featured-posts
-FeaturedPosts: "注目の投稿"
+FeaturedPosts: "特集記事"
 
 # Widget: tags-cloud
 PopularTopics: "人気のトピック"
@@ -98,18 +108,18 @@ TableOfContents: "目次"
 NoContentAvailable: "利用可能なコンテンツがありません。"
 
 # Layout: post-navigation
-OlderPost: "前の投稿"
-NewerPost: "次の投稿"
+OlderPost: "以前の投稿"
+NewerPost: "新しい投稿"
 
 # Layout: disqus-comments
 ShowComments: "コメントを表示"
-DisqusNoscriptMessage: "コメントを表示するにはJavaScriptを有効にしてください。<a href='https://disqus.com/?ref_noscript'>Disqusで提供されたコメントを表示</a>"
+DisqusNoscriptMessage: "コメントを見るには、<a href='https://disqus.com/?ref_noscript'>Disqus対応のコメントを表示するためにJavaScriptを有効にしてください。</a>"
 
 # Layout: pagination
 LoadMorePosts: "さらに投稿を読み込む"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>。すべての権利を保有。<a href='https://gohugo.io/'>Hugo</a>で発行されました。"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>。すべての権利を保有しています。<a href='https://gohugo.io/'>Hugo</a>を使用して公開されています。"
 EnableDarkMode: "ダークモードを有効にする"
 Dark: "ダーク"
 EnableLightMode: "ライトモードを有効にする"
@@ -118,17 +128,17 @@ Top: "トップ"
 BackToTop: "トップに戻る"
 
 # Footer: widget-info
-footer__description: "生産性向上のヒント、インスピレーション、戦略を提供し、大きな利益を得る方法を紹介します。成功するブログの立ち上げ方、または既存のブログをさらに改善する方法を見つけましょう！"
+footer__description: "生産性、ヒント、インスピレーション、そして大きな利益を得るための戦略を紹介します。成功するブログを作成する方法や、既存のブログをさらに向上させる方法を見つけましょう！"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "興味深いニュースを受け取る"
-mailchimp__description: "ニュースレターに登録すると、最新の投稿をメールでお届けします。"
+mailchimp__description: "ニュースレターに登録していただければ、最新の投稿をメールでお送りします。"
 mailchimp__input__text: "あなたのメールアドレス"
-mailchimp__button__text: "購読"
+mailchimp__button__text: "購読する"
 
 # Layout: search
 SearchForBlog: "ブログを検索"
-TypeToSearch: "検索するには入力..."
+TypeToSearch: "検索するには入力してください..."
 SearchIcon: "検索アイコン"
 CloseSearchIcon: "検索アイコンを閉じる"
 
@@ -146,12 +156,109 @@ LinkCopied: "リンクがクリップボードにコピーされました！"
 
 # Page: 404
 ErrorCode: "エラーコード"
-404Message: "リクエストされたページが見つかりませんでした。"
+404Message: "要求されたページは見つかりませんでした。"
 BackToHomepage: "ホームページに戻る"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "よくある質問"
-howto_supplies: "必要な用品"
-howto_tools: "必要な工具"
+howto_supplies: "必要な備品"
+howto_tools: "必要なツール"
 howto_steps: "手順"
-howto_total_time: "合計時間"
+howto_total_time: "総時間"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "すべてのためのショートカット。"
+raycastHeroDescription: "拡張可能なランチャー内の強力な生産性ツールのコレクション。高速、使いやすく、信頼性が高い。"
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Mac用にダウンロード"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Windowsのウェイティングリストに参加"
+
+# features-card
+featureCardTitle1: "簡単な共有"
+featureCardDescription1: "1つのリンクで簡単にコンテンツを共有。"
+featureCardImageAlt1: "簡単な共有アイコン"
+
+featureCardTitle2: "シームレスなコラボレーション"
+featureCardDescription2: "ワークスペース内でチームとスムーズにコラボレーション。"
+featureCardImageAlt2: "シームレスなコラボレーションアイコン"
+
+featureCardTitle3: "リアルタイム同期"
+featureCardDescription3: "変更はすべてのデバイスでリアルタイムに同期されます。"
+featureCardImageAlt3: "リアルタイム同期アイコン"
+
+featureCardTitle4: "さまざまなツール"
+featureCardDescription4: "内蔵されたさまざまなツールを使用して効率的に作業します。"
+featureCardImageAlt4: "さまざまなツールアイコン"
+
+featureCardTitle5: "ファイル共有"
+featureCardDescription5: "ドキュメントやメディアを簡単に共有。"
+featureCardImageAlt5: "ファイル共有アイコン"
+
+featureCardTitle6: "ビデオ通話"
+featureCardDescription6: "友人や同僚と顔を合わせて話す。"
+featureCardImageAlt6: "ビデオ通話アイコン"
+
+featureCardTitle7: "カスタマイズ可能なテーマ"
+featureCardDescription7: "チャット環境を個別に設定。"
+featureCardImageAlt7: "カスタマイズ可能なテーマアイコン"
+
+featureCardTitle8: "クロスプラットフォーム"
+featureCardDescription8: "どのデバイスでも、どこでも利用可能。"
+featureCardImageAlt8: "クロスプラットフォームアイコン"
+
+featureCardTitle9: "簡単な共有"
+featureCardDescription9: "1つのリンクで簡単にコンテンツを共有。"
+featureCardImageAlt9: "簡単な共有アイコン"
+
+featureCardTitle10: "シームレスなコラボレーション"
+featureCardDescription10: "ワークスペース内でチームとスムーズにコラボレーション。"
+featureCardImageAlt10: "シームレスなコラボレーションアイコン"
+
+featureCardTitle11: "リアルタイム同期"
+featureCardDescription11: "変更はすべてのデバイスでリアルタイムに同期されます。"
+featureCardImageAlt11: "リアルタイム同期アイコン"
+
+featureCardTitle12: "さまざまなツール"
+featureCardDescription12: "内蔵されたさまざまなツールを使用して効率的に作業します。"
+featureCardImageAlt12: "さまざまなツールアイコン"
+
+# features-grid
+featureGridTitle1: "何でも話そう"
+featureGridDescription1: "テキスト、ボイスメッセージ、写真、ビデオ、GIF、ファイルを無料で共有できます。Signalは電話のデータ接続を使用するため、SMSやMMSの料金を回避できます。"
+featureGridImageAlt1: "メッセージ機能のイラスト"
+
+featureGridTitle2: "自由に話す"
+featureGridDescription2: "近くに住む人や海外にいる人と、長距離通話料金なしでクリアな音声・ビデオ通話ができます。"
+featureGridImageAlt2: "音声・ビデオ通話のイラスト"
+
+featureGridTitle3: "プライバシーを守る"
+featureGridDescription3: "暗号化されたステッカーで会話に新たな表現の層を追加しましょう。また、独自のステッカーパックを作成して共有することもできます。"
+featureGridImageAlt3: "ステッカー機能のイラスト"
+
+featureGridTitle4: "グループで集まる"
+featureGridDescription4: "グループチャットで家族、友人、同僚とのつながりを簡単に保ちます。"
+featureGridImageAlt4: "グループチャット機能のイラスト"
+
+# download-buttons
+downloadTitle: "MySoftwareをダウンロード"
+downloadDescription: "さまざまなOSプラットフォームでNaver MySoftwareにPCやモバイルからいつでもどこでもアクセス可能！"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "直接ダウンロード"
+
+downloadWindowsAria: "Windows用MySoftwareをダウンロード"
+downloadMacOSAria: "macOS用MySoftwareをダウンロード"
+downloadAndroidAria: "Android用MySoftwareをダウンロード"
+downloadIOSAria: "iOS用MySoftwareをダウンロード"
+downloadLinuxAria: "Linux用MySoftwareをダウンロード"
+downloadDirectAria: "MySoftwareの直接ファイルをダウンロード"
+
+downloadButtonText: "ダウンロード"

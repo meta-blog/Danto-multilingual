@@ -1,20 +1,22 @@
 # Sections
-"Post": "Bài viết"
-"Posts": "Bài viết"
-"Latest": "Mới nhất"
-"Blog": "Blog"
-"News": "Tin tức"
-"Docs": "Tài liệu"
+post: "Bài viết"
+posts: "Bài viết"
+latest: "Mới nhất"
+blog: "Blog"
+news: "Tin tức"
+docs: "Tài liệu"
+reviews: "Đánh giá"
 
 # Taxonomies
 Authors: "Tác giả"
 Categories: "Danh mục"
 Tags: "Thẻ"
+Series: "Loạt bài"
 
 # Categories
 apple: "Apple"
 gear: "Thiết bị"
-beauty: "Làm đẹp"
+beauty: "Sắc đẹp"
 review: "Đánh giá"
 game: "Trò chơi"
 
@@ -23,11 +25,19 @@ study: "Học tập"
 business: "Kinh doanh"
 lifestyle: "Phong cách sống"
 shopping: "Mua sắm"
-food: "Thực phẩm"
+food: "Thức ăn"
 people: "Con người"
-reading: "Đọc sách"
+reading: "Đọc"
 science: "Khoa học"
 sport: "Thể thao"
+
+# Series
+"my first series": "Loạt bài đầu tiên của tôi"
+"how to customizing hugo": "Cách tùy chỉnh Hugo"
+
+# Pages
+About: "Giới thiệu"
+Contact: "Liên hệ"
 
 # header: cta_button
 cta_button_text: "Liên hệ với chúng tôi"
@@ -37,10 +47,10 @@ Search: "Tìm kiếm"
 global: "Toàn cầu"
 
 # Section: Hero
-hero_title: "Tin tức hàng ngày, bài viết, cảm hứng và mẹo trong một nơi."
-hero_description: "Cung cấp các mẹo về năng suất, cảm hứng và chiến lược để đạt lợi nhuận lớn. Tìm hiểu cách tạo blog thành công hoặc cách cải thiện blog của bạn!"
+hero_title: "Nguồn tin tức hàng ngày, bài viết, cảm hứng và mẹo trong một nơi."
+hero_description: "Cung cấp năng suất, mẹo, cảm hứng và chiến lược để đạt lợi nhuận cao. Khám phá cách thiết lập blog thành công hoặc cách cải thiện blog của bạn!"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "Nổi bật"
 
 # section: tags
@@ -61,7 +71,7 @@ instagramLink: "Liên kết Instagram"
 website: "Trang web"
 
 # Layout: author.terms
-authorsList: "Danh sách tác giả"
+authorsList: "Tác giả"
 post: "Bài viết"
 posts: "Bài viết"
 
@@ -78,9 +88,9 @@ sendMessage: "Gửi tin nhắn"
 featuredPosts: "Bài viết nổi bật"
 
 # Layout: index.json
-dateFormat: "2 tháng 1, 2006"
+dateFormat: "Ngày 2 tháng 1 năm 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Video"
 NoVideosFound: "Không tìm thấy video."
 
@@ -103,31 +113,31 @@ NewerPost: "Bài viết mới hơn"
 
 # Layout: disqus-comments
 ShowComments: "Hiển thị bình luận"
-DisqusNoscriptMessage: "Vui lòng bật JavaScript để xem <a href='https://disqus.com/?ref_noscript'>bình luận được hỗ trợ bởi Disqus.</a>"
+DisqusNoscriptMessage: "Vui lòng bật JavaScript để xem <a href='https://disqus.com/?ref_noscript'>bình luận do Disqus cung cấp.</a>"
 
 # Layout: pagination
 LoadMorePosts: "Tải thêm bài viết"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Đã đăng ký bản quyền. Được xuất bản với <a href='https://gohugo.io/'>Hugo</a>."
-EnableDarkMode: "Kích hoạt chế độ tối"
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Bảo lưu mọi quyền. Xuất bản với <a href='https://gohugo.io/'>Hugo</a>."
+EnableDarkMode: "Bật chế độ tối"
 Dark: "Tối"
-EnableLightMode: "Kích hoạt chế độ sáng"
+EnableLightMode: "Bật chế độ sáng"
 Light: "Sáng"
-Top: "Lên trên"
+Top: "Đầu trang"
 BackToTop: "Trở lại đầu trang"
 
 # Footer: widget-info
-footer__description: "Cung cấp các mẹo về năng suất, cảm hứng và chiến lược để đạt lợi nhuận lớn. Tìm hiểu cách tạo blog thành công hoặc cách cải thiện blog của bạn!"
+footer__description: "Cung cấp năng suất, mẹo, cảm hứng và chiến lược để đạt lợi nhuận cao. Khám phá cách thiết lập blog thành công hoặc cách cải thiện blog của bạn!"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "Nhận tin tức thú vị"
-mailchimp__description: "Đăng ký nhận bản tin của chúng tôi và chúng tôi sẽ gửi email cho bạn các bài viết mới nhất."
+mailchimp__description: "Đăng ký nhận bản tin của chúng tôi và chúng tôi sẽ gửi email các bài viết mới nhất cho bạn."
 mailchimp__input__text: "Địa chỉ email của bạn"
 mailchimp__button__text: "Đăng ký"
 
 # Layout: search
-SearchForBlog: "Tìm kiếm trong Blog"
+SearchForBlog: "Tìm kiếm Blog"
 TypeToSearch: "Nhập để tìm kiếm..."
 SearchIcon: "Biểu tượng tìm kiếm"
 CloseSearchIcon: "Đóng biểu tượng tìm kiếm"
@@ -142,16 +152,113 @@ ShareLINE: "Chia sẻ trên LINE"
 ShareZalo: "Chia sẻ trên Zalo"
 ShareReddit: "Chia sẻ trên Reddit"
 Copy: "Sao chép"
-LinkCopied: "Liên kết đã được sao chép vào clipboard!"
+LinkCopied: "Liên kết đã được sao chép vào bảng tạm!"
 
 # Page: 404
 ErrorCode: "Mã lỗi"
 404Message: "Không tìm thấy trang yêu cầu."
 BackToHomepage: "Quay lại trang chủ"
 
-# Schema:faq+howto
-faq_title: "Câu Hỏi Thường Gặp"
-howto_supplies: "Vật Dụng Cần Thiết"
-howto_tools: "Công Cụ Cần Thiết"
-howto_steps: "Các Bước"
-howto_total_time: "Tổng Thời Gian"
+# Schema: faq+howto
+faq_title: "Câu hỏi thường gặp"
+howto_supplies: "Vật tư cần thiết"
+howto_tools: "Công cụ cần thiết"
+howto_steps: "Các bước"
+howto_total_time: "Tổng thời gian"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Lối tắt của bạn đến mọi thứ."
+raycastHeroDescription: "Một bộ sưu tập các công cụ năng suất mạnh mẽ trong một trình khởi chạy có thể mở rộng. Nhanh chóng, tiện lợi và đáng tin cậy."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Tải xuống cho Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Tham gia danh sách chờ cho Windows"
+
+# features-card
+featureCardTitle1: "Chia sẻ dễ dàng"
+featureCardDescription1: "Chia sẻ nội dung dễ dàng chỉ với một liên kết."
+featureCardImageAlt1: "Biểu tượng chia sẻ dễ dàng"
+
+featureCardTitle2: "Hợp tác liền mạch"
+featureCardDescription2: "Hợp tác dễ dàng với nhóm của bạn trong không gian làm việc."
+featureCardImageAlt2: "Biểu tượng hợp tác liền mạch"
+
+featureCardTitle3: "Đồng bộ thời gian thực"
+featureCardDescription3: "Các thay đổi được đồng bộ hóa thời gian thực trên tất cả các thiết bị."
+featureCardImageAlt3: "Biểu tượng đồng bộ thời gian thực"
+
+featureCardTitle4: "Đa dạng công cụ"
+featureCardDescription4: "Làm việc hiệu quả với nhiều công cụ tích hợp sẵn."
+featureCardImageAlt4: "Biểu tượng đa dạng công cụ"
+
+featureCardTitle5: "Chia sẻ tệp"
+featureCardDescription5: "Chia sẻ tài liệu và phương tiện dễ dàng."
+featureCardImageAlt5: "Biểu tượng chia sẻ tệp"
+
+featureCardTitle6: "Cuộc gọi video"
+featureCardDescription6: "Nói chuyện trực tiếp với bạn bè hoặc đồng nghiệp."
+featureCardImageAlt6: "Biểu tượng cuộc gọi video"
+
+featureCardTitle7: "Chủ đề tùy chỉnh"
+featureCardDescription7: "Cá nhân hóa môi trường trò chuyện của bạn."
+featureCardImageAlt7: "Biểu tượng chủ đề tùy chỉnh"
+
+featureCardTitle8: "Đa nền tảng"
+featureCardDescription8: "Có sẵn trên mọi thiết bị, ở mọi nơi."
+featureCardImageAlt8: "Biểu tượng đa nền tảng"
+
+featureCardTitle9: "Chia sẻ dễ dàng"
+featureCardDescription9: "Chia sẻ nội dung dễ dàng chỉ với một liên kết."
+featureCardImageAlt9: "Biểu tượng chia sẻ dễ dàng"
+
+featureCardTitle10: "Hợp tác liền mạch"
+featureCardDescription10: "Hợp tác dễ dàng với nhóm của bạn trong không gian làm việc."
+featureCardImageAlt10: "Biểu tượng hợp tác liền mạch"
+
+featureCardTitle11: "Đồng bộ thời gian thực"
+featureCardDescription11: "Các thay đổi được đồng bộ hóa thời gian thực trên tất cả các thiết bị."
+featureCardImageAlt11: "Biểu tượng đồng bộ thời gian thực"
+
+featureCardTitle12: "Đa dạng công cụ"
+featureCardDescription12: "Làm việc hiệu quả với nhiều công cụ tích hợp sẵn."
+featureCardImageAlt12: "Biểu tượng đa dạng công cụ"
+
+# features-grid
+featureGridTitle1: "Nói bất cứ điều gì"
+featureGridDescription1: "Chia sẻ miễn phí văn bản, tin nhắn thoại, ảnh, video, GIF và tệp. Signal sử dụng kết nối dữ liệu của điện thoại bạn để tránh phí SMS và MMS."
+featureGridImageAlt1: "Hình minh họa tính năng nhắn tin"
+
+featureGridTitle2: "Nói tự do"
+featureGridDescription2: "Thực hiện các cuộc gọi thoại và video rõ ràng với những người ở gần hoặc xa bên kia đại dương mà không tốn phí đường dài."
+featureGridImageAlt2: "Hình minh họa cuộc gọi thoại và video"
+
+featureGridTitle3: "Bảo mật mọi lúc"
+featureGridDescription3: "Thêm một lớp biểu đạt mới vào cuộc trò chuyện của bạn với các sticker mã hóa. Bạn cũng có thể tạo và chia sẻ bộ sticker của riêng mình."
+featureGridImageAlt3: "Hình minh họa tính năng sticker"
+
+featureGridTitle4: "Kết nối với nhóm"
+featureGridDescription4: "Các cuộc trò chuyện nhóm giúp bạn dễ dàng kết nối với gia đình, bạn bè và đồng nghiệp."
+featureGridImageAlt4: "Hình minh họa tính năng trò chuyện nhóm"
+
+# download-buttons
+downloadTitle: "Tải xuống MySoftware"
+downloadDescription: "Truy cập Naver MySoftware trên nhiều nền tảng hệ điều hành trên PC và thiết bị di động, mọi lúc, mọi nơi!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Tải xuống trực tiếp"
+
+downloadWindowsAria: "Tải xuống MySoftware cho Windows"
+downloadMacOSAria: "Tải xuống MySoftware cho macOS"
+downloadAndroidAria: "Tải xuống MySoftware cho Android"
+downloadIOSAria: "Tải xuống MySoftware cho iOS"
+downloadLinuxAria: "Tải xuống MySoftware cho Linux"
+downloadDirectAria: "Tải xuống trực tiếp tệp MySoftware"
+
+downloadButtonText: "Tải xuống"

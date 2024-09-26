@@ -1,15 +1,17 @@
 # Sections
-"Post": "Post"
-"Posts": "Post"
-"Latest": "Ultimo"
-"Blog": "Blog"
-"News": "Notizie"
-"Docs": "Documenti"
+post: "Post"
+posts: "Post"
+latest: "Ultimi"
+blog: "Blog"
+news: "Notizie"
+docs: "Documenti"
+reviews: "Recensioni"
 
 # Taxonomies
 Authors: "Autori"
 Categories: "Categorie"
 Tags: "Tag"
+Series: "Serie"
 
 # Categories
 apple: "Apple"
@@ -20,7 +22,7 @@ game: "Gioco"
 
 # Tags
 study: "Studio"
-business: "Affari"
+business: "Business"
 lifestyle: "Stile di vita"
 shopping: "Shopping"
 food: "Cibo"
@@ -28,6 +30,14 @@ people: "Persone"
 reading: "Lettura"
 science: "Scienza"
 sport: "Sport"
+
+# Series
+"my first series": "La mia prima serie"
+"how to customizing hugo": "Come personalizzare Hugo"
+
+# Pages
+About: "Informazioni"
+Contact: "Contatti"
 
 # header: cta_button
 cta_button_text: "Contattaci"
@@ -37,11 +47,11 @@ Search: "Cerca"
 global: "Globale"
 
 # Section: Hero
-hero_title: "Notizie quotidiane, articoli, ispirazioni e consigli, tutto in un unico posto."
-hero_description: "Offriamo consigli per la produttività, ispirazioni e strategie per grandi profitti. Scopri come avviare un blog di successo o migliorare il tuo blog attuale!"
+hero_title: "Notizie quotidiane, articoli, ispirazioni e consigli tutto in uno."
+hero_description: "Offre produttività, consigli, ispirazione e strategie per grandi profitti. Scopri come creare un blog di successo o come migliorare il tuo!"
 
-# section:featured-posts
-Featured: "In primo piano"
+# section: featured-posts
+Featured: "In evidenza"
 
 # section: tags
 ViewAll: "Vedi tutto"
@@ -54,14 +64,14 @@ see_all_authors: "Vedi tutti gli autori"
 By: "Di"
 
 # Layout: author
-websiteLink: "Link al sito web"
+websiteLink: "Link del sito web"
 facebookLink: "Link Facebook"
 twitterLink: "Link Twitter"
 instagramLink: "Link Instagram"
 website: "Sito web"
 
 # Layout: author.terms
-authorsList: "Elenco autori"
+authorsList: "Autori"
 post: "Post"
 posts: "Post"
 
@@ -75,12 +85,12 @@ yourMessagePlaceholder: "Il tuo messaggio..."
 sendMessage: "Invia messaggio"
 
 # Layout: featured
-featuredPosts: "Post in primo piano"
+featuredPosts: "Post in evidenza"
 
 # Layout: index.json
 dateFormat: "2 gennaio 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Video"
 NoVideosFound: "Nessun video trovato."
 
@@ -88,7 +98,7 @@ NoVideosFound: "Nessun video trovato."
 RecentPosts: "Post recenti"
 
 # Widget: featured-posts
-FeaturedPosts: "Post in primo piano"
+FeaturedPosts: "Post in evidenza"
 
 # Widget: tags-cloud
 PopularTopics: "Argomenti popolari"
@@ -103,7 +113,7 @@ NewerPost: "Post successivo"
 
 # Layout: disqus-comments
 ShowComments: "Mostra commenti"
-DisqusNoscriptMessage: "Per favore abilita JavaScript per visualizzare i <a href='https://disqus.com/?ref_noscript'>commenti forniti da Disqus.</a>"
+DisqusNoscriptMessage: "Attiva JavaScript per visualizzare i <a href='https://disqus.com/?ref_noscript'>commenti forniti da Disqus.</a>"
 
 # Layout: pagination
 LoadMorePosts: "Carica altri post"
@@ -114,11 +124,11 @@ EnableDarkMode: "Attiva modalità scura"
 Dark: "Scuro"
 EnableLightMode: "Attiva modalità chiara"
 Light: "Chiaro"
-Top: "In alto"
-BackToTop: "Torna in cima"
+Top: "Inizio"
+BackToTop: "Torna all'inizio"
 
 # Footer: widget-info
-footer__description: "Offriamo consigli per la produttività, ispirazioni e strategie per grandi profitti. Scopri come avviare un blog di successo o migliorare il tuo blog attuale!"
+footer__description: "Offre produttività, consigli, ispirazione e strategie per grandi profitti. Scopri come creare un blog di successo o come migliorare il tuo!"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "Ricevi notizie interessanti"
@@ -128,7 +138,7 @@ mailchimp__button__text: "Iscriviti"
 
 # Layout: search
 SearchForBlog: "Cerca nel blog"
-TypeToSearch: "Digita per cercare..."
+TypeToSearch: "Scrivi per cercare..."
 SearchIcon: "Icona di ricerca"
 CloseSearchIcon: "Chiudi icona di ricerca"
 
@@ -147,11 +157,108 @@ LinkCopied: "Link copiato negli appunti!"
 # Page: 404
 ErrorCode: "Codice di errore"
 404Message: "La pagina richiesta non è stata trovata."
-BackToHomepage: "Torna alla homepage"
+BackToHomepage: "Torna alla home"
 
-# Schema:faq+howto
-faq_title: "Domande Frequenti"
-howto_supplies: "Materiali Necessari"
-howto_tools: "Strumenti Necessari"
+# Schema: faq+howto
+faq_title: "Domande frequenti"
+howto_supplies: "Materiali necessari"
+howto_tools: "Strumenti necessari"
 howto_steps: "Passaggi"
-howto_total_time: "Tempo Totale"
+howto_total_time: "Tempo totale"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "La tua scorciatoia per tutto."
+raycastHeroDescription: "Una raccolta di potenti strumenti di produttività in un launcher estendibile. Veloce, ergonomico e affidabile."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Scarica per Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Unisciti alla lista d'attesa per Windows"
+
+# features-card
+featureCardTitle1: "Condivisione facile"
+featureCardDescription1: "Condividi contenuti facilmente con un solo link."
+featureCardImageAlt1: "Icona di Condivisione Facile"
+
+featureCardTitle2: "Collaborazione fluida"
+featureCardDescription2: "Collabora senza problemi con il tuo team nello spazio di lavoro."
+featureCardImageAlt2: "Icona di Collaborazione Fluida"
+
+featureCardTitle3: "Sincronizzazione in tempo reale"
+featureCardDescription3: "Le modifiche vengono sincronizzate in tempo reale su tutti i dispositivi."
+featureCardImageAlt3: "Icona di Sincronizzazione in Tempo Reale"
+
+featureCardTitle4: "Varietà di strumenti"
+featureCardDescription4: "Lavora in modo efficiente con una varietà di strumenti integrati."
+featureCardImageAlt4: "Icona di Varietà di Strumenti"
+
+featureCardTitle5: "Condivisione di file"
+featureCardDescription5: "Condividi documenti e media facilmente."
+featureCardImageAlt5: "Icona di Condivisione di File"
+
+featureCardTitle6: "Videochiamate"
+featureCardDescription6: "Parla faccia a faccia con amici o colleghi."
+featureCardImageAlt6: "Icona di Videochiamate"
+
+featureCardTitle7: "Temi personalizzabili"
+featureCardDescription7: "Personalizza il tuo ambiente di chat."
+featureCardImageAlt7: "Icona di Temi Personalizzabili"
+
+featureCardTitle8: "Multipiattaforma"
+featureCardDescription8: "Disponibile su qualsiasi dispositivo, ovunque."
+featureCardImageAlt8: "Icona Multipiattaforma"
+
+featureCardTitle9: "Condivisione facile"
+featureCardDescription9: "Condividi contenuti facilmente con un solo link."
+featureCardImageAlt9: "Icona di Condivisione Facile"
+
+featureCardTitle10: "Collaborazione fluida"
+featureCardDescription10: "Collabora senza problemi con il tuo team nello spazio di lavoro."
+featureCardImageAlt10: "Icona di Collaborazione Fluida"
+
+featureCardTitle11: "Sincronizzazione in tempo reale"
+featureCardDescription11: "Le modifiche vengono sincronizzate in tempo reale su tutti i dispositivi."
+featureCardImageAlt11: "Icona di Sincronizzazione in Tempo Reale"
+
+featureCardTitle12: "Varietà di strumenti"
+featureCardDescription12: "Lavora in modo efficiente con una varietà di strumenti integrati."
+featureCardImageAlt12: "Icona di Varietà di Strumenti"
+
+# features-grid
+featureGridTitle1: "Dì qualsiasi cosa"
+featureGridDescription1: "Condividi testi, messaggi vocali, foto, video, GIF e file gratuitamente. Signal utilizza la connessione dati del tuo telefono per evitare costi SMS e MMS."
+featureGridImageAlt1: "Illustrazione della funzione di messaggistica"
+
+featureGridTitle2: "Parla liberamente"
+featureGridDescription2: "Effettua chiamate vocali e video cristalline con persone vicine o dall'altra parte del mondo, senza costi di chiamata a lunga distanza."
+featureGridImageAlt2: "Illustrazione delle chiamate vocali e video"
+
+featureGridTitle3: "Fai della privacy un'abitudine"
+featureGridDescription3: "Aggiungi un nuovo livello di espressione alle tue conversazioni con adesivi crittografati. Puoi anche creare e condividere i tuoi pacchetti di adesivi."
+featureGridImageAlt3: "Illustrazione della funzione adesivi"
+
+featureGridTitle4: "Riunisci i gruppi"
+featureGridDescription4: "Le chat di gruppo rendono facile rimanere in contatto con la famiglia, gli amici e i colleghi."
+featureGridImageAlt4: "Illustrazione della funzione chat di gruppo"
+
+# download-buttons
+downloadTitle: "Scarica MySoftware"
+downloadDescription: "Accedi a Naver MySoftware su varie piattaforme OS su PC e dispositivi mobili, sempre e ovunque!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Download diretto"
+
+downloadWindowsAria: "Scarica MySoftware per Windows"
+downloadMacOSAria: "Scarica MySoftware per macOS"
+downloadAndroidAria: "Scarica MySoftware per Android"
+downloadIOSAria: "Scarica MySoftware per iOS"
+downloadLinuxAria: "Scarica MySoftware per Linux"
+downloadDirectAria: "Download diretto di MySoftware"
+
+downloadButtonText: "Scarica"

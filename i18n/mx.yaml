@@ -1,15 +1,17 @@
 # Sections
-"Post": "Publicación"
-"Posts": "Publicaciones"
-"Latest": "Último"
-"Blog": "Blog"
-"News": "Noticias"
-"Docs": "Documentos"
+post: "Publicación"
+posts: "Publicaciones"
+latest: "Último"
+blog: "Blog"
+news: "Noticias"
+docs: "Documentos"
+reviews: "Reseñas"
 
 # Taxonomies
 Authors: "Autores"
 Categories: "Categorías"
 Tags: "Etiquetas"
+Series: "Series"
 
 # Categories
 apple: "Apple"
@@ -29,6 +31,14 @@ reading: "Lectura"
 science: "Ciencia"
 sport: "Deporte"
 
+# Series
+"my first series": "Mi primera serie"
+"how to customizing hugo": "Cómo personalizar Hugo"
+
+# Pages
+About: "Acerca de"
+Contact: "Contacto"
+
 # header: cta_button
 cta_button_text: "Contáctanos"
 Search: "Buscar"
@@ -38,9 +48,9 @@ global: "Global"
 
 # Section: Hero
 hero_title: "Noticias diarias, artículos, inspiración y consejos en un solo lugar."
-hero_description: "Ofrecemos productividad, consejos, inspiración y estrategias para grandes ganancias. Descubre cómo crear un blog exitoso o cómo mejorar el tuyo."
+hero_description: "Presentamos productividad, consejos, inspiración y estrategias para obtener grandes beneficios. ¡Descubre cómo crear un blog exitoso o cómo mejorar el tuyo!"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "Destacado"
 
 # section: tags
@@ -55,13 +65,13 @@ By: "Por"
 
 # Layout: author
 websiteLink: "Enlace al sitio web"
-facebookLink: "Enlace a Facebook"
-twitterLink: "Enlace a Twitter"
-instagramLink: "Enlace a Instagram"
+facebookLink: "Enlace de Facebook"
+twitterLink: "Enlace de Twitter"
+instagramLink: "Enlace de Instagram"
 website: "Sitio web"
 
 # Layout: author.terms
-authorsList: "Lista de autores"
+authorsList: "Autores"
 post: "Publicación"
 posts: "Publicaciones"
 
@@ -80,7 +90,7 @@ featuredPosts: "Publicaciones destacadas"
 # Layout: index.json
 dateFormat: "2 de enero de 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Videos"
 NoVideosFound: "No se encontraron videos."
 
@@ -118,19 +128,19 @@ Top: "Arriba"
 BackToTop: "Volver arriba"
 
 # Footer: widget-info
-footer__description: "Ofrecemos productividad, consejos, inspiración y estrategias para grandes ganancias. Descubre cómo crear un blog exitoso o cómo mejorar el tuyo."
+footer__description: "Presentamos productividad, consejos, inspiración y estrategias para obtener grandes beneficios. ¡Descubre cómo crear un blog exitoso o cómo mejorar el tuyo!"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "Recibe noticias interesantes"
-mailchimp__description: "Suscríbete a nuestro boletín y te enviaremos correos electrónicos con las últimas publicaciones."
+mailchimp__description: "Suscríbete a nuestro boletín y te enviaremos los correos electrónicos de las publicaciones más recientes."
 mailchimp__input__text: "Tu dirección de correo electrónico"
 mailchimp__button__text: "Suscribirse"
 
 # Layout: search
 SearchForBlog: "Buscar en el blog"
 TypeToSearch: "Escribe para buscar..."
-SearchIcon: "Icono de búsqueda"
-CloseSearchIcon: "Cerrar icono de búsqueda"
+SearchIcon: "Ícono de búsqueda"
+CloseSearchIcon: "Cerrar ícono de búsqueda"
 
 # Layout: share-buttons
 ShareLinkCopy: "Copiar enlace"
@@ -147,11 +157,108 @@ LinkCopied: "¡Enlace copiado al portapapeles!"
 # Page: 404
 ErrorCode: "Código de error"
 404Message: "No se pudo encontrar la página solicitada."
-BackToHomepage: "Volver a la página de inicio"
+BackToHomepage: "Volver a la página principal"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "Preguntas Frecuentes"
 howto_supplies: "Suministros Necesarios"
 howto_tools: "Herramientas Necesarias"
 howto_steps: "Pasos"
 howto_total_time: "Tiempo Total"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Tu acceso directo a todo."
+raycastHeroDescription: "Una colección de potentes herramientas de productividad dentro de un lanzador extensible. Rápido, ergonómico y confiable."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Descargar para Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Únete a la lista de espera para Windows"
+
+# features-card
+featureCardTitle1: "Compartir fácilmente"
+featureCardDescription1: "Comparte contenido fácilmente con un solo enlace."
+featureCardImageAlt1: "Ícono de Compartir Fácilmente"
+
+featureCardTitle2: "Colaboración sin esfuerzo"
+featureCardDescription2: "Colabora sin problemas con tu equipo en el espacio de trabajo."
+featureCardImageAlt2: "Ícono de Colaboración sin esfuerzo"
+
+featureCardTitle3: "Sincronización en tiempo real"
+featureCardDescription3: "Los cambios se sincronizan en tiempo real en todos los dispositivos."
+featureCardImageAlt3: "Ícono de Sincronización en tiempo real"
+
+featureCardTitle4: "Variedad de herramientas"
+featureCardDescription4: "Trabaja de manera eficiente con una variedad de herramientas integradas."
+featureCardImageAlt4: "Ícono de Variedad de herramientas"
+
+featureCardTitle5: "Compartir archivos"
+featureCardDescription5: "Comparte documentos y medios fácilmente."
+featureCardImageAlt5: "Ícono de Compartir Archivos"
+
+featureCardTitle6: "Videollamadas"
+featureCardDescription6: "Habla cara a cara con amigos o colegas."
+featureCardImageAlt6: "Ícono de Videollamadas"
+
+featureCardTitle7: "Temas personalizables"
+featureCardDescription7: "Personaliza tu entorno de chat."
+featureCardImageAlt7: "Ícono de Temas personalizables"
+
+featureCardTitle8: "Multiplataforma"
+featureCardDescription8: "Disponible en cualquier dispositivo, en cualquier lugar."
+featureCardImageAlt8: "Ícono de Multiplataforma"
+
+featureCardTitle9: "Compartir fácilmente"
+featureCardDescription9: "Comparte contenido fácilmente con un solo enlace."
+featureCardImageAlt9: "Ícono de Compartir Fácilmente"
+
+featureCardTitle10: "Colaboración sin esfuerzo"
+featureCardDescription10: "Colabora sin problemas con tu equipo en el espacio de trabajo."
+featureCardImageAlt10: "Ícono de Colaboración sin esfuerzo"
+
+featureCardTitle11: "Sincronización en tiempo real"
+featureCardDescription11: "Los cambios se sincronizan en tiempo real en todos los dispositivos."
+featureCardImageAlt11: "Ícono de Sincronización en tiempo real"
+
+featureCardTitle12: "Variedad de herramientas"
+featureCardDescription12: "Trabaja de manera eficiente con una variedad de herramientas integradas."
+featureCardImageAlt12: "Ícono de Variedad de herramientas"
+
+# features-grid
+featureGridTitle1: "Di cualquier cosa"
+featureGridDescription1: "Comparte textos, mensajes de voz, fotos, videos, GIFs y archivos de manera gratuita. Signal utiliza la conexión de datos de tu teléfono para evitar cargos de SMS y MMS."
+featureGridImageAlt1: "Ilustración de la función de mensajería"
+
+featureGridTitle2: "Habla libremente"
+featureGridDescription2: "Haz llamadas de voz y video claras con personas que viven cerca o al otro lado del océano, sin cargos por larga distancia."
+featureGridImageAlt2: "Ilustración de llamadas de voz y video"
+
+featureGridTitle3: "Haz que la privacidad sea parte de ti"
+featureGridDescription3: "Añade una nueva capa de expresión a tus conversaciones con stickers encriptados. También puedes crear y compartir tus propios paquetes de stickers."
+featureGridImageAlt3: "Ilustración de la función de stickers"
+
+featureGridTitle4: "Reúnete con grupos"
+featureGridDescription4: "Los chats grupales hacen que sea fácil mantenerte conectado con tu familia, amigos y compañeros de trabajo."
+featureGridImageAlt4: "Ilustración de la función de chat grupal"
+
+# download-buttons
+downloadTitle: "Descargar MySoftware"
+downloadDescription: "Accede a Naver MySoftware en varias plataformas de SO en PC y dispositivos móviles, ¡en cualquier momento y lugar!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Descarga directa"
+
+downloadWindowsAria: "Descargar MySoftware para Windows"
+downloadMacOSAria: "Descargar MySoftware para macOS"
+downloadAndroidAria: "Descargar MySoftware para Android"
+downloadIOSAria: "Descargar MySoftware para iOS"
+downloadLinuxAria: "Descargar MySoftware para Linux"
+downloadDirectAria: "Descarga directa del archivo MySoftware"
+
+downloadButtonText: "Descargar"

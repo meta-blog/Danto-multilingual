@@ -1,27 +1,29 @@
 # Sections
-"Post": "Article"
-"Posts": "Articles"
-"Latest": "Dernier"
-"Blog": "Blog"
-"News": "Actualités"
-"Docs": "Documents"
+post: "Publication"
+posts: "Publications"
+latest: "Dernier"
+blog: "Blog"
+news: "Actualités"
+docs: "Documents"
+reviews: "Avis"
 
 # Taxonomies
 Authors: "Auteurs"
 Categories: "Catégories"
 Tags: "Étiquettes"
+Series: "Séries"
 
 # Categories
 apple: "Apple"
 gear: "Équipement"
 beauty: "Beauté"
-review: "Critique"
+review: "Avis"
 game: "Jeu"
 
 # Tags
-study: "Étude"
+study: "Études"
 business: "Affaires"
-lifestyle: "Style de vie"
+lifestyle: "Mode de vie"
 shopping: "Achats"
 food: "Nourriture"
 people: "Personnes"
@@ -29,19 +31,27 @@ reading: "Lecture"
 science: "Science"
 sport: "Sport"
 
+# Series
+"my first series": "Ma première série"
+"how to customizing hugo": "Comment personnaliser Hugo"
+
+# Pages
+About: "À propos"
+Contact: "Contact"
+
 # header: cta_button
 cta_button_text: "Contactez-nous"
-Search: "Recherche"
+Search: "Rechercher"
 
 # header widget: language-switcher
 global: "Global"
 
 # Section: Hero
-hero_title: "Un guichet unique pour les actualités, articles, inspirations et conseils quotidiens."
-hero_description: "Propose des astuces de productivité, d'inspiration et des stratégies pour des profits massifs. Découvrez comment créer un blog réussi ou comment améliorer le vôtre !"
+hero_title: "Votre source quotidienne unique pour des actualités, des articles, de l'inspiration et des conseils."
+hero_description: "Des astuces de productivité, de l'inspiration et des stratégies pour des profits massifs. Découvrez comment créer un blog réussi ou comment améliorer le vôtre !"
 
-# section:featured-posts
-Featured: "À la une"
+# section: featured-posts
+Featured: "En vedette"
 
 # section: tags
 ViewAll: "Voir tout"
@@ -54,59 +64,59 @@ see_all_authors: "Voir tous les auteurs"
 By: "Par"
 
 # Layout: author
-websiteLink: "Lien vers le site"
+websiteLink: "Lien du site"
 facebookLink: "Lien Facebook"
 twitterLink: "Lien Twitter"
 instagramLink: "Lien Instagram"
 website: "Site web"
 
 # Layout: author.terms
-authorsList: "Liste des auteurs"
-post: "Article"
-posts: "Articles"
+authorsList: "Auteurs"
+post: "Publication"
+posts: "Publications"
 
 # Layout: contact
 yourName: "Votre nom"
 yourNamePlaceholder: "Votre nom..."
-yourEmail: "Votre email"
-yourEmailPlaceholder: "Votre email..."
+yourEmail: "Votre e-mail"
+yourEmailPlaceholder: "Votre e-mail..."
 yourMessage: "Votre message"
 yourMessagePlaceholder: "Votre message..."
 sendMessage: "Envoyer le message"
 
 # Layout: featured
-featuredPosts: "Articles en vedette"
+featuredPosts: "Publications en vedette"
 
 # Layout: index.json
 dateFormat: "2 janvier 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Vidéos"
 NoVideosFound: "Aucune vidéo trouvée."
 
 # Widget: recent-posts
-RecentPosts: "Articles récents"
+RecentPosts: "Publications récentes"
 
 # Widget: featured-posts
-FeaturedPosts: "Articles en vedette"
+FeaturedPosts: "Publications en vedette"
 
 # Widget: tags-cloud
 PopularTopics: "Sujets populaires"
 
 # Widget: toc
 TableOfContents: "Table des matières"
-NoContentAvailable: "Aucun contenu disponible."
+NoContentAvailable: "Pas de contenu disponible."
 
 # Layout: post-navigation
-OlderPost: "Article précédent"
-NewerPost: "Article suivant"
+OlderPost: "Publication précédente"
+NewerPost: "Publication suivante"
 
 # Layout: disqus-comments
 ShowComments: "Afficher les commentaires"
-DisqusNoscriptMessage: "Veuillez activer JavaScript pour voir les <a href='https://disqus.com/?ref_noscript'>commentaires propulsés par Disqus.</a>"
+DisqusNoscriptMessage: "Veuillez activer JavaScript pour voir les <a href='https://disqus.com/?ref_noscript'>commentaires fournis par Disqus.</a>"
 
 # Layout: pagination
-LoadMorePosts: "Charger plus d'articles"
+LoadMorePosts: "Charger plus de publications"
 
 # Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Tous droits réservés. Publié avec <a href='https://gohugo.io/'>Hugo</a>."
@@ -118,19 +128,19 @@ Top: "Haut"
 BackToTop: "Retour en haut"
 
 # Footer: widget-info
-footer__description: "Propose des astuces de productivité, d'inspiration et des stratégies pour des profits massifs. Découvrez comment créer un blog réussi ou comment améliorer le vôtre !"
+footer__description: "Des astuces de productivité, de l'inspiration et des stratégies pour des profits massifs. Découvrez comment créer un blog réussi ou comment améliorer le vôtre !"
 
 # Footer: mailchimp_Subscribe
-mailchimp__title: "Recevez des nouvelles intéressantes"
-mailchimp__description: "Abonnez-vous à notre newsletter et nous vous enverrons les derniers articles par email."
-mailchimp__input__text: "Votre adresse email"
+mailchimp__title: "Recevez des actualités intéressantes"
+mailchimp__description: "Abonnez-vous à notre newsletter et nous vous enverrons les derniers articles par e-mail."
+mailchimp__input__text: "Votre adresse e-mail"
 mailchimp__button__text: "S'abonner"
 
 # Layout: search
 SearchForBlog: "Rechercher dans le blog"
 TypeToSearch: "Tapez pour rechercher..."
 SearchIcon: "Icône de recherche"
-CloseSearchIcon: "Fermer l'icône de recherche"
+CloseSearchIcon: "Icône de fermeture de recherche"
 
 # Layout: share-buttons
 ShareLinkCopy: "Copier le lien"
@@ -147,11 +157,108 @@ LinkCopied: "Lien copié dans le presse-papiers !"
 # Page: 404
 ErrorCode: "Code d'erreur"
 404Message: "La page demandée est introuvable."
-BackToHomepage: "Retour à la page d'accueil"
+BackToHomepage: "Retour à l'accueil"
 
-# Schema:faq+howto
-faq_title: "Questions Fréquentes"
-howto_supplies: "Fournitures Nécessaires"
-howto_tools: "Outils Nécessaires"
+# Schema: faq+howto
+faq_title: "Questions fréquemment posées"
+howto_supplies: "Fournitures nécessaires"
+howto_tools: "Outils nécessaires"
 howto_steps: "Étapes"
-howto_total_time: "Temps Total"
+howto_total_time: "Temps total"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Votre raccourci vers tout."
+raycastHeroDescription: "Une collection d'outils de productivité puissants dans un lanceur extensible. Rapide, ergonomique et fiable."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Télécharger pour Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Rejoindre la liste d'attente Windows"
+
+# features-card
+featureCardTitle1: "Partage facile"
+featureCardDescription1: "Partagez du contenu facilement avec un seul lien."
+featureCardImageAlt1: "Icône de partage facile"
+
+featureCardTitle2: "Collaboration fluide"
+featureCardDescription2: "Collaborez sans effort avec votre équipe dans l'espace de travail."
+featureCardImageAlt2: "Icône de collaboration fluide"
+
+featureCardTitle3: "Synchronisation en temps réel"
+featureCardDescription3: "Les modifications sont synchronisées en temps réel sur tous les appareils."
+featureCardImageAlt3: "Icône de synchronisation en temps réel"
+
+featureCardTitle4: "Variété d'outils"
+featureCardDescription4: "Travaillez efficacement avec une variété d'outils intégrés."
+featureCardImageAlt4: "Icône de variété d'outils"
+
+featureCardTitle5: "Partage de fichiers"
+featureCardDescription5: "Partagez facilement des documents et des médias."
+featureCardImageAlt5: "Icône de partage de fichiers"
+
+featureCardTitle6: "Appels vidéo"
+featureCardDescription6: "Discutez en face à face avec des amis ou des collègues."
+featureCardImageAlt6: "Icône d'appels vidéo"
+
+featureCardTitle7: "Thèmes personnalisables"
+featureCardDescription7: "Personnalisez votre environnement de chat."
+featureCardImageAlt7: "Icône de thèmes personnalisables"
+
+featureCardTitle8: "Multi-plateforme"
+featureCardDescription8: "Disponible sur n'importe quel appareil, où que vous soyez."
+featureCardImageAlt8: "Icône multi-plateforme"
+
+featureCardTitle9: "Partage facile"
+featureCardDescription9: "Partagez du contenu facilement avec un seul lien."
+featureCardImageAlt9: "Icône de partage facile"
+
+featureCardTitle10: "Collaboration fluide"
+featureCardDescription10: "Collaborez sans effort avec votre équipe dans l'espace de travail."
+featureCardImageAlt10: "Icône de collaboration fluide"
+
+featureCardTitle11: "Synchronisation en temps réel"
+featureCardDescription11: "Les modifications sont synchronisées en temps réel sur tous les appareils."
+featureCardImageAlt11: "Icône de synchronisation en temps réel"
+
+featureCardTitle12: "Variété d'outils"
+featureCardDescription12: "Travaillez efficacement avec une variété d'outils intégrés."
+featureCardImageAlt12: "Icône de variété d'outils"
+
+# features-grid
+featureGridTitle1: "Dites n'importe quoi"
+featureGridDescription1: "Partagez gratuitement des textes, messages vocaux, photos, vidéos, GIFs et fichiers. Signal utilise la connexion de données de votre téléphone pour éviter les frais SMS et MMS."
+featureGridImageAlt1: "Illustration de la fonction de messagerie"
+
+featureGridTitle2: "Parlez librement"
+featureGridDescription2: "Passez des appels vocaux et vidéo d'une clarté cristalline avec des personnes à proximité ou à travers l'océan, sans frais de longue distance."
+featureGridImageAlt2: "Illustration des appels vocaux et vidéo"
+
+featureGridTitle3: "Faites de la confidentialité une habitude"
+featureGridDescription3: "Ajoutez une nouvelle couche d'expression à vos conversations avec des stickers cryptés. Vous pouvez également créer et partager vos propres packs de stickers."
+featureGridImageAlt3: "Illustration de la fonction de stickers"
+
+featureGridTitle4: "Réunissez-vous en groupe"
+featureGridDescription4: "Les discussions de groupe facilitent le maintien du contact avec votre famille, vos amis et vos collègues."
+featureGridImageAlt4: "Illustration de la fonction de discussion en groupe"
+
+# download-buttons
+downloadTitle: "Télécharger MySoftware"
+downloadDescription: "Accédez à Naver MySoftware sur diverses plateformes OS sur PC et mobile, à tout moment et n'importe où !"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Téléchargement direct"
+
+downloadWindowsAria: "Télécharger MySoftware pour Windows"
+downloadMacOSAria: "Télécharger MySoftware pour macOS"
+downloadAndroidAria: "Télécharger MySoftware pour Android"
+downloadIOSAria: "Télécharger MySoftware pour iOS"
+downloadLinuxAria: "Télécharger MySoftware pour Linux"
+downloadDirectAria: "Téléchargement direct de MySoftware"
+
+downloadButtonText: "Télécharger"

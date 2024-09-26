@@ -1,39 +1,43 @@
 # Sections
-"Post": "게시물"
-"Posts": "게시물들"
-"Latest": "최신"
-"Blog": "블로그"
-"News": "뉴스"
-"Docs": "문서"
-"reviews": "리뷰"
+post: "게시물"
+posts: "게시물들"
+latest: "최신"
+blog: "블로그"
+news: "뉴스"
+docs: "문서"
+reviews: "리뷰"
 
 # Taxonomies
-Authors: "저자"
+Authors: "저자들"
 Categories: "카테고리"
 Tags: "태그"
 Series: "시리즈"
 
 # Categories
 apple: "애플"
-gear: "장비"
+gear: "기어"
 beauty: "뷰티"
 review: "리뷰"
 game: "게임"
 
 # Tags
-study: "학습"
+study: "공부"
 business: "비즈니스"
 lifestyle: "라이프스타일"
 shopping: "쇼핑"
 food: "음식"
-people: "사람"
+people: "사람들"
 reading: "독서"
 science: "과학"
 sport: "스포츠"
 
 # Series
-"my first series": "내 첫번째 시리즈"
-"how to customizing hugo": "Hugo 커스터마이징 방법"
+"my first series": "내 첫 시리즈"
+"how to customizing hugo": "휴고 커스터마이징 방법"
+
+# Pages
+About: "소개"
+Contact: "문의"
 
 # header: cta_button
 cta_button_text: "문의하기"
@@ -43,17 +47,17 @@ Search: "검색"
 global: "글로벌"
 
 # Section: Hero
-hero_title: "뉴스, 기사, 영감, 팁을 한곳에서 만나보세요."
-hero_description: "생산성, 팁, 영감 및 전략으로 큰 수익을 올릴 수 있는 방법을 제공합니다. 성공적인 블로그를 시작하는 방법이나 기존 블로그를 더욱 개선하는 방법을 알아보세요!"
+hero_title: "원스톱 일간 뉴스, 기사, 영감, 그리고 팁."
+hero_description: "생산성, 팁, 영감과 전략을 통해 엄청난 수익을 올리세요. 성공적인 블로그를 만드는 방법이나, 더 나은 블로그를 만드는 방법을 알아보세요!"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "추천"
 
 # section: tags
-ViewAll: "전체 보기"
+ViewAll: "모두 보기"
 
 # Section: Authors
-authors_section_title: "저자를 소개합니다"
+authors_section_title: "우리의 저자를 만나보세요"
 see_all_authors: "모든 저자 보기"
 
 # Layout: Article Meta
@@ -67,17 +71,17 @@ instagramLink: "인스타그램 링크"
 website: "웹사이트"
 
 # Layout: author.terms
-authorsList: "저자 목록"
+authorsList: "저자들"
 post: "게시물"
 posts: "게시물들"
 
 # Layout: contact
 yourName: "이름"
-yourNamePlaceholder: "이름..."
+yourNamePlaceholder: "이름을 입력하세요..."
 yourEmail: "이메일"
-yourEmailPlaceholder: "이메일..."
+yourEmailPlaceholder: "이메일을 입력하세요..."
 yourMessage: "메시지"
-yourMessagePlaceholder: "메시지..."
+yourMessagePlaceholder: "메시지를 입력하세요..."
 sendMessage: "메시지 보내기"
 
 # Layout: featured
@@ -86,7 +90,7 @@ featuredPosts: "추천 게시물"
 # Layout: index.json
 dateFormat: "2006년 1월 2일"
 
-# Layoud: videos
+# Layout: videos
 Videos: "동영상"
 NoVideosFound: "동영상을 찾을 수 없습니다."
 
@@ -101,7 +105,7 @@ PopularTopics: "인기 주제"
 
 # Widget: toc
 TableOfContents: "목차"
-NoContentAvailable: "이용 가능한 콘텐츠가 없습니다."
+NoContentAvailable: "내용이 없습니다."
 
 # Layout: post-navigation
 OlderPost: "이전 게시물"
@@ -109,92 +113,90 @@ NewerPost: "다음 게시물"
 
 # Layout: disqus-comments
 ShowComments: "댓글 보기"
-DisqusNoscriptMessage: "댓글을 보려면 JavaScript를 활성화하세요. <a href='https://disqus.com/?ref_noscript'>Disqus가 제공하는 댓글입니다.</a>"
+DisqusNoscriptMessage: "댓글을 보려면 <a href='https://disqus.com/?ref_noscript'>JavaScript를 활성화해주세요.</a>"
 
 # Layout: pagination
 LoadMorePosts: "더 많은 게시물 불러오기"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 발행됨."
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 게시됨."
 EnableDarkMode: "다크 모드 활성화"
 Dark: "다크"
 EnableLightMode: "라이트 모드 활성화"
 Light: "라이트"
-Top: "상단"
-BackToTop: "상단으로 이동"
+Top: "위로"
+BackToTop: "맨 위로"
 
 # Footer: widget-info
-footer__description: "생산성, 팁, 영감 및 전략으로 큰 수익을 올릴 수 있는 방법을 제공합니다. 성공적인 블로그를 시작하는 방법이나 기존 블로그를 더욱 개선하는 방법을 알아보세요!"
+footer__description: "생산성, 팁, 영감과 전략을 통해 엄청난 수익을 올리세요. 성공적인 블로그를 만드는 방법이나, 더 나은 블로그를 만드는 방법을 알아보세요!"
 
 # Footer: mailchimp_Subscribe
-mailchimp__title: "흥미로운 소식을 받아보세요"
-mailchimp__description: "뉴스레터를 구독하시면 최신 게시물을 이메일로 보내드립니다."
+mailchimp__title: "흥미로운 뉴스 받아보세요"
+mailchimp__description: "뉴스레터를 구독하시면 최신 게시물 이메일을 보내드립니다."
 mailchimp__input__text: "이메일 주소"
 mailchimp__button__text: "구독하기"
 
 # Layout: search
 SearchForBlog: "블로그 검색"
-TypeToSearch: "검색하려면 입력하세요..."
+TypeToSearch: "검색어 입력..."
 SearchIcon: "검색 아이콘"
-CloseSearchIcon: "검색 아이콘 닫기"
+CloseSearchIcon: "검색 닫기 아이콘"
 
 # Layout: share-buttons
 ShareLinkCopy: "링크 복사"
-ShareWhatsApp: "WhatsApp으로 공유"
-ShareFacebook: "페이스북으로 공유"
-ShareTwitter: "트위터로 공유"
-ShareWeibo: "웨이보로 공유"
-ShareLINE: "LINE으로 공유"
-ShareZalo: "Zalo로 공유"
-ShareReddit: "Reddit으로 공유"
+ShareWhatsApp: "WhatsApp에서 공유"
+ShareFacebook: "페이스북에서 공유"
+ShareTwitter: "트위터에서 공유"
+ShareWeibo: "웨이보에서 공유"
+ShareLINE: "라인에서 공유"
+ShareZalo: "Zalo에서 공유"
+ShareReddit: "레딧에서 공유"
 Copy: "복사"
 LinkCopied: "링크가 클립보드에 복사되었습니다!"
 
 # Page: 404
-ErrorCode: "오류 코드"
-404Message: "요청하신 페이지를 찾을 수 없습니다."
+ErrorCode: "에러 코드"
+404Message: "요청한 페이지를 찾을 수 없습니다."
 BackToHomepage: "홈페이지로 돌아가기"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "자주 묻는 질문"
-howto_supplies: "필요한 준비물"
+howto_supplies: "필요한 물품"
 howto_tools: "필요한 도구"
 howto_steps: "단계"
-howto_total_time: "총 소요 시간"
-
+howto_total_time: "총 시간"
 
 #######################
 ####### Landing #######
 #######################
 
 # hero-raycast
-raycastHeroTitle: "모든 것에 대한 지름길."
-raycastHeroDescription: "확장 가능한 런처에 강력한 생산성 도구가 모두 모여 있습니다. 빠르고, 인체공학적이고, 안정적입니다."
-raycastCtaPrimaryLink: "/series/"
-raycastCtaPrimaryText: "맥OS용 다운로드"
-raycastCtaSecondaryLink: "/docs/"
-raycastCtaSecondaryText: "Windows 사전 예약"
+raycastHeroTitle: "모든 것의 단축키."
+raycastHeroDescription: "확장 가능한 런처 내에서 제공되는 강력한 생산성 도구 모음. 빠르고 인체공학적이며 신뢰할 수 있습니다."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Mac용 다운로드"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Windows 대기 명단에 등록하기"
 
-
-# features
+# features-card
 featureCardTitle1: "간편한 공유"
-featureCardDescription1: "링크 하나로 간편하게 콘텐츠를 공유하세요."
+featureCardDescription1: "한 번의 링크로 간편하게 콘텐츠를 공유하세요."
 featureCardImageAlt1: "간편한 공유 아이콘"
 
-featureCardTitle2: "쉬운 협업"
-featureCardDescription2: "워크스페이스에서 팀과 쉽게 협업하세요."
-featureCardImageAlt2: "쉬운 협업 아이콘"
+featureCardTitle2: "매끄러운 협업"
+featureCardDescription2: "작업 공간에서 팀과 무리 없이 협업하세요."
+featureCardImageAlt2: "매끄러운 협업 아이콘"
 
 featureCardTitle3: "실시간 동기화"
-featureCardDescription3: "변경사항이 실시간으로 모든 기기에 동기화됩니다."
+featureCardDescription3: "모든 장치에서 변경 사항이 실시간으로 동기화됩니다."
 featureCardImageAlt3: "실시간 동기화 아이콘"
 
 featureCardTitle4: "다양한 도구"
-featureCardDescription4: "다양한 내장 도구로 작업을 효율적으로 수행하세요."
+featureCardDescription4: "내장된 다양한 도구를 활용하여 효율적으로 작업하세요."
 featureCardImageAlt4: "다양한 도구 아이콘"
 
 featureCardTitle5: "파일 공유"
-featureCardDescription5: "문서와 미디어를 쉽게 공유하세요."
+featureCardDescription5: "문서 및 미디어를 손쉽게 공유하세요."
 featureCardImageAlt5: "파일 공유 아이콘"
 
 featureCardTitle6: "영상 통화"
@@ -202,51 +204,49 @@ featureCardDescription6: "친구나 동료와 얼굴을 보며 대화하세요."
 featureCardImageAlt6: "영상 통화 아이콘"
 
 featureCardTitle7: "맞춤형 테마"
-featureCardDescription7: "채팅 환경을 개인화하세요."
+featureCardDescription7: "채팅 환경을 개인 맞춤형으로 설정하세요."
 featureCardImageAlt7: "맞춤형 테마 아이콘"
 
 featureCardTitle8: "크로스 플랫폼"
-featureCardDescription8: "어디서나, 어떤 기기에서도 사용 가능합니다."
+featureCardDescription8: "어디서든, 어떤 장치에서도 사용 가능합니다."
 featureCardImageAlt8: "크로스 플랫폼 아이콘"
 
 featureCardTitle9: "간편한 공유"
-featureCardDescription9: "링크 하나로 간편하게 콘텐츠를 공유하세요."
+featureCardDescription9: "한 번의 링크로 간편하게 콘텐츠를 공유하세요."
 featureCardImageAlt9: "간편한 공유 아이콘"
 
-featureCardTitle10: "쉬운 협업"
-featureCardDescription10: "워크스페이스에서 팀과 쉽게 협업하세요."
-featureCardImageAlt10: "쉬운 협업 아이콘"
+featureCardTitle10: "매끄러운 협업"
+featureCardDescription10: "작업 공간에서 팀과 무리 없이 협업하세요."
+featureCardImageAlt10: "매끄러운 협업 아이콘"
 
 featureCardTitle11: "실시간 동기화"
-featureCardDescription11: "변경사항이 실시간으로 모든 기기에 동기화됩니다."
+featureCardDescription11: "모든 장치에서 변경 사항이 실시간으로 동기화됩니다."
 featureCardImageAlt11: "실시간 동기화 아이콘"
 
 featureCardTitle12: "다양한 도구"
-featureCardDescription12: "다양한 내장 도구로 작업을 효율적으로 수행하세요."
+featureCardDescription12: "내장된 다양한 도구를 활용하여 효율적으로 작업하세요."
 featureCardImageAlt12: "다양한 도구 아이콘"
 
 # features-grid
 featureGridTitle1: "무엇이든 말하세요"
-featureGridDescription1: "문자, 음성 메시지, 사진, 동영상, GIF, 파일을 무료로 공유하세요. Signal은 전화의 데이터 연결을 사용하여 SMS 및 MMS 요금을 피할 수 있습니다."
-featureGridImageAlt1: "메시징 기능 일러스트"
+featureGridDescription1: "텍스트, 음성 메시지, 사진, 동영상, GIF 및 파일을 무료로 공유하세요. 시그널은 전화의 데이터 연결을 사용하므로 SMS 및 MMS 요금을 피할 수 있습니다."
+featureGridImageAlt1: "메시징 기능 삽화"
 
 featureGridTitle2: "자유롭게 말하세요"
-featureGridDescription2: "도시 건너편에 사는 사람이나, 바다 건너에 있는 사람과도 선명한 음성 및 영상 통화를 할 수 있으며, 장거리 요금이 부과되지 않습니다."
-featureGridImageAlt2: "음성 및 영상 통화 일러스트"
+featureGridDescription2: "근처에 사는 사람이나 멀리 떨어진 사람들과 선명한 음성 및 영상 통화를 하세요. 장거리 통화 요금은 없습니다."
+featureGridImageAlt2: "음성 및 영상 통화 삽화"
 
-featureGridTitle3: "프라이버시를 유지하세요"
-featureGridDescription3: "암호화된 스티커로 대화에 새로운 표현을 추가하세요. 나만의 스티커 팩을 만들고 공유할 수도 있습니다."
-featureGridImageAlt3: "스티커 기능 일러스트"
+featureGridTitle3: "프라이버시 보호"
+featureGridDescription3: "암호화된 스티커로 대화에 새로운 표현을 더하세요. 또한 직접 스티커 팩을 만들어 공유할 수 있습니다."
+featureGridImageAlt3: "스티커 기능 삽화"
 
 featureGridTitle4: "그룹으로 모이세요"
-featureGridDescription4: "그룹 채팅을 통해 가족, 친구, 동료들과 쉽게 연결될 수 있습니다."
-featureGridImageAlt4: "그룹 채팅 기능 일러스트"
-# ... 나머지 4개의 기능에 대한 번역도 추가
-
+featureGridDescription4: "그룹 채팅으로 가족, 친구, 동료들과 쉽게 연결되어 있으세요."
+featureGridImageAlt4: "그룹 채팅 기능 삽화"
 
 # downlaod-buttons
-downloadTitle: "마이소프트웨어 다운로드"
-downloadDescription: "PC, 모바일 어디서나 다양한 OS에서 네이버 마이소프트웨어를 만나 보세요!"
+downloadTitle: "MySoftware 다운로드"
+downloadDescription: "PC 및 모바일에서 다양한 OS 플랫폼을 통해 Naver MySoftware에 언제 어디서든 접근하세요!"
 downloadWindows: "Windows"
 downloadMacOS: "macOS"
 downloadAndroid: "Android"
@@ -254,11 +254,11 @@ downloadIOS: "iOS"
 downloadLinux: "Linux"
 downloadDirect: "직접 다운로드"
 
-downloadWindowsAria: "Windows용 마이소프트웨어 다운로드"
-downloadMacOSAria: "macOS용 마이소프트웨어 다운로드"
-downloadAndroidAria: "Android용 마이소프트웨어 다운로드"
-downloadIOSAria: "iOS용 마이소프트웨어 다운로드"
-downloadLinuxAria: "Linux용 마이소프트웨어 다운로드"
-downloadDirectAria: "마이소프트웨어 직접 파일 다운로드"
+downloadWindowsAria: "Windows용 MySoftware 다운로드"
+downloadMacOSAria: "macOS용 MySoftware 다운로드"
+downloadAndroidAria: "Android용 MySoftware 다운로드"
+downloadIOSAria: "iOS용 MySoftware 다운로드"
+downloadLinuxAria: "Linux용 MySoftware 다운로드"
+downloadDirectAria: "MySoftware의 직접 파일 다운로드"
 
 downloadButtonText: "다운로드"

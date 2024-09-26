@@ -1,15 +1,17 @@
 # Sections
-"Post": "Postingan"
-"Posts": "Postingan"
-"Latest": "Terbaru"
-"Blog": "Blog"
-"News": "Berita"
-"Docs": "Dokumen"
+post: "Pos"
+posts: "Pos-pos"
+latest: "Terbaru"
+blog: "Blog"
+news: "Berita"
+docs: "Dokumen"
+reviews: "Ulasan"
 
 # Taxonomies
 Authors: "Penulis"
 Categories: "Kategori"
 Tags: "Tag"
+Series: "Seri"
 
 # Categories
 apple: "Apple"
@@ -24,30 +26,38 @@ business: "Bisnis"
 lifestyle: "Gaya Hidup"
 shopping: "Belanja"
 food: "Makanan"
-people: "Orang"
+people: "Orang-orang"
 reading: "Membaca"
 science: "Ilmu Pengetahuan"
 sport: "Olahraga"
 
+# Series
+"my first series": "Seri Pertama Saya"
+"how to customizing hugo": "Cara Menyesuaikan Hugo"
+
+# Pages
+About: "Tentang"
+Contact: "Kontak"
+
 # header: cta_button
-cta_button_text: "Hubungi Kami"
+cta_button_text: "Hubungi kami"
 Search: "Cari"
 
 # header widget: language-switcher
 global: "Global"
 
 # Section: Hero
-hero_title: "Berita Harian, Artikel, Inspirasi, dan Tips di Satu Tempat."
-hero_description: "Menampilkan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau bagaimana membuat blog Anda lebih baik lagi!"
+hero_title: "Satu Tempat untuk Berita Harian, Artikel, Inspirasi, dan Tips."
+hero_description: "Menyajikan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau cara meningkatkan blog Anda!"
 
-# section:featured-posts
+# section: featured-posts
 Featured: "Unggulan"
 
 # section: tags
 ViewAll: "Lihat semua"
 
 # Section: Authors
-authors_section_title: "Kenali penulis kami"
+authors_section_title: "Temui para penulis kami"
 see_all_authors: "Lihat semua penulis"
 
 # Layout: Article Meta
@@ -61,9 +71,9 @@ instagramLink: "Tautan Instagram"
 website: "Situs web"
 
 # Layout: author.terms
-authorsList: "Daftar penulis"
-post: "Postingan"
-posts: "Postingan"
+authorsList: "Penulis"
+post: "Pos"
+posts: "Pos-pos"
 
 # Layout: contact
 yourName: "Nama Anda"
@@ -75,20 +85,20 @@ yourMessagePlaceholder: "Pesan Anda..."
 sendMessage: "Kirim Pesan"
 
 # Layout: featured
-featuredPosts: "Postingan Unggulan"
+featuredPosts: "Pos Unggulan"
 
 # Layout: index.json
 dateFormat: "2 Januari 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Video"
-NoVideosFound: "Tidak ada video ditemukan."
+NoVideosFound: "Tidak ada video yang ditemukan."
 
 # Widget: recent-posts
-RecentPosts: "Postingan Terbaru"
+RecentPosts: "Pos Terbaru"
 
 # Widget: featured-posts
-FeaturedPosts: "Postingan Unggulan"
+FeaturedPosts: "Pos Unggulan"
 
 # Widget: tags-cloud
 PopularTopics: "Topik Populer"
@@ -98,18 +108,18 @@ TableOfContents: "Daftar Isi"
 NoContentAvailable: "Tidak ada konten yang tersedia."
 
 # Layout: post-navigation
-OlderPost: "Postingan Lama"
-NewerPost: "Postingan Baru"
+OlderPost: "Pos Sebelumnya"
+NewerPost: "Pos Selanjutnya"
 
 # Layout: disqus-comments
 ShowComments: "Tampilkan Komentar"
-DisqusNoscriptMessage: "Aktifkan JavaScript untuk melihat <a href='https://disqus.com/?ref_noscript'>komentar yang didukung oleh Disqus.</a>"
+DisqusNoscriptMessage: "Silakan aktifkan JavaScript untuk melihat <a href='https://disqus.com/?ref_noscript'>komentar yang didukung oleh Disqus.</a>"
 
 # Layout: pagination
-LoadMorePosts: "Muat lebih banyak postingan"
+LoadMorePosts: "Muat lebih banyak pos"
 
 # Layout: footer ########## Custom
-CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Semua Hak Dilindungi. Diterbitkan dengan <a href='https://gohugo.io/'>Hugo</a>."
+CopyrightText: "{year} &copy; <a href='/'>{site}</a>. Hak cipta dilindungi. Diterbitkan dengan <a href='https://gohugo.io/'>Hugo</a>."
 EnableDarkMode: "Aktifkan mode gelap"
 Dark: "Gelap"
 EnableLightMode: "Aktifkan mode terang"
@@ -118,19 +128,19 @@ Top: "Atas"
 BackToTop: "Kembali ke atas"
 
 # Footer: widget-info
-footer__description: "Menampilkan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau bagaimana membuat blog Anda lebih baik lagi!"
+footer__description: "Menyajikan produktivitas, tips, inspirasi, dan strategi untuk keuntungan besar. Temukan cara membuat blog yang sukses atau cara meningkatkan blog Anda!"
 
 # Footer: mailchimp_Subscribe
 mailchimp__title: "Dapatkan berita menarik"
-mailchimp__description: "Langganan newsletter kami dan kami akan mengirimkan postingan terbaru melalui email."
+mailchimp__description: "Berlangganan buletin kami dan kami akan mengirimkan email dengan pos terbaru."
 mailchimp__input__text: "Alamat email Anda"
-mailchimp__button__text: "Langganan"
+mailchimp__button__text: "Berlangganan"
 
 # Layout: search
 SearchForBlog: "Cari Blog"
 TypeToSearch: "Ketik untuk mencari..."
 SearchIcon: "Ikon pencarian"
-CloseSearchIcon: "Tutup ikon pencarian"
+CloseSearchIcon: "Ikon tutup pencarian"
 
 # Layout: share-buttons
 ShareLinkCopy: "Salin tautan"
@@ -145,13 +155,110 @@ Copy: "Salin"
 LinkCopied: "Tautan disalin ke papan klip!"
 
 # Page: 404
-ErrorCode: "Kode Kesalahan"
-404Message: "Halaman yang diminta tidak dapat ditemukan."
+ErrorCode: "Kode kesalahan"
+404Message: "Halaman yang diminta tidak ditemukan."
 BackToHomepage: "Kembali ke beranda"
 
-# Schema:faq+howto
+# Schema: faq+howto
 faq_title: "Pertanyaan yang Sering Diajukan"
-howto_supplies: "Persediaan yang Dibutuhkan"
+howto_supplies: "Perlengkapan yang Dibutuhkan"
 howto_tools: "Alat yang Dibutuhkan"
 howto_steps: "Langkah-langkah"
 howto_total_time: "Total Waktu"
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Jalan pintas Anda untuk segalanya."
+raycastHeroDescription: "Kumpulan alat produktivitas yang kuat dalam sebuah peluncur yang dapat diperluas. Cepat, ergonomis, dan andal."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Unduh untuk Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Gabung daftar tunggu Windows"
+
+# features-card
+featureCardTitle1: "Berbagi Mudah"
+featureCardDescription1: "Bagikan konten dengan mudah menggunakan satu tautan."
+featureCardImageAlt1: "Ikon Berbagi Mudah"
+
+featureCardTitle2: "Kolaborasi Lancar"
+featureCardDescription2: "Bekerja sama dengan tim Anda di ruang kerja dengan lancar."
+featureCardImageAlt2: "Ikon Kolaborasi Lancar"
+
+featureCardTitle3: "Sinkronisasi Waktu Nyata"
+featureCardDescription3: "Perubahan disinkronkan secara waktu nyata di semua perangkat."
+featureCardImageAlt3: "Ikon Sinkronisasi Waktu Nyata"
+
+featureCardTitle4: "Berbagai Alat"
+featureCardDescription4: "Bekerja secara efisien dengan berbagai alat bawaan."
+featureCardImageAlt4: "Ikon Berbagai Alat"
+
+featureCardTitle5: "Berbagi File"
+featureCardDescription5: "Bagikan dokumen dan media dengan mudah."
+featureCardImageAlt5: "Ikon Berbagi File"
+
+featureCardTitle6: "Panggilan Video"
+featureCardDescription6: "Bicara langsung dengan teman atau kolega."
+featureCardImageAlt6: "Ikon Panggilan Video"
+
+featureCardTitle7: "Tema yang Dapat Disesuaikan"
+featureCardDescription7: "Personalisasi lingkungan obrolan Anda."
+featureCardImageAlt7: "Ikon Tema yang Dapat Disesuaikan"
+
+featureCardTitle8: "Lintas Platform"
+featureCardDescription8: "Tersedia di perangkat apa pun, di mana saja."
+featureCardImageAlt8: "Ikon Lintas Platform"
+
+featureCardTitle9: "Berbagi Mudah"
+featureCardDescription9: "Bagikan konten dengan mudah menggunakan satu tautan."
+featureCardImageAlt9: "Ikon Berbagi Mudah"
+
+featureCardTitle10: "Kolaborasi Lancar"
+featureCardDescription10: "Bekerja sama dengan tim Anda di ruang kerja dengan lancar."
+featureCardImageAlt10: "Ikon Kolaborasi Lancar"
+
+featureCardTitle11: "Sinkronisasi Waktu Nyata"
+featureCardDescription11: "Perubahan disinkronkan secara waktu nyata di semua perangkat."
+featureCardImageAlt11: "Ikon Sinkronisasi Waktu Nyata"
+
+featureCardTitle12: "Berbagai Alat"
+featureCardDescription12: "Bekerja secara efisien dengan berbagai alat bawaan."
+featureCardImageAlt12: "Ikon Berbagai Alat"
+
+# features-grid
+featureGridTitle1: "Katakan Apa Saja"
+featureGridDescription1: "Bagikan teks, pesan suara, foto, video, GIF, dan file secara gratis. Signal menggunakan koneksi data ponsel Anda sehingga Anda dapat menghindari biaya SMS dan MMS."
+featureGridImageAlt1: "Ilustrasi fitur pesan"
+
+featureGridTitle2: "Bicara Bebas"
+featureGridDescription2: "Lakukan panggilan suara dan video yang sangat jernih kepada orang-orang di dekat Anda atau di seberang lautan tanpa biaya jarak jauh."
+featureGridImageAlt2: "Ilustrasi panggilan suara dan video"
+
+featureGridTitle3: "Jadikan Privasi Sebagai Kebiasaan"
+featureGridDescription3: "Tambahkan lapisan ekspresi baru ke percakapan Anda dengan stiker terenkripsi. Anda juga dapat membuat dan berbagi paket stiker Anda sendiri."
+featureGridImageAlt3: "Ilustrasi fitur stiker"
+
+featureGridTitle4: "Kumpul dengan Grup"
+featureGridDescription4: "Obrolan grup memudahkan Anda untuk tetap terhubung dengan keluarga, teman, dan rekan kerja."
+featureGridImageAlt4: "Ilustrasi fitur obrolan grup"
+
+# download-buttons
+downloadTitle: "Unduh MySoftware"
+downloadDescription: "Akses Naver MySoftware di berbagai platform OS di PC dan perangkat seluler, kapan saja dan di mana saja!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Unduh Langsung"
+
+downloadWindowsAria: "Unduh MySoftware untuk Windows"
+downloadMacOSAria: "Unduh MySoftware untuk macOS"
+downloadAndroidAria: "Unduh MySoftware untuk Android"
+downloadIOSAria: "Unduh MySoftware untuk iOS"
+downloadLinuxAria: "Unduh MySoftware untuk Linux"
+downloadDirectAria: "Unduh file MySoftware secara langsung"
+
+downloadButtonText: "Unduh"

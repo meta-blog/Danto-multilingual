@@ -1,16 +1,17 @@
 # Sections
-"Post": "Post"
-"Posts": "Posts"
-"Latest": "Latest"
-"Blog": "Blog"
-"News": "News"
-"Docs": "Docs"
-
+post: "Post"
+posts: "Posts"
+latest: "Latest"
+blog: "Blog"
+news: "News"
+docs: "Docs"
+reviews: "Reviews"
 
 # Taxonomies
 Authors : "Authors"
 Categories: "Categories"
 Tags: "Tags"
+Series: "Series"
 
 # Categories
 apple: "Apple"
@@ -29,6 +30,14 @@ people: "People"
 reading: "Reading"
 science: "Science"
 sport: "Sport"
+
+# Series
+"my first series": "My First Series"
+"how to customizing hugo": "how to customizing hugo"
+
+# Pages
+About: "about"
+Contact: "contact"
 
 # header: cta_button
 cta_button_text: "Get in touch"
@@ -84,7 +93,7 @@ featuredPosts: "Featured Posts"
 # Layout: index.json
 dateFormat: "January 2, 2006"
 
-# Layoud: videos
+# Layout: videos
 Videos: "Videos"
 NoVideosFound: "No videos found."
 
@@ -96,6 +105,10 @@ FeaturedPosts: "Featured posts"
 
 # Widget: tags-cloud
 PopularTopics: "Popular topics"
+
+# Widget: toc
+TableOfContents: "Table of Contents"
+NoContentAvailable: "No content available."
 
 # Layout: post-navigation
 OlderPost: "Older post"
@@ -156,3 +169,105 @@ howto_supplies: "Supplies Needed"
 howto_tools: "Tools Needed"
 howto_steps: "Steps"
 howto_total_time: "Total Time"
+
+
+#######################
+####### Landing #######
+#######################
+
+# hero-raycast
+raycastHeroTitle: "Your shortcut to everything."
+raycastHeroDescription: "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."
+raycastCtaPrimaryLink: "/download/mac"
+raycastCtaPrimaryText: "Download for Mac"
+raycastCtaSecondaryLink: "/windows-waitlist"
+raycastCtaSecondaryText: "Join Windows waitlist"
+
+# features-card
+featureCardTitle1: "Easy Sharing"
+featureCardDescription1: "Share content easily with just one link."
+featureCardImageAlt1: "Easy Sharing Icon"
+
+featureCardTitle2: "Seamless Collaboration"
+featureCardDescription2: "Collaborate effortlessly with your team in the workspace."
+featureCardImageAlt2: "Seamless Collaboration Icon"
+
+featureCardTitle3: "Real-time Sync"
+featureCardDescription3: "Changes are synced in real-time across all devices."
+featureCardImageAlt3: "Real-time Sync Icon"
+
+featureCardTitle4: "Variety of Tools"
+featureCardDescription4: "Work efficiently with a variety of built-in tools."
+featureCardImageAlt4: "Variety of Tools Icon"
+
+featureCardTitle5: "File Sharing"
+featureCardDescription5: "Share documents and media easily."
+featureCardImageAlt5: "File Sharing Icon"
+
+featureCardTitle6: "Video Calls"
+featureCardDescription6: "Talk face-to-face with friends or colleagues."
+featureCardImageAlt6: "Video Calls Icon"
+
+featureCardTitle7: "Customizable Themes"
+featureCardDescription7: "Personalize your chat environment."
+featureCardImageAlt7: "Customizable Themes Icon"
+
+featureCardTitle8: "Cross-platform"
+featureCardDescription8: "Available on any device, anywhere."
+featureCardImageAlt8: "Cross-platform Icon"
+
+featureCardTitle9: "Easy Sharing"
+featureCardDescription9: "Share content easily with just one link."
+featureCardImageAlt9: "Easy Sharing Icon"
+
+featureCardTitle10: "Seamless Collaboration"
+featureCardDescription10: "Collaborate effortlessly with your team in the workspace."
+featureCardImageAlt10: "Seamless Collaboration Icon"
+
+featureCardTitle11: "Real-time Sync"
+featureCardDescription11: "Changes are synced in real-time across all devices."
+featureCardImageAlt11: "Real-time Sync Icon"
+
+featureCardTitle12: "Variety of Tools"
+featureCardDescription12: "Work efficiently with a variety of built-in tools."
+featureCardImageAlt12: "Variety of Tools Icon"
+
+
+# features-grid
+featureGridTitle1: "Say Anything"
+featureGridDescription1: "Share text, voice messages, photos, videos, GIFs and files for free. Signal uses your phone's data connection so you can avoid SMS and MMS fees."
+featureGridImageAlt1: "Messaging feature illustration"
+
+featureGridTitle2: "Speak Freely"
+featureGridDescription2: "Make crystal-clear voice and video calls to people who live across town, or across the ocean, with no long-distance charges."
+featureGridImageAlt2: "Voice and video calls illustration"
+
+featureGridTitle3: "Make Privacy Stick"
+featureGridDescription3: "Add a new layer of expression to your conversations with encrypted stickers. You can also create and share your own sticker packs."
+featureGridImageAlt3: "Stickers feature illustration"
+
+featureGridTitle4: "Get Together with Groups"
+featureGridDescription4: "Group chats make it easy to stay connected to your family, friends, and coworkers."
+featureGridImageAlt4: "Group chat feature illustration"
+# ... 나머지 4개의 기능에 대한 번역도 추가
+
+
+
+# downlaod-buttons
+downloadTitle: "Download MySoftware"
+downloadDescription: "Access Naver MySoftware across various OS platforms on PC and mobile, anytime and anywhere!"
+downloadWindows: "Windows"
+downloadMacOS: "macOS"
+downloadAndroid: "Android"
+downloadIOS: "iOS"
+downloadLinux: "Linux"
+downloadDirect: "Direct Download"
+
+downloadWindowsAria: "Download MySoftware for Windows"
+downloadMacOSAria: "Download MySoftware for macOS"
+downloadAndroidAria: "Download MySoftware for Android"
+downloadIOSAria: "Download MySoftware for iOS"
+downloadLinuxAria: "Download MySoftware for Linux"
+downloadDirectAria: "Direct file download of MySoftware"
+
+downloadButtonText: "Download"
