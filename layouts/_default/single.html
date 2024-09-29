@@ -61,7 +61,18 @@
           {{ partial "schema/item-list-products.html" . }}
           {{ end }}
           <!-- Content -->
-          {{ .Content }}
+          <!-- 키워드 링크 변환 로직 추가 -->
+          {{ $content := .Content }}
+          {{ $keywords := index .Site.Data .Lang "keywords" }}
+
+          {{ range $keyword, $link := $keywords }}
+          {{ $pattern := printf "(%s)" $keyword }}
+          {{ $replacement := printf "<a href=\"%s\">$1</a>" $link }}
+          {{ $content = $content | replaceRE $pattern $replacement }}
+          {{ end }}
+
+          <!-- 변환된 콘텐츠 출력 -->
+          {{ $content | safeHTML }}
         </div>
         {{ partial "share-buttons.html" . }}
       </article>
