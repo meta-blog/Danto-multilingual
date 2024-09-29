@@ -193,7 +193,7 @@ paginate = 12
   logo = "/images/logo.png"
   logo_dark = "/images/logo.png"
   color_scheme = "auto"
-  mainSections = ["posts", "news", "docs"]
+  mainSections = ["posts", "news", "docs", "reviews"]
   canonifyURLs = true
   alternatePageName = "Your Alternate Site Name"
   socialProfiles = ["https://facebook.com/yourpage", "https://twitter.com/yourhandle", "https://instagram.com/yourprofile"]
@@ -385,6 +385,7 @@ paginate = 12
   posts = "/:slug/"
   news = "/:sections/:slug/"
   docs = "/:sections/:slug/"
+  reviews = "/:slug/"
   
 [outputs]
   home = ["HTML", "RSS", "JSON"]
