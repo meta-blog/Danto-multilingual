@@ -1,28 +1,28 @@
 {{ $originalPage := . }}
-{{ $usVersion := "" }}
+{{ $canonicalVersion := "" }}
 {{ $currentLang := .Lang }}
+{{ $defaultHreflang := "x-default" }}
 
+<!-- 모든 번역을 반복 -->
 {{ range .AllTranslations }}
+  <!-- 캐노니컬 링크를 US 버전으로 설정 -->
   {{ if eq .Lang "us" }}
-    {{ $usVersion = . }}
+    {{ $canonicalVersion = . }}
   {{ end }}
 {{ end }}
 
-{{ if $usVersion }}
-  <link rel="canonical" href="{{ $usVersion.Permalink }}">
+<!-- 캐노니컬 URL -->
+{{ if $canonicalVersion }}
+  <link rel="canonical" href="{{ $canonicalVersion.Permalink }}">
 {{ else }}
   <link rel="canonical" href="{{ $originalPage.Permalink }}">
 {{ end }}
 
+<!-- 각 번역에 대한 대체 링크 -->
 {{ range .Translations }}
-  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  <!-- hreflang이 올바른 언어 코드 형식을 사용하도록 보장 -->
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
 {{ end }}
 
-{{ if not (eq $currentLang "us") }}
-  {{ with $usVersion }}
-    <link rel="alternate" hreflang="us" href="{{ .Permalink }}">
-  {{ end }}
-{{ end }}
-
-<link rel="alternate" hreflang="{{ $currentLang }}" href="{{ $originalPage.Permalink }}">
-<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
+<!-- x-default hreflang 추가 -->
+<link rel="alternate" hreflang="{{ $defaultHreflang }}" href="{{ .Site.Home.Permalink }}">

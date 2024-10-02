@@ -313,19 +313,30 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 /* =======================
-  // youtube-thumbnail
-  ======================= */
-  document.addEventListener('DOMContentLoaded', function() {
-    var players = document.querySelectorAll('.youtube-player');
-    players.forEach(function(player) {
-        player.addEventListener('click', function() {
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + this.dataset.id + '?autoplay=1');
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allowfullscreen', '1');
-            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-            this.innerHTML = '';
-            this.appendChild(iframe);
-        });
-    });
+ // youtube-thumbnail
+ ======================= */
+ document.addEventListener('DOMContentLoaded', function() {
+  var players = document.querySelectorAll('.youtube-player');
+  players.forEach(function(player) {
+      var img = player.querySelector('img');
+      var src = img.src;
+      
+      // 60일 후의 타임스탬프 계산
+      var futureDate = new Date();
+      futureDate.setDate(futureDate.getDate() + 60);
+      var futureTimestamp = Math.floor(futureDate.getTime() / 1000);
+      
+      // 이미지 소스 URL 업데이트
+      img.src = src.replace(/cache_timestamp=\d+/, 'cache_timestamp=' + futureTimestamp);
+      
+      player.addEventListener('click', function() {
+          var iframe = document.createElement('iframe');
+          iframe.setAttribute('src', 'https://www.youtube.com/embed/' + this.dataset.id + '?autoplay=1');
+          iframe.setAttribute('frameborder', '0');
+          iframe.setAttribute('allowfullscreen', '1');
+          iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+          this.innerHTML = '';
+          this.appendChild(iframe);
+      });
+  });
 });

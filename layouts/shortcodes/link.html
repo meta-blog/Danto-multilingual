@@ -1,0 +1,35 @@
+{{ $lang := .Page.Lang }}
+{{ $key := .Get 0 }}
+{{ $customText := .Get 1 }}
+
+{{ $defaultLang := "us" }}
+{{ $linkData := index site.Data $lang "links" | default (index site.Data $defaultLang "links") }}
+{{ $linkInfo := index $linkData $key }}
+
+{{ $link := "" }}
+{{ $defaultText := "" }}
+
+{{ if reflect.IsMap $linkInfo }}
+  {{ $link = $linkInfo.url }}
+  {{ $defaultText = $linkInfo.text }}
+{{ else }}
+  {{ $link = $linkInfo }}
+  {{ $defaultText = $key }}
+{{ end }}
+
+{{ $text := $customText | default $defaultText }}
+
+{{ $isExternal := false }}
+{{ if $link }}
+  {{ $isExternal = or (hasPrefix $link "http") (hasPrefix $link "https") }}
+{{ end }}
+
+<a href="{{ $link }}"
+   {{ if $isExternal }}
+     target="_blank"
+     rel="noopener noreferrer"
+   {{ end }}
+   {{ if eq $lang "ae" }}dir="rtl"{{ end }}
+>
+  {{ $text }}
+</a>

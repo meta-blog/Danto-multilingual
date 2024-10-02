@@ -118,6 +118,10 @@ DisqusNoscriptMessage: "댓글을 보려면 <a href='https://disqus.com/?ref_nos
 # Layout: pagination
 LoadMorePosts: "더 많은 게시물 불러오기"
 
+# Layout: Related Posts
+relatedPostsTitle: "관련 글"
+viewAllButton: "모두 보기"
+
 # Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. 모든 권리 보유. <a href='https://gohugo.io/'>Hugo</a>로 게시됨."
 EnableDarkMode: "다크 모드 활성화"

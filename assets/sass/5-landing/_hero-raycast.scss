@@ -30,7 +30,7 @@
       background-image: url('/images/hero-background.webp'); // 배경 이미지 경로
       background-size: cover;
       background-position: center;
-      opacity: 0.5; // 배경 이미지 투명도 조절
+      opacity: 0.3; // 배경 이미지 투명도 조절
     }
   }
 
@@ -45,6 +45,14 @@
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 3rem; // 태블릿 화면에서 글자 크기 줄이기
+    }
+
+    @media (max-width: 480px) {
+      font-size: 4rem; // 모바일 화면에서 글자 크기 더 줄이기
+    }
   }
 
   &__description {
@@ -85,5 +93,3 @@
     }
   }
 }
-
-// 다크모드와 라이트모드에 대한 추가적인 스타일 조정이 필요 없음

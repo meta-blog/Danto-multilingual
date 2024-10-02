@@ -73,8 +73,6 @@ website: "Website"
 
 # Layout: author.terms
 authorsList: "Authors"
-post: "Post"
-posts: "Posts"
 
 # Layout: contact
 yourName: "Your Name"
@@ -121,6 +119,10 @@ DisqusNoscriptMessage: "Please enable JavaScript to view the <a href='https://di
 
 # Layout: pagination
 LoadMorePosts: "Load more posts"
+
+# Layout: Related Posts
+relatedPostsTitle: "Related"
+viewAllButton: "View all"
 
 # Layout: footer ########## Custom
 CopyrightText: "{year} &copy; <a href='/'>{site}</a>. All Right Reserved. Published with <a href='https://gohugo.io/'>Hugo</a>."

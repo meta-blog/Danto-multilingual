@@ -368,18 +368,19 @@ paginate = 12
   tag = "tags"
   series = "series"
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
-
-[markup.highlight]
-  codeFences = true
-  guessSyntax = true
-  noClasses = false
 
 [permalinks]
   posts = "/:slug/"
@@ -398,3 +399,13 @@ paginate = 12
 
 [services.rss]
   limit = 50  # RSS 피드에 포함할 최근 항목 수
+
+
+[imaging]
+  enable = true
+  quality = 75
+  resampleFilter = "Lanczos"
+
+  [imaging.exif]
+    includeFields = ".*"
+    excludeFields = "GPS.*"
