@@ -1,42 +1,6 @@
-{{/* layouts/shortcodes/image.html */}}
-{{ $src := .Get "src" }}
-{{ $caption := .Get "caption" }}
-{{ $alt := .Get "alt" }}
-
-{{ $counter := add 1 ($.Page.Scratch.Get "imageCounter" | default 0) }}
-{{ $.Page.Scratch.Set "imageCounter" $counter }}
-{{ $defaultAlt := printf "%s_%02d" $.Page.Title $counter }}
-
-{{ $alt = $alt | default $caption | default $defaultAlt }}
-
-{{ $image := resources.Get $src }}
-{{ if $image }}
-  {{ $tiny := $image.Resize "400x" }}
-  {{ $small := $image.Resize "600x" }}
-  {{ $medium := $image.Resize "800x" }}
-  {{ $large := $image.Resize "1200x" }}
-
-  {{/* Get original image dimensions */}}
-  {{ $width := $image.Width }}
-  {{ $height := $image.Height }}
-
-  <figure>
-    <img
-      srcset="{{ $tiny.RelPermalink }} 400w,
-              {{ $small.RelPermalink }} 600w,
-              {{ $medium.RelPermalink }} 800w,
-              {{ $large.RelPermalink }} 1200w"
-      sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, 1200px"
-      src="{{ $image.RelPermalink }}"
-      alt="{{ $alt }}"
-      loading="lazy"
-      width="{{ $width }}"
-      height="{{ $height }}"
-    >
-    {{ with $caption }}
-      <figcaption>{{ . }}</figcaption>
-    {{ end }}
-  </figure>
-{{ else }}
-  <p>Error: Image "{{ $src }}" not found</p>
-{{ end }}
+{{ $counter := add 1 (index .Page.Params "img_counter" | default 0) }}
+{{ .Page.Scratch.Set "img_counter" $counter }}
+<figure>
+<img src="{{ .Get "src" }}" alt="{{ .Page.Title }}_{{ printf "%02d" $counter }}" loading="lazy">
+<figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

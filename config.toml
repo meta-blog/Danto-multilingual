@@ -399,13 +399,3 @@ paginate = 12
 
 [services.rss]
   limit = 50  # RSS 피드에 포함할 최근 항목 수
-
-
-[imaging]
-  enable = true
-  quality = 75
-  resampleFilter = "Lanczos"
-
-  [imaging.exif]
-    includeFields = ".*"
-    excludeFields = "GPS.*"
