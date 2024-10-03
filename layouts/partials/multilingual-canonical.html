@@ -1,28 +1,12 @@
-{{ $originalPage := . }}
-{{ $canonicalVersion := "" }}
-{{ $currentLang := .Lang }}
-{{ $defaultHreflang := "x-default" }}
-
-<!-- 모든 번역을 반복 -->
-{{ range .AllTranslations }}
-  <!-- 캐노니컬 링크를 US 버전으로 설정 -->
-  {{ if eq .Lang "us" }}
-    {{ $canonicalVersion = . }}
-  {{ end }}
-{{ end }}
-
-<!-- 캐노니컬 URL -->
-{{ if $canonicalVersion }}
-  <link rel="canonical" href="{{ $canonicalVersion.Permalink }}">
+{{ with .Params.canonical_url }}
+  <link rel="canonical" href="{{ . }}" />
 {{ else }}
-  <link rel="canonical" href="{{ $originalPage.Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}" />
 {{ end }}
 
-<!-- 각 번역에 대한 대체 링크 -->
-{{ range .Translations }}
-  <!-- hreflang이 올바른 언어 코드 형식을 사용하도록 보장 -->
-  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
 {{ end }}
-
-<!-- x-default hreflang 추가 -->
-<link rel="alternate" hreflang="{{ $defaultHreflang }}" href="{{ .Site.Home.Permalink }}">
